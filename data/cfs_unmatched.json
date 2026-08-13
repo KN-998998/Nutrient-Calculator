@@ -1,0 +1,1237 @@
+[
+ {
+  "key": "HK0-2007|雜豆粒",
+  "code": "HK0-2007",
+  "name": "雜豆粒",
+  "keyword": "雜豆",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0073|调味雞粉(家樂)1kg*12包",
+  "code": "DTL0073",
+  "name": "调味雞粉(家樂)1kg*12包",
+  "keyword": "调味雞粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1572|京蔥",
+  "code": "HK0-1572",
+  "name": "京蔥",
+  "keyword": "蔥",
+  "candidates": [
+   "洋蔥圈（不連醬汁）",
+   "洋蔥湯",
+   "洋蔥豬扒包"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1373|蕃茄 <切角>",
+  "code": "HK0-1373",
+  "name": "蕃茄 <切角>",
+  "keyword": "蕃茄",
+  "candidates": [
+   "薄餅, 加工肉類, 蕃茄醬, 普通批/薄批",
+   "薄餅, 加工肉類及肉類, 蕃茄醬, 普通批/薄批",
+   "薄餅, 夏威夷, 蕃茄醬, 普通批/薄批",
+   "薄餅, 夏威夷/熱帶風情, 蕃茄醬, 厚批",
+   "薄餅, 海鮮, 蕃茄醬, 普通批/薄批",
+   "薄餅, 肉類, 蕃茄醬, 普通批/薄批",
+   "薄餅, 肉類/加工肉類, 蕃茄醬, 厚批",
+   "薄餅, 肉類/加工肉類, 蕃茄醬, 芝心批"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1314|照燒汁",
+  "code": "HK0-1314",
+  "name": "照燒汁",
+  "keyword": "照燒汁",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0084|25KG 幼鹽",
+  "code": "DTL0084",
+  "name": "25KG 幼鹽",
+  "keyword": "幼鹽",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-0016|合掌瓜肉 <切角>",
+  "code": "HK0-0016",
+  "name": "合掌瓜肉 <切角>",
+  "keyword": "合掌瓜",
+  "candidates": [
+   "佛手瓜[棒瓜，菜餚梨]",
+   "[合掌瓜]"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2785|<清洗>小棠菜苗",
+  "code": "HK0-2785",
+  "name": "<清洗>小棠菜苗",
+  "keyword": "小棠菜",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2508|紅圓椒肉 <切絲>",
+  "code": "HK0-2508",
+  "name": "紅圓椒肉 <切絲>",
+  "keyword": "紅圓椒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2107|黃圓椒肉 <切絲>",
+  "code": "HK0-2107",
+  "name": "黃圓椒肉 <切絲>",
+  "keyword": "黃圓椒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "VCK0348|<清洗>紹菜",
+  "code": "VCK0348",
+  "name": "<清洗>紹菜",
+  "keyword": "紹菜",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0173|京蔥",
+  "code": "DTL0173",
+  "name": "京蔥",
+  "keyword": "蔥",
+  "candidates": [
+   "洋蔥圈（不連醬汁）",
+   "洋蔥湯",
+   "洋蔥豬扒包"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0073|12X1KG家樂牌調味雞粉(包裝)",
+  "code": "DTL0073",
+  "name": "12X1KG家樂牌調味雞粉(包裝)",
+  "keyword": "X1KG牌雞粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3209|28LB蜆殼粉",
+  "code": "HK0-3209",
+  "name": "28LB蜆殼粉",
+  "keyword": "蜆殼粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3359|扭扭粉彎曲通心粉（山麥）",
+  "code": "HK0-3359",
+  "name": "扭扭粉彎曲通心粉（山麥）",
+  "keyword": "扭扭粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2025|貝殼粉",
+  "code": "HK0-2025",
+  "name": "貝殼粉",
+  "keyword": "貝殼粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2107|黃圓椒肉 <切條>",
+  "code": "HK0-2107",
+  "name": "黃圓椒肉 <切條>",
+  "keyword": "黃圓椒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|<清洗>紹菜",
+  "code": "",
+  "name": "<清洗>紹菜",
+  "keyword": "紹菜",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2007|雜豆",
+  "code": "HK0-2007",
+  "name": "雜豆",
+  "keyword": "雜豆",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2363|合掌瓜肉 <切絲>",
+  "code": "HK0-2363",
+  "name": "合掌瓜肉 <切絲>",
+  "keyword": "合掌瓜",
+  "candidates": [
+   "佛手瓜[棒瓜，菜餚梨]",
+   "[合掌瓜]"
+  ],
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "HK0-1354|翠玉瓜 <切半圓片>",
+  "code": "HK0-1354",
+  "name": "翠玉瓜 <切半圓片>",
+  "keyword": "翠玉瓜圓",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1373|鮮茄角",
+  "code": "HK0-1373",
+  "name": "鮮茄角",
+  "keyword": "番茄",
+  "candidates": [
+   "墨式酸辣醬(主要成分為番茄)",
+   "新西蘭番茄(去皮)",
+   "焗豆(罐裝，番茄汁浸)",
+   "焗豆(罐裝，番茄汁浸，較低鹽)",
+   "番茄",
+   "番茄",
+   "[紅茄]、[番茄柿]",
+   "番茄(整個，罐裝，番茄汁浸)"
+  ],
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "HK0-3567|地捫什果/什果(億萬)",
+  "code": "HK0-3567",
+  "name": "地捫什果/什果(億萬)",
+  "keyword": "什果",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2024|泰國紅米",
+  "code": "HK0-2024",
+  "name": "泰國紅米",
+  "keyword": "泰國紅米",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1118|12X1KG家樂牌調味雞粉(包裝)",
+  "code": "HK0-1118",
+  "name": "12X1KG家樂牌調味雞粉(包裝)",
+  "keyword": "X1KG牌雞粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1373|蕃茄角",
+  "code": "HK0-1373",
+  "name": "蕃茄角",
+  "keyword": "蕃茄",
+  "candidates": [
+   "薄餅, 加工肉類, 蕃茄醬, 普通批/薄批",
+   "薄餅, 加工肉類及肉類, 蕃茄醬, 普通批/薄批",
+   "薄餅, 夏威夷, 蕃茄醬, 普通批/薄批",
+   "薄餅, 夏威夷/熱帶風情, 蕃茄醬, 厚批",
+   "薄餅, 海鮮, 蕃茄醬, 普通批/薄批",
+   "薄餅, 肉類, 蕃茄醬, 普通批/薄批",
+   "薄餅, 肉類/加工肉類, 蕃茄醬, 厚批",
+   "薄餅, 肉類/加工肉類, 蕃茄醬, 芝心批"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "TTF0058|栗米粒",
+  "code": "TTF0058",
+  "name": "栗米粒",
+  "keyword": "栗米",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|素牛扒",
+  "code": "",
+  "name": "素牛扒",
+  "keyword": "素牛扒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2191|紫芯蕃薯肉 <切粒>",
+  "code": "HK0-2191",
+  "name": "紫芯蕃薯肉 <切粒>",
+  "keyword": "紫芯蕃薯",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0108|珍珠雲耳 ( 貓耳朵 )",
+  "code": "DTL0108",
+  "name": "珍珠雲耳 ( 貓耳朵 )",
+  "keyword": "珍珠雲耳",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|本菇",
+  "code": "",
+  "name": "本菇",
+  "keyword": "本菇",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-0431|雞脾菇",
+  "code": "HK0-0431",
+  "name": "雞脾菇",
+  "keyword": "雞脾菇",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "VCK0146|窩筍肉 <切片>",
+  "code": "VCK0146",
+  "name": "窩筍肉 <切片>",
+  "keyword": "窩筍",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2507|西椒肉 <切絲>",
+  "code": "HK0-2507",
+  "name": "西椒肉 <切絲>",
+  "keyword": "西椒",
+  "candidates": [
+   "甜椒",
+   "[燈籠椒]、[西椒]、[柿子椒]、[甜番椒]",
+   "甜椒(脫水)",
+   "[燈籠椒]、[西椒]、[柿子椒]、[甜番椒]",
+   "甜椒[燈籠椒，柿子椒]",
+   "[西椒]、[甜番椒]"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-0016|合掌瓜肉 <切絲>",
+  "code": "HK0-0016",
+  "name": "合掌瓜肉 <切絲>",
+  "keyword": "合掌瓜",
+  "candidates": [
+   "佛手瓜[棒瓜，菜餚梨]",
+   "[合掌瓜]"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1575|馬蹄碎",
+  "code": "HK0-1575",
+  "name": "馬蹄碎",
+  "keyword": "馬蹄碎",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|珍珠雲耳 ( 貓耳朵 )",
+  "code": "",
+  "name": "珍珠雲耳 ( 貓耳朵 )",
+  "keyword": "珍珠雲耳",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2229|淮山肉 <切角>",
+  "code": "HK0-2229",
+  "name": "淮山肉 <切角>",
+  "keyword": "淮山",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "MCK0050|牛坑腩切",
+  "code": "MCK0050",
+  "name": "牛坑腩切",
+  "keyword": "牛坑腩切",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-0102|柱侯醬",
+  "code": "HK0-0102",
+  "name": "柱侯醬",
+  "keyword": "柱侯醬",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0054|黑磨豉醬",
+  "code": "DTL0054",
+  "name": "黑磨豉醬",
+  "keyword": "黑磨豉醬",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-0078|金盾牌頂級香絲苗米（紅線）25公斤",
+  "code": "HK0-0078",
+  "name": "金盾牌頂級香絲苗米（紅線）25公斤",
+  "keyword": "金盾牌頂級香苗米",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1569|紅圓椒肉 <切角>",
+  "code": "HK0-1569",
+  "name": "紅圓椒肉 <切角>",
+  "keyword": "紅圓椒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "TTF0006|蟹柳",
+  "code": "TTF0006",
+  "name": "蟹柳",
+  "keyword": "蟹柳",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1571|黃圓椒肉 <切角>",
+  "code": "HK0-1571",
+  "name": "黃圓椒肉 <切角>",
+  "keyword": "黃圓椒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|肉丸2個",
+  "code": "",
+  "name": "肉丸2個",
+  "keyword": "肉丸",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|豬頸肉片",
+  "code": "",
+  "name": "豬頸肉片",
+  "keyword": "豬頸",
+  "candidates": [
+   "泰式燒豬頸肉"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "YJ0013|瑞士汁",
+  "code": "YJ0013",
+  "name": "瑞士汁",
+  "keyword": "瑞士汁",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "LKK0004|照燒汁",
+  "code": "LKK0004",
+  "name": "照燒汁",
+  "keyword": "照燒汁",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "MCK0011|豬軟骨",
+  "code": "MCK0011",
+  "name": "豬軟骨",
+  "keyword": "豬軟骨",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "VCK0348|紹菜",
+  "code": "VCK0348",
+  "name": "紹菜",
+  "keyword": "紹菜",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2569|滷肉<108倉>",
+  "code": "HK0-2569",
+  "name": "滷肉<108倉>",
+  "keyword": "滷肉108倉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|雞下脾",
+  "code": "",
+  "name": "雞下脾",
+  "keyword": "雞下脾",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|白蘿蔔",
+  "code": "",
+  "name": "白蘿蔔",
+  "keyword": "白蘿蔔",
+  "candidates": [
+   "白蘿蔔[萊菔]"
+  ],
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "DTL0079|砂糖",
+  "code": "DTL0079",
+  "name": "砂糖",
+  "keyword": "砂糖",
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "HK0-2007|什豆",
+  "code": "HK0-2007",
+  "name": "什豆",
+  "keyword": "什豆",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3211|家樂牌鮮露",
+  "code": "HK0-3211",
+  "name": "家樂牌鮮露",
+  "keyword": "牌鮮露",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3364|餐肉",
+  "code": "HK0-3364",
+  "name": "餐肉",
+  "keyword": "餐",
+  "candidates": [
+   "全麥餐包",
+   "全麥餐包",
+   "全麥餐包(烘過)",
+   "午餐肉",
+   "午餐肉包",
+   "午餐肉蛋三文治",
+   "午餐肉蛋即食麵",
+   "[方便麵]"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "VHF088|金菇(包)",
+  "code": "VHF088",
+  "name": "金菇(包)",
+  "keyword": "金菇",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2087|急凍餃子",
+  "code": "HK0-2087",
+  "name": "急凍餃子",
+  "keyword": "急凍餃子",
+  "candidates": [
+   "日式煎餃子"
+  ],
+  "fallback_kw": "餃子",
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "DTL0073|家樂牌調味雞粉(包裝)",
+  "code": "DTL0073",
+  "name": "家樂牌調味雞粉(包裝)",
+  "keyword": "牌雞粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2945|米線",
+  "code": "HK0-2945",
+  "name": "米線",
+  "keyword": "米線",
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "MCK0084|肉眼粒",
+  "code": "MCK0084",
+  "name": "肉眼粒",
+  "keyword": "肉眼",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3217|出前一丁",
+  "code": "HK0-3217",
+  "name": "出前一丁",
+  "keyword": "出前一",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2518|去皮雞絲",
+  "code": "HK0-2518",
+  "name": "去皮雞絲",
+  "keyword": "雞",
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "DTL160|4KG滿姨米粉",
+  "code": "DTL160",
+  "name": "4KG滿姨米粉",
+  "keyword": "米粉",
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "MCK0104|大利 火腿片 2磅/包",
+  "code": "MCK0104",
+  "name": "大利 火腿片 2磅/包",
+  "keyword": "大利火腿2磅",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2292|紹菜",
+  "code": "HK0-2292",
+  "name": "紹菜",
+  "keyword": "紹菜",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "VHF050|銀芽",
+  "code": "VHF050",
+  "name": "銀芽",
+  "keyword": "銀芽",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1118|调味雞粉(家樂)1kg*12包",
+  "code": "HK0-1118",
+  "name": "调味雞粉(家樂)1kg*12包",
+  "keyword": "调味雞粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3235|牛冧片",
+  "code": "HK0-3235",
+  "name": "牛冧片",
+  "keyword": "牛冧",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0099|杞子",
+  "code": "DTL0099",
+  "name": "杞子",
+  "keyword": "杞子",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3223|300+龍利柳(白盒)",
+  "code": "HK0-3223",
+  "name": "300+龍利柳(白盒)",
+  "keyword": "龍利柳",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1567|福花",
+  "code": "HK0-1567",
+  "name": "福花",
+  "keyword": "福花",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3223|300+龍利柳(白)",
+  "code": "HK0-3223",
+  "name": "300+龍利柳(白)",
+  "keyword": "龍利柳",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0331|蟲草花",
+  "code": "DTL0331",
+  "name": "蟲草花",
+  "keyword": "蟲草花",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0014|塔牌龍口粉絲（箱拆包）",
+  "code": "DTL0014",
+  "name": "塔牌龍口粉絲（箱拆包）",
+  "keyword": "塔牌龍口粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3148|合掌瓜肉 <切角>",
+  "code": "HK0-3148",
+  "name": "合掌瓜肉 <切角>",
+  "keyword": "合掌瓜",
+  "candidates": [
+   "佛手瓜[棒瓜，菜餚梨]",
+   "[合掌瓜]"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0028|炸蒜容",
+  "code": "DTL0028",
+  "name": "炸蒜容",
+  "keyword": "炸蒜容",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3228|牛冧片",
+  "code": "HK0-3228",
+  "name": "牛冧片",
+  "keyword": "牛冧",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "斤（HK）|合掌瓜肉 <切角>",
+  "code": "斤（HK）",
+  "name": "合掌瓜肉 <切角>",
+  "keyword": "合掌瓜",
+  "candidates": [
+   "佛手瓜[棒瓜，菜餚梨]",
+   "[合掌瓜]"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2508|西椒肉 <切絲>",
+  "code": "HK0-2508",
+  "name": "西椒肉 <切絲>",
+  "keyword": "西椒",
+  "candidates": [
+   "甜椒",
+   "[燈籠椒]、[西椒]、[柿子椒]、[甜番椒]",
+   "甜椒(脫水)",
+   "[燈籠椒]、[西椒]、[柿子椒]、[甜番椒]",
+   "甜椒[燈籠椒，柿子椒]",
+   "[西椒]、[甜番椒]"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0108|珍珠雲耳",
+  "code": "DTL0108",
+  "name": "珍珠雲耳",
+  "keyword": "珍珠雲耳",
+  "candidates": [],
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "HK0-2508|紅圓椒絲",
+  "code": "HK0-2508",
+  "name": "紅圓椒絲",
+  "keyword": "紅圓椒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3147|日本青皮南瓜<有皮><切粒>",
+  "code": "HK0-3147",
+  "name": "日本青皮南瓜<有皮><切粒>",
+  "keyword": "青皮南瓜有皮",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2107|黃圓椒絲",
+  "code": "HK0-2107",
+  "name": "黃圓椒絲",
+  "keyword": "黃圓椒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3211|鮮露",
+  "code": "HK0-3211",
+  "name": "鮮露",
+  "keyword": "鮮露",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "VCK0310|甘筍仔",
+  "code": "VCK0310",
+  "name": "甘筍仔",
+  "keyword": "甘筍仔",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2025|28LB 蜆殼粉",
+  "code": "HK0-2025",
+  "name": "28LB 蜆殼粉",
+  "keyword": "蜆殼粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1168|煙肉",
+  "code": "HK0-1168",
+  "name": "煙肉",
+  "keyword": "煙",
+  "candidates": [
+   "三文魚(煙燻，切片)",
+   "煙肉中薄片(未經削切，生)",
+   "煙肉中薄片(肥肉，煎，無添加脂肪)",
+   "芝士火腿煙肉意粉",
+   "鱈魚(煙燻，生)",
+   "鱈魚(煙燻，蒸)"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1168|煙肉片",
+  "code": "HK0-1168",
+  "name": "煙肉片",
+  "keyword": "煙",
+  "candidates": [
+   "三文魚(煙燻，切片)",
+   "煙肉中薄片(未經削切，生)",
+   "煙肉中薄片(肥肉，煎，無添加脂肪)",
+   "芝士火腿煙肉意粉",
+   "鱈魚(煙燻，生)",
+   "鱈魚(煙燻，蒸)"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "XWJ-0281|黑松露醬",
+  "code": "XWJ-0281",
+  "name": "黑松露醬",
+  "keyword": "黑松露醬",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2030|黑松露油",
+  "code": "HK0-2030",
+  "name": "黑松露油",
+  "keyword": "黑松露油",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3153|HK0-3153",
+  "code": "HK0-3153",
+  "name": "HK0-3153",
+  "keyword": "HK0-",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|素鴨",
+  "code": "",
+  "name": "素鴨",
+  "keyword": "素鴨",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2507|青椒絲",
+  "code": "HK0-2507",
+  "name": "青椒絲",
+  "keyword": "青椒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2651|鮮菇粉",
+  "code": "HK0-2651",
+  "name": "鮮菇粉",
+  "keyword": "鮮菇粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-0800|青椒角",
+  "code": "HK0-0800",
+  "name": "青椒角",
+  "keyword": "青椒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1373|蕃茄粒",
+  "code": "HK0-1373",
+  "name": "蕃茄粒",
+  "keyword": "蕃茄",
+  "candidates": [
+   "薄餅, 加工肉類, 蕃茄醬, 普通批/薄批",
+   "薄餅, 加工肉類及肉類, 蕃茄醬, 普通批/薄批",
+   "薄餅, 夏威夷, 蕃茄醬, 普通批/薄批",
+   "薄餅, 夏威夷/熱帶風情, 蕃茄醬, 厚批",
+   "薄餅, 海鮮, 蕃茄醬, 普通批/薄批",
+   "薄餅, 肉類, 蕃茄醬, 普通批/薄批",
+   "薄餅, 肉類/加工肉類, 蕃茄醬, 厚批",
+   "薄餅, 肉類/加工肉類, 蕃茄醬, 芝心批"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|OMNIMeat（新豬肉碎）",
+  "code": "",
+  "name": "OMNIMeat（新豬肉碎）",
+  "keyword": "OMNIMeat",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "|新肉絲OMNIPORK STRIP",
+  "code": "",
+  "name": "新肉絲OMNIPORK STRIP",
+  "keyword": "新肉OMNIPORKSTRIP",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2244|中芹肉 <切段>",
+  "code": "HK0-2244",
+  "name": "中芹肉 <切段>",
+  "keyword": "中芹肉切段",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3567|地捫什果",
+  "code": "HK0-3567",
+  "name": "地捫什果",
+  "keyword": "什果",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "LKK0005|黑磨豉醬",
+  "code": "LKK0005",
+  "name": "黑磨豉醬",
+  "keyword": "黑磨豉醬",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-2508|紅椒絲",
+  "code": "HK0-2508",
+  "name": "紅椒絲",
+  "keyword": "紅椒",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0238|沙爹醬",
+  "code": "DTL0238",
+  "name": "沙爹醬",
+  "keyword": "沙爹醬",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "101-0396|肉丸2個",
+  "code": "101-0396",
+  "name": "肉丸2個",
+  "keyword": "肉丸",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0057|豆辦醬",
+  "code": "DTL0057",
+  "name": "豆辦醬",
+  "keyword": "豆辦醬",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "MCK0050|牛坑腩切粒",
+  "code": "MCK0050",
+  "name": "牛坑腩切粒",
+  "keyword": "牛坑腩",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-0102|柱候醬",
+  "code": "HK0-0102",
+  "name": "柱候醬",
+  "keyword": "柱候醬",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3078|玉子豆腐",
+  "code": "HK0-3078",
+  "name": "玉子豆腐",
+  "keyword": "玉子豆腐",
+  "candidates": [
+   "奶豆腐(脫脂)",
+   "奶豆腐(鮮)",
+   "油豆腐",
+   "硬豆腐",
+   "糟豆腐乳[糟乳]",
+   "紅燒豆腐",
+   "腐乳(白)[醬豆腐]",
+   "腐乳(紅)[醬豆腐]"
+  ],
+  "fallback_kw": "豆腐",
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "A10-7114|披薩",
+  "code": "A10-7114",
+  "name": "披薩",
+  "keyword": "披薩",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-0411|薯蓉粉",
+  "code": "HK0-0411",
+  "name": "薯蓉粉",
+  "keyword": "薯蓉粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "BCPN-9013|姜蓉（沙师弟）",
+  "code": "BCPN-9013",
+  "name": "姜蓉（沙师弟）",
+  "keyword": "姜蓉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1118|家樂牌黃罐雞粉",
+  "code": "HK0-1118",
+  "name": "家樂牌黃罐雞粉",
+  "keyword": "牌黃罐雞粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "BCPN-9006|煮饭油（沙师弟）",
+  "code": "BCPN-9006",
+  "name": "煮饭油（沙师弟）",
+  "keyword": "煮饭油",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "VHF024|甘荀絲",
+  "code": "VHF024",
+  "name": "甘荀絲",
+  "keyword": "甘荀",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "CK0283|栗米粒",
+  "code": "CK0283",
+  "name": "栗米粒",
+  "keyword": "栗米",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3217|出前一丁[黑帶]30包X3箱",
+  "code": "HK0-3217",
+  "name": "出前一丁[黑帶]30包X3箱",
+  "keyword": "出前一30包X",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0073|家樂牌調味雞粉",
+  "code": "DTL0073",
+  "name": "家樂牌調味雞粉",
+  "keyword": "牌雞粉",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-3211|12X980ML 家樂牌鮮露",
+  "code": "HK0-3211",
+  "name": "12X980ML 家樂牌鮮露",
+  "keyword": "X980ML牌鮮露",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1314|李錦記照燒汁",
+  "code": "HK0-1314",
+  "name": "李錦記照燒汁",
+  "keyword": "照燒汁",
+  "candidates": [],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "DTL0108|雲耳",
+  "code": "DTL0108",
+  "name": "雲耳",
+  "keyword": "雲耳",
+  "candidates": [
+   "木耳(乾)[黑木耳，雲耳]",
+   "木耳(水發)[黑木耳，雲耳]"
+  ],
+  "status": "unmatched",
+  "reason": "no candidate >= 0.55"
+ },
+ {
+  "key": "HK0-1082|椰菜絲",
+  "code": "HK0-1082",
+  "name": "椰菜絲",
+  "keyword": "椰菜",
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ },
+ {
+  "key": "DTL0121|豆油/15L 福字生油",
+  "code": "DTL0121",
+  "name": "豆油/15L 福字生油",
+  "keyword": "豆油",
+  "status": "error",
+  "reason": "TimeoutError: The read operation timed out"
+ }
+]

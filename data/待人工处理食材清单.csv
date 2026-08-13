@@ -1,0 +1,129 @@
+﻿食材编码,食材名称,搜索关键词,未匹配原因,建议处理
+DTL0073,12X1KG家樂牌調味雞粉(包裝),X1KG牌雞粉,no candidate >= 0.55,用供应商标签或近似食材(如玉米澱粉)替代
+HK0-1118,12X1KG家樂牌調味雞粉(包裝),X1KG牌雞粉,no candidate >= 0.55,用供应商标签或近似食材(如玉米澱粉)替代
+HK0-3211,12X980ML 家樂牌鮮露,X980ML牌鮮露,no candidate >= 0.55,重新搜索或人工指定
+DTL0084,25KG 幼鹽,幼鹽,no candidate >= 0.55,重新搜索或人工指定
+HK0-2025,28LB 蜆殼粉,蜆殼粉,no candidate >= 0.55,重新搜索或人工指定
+HK0-3209,28LB蜆殼粉,蜆殼粉,no candidate >= 0.55,重新搜索或人工指定
+HK0-3223,300+龍利柳(白),龍利柳,no candidate >= 0.55,重新搜索或人工指定
+HK0-3223,300+龍利柳(白盒),龍利柳,no candidate >= 0.55,重新搜索或人工指定
+DTL160,4KG滿姨米粉,米粉,TimeoutError: The read operation timed o,重新搜索或人工指定
+HK0-2651,6X1KG 大廚師香菇精粉/李錦記鮮菇粉,X1KG大廚師香菇精粉,"CFS 无对应食物, 需人工处理",重新搜索或人工指定
+HK0-2785,<清洗>小棠菜苗,小棠菜,no candidate >= 0.55,重新搜索或人工指定
+VCK0348,<清洗>紹菜,紹菜,no candidate >= 0.55,重新搜索或人工指定
+,<清洗>紹菜,紹菜,no candidate >= 0.55,重新搜索或人工指定
+HK0-3153,HK0-3153,HK0-,no candidate >= 0.55,重新搜索或人工指定
+,OMNIMeat（新豬肉碎）,OMNIMeat,no candidate >= 0.55,重新搜索或人工指定
+HK0-2244,中芹肉 <切段>,中芹肉切段,no candidate >= 0.55,重新搜索或人工指定
+HK0-1572,京蔥,蔥,no candidate >= 0.55,重新搜索或人工指定
+DTL0173,京蔥,蔥,no candidate >= 0.55,重新搜索或人工指定
+HK0-2007,什豆,什豆,no candidate >= 0.55,重新搜索或人工指定
+HK0-3217,出前一丁,出前一,no candidate >= 0.55,重新搜索或人工指定
+HK0-3217,出前一丁[黑帶]30包X3箱,出前一30包X,no candidate >= 0.55,重新搜索或人工指定
+HK0-2518,去皮雞絲,雞,TimeoutError: The read operation timed o,重新搜索或人工指定
+HK0-2363,合掌瓜肉 <切絲>,合掌瓜,TimeoutError: The read operation timed o,重新搜索或人工指定
+HK0-0016,合掌瓜肉 <切絲>,合掌瓜,no candidate >= 0.55,重新搜索或人工指定
+HK0-0016,合掌瓜肉 <切角>,合掌瓜,no candidate >= 0.55,重新搜索或人工指定
+HK0-3148,合掌瓜肉 <切角>,合掌瓜,no candidate >= 0.55,重新搜索或人工指定
+斤（HK）,合掌瓜肉 <切角>,合掌瓜,no candidate >= 0.55,重新搜索或人工指定
+HK0-3567,地捫什果,什果,no candidate >= 0.55,重新搜索或人工指定
+HK0-3567,地捫什果/什果(億萬),什果,no candidate >= 0.55,重新搜索或人工指定
+DTL0014,塔牌龍口粉絲（箱拆包）,塔牌龍口粉,no candidate >= 0.55,重新搜索或人工指定
+MCK0104,大利 火腿片 2磅/包,大利火腿2磅,no candidate >= 0.55,重新搜索或人工指定
+BCPN-9013,姜蓉（沙师弟）,姜蓉,no candidate >= 0.55,重新搜索或人工指定
+DTL0073,家樂牌調味雞粉,牌雞粉,no candidate >= 0.55,用供应商标签或近似食材(如玉米澱粉)替代
+DTL0073,家樂牌調味雞粉(包裝),牌雞粉,no candidate >= 0.55,用供应商标签或近似食材(如玉米澱粉)替代
+HK0-3211,家樂牌鮮露,牌鮮露,no candidate >= 0.55,重新搜索或人工指定
+HK0-1118,家樂牌黃罐雞粉,牌黃罐雞粉,no candidate >= 0.55,用供应商标签或近似食材(如玉米澱粉)替代
+HK0-2087,急凍餃子,急凍餃子,TimeoutError: The read operation timed o,"半成品, 查供应商营养标签"
+HK0-3359,扭扭粉彎曲通心粉（山麥）,扭扭粉,no candidate >= 0.55,重新搜索或人工指定
+A10-7114,披薩,披薩,no candidate >= 0.55,重新搜索或人工指定
+,新肉絲OMNIPORK STRIP,新肉OMNIPORKSTRIP,no candidate >= 0.55,重新搜索或人工指定
+HK0-3147,日本青皮南瓜<有皮><切粒>,青皮南瓜有皮,no candidate >= 0.55,重新搜索或人工指定
+,本菇,本菇,no candidate >= 0.55,重新搜索或人工指定
+HK0-1314,李錦記照燒汁,照燒汁,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+DTL0099,杞子,杞子,no candidate >= 0.55,重新搜索或人工指定
+HK0-0102,柱侯醬,柱侯醬,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+HK0-0102,柱候醬,柱候醬,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+TTF0058,栗米粒,栗米,no candidate >= 0.55,重新搜索或人工指定
+CK0283,栗米粒,栗米,no candidate >= 0.55,重新搜索或人工指定
+HK0-1082,椰菜絲,椰菜,TimeoutError: The read operation timed o,重新搜索或人工指定
+DTL0238,沙爹醬,沙爹醬,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+HK0-2024,泰國紅米,泰國紅米,no candidate >= 0.55,重新搜索或人工指定
+HK0-2229,淮山肉 <切角>,淮山,no candidate >= 0.55,重新搜索或人工指定
+HK0-2569,滷肉<108倉>,滷肉108倉,no candidate >= 0.55,重新搜索或人工指定
+DTL0028,炸蒜容,炸蒜容,no candidate >= 0.55,重新搜索或人工指定
+HK0-1168,煙肉,煙,no candidate >= 0.55,重新搜索或人工指定
+HK0-1168,煙肉片,煙,no candidate >= 0.55,重新搜索或人工指定
+HK0-1314,照燒汁,照燒汁,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+LKK0004,照燒汁,照燒汁,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+BCPN-9006,煮饭油（沙师弟）,煮饭油,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+HK0-3235,牛冧片,牛冧,no candidate >= 0.55,重新搜索或人工指定
+HK0-3228,牛冧片,牛冧,no candidate >= 0.55,重新搜索或人工指定
+MCK0050,牛坑腩切,牛坑腩切,no candidate >= 0.55,重新搜索或人工指定
+MCK0050,牛坑腩切粒,牛坑腩,no candidate >= 0.55,重新搜索或人工指定
+HK0-3078,玉子豆腐,玉子豆腐,TimeoutError: The read operation timed o,重新搜索或人工指定
+DTL0108,珍珠雲耳,珍珠雲耳,TimeoutError: The read operation timed o,重新搜索或人工指定
+DTL0108,珍珠雲耳 ( 貓耳朵 ),珍珠雲耳,no candidate >= 0.55,重新搜索或人工指定
+,珍珠雲耳 ( 貓耳朵 ),珍珠雲耳,no candidate >= 0.55,重新搜索或人工指定
+YJ0013,瑞士汁,瑞士汁,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+VCK0310,甘筍仔,甘筍仔,no candidate >= 0.55,重新搜索或人工指定
+VHF024,甘荀絲,甘荀,no candidate >= 0.55,重新搜索或人工指定
+,白蘿蔔,白蘿蔔,TimeoutError: The read operation timed o,重新搜索或人工指定
+DTL0079,砂糖,砂糖,TimeoutError: The read operation timed o,重新搜索或人工指定
+HK0-1567,福花,福花,no candidate >= 0.55,重新搜索或人工指定
+VCK0146,窩筍肉 <切片>,窩筍,no candidate >= 0.55,重新搜索或人工指定
+HK0-2945,米線,米線,TimeoutError: The read operation timed o,重新搜索或人工指定
+HK0-2508,紅圓椒絲,紅圓椒,no candidate >= 0.55,重新搜索或人工指定
+HK0-2508,紅圓椒肉 <切絲>,紅圓椒,no candidate >= 0.55,重新搜索或人工指定
+HK0-1569,紅圓椒肉 <切角>,紅圓椒,no candidate >= 0.55,重新搜索或人工指定
+HK0-2508,紅椒絲,紅椒,no candidate >= 0.55,重新搜索或人工指定
+,素牛扒,素牛扒,no candidate >= 0.55,"半成品, 查供应商营养标签"
+,素鴨,素鴨,no candidate >= 0.55,重新搜索或人工指定
+HK0-2191,紫芯蕃薯肉 <切粒>,紫芯蕃薯,no candidate >= 0.55,重新搜索或人工指定
+VCK0348,紹菜,紹菜,no candidate >= 0.55,重新搜索或人工指定
+HK0-2292,紹菜,紹菜,no candidate >= 0.55,重新搜索或人工指定
+HK0-1354,翠玉瓜 <切半圓片>,翠玉瓜圓,no candidate >= 0.55,重新搜索或人工指定
+,肉丸2個,肉丸,no candidate >= 0.55,"半成品, 查供应商营养标签"
+101-0396,肉丸2個,肉丸,no candidate >= 0.55,"半成品, 查供应商营养标签"
+MCK0084,肉眼粒,肉眼,no candidate >= 0.55,重新搜索或人工指定
+HK0-1373,蕃茄 <切角>,蕃茄,no candidate >= 0.55,重新搜索或人工指定
+HK0-1373,蕃茄粒,蕃茄,no candidate >= 0.55,重新搜索或人工指定
+HK0-1373,蕃茄角,蕃茄,no candidate >= 0.55,重新搜索或人工指定
+HK0-0411,薯蓉粉,薯蓉粉,no candidate >= 0.55,重新搜索或人工指定
+DTL0331,蟲草花,蟲草花,no candidate >= 0.55,重新搜索或人工指定
+TTF0006,蟹柳,蟹柳,no candidate >= 0.55,重新搜索或人工指定
+HK0-2507,西椒肉 <切絲>,西椒,no candidate >= 0.55,重新搜索或人工指定
+HK0-2508,西椒肉 <切絲>,西椒,no candidate >= 0.55,重新搜索或人工指定
+DTL0073,调味雞粉(家樂)1kg*12包,调味雞粉,no candidate >= 0.55,用供应商标签或近似食材(如玉米澱粉)替代
+HK0-1118,调味雞粉(家樂)1kg*12包,调味雞粉,no candidate >= 0.55,用供应商标签或近似食材(如玉米澱粉)替代
+DTL0121,豆油/15L 福字生油,豆油,TimeoutError: The read operation timed o,"调味料, 查供应商标签或按近似调味料"
+DTL0057,豆辦醬,豆辦醬,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+MCK0011,豬軟骨,豬軟骨,no candidate >= 0.55,重新搜索或人工指定
+,豬頸肉片,豬頸,no candidate >= 0.55,重新搜索或人工指定
+HK0-2025,貝殼粉,貝殼粉,no candidate >= 0.55,重新搜索或人工指定
+,野菜鮮魚餅2個,野菜鮮魚餅,"CFS 无对应食物, 需人工处理","半成品, 查供应商营养标签"
+HK0-0078,金盾牌頂級香絲苗米（紅線）25公斤,金盾牌頂級香苗米,no candidate >= 0.55,重新搜索或人工指定
+VHF088,金菇(包),金菇,no candidate >= 0.55,重新搜索或人工指定
+VHF050,銀芽,銀芽,no candidate >= 0.55,重新搜索或人工指定
+HK0-2007,雜豆,雜豆,no candidate >= 0.55,重新搜索或人工指定
+HK0-2007,雜豆粒,雜豆,no candidate >= 0.55,重新搜索或人工指定
+,雞下脾,雞下脾,no candidate >= 0.55,重新搜索或人工指定
+HK0-0431,雞脾菇,雞脾菇,no candidate >= 0.55,重新搜索或人工指定
+DTL0108,雲耳,雲耳,no candidate >= 0.55,重新搜索或人工指定
+HK0-2507,青椒絲,青椒,no candidate >= 0.55,重新搜索或人工指定
+HK0-0800,青椒角,青椒,no candidate >= 0.55,重新搜索或人工指定
+HK0-3364,餐肉,餐,no candidate >= 0.55,重新搜索或人工指定
+,香菇貢丸2個,香菇貢丸,"CFS 无对应食物, 需人工处理","半成品, 查供应商营养标签"
+HK0-1575,馬蹄碎,馬蹄碎,no candidate >= 0.55,重新搜索或人工指定
+HK0-1373,鮮茄角,番茄,TimeoutError: The read operation timed o,重新搜索或人工指定
+HK0-2651,鮮菇粉,鮮菇粉,no candidate >= 0.55,重新搜索或人工指定
+HK0-3211,鮮露,鮮露,no candidate >= 0.55,重新搜索或人工指定
+HK0-2107,黃圓椒絲,黃圓椒,no candidate >= 0.55,重新搜索或人工指定
+HK0-2107,黃圓椒肉 <切條>,黃圓椒,no candidate >= 0.55,重新搜索或人工指定
+HK0-2107,黃圓椒肉 <切絲>,黃圓椒,no candidate >= 0.55,重新搜索或人工指定
+HK0-1571,黃圓椒肉 <切角>,黃圓椒,no candidate >= 0.55,重新搜索或人工指定
+HK0-2030,黑松露油,黑松露油,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+XWJ-0281,黑松露醬,黑松露醬,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+DTL0054,黑磨豉醬,黑磨豉醬,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"
+LKK0005,黑磨豉醬,黑磨豉醬,no candidate >= 0.55,"调味料, 查供应商标签或按近似调味料"

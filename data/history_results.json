@@ -1,0 +1,4572 @@
+[
+ {
+  "month": "4",
+  "name": "A鮮茄雞蛋肉片配飯（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 645.8,
+   "protein_g": 39.3,
+   "total_fat_g": 16.8,
+   "saturated_fat_g": 3.4,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 160.0,
+   "sugars_g": 0.59,
+   "sodium_mg": 1047.3
+  }
+ },
+ {
+  "month": "4",
+  "name": "B紅甜椒芝士雞柳螺絲粉（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 467.2,
+   "protein_g": 12.7,
+   "total_fat_g": 6.32,
+   "saturated_fat_g": 0.985,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.67,
+   "sugars_g": 3.813,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C西芹枝竹炒香乾配小米飯（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 612.7,
+   "protein_g": 23.2,
+   "total_fat_g": 18.5,
+   "saturated_fat_g": 4.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.0,
+   "sugars_g": 10.0,
+   "sodium_mg": 532.6
+  }
+ },
+ {
+  "month": "4",
+  "name": "D蕃茄牛肉配飯（墨魚餅+甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 567.5,
+   "protein_g": 30.2,
+   "total_fat_g": 11.4,
+   "saturated_fat_g": 3.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.7,
+   "sugars_g": 3.29,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A洋蔥木耳肉絲配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 578.3,
+   "protein_g": 25.68,
+   "total_fat_g": 16.52,
+   "saturated_fat_g": 3.508,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.5,
+   "sugars_g": 8.3,
+   "sodium_mg": 597.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B葡國雞塊貝殼粉（烤西蘭花）",
+  "nutrients": {
+   "energy_kcal": 533.1,
+   "protein_g": 30.3,
+   "total_fat_g": 6.5,
+   "saturated_fat_g": 1.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 80.1,
+   "sugars_g": 3.2,
+   "sodium_mg": 541.1
+  }
+ },
+ {
+  "month": "4",
+  "name": "C香煎新餐肉配紫米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 665.49,
+   "protein_g": 29.758,
+   "total_fat_g": 18.07,
+   "saturated_fat_g": 4.487,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 96.881,
+   "sugars_g": 0.927,
+   "sodium_mg": 539.2
+  }
+ },
+ {
+  "month": "4",
+  "name": "D蝦仁炒蛋配飯（十三香蔥肉餅+時令菜）",
+  "nutrients": {
+   "energy_kcal": 527.52,
+   "protein_g": 20.838,
+   "total_fat_g": 13.899,
+   "saturated_fat_g": 4.233,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.562,
+   "sugars_g": 0.09,
+   "sodium_mg": 687.017
+  }
+ },
+ {
+  "month": "4",
+  "name": "A咖喱薯仔雞球配飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 594.3,
+   "protein_g": 27.45,
+   "total_fat_g": 17.84,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.28,
+   "sugars_g": 7.78,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B意式番茄魚柳扭扭通粉（烤翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 525.8,
+   "protein_g": 17.25,
+   "total_fat_g": 11.55,
+   "saturated_fat_g": 3.8,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 90.35,
+   "sugars_g": 7.52,
+   "sodium_mg": 401.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "C羅漢齋配糙米飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 602.8,
+   "protein_g": 27.94,
+   "total_fat_g": 15.52,
+   "saturated_fat_g": 3.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 92.51,
+   "sugars_g": 5.358,
+   "sodium_mg": 574.6
+  }
+ },
+ {
+  "month": "4",
+  "name": "D京都豬扒配飯（魚蓉燒賣+翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 657.7,
+   "protein_g": 23.2,
+   "total_fat_g": 26.3,
+   "saturated_fat_g": 6.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.2,
+   "sugars_g": 0.4,
+   "sodium_mg": 586.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A西蘭花蝦仁配飯（小棠菜）",
+  "nutrients": {
+   "energy_kcal": 645.8,
+   "protein_g": 39.3,
+   "total_fat_g": 16.8,
+   "saturated_fat_g": 3.4,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 160.0,
+   "sugars_g": 0.59,
+   "sodium_mg": 1047.3
+  }
+ },
+ {
+  "month": "4",
+  "name": "B意式牛肉醬意粉（南瓜）",
+  "nutrients": {
+   "energy_kcal": 565.5,
+   "protein_g": 26.0,
+   "total_fat_g": 14.9,
+   "saturated_fat_g": 2.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 83.1,
+   "sugars_g": 2.6,
+   "sodium_mg": 543.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "C茄汁素魚柳配紫薯飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 447.2,
+   "protein_g": 12.7,
+   "total_fat_g": 6.32,
+   "saturated_fat_g": 0.985,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.67,
+   "sugars_g": 3.813,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D照燒雞球配飯（日式煎餃+時令菜）",
+  "nutrients": {
+   "energy_kcal": 563.52,
+   "protein_g": 23.99,
+   "total_fat_g": 12.876,
+   "saturated_fat_g": 3.43,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 89.115,
+   "sugars_g": 4.3375,
+   "sodium_mg": 688.795
+  }
+ },
+ {
+  "month": "4",
+  "name": "A鹵水雞中翼配炒飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 544.73,
+   "protein_g": 19.95,
+   "total_fat_g": 11.07,
+   "saturated_fat_g": 2.79,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 92.68,
+   "sugars_g": 9.265,
+   "sodium_mg": 578.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "B薯仔粒免治豬肉扭扭通粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 565.5,
+   "protein_g": 26.0,
+   "total_fat_g": 14.9,
+   "saturated_fat_g": 2.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 83.1,
+   "sugars_g": 2.6,
+   "sodium_mg": 543.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "C香煎素火腿配小米飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 435.9,
+   "protein_g": 5.5,
+   "total_fat_g": 3.6,
+   "saturated_fat_g": 0.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.2,
+   "sugars_g": 2.5,
+   "sodium_mg": 762.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "D洋蔥西蘭花肥牛配飯（墨魚餅+四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 618.32,
+   "protein_g": 21.58,
+   "total_fat_g": 21.766,
+   "saturated_fat_g": 6.586,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 85.99,
+   "sugars_g": 1.08,
+   "sodium_mg": 599.4
+  }
+ },
+ {
+  "month": "4",
+  "name": "A洋蔥牛肉片配飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 578.55,
+   "protein_g": 19.87,
+   "total_fat_g": 15.48,
+   "saturated_fat_g": 1.795,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 92.26,
+   "sugars_g": 5.0955,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B彩椒蝦仁芝士意粉（烤翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 648.7,
+   "protein_g": 28.3,
+   "total_fat_g": 23.0,
+   "saturated_fat_g": 5.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.6,
+   "sugars_g": 7.8,
+   "sodium_mg": 594.2
+  }
+ },
+ {
+  "month": "4",
+  "name": "C青瓜炒雙筍【甘筍、萵筍】配糙米飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 450.65,
+   "protein_g": 13.58,
+   "total_fat_g": 6.365,
+   "saturated_fat_g": 0.995,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.06,
+   "sugars_g": 5.4,
+   "sodium_mg": 229.97
+  }
+ },
+ {
+  "month": "4",
+  "name": "D臺式滷肉飯（魚蓉燒賣+翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 729.78,
+   "protein_g": 26.16,
+   "total_fat_g": 26.74,
+   "saturated_fat_g": 13.34,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 96.762,
+   "sugars_g": 2.22,
+   "sodium_mg": 578.6
+  }
+ },
+ {
+  "month": "4",
+  "name": "A豉汁龍利魚蒸蛋配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 533.1,
+   "protein_g": 30.3,
+   "total_fat_g": 6.5,
+   "saturated_fat_g": 1.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 80.1,
+   "sugars_g": 3.2,
+   "sodium_mg": 541.1
+  }
+ },
+ {
+  "month": "4",
+  "name": "B地中海肉粒長通粉（南瓜）",
+  "nutrients": {
+   "energy_kcal": 551.18,
+   "protein_g": 23.828,
+   "total_fat_g": 13.681,
+   "saturated_fat_g": 2.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.588,
+   "sugars_g": 6.7928,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C醬燒薯仔素漢堡扒配燕麥飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 555.15,
+   "protein_g": 20.485,
+   "total_fat_g": 15.57,
+   "saturated_fat_g": 8.395,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 79.665,
+   "sugars_g": 5.0,
+   "sodium_mg": 259.175
+  }
+ },
+ {
+  "month": "4",
+  "name": "D星洲黑磨豉炆牛筋腩配飯（蝦棗+時令菜）",
+  "nutrients": {
+   "energy_kcal": 777.19,
+   "protein_g": 28.941,
+   "total_fat_g": 35.06,
+   "saturated_fat_g": 10.876,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.689,
+   "sugars_g": 6.103,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A甘筍洋蔥牛肉絲配飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 554.9,
+   "protein_g": 15.4,
+   "total_fat_g": 17.0,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 78.9,
+   "sugars_g": 2.9,
+   "sodium_mg": 659.9
+  }
+ },
+ {
+  "month": "4",
+  "name": "B鮮茄椰菜雞肉貝殼粉（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 1152.1,
+   "protein_g": 51.66,
+   "total_fat_g": 32.59,
+   "saturated_fat_g": 6.7,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 156.175,
+   "sugars_g": 12.7675,
+   "sodium_mg": 1388.875
+  }
+ },
+ {
+  "month": "4",
+  "name": "C雙耳（黑白木耳）素肉絲配香芋飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 534.0,
+   "protein_g": 22.07,
+   "total_fat_g": 11.54,
+   "saturated_fat_g": 1.96,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 86.325,
+   "sugars_g": 7.0295,
+   "sodium_mg": 562.615
+  }
+ },
+ {
+  "month": "4",
+  "name": "D福花炒腩片配飯（墨魚餅+合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 679.791,
+   "protein_g": 24.553,
+   "total_fat_g": 23.703,
+   "saturated_fat_g": 7.753,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 94.153,
+   "sugars_g": 2.98,
+   "sodium_mg": 672.673
+  }
+ },
+ {
+  "month": "4",
+  "name": "A西檸汁雞柳配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 648.0,
+   "protein_g": 21.45,
+   "total_fat_g": 12.3,
+   "saturated_fat_g": 2.03,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 112.925,
+   "sugars_g": 27.7575,
+   "sodium_mg": 631.075
+  }
+ },
+ {
+  "month": "4",
+  "name": "B芝士牛肉醬螺絲粉（培根焗番茄）",
+  "nutrients": {
+   "energy_kcal": 708.0,
+   "protein_g": 22.25,
+   "total_fat_g": 12.4,
+   "saturated_fat_g": 2.03,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 126.925,
+   "sugars_g": 27.7575,
+   "sodium_mg": 646.075
+  }
+ },
+ {
+  "month": "4",
+  "name": "C素紅燒豆腐配紅米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 594.3,
+   "protein_g": 27.45,
+   "total_fat_g": 17.84,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.28,
+   "sugars_g": 7.78,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D吉列魚柳配飯（芝士焗薯球+時令菜）",
+  "nutrients": {
+   "energy_kcal": 995.96,
+   "protein_g": 28.75,
+   "total_fat_g": 20.85,
+   "saturated_fat_g": 1.575,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 174.649,
+   "sugars_g": 3.2925,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A雜果咕嚕肉配飯（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 645.8,
+   "protein_g": 39.3,
+   "total_fat_g": 16.8,
+   "saturated_fat_g": 3.4,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 160.0,
+   "sugars_g": 0.59,
+   "sodium_mg": 1047.3
+  }
+ },
+ {
+  "month": "4",
+  "name": "B香草燴雞球扭扭通粉（烤甘筍仔）",
+  "nutrients": {
+   "energy_kcal": 695.6,
+   "protein_g": 28.415,
+   "total_fat_g": 25.535,
+   "saturated_fat_g": 5.445,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.915,
+   "sugars_g": 9.7835,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C蕃茄素鴨配健康飯卷（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 447.2,
+   "protein_g": 12.7,
+   "total_fat_g": 6.32,
+   "saturated_fat_g": 0.985,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.67,
+   "sugars_g": 3.813,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D繽紛水果披薩(烤雞中翼+薯蓉)",
+  "nutrients": {
+   "energy_kcal": 567.5,
+   "protein_g": 30.2,
+   "total_fat_g": 11.4,
+   "saturated_fat_g": 3.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.7,
+   "sugars_g": 3.29,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A瑞士汁雞中翼配炒蛋飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 578.3,
+   "protein_g": 25.68,
+   "total_fat_g": 16.52,
+   "saturated_fat_g": 3.508,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.5,
+   "sugars_g": 8.3,
+   "sodium_mg": 597.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B蕃茄牛肉醬意粉（南瓜）",
+  "nutrients": {
+   "energy_kcal": 473.6,
+   "protein_g": 10.66,
+   "total_fat_g": 4.26,
+   "saturated_fat_g": 0.87,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 99.68,
+   "sugars_g": 2.771,
+   "sodium_mg": 517.97
+  }
+ },
+ {
+  "month": "4",
+  "name": "C茄汁薯仔炆素雞配小米飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 665.49,
+   "protein_g": 29.758,
+   "total_fat_g": 18.07,
+   "saturated_fat_g": 4.487,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 96.881,
+   "sugars_g": 0.927,
+   "sodium_mg": 539.2
+  }
+ },
+ {
+  "month": "4",
+  "name": "D柱侯牛腩配飯（墨魚餅+合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 609.6,
+   "protein_g": 34.5,
+   "total_fat_g": 12.2,
+   "saturated_fat_g": 2.3,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.1,
+   "sugars_g": 5.5,
+   "sodium_mg": 556.9
+  }
+ },
+ {
+  "month": "4",
+  "name": "A鮮茄汁魚柳配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 591.6,
+   "protein_g": 35.06,
+   "total_fat_g": 14.48,
+   "saturated_fat_g": 3.45,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 78.2,
+   "sugars_g": 8.01,
+   "sodium_mg": 530.1
+  }
+ },
+ {
+  "month": "4",
+  "name": "B日式咖喱豬肉長通粉（烤薯角）",
+  "nutrients": {
+   "energy_kcal": 515.6,
+   "protein_g": 19.23,
+   "total_fat_g": 10.73,
+   "saturated_fat_g": 1.795,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 85.03,
+   "sugars_g": 6.8,
+   "sodium_mg": 219.16
+  }
+ },
+ {
+  "month": "4",
+  "name": "C梅菜蒸新肉餅配糙米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 612.58,
+   "protein_g": 20.3845,
+   "total_fat_g": 18.549,
+   "saturated_fat_g": 9.305,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 34.5335,
+   "sugars_g": 19.9815,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D天天海南雞配飯 (滷水蛋+時令菜）",
+  "nutrients": {
+   "energy_kcal": 777.19,
+   "protein_g": 28.941,
+   "total_fat_g": 35.06,
+   "saturated_fat_g": 10.876,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.689,
+   "sugars_g": 6.103,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A節瓜薯仔肉絲配飯（翠玉瓜粟米粒）",
+  "nutrients": {
+   "energy_kcal": 551.18,
+   "protein_g": 23.828,
+   "total_fat_g": 13.681,
+   "saturated_fat_g": 2.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.588,
+   "sugars_g": 6.7928,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B芝士汁海鮮螺絲粉（翠玉瓜粟米粒）",
+  "nutrients": {
+   "energy_kcal": 555.15,
+   "protein_g": 20.485,
+   "total_fat_g": 15.57,
+   "saturated_fat_g": 8.395,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 79.665,
+   "sugars_g": 5.0,
+   "sodium_mg": 259.175
+  }
+ },
+ {
+  "month": "4",
+  "name": "C荷蘭豆炆素雞配毛豆飯（翠玉瓜粟米粒）",
+  "nutrients": {
+   "energy_kcal": 474.51,
+   "protein_g": 18.048,
+   "total_fat_g": 28.97,
+   "saturated_fat_g": 2.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 19.149,
+   "sugars_g": 6.2,
+   "sodium_mg": 1183.421
+  }
+ },
+ {
+  "month": "4",
+  "name": "D日式照燒豬軟骨配飯（日式煎餃+翠玉瓜粟米粒）",
+  "nutrients": {
+   "energy_kcal": 554.9,
+   "protein_g": 15.4,
+   "total_fat_g": 17.0,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 78.9,
+   "sugars_g": 2.9,
+   "sodium_mg": 659.9
+  }
+ },
+ {
+  "month": "4",
+  "name": "A甘筍雞絲炒木耳配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 404.51,
+   "protein_g": 18.048,
+   "total_fat_g": 28.97,
+   "saturated_fat_g": 2.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 19.149,
+   "sugars_g": 6.2,
+   "sodium_mg": 1183.421
+  }
+ },
+ {
+  "month": "4",
+  "name": "B茄汁免治肉碎貝殼粉（烤西蘭花）",
+  "nutrients": {
+   "energy_kcal": 473.6,
+   "protein_g": 10.66,
+   "total_fat_g": 4.26,
+   "saturated_fat_g": 0.87,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 99.68,
+   "sugars_g": 2.771,
+   "sodium_mg": 517.97
+  }
+ },
+ {
+  "month": "4",
+  "name": "C甜椒炒素肉絲配紅米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 550.1,
+   "protein_g": 24.61,
+   "total_fat_g": 11.91,
+   "saturated_fat_g": 3.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.765,
+   "sugars_g": 2.4475,
+   "sodium_mg": 715.555
+  }
+ },
+ {
+  "month": "4",
+  "name": "D鮮茄雞蛋海鮮炒意粉（牛肉球+時令菜）",
+  "nutrients": {
+   "energy_kcal": 529.1,
+   "protein_g": 23.06,
+   "total_fat_g": 12.01,
+   "saturated_fat_g": 3.1,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.14,
+   "sugars_g": 0.09,
+   "sodium_mg": 598.3
+  }
+ },
+ {
+  "month": "4",
+  "name": "A冬菇蘿蔔炆肉片配飯（甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 534.0,
+   "protein_g": 22.07,
+   "total_fat_g": 11.54,
+   "saturated_fat_g": 1.96,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 86.325,
+   "sugars_g": 7.0295,
+   "sodium_mg": 562.615
+  }
+ },
+ {
+  "month": "4",
+  "name": "B意式雜菜雞球扭扭通粉（甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 489.0,
+   "protein_g": 22.61,
+   "total_fat_g": 10.09,
+   "saturated_fat_g": 1.8,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 72.15,
+   "sugars_g": 3.11,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C三絲燴豆腐配燕麥飯（甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 679.791,
+   "protein_g": 24.553,
+   "total_fat_g": 23.703,
+   "saturated_fat_g": 7.753,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 94.153,
+   "sugars_g": 2.98,
+   "sodium_mg": 672.673
+  }
+ },
+ {
+  "month": "4",
+  "name": "D洋蔥薯仔炆雞下脾配飯（小籠包+甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 648.0,
+   "protein_g": 21.45,
+   "total_fat_g": 12.3,
+   "saturated_fat_g": 2.03,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 112.925,
+   "sugars_g": 27.7575,
+   "sodium_mg": 631.075
+  }
+ },
+ {
+  "month": "4",
+  "name": "A翠玉瓜蝦仁配飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 606.87,
+   "protein_g": 25.22,
+   "total_fat_g": 18.34,
+   "saturated_fat_g": 3.788,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 83.545,
+   "sugars_g": 7.0075,
+   "sodium_mg": 520.585
+  }
+ },
+ {
+  "month": "4",
+  "name": "B葡汁豬柳螺絲粉（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 459.0,
+   "protein_g": 20.9,
+   "total_fat_g": 5.1,
+   "saturated_fat_g": 1.1,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.7,
+   "sugars_g": 2.89,
+   "sodium_mg": 1034.8
+  }
+ },
+ {
+  "month": "4",
+  "name": "C鮮茄素漢堡扒配玉米飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 708.0,
+   "protein_g": 22.25,
+   "total_fat_g": 12.4,
+   "saturated_fat_g": 2.03,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 126.925,
+   "sugars_g": 27.7575,
+   "sodium_mg": 646.075
+  }
+ },
+ {
+  "month": "4",
+  "name": "D枝竹炆牛腩配飯 (墨魚餅+合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 695.6,
+   "protein_g": 28.415,
+   "total_fat_g": 25.535,
+   "saturated_fat_g": 5.445,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.915,
+   "sugars_g": 9.7835,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(10)冬菇蘿蔔炆肉片配飯（甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 527.52,
+   "protein_g": 20.838,
+   "total_fat_g": 13.899,
+   "saturated_fat_g": 4.233,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.562,
+   "sugars_g": 0.09,
+   "sodium_mg": 687.017
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(30)紅甜椒BBQ雞柳螺絲粉（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 467.2,
+   "protein_g": 12.7,
+   "total_fat_g": 6.32,
+   "saturated_fat_g": 0.985,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.67,
+   "sugars_g": 3.813,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(30)星洲黑磨豉炆牛腩配飯（墨魚餅+甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 567.5,
+   "protein_g": 30.2,
+   "total_fat_g": 11.4,
+   "saturated_fat_g": 3.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.7,
+   "sugars_g": 3.29,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(29)洋蔥木耳肉絲配飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 578.3,
+   "protein_g": 25.68,
+   "total_fat_g": 16.52,
+   "saturated_fat_g": 3.508,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.5,
+   "sugars_g": 8.3,
+   "sodium_mg": 597.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(13)甘筍雞絲炒木耳配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 404.51,
+   "protein_g": 18.048,
+   "total_fat_g": 28.97,
+   "saturated_fat_g": 2.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 19.149,
+   "sugars_g": 6.2,
+   "sodium_mg": 1183.421
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(29)香煎新餐肉配紫米飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 665.49,
+   "protein_g": 29.758,
+   "total_fat_g": 18.07,
+   "saturated_fat_g": 4.487,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 96.881,
+   "sugars_g": 0.927,
+   "sodium_mg": 539.2
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(29)蝦仁炒蛋配飯（十三香蔥肉餅+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 527.52,
+   "protein_g": 20.838,
+   "total_fat_g": 13.899,
+   "saturated_fat_g": 4.233,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.562,
+   "sugars_g": 0.09,
+   "sodium_mg": 687.017
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(14)節瓜薯仔肉絲配飯（翠玉瓜粟米粒）",
+  "nutrients": {
+   "energy_kcal": 551.18,
+   "protein_g": 23.828,
+   "total_fat_g": 13.681,
+   "saturated_fat_g": 2.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.588,
+   "sugars_g": 6.7928,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(27)意式牛肉醬意粉（甘筍仔）",
+  "nutrients": {
+   "energy_kcal": 565.5,
+   "protein_g": 26.0,
+   "total_fat_g": 14.9,
+   "saturated_fat_g": 2.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 83.1,
+   "sugars_g": 2.6,
+   "sodium_mg": 543.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(27)茄汁素魚柳配紫薯飯（小棠菜）",
+  "nutrients": {
+   "energy_kcal": 435.9,
+   "protein_g": 5.5,
+   "total_fat_g": 3.6,
+   "saturated_fat_g": 0.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.2,
+   "sugars_g": 2.5,
+   "sodium_mg": 762.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(27)照燒雞球配飯（日式煎餃+小棠菜）",
+  "nutrients": {
+   "energy_kcal": 618.32,
+   "protein_g": 21.58,
+   "total_fat_g": 21.766,
+   "saturated_fat_g": 6.586,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 85.99,
+   "sugars_g": 1.08,
+   "sodium_mg": 599.4
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(15)鮮茄汁魚柳配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 591.6,
+   "protein_g": 35.06,
+   "total_fat_g": 14.48,
+   "saturated_fat_g": 3.45,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 78.2,
+   "sugars_g": 8.01,
+   "sodium_mg": 530.1
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(16)瑞士汁雞中翼配炒蛋飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 578.3,
+   "protein_g": 25.68,
+   "total_fat_g": 16.52,
+   "saturated_fat_g": 3.508,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.5,
+   "sugars_g": 8.3,
+   "sodium_mg": 597.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(23)彩椒蝦仁意粉（烤翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 648.7,
+   "protein_g": 28.3,
+   "total_fat_g": 23.0,
+   "saturated_fat_g": 5.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.6,
+   "sugars_g": 7.8,
+   "sodium_mg": 594.2
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(22)豉汁龍利魚蒸蛋配飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 533.1,
+   "protein_g": 30.3,
+   "total_fat_g": 6.5,
+   "saturated_fat_g": 1.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 80.1,
+   "sugars_g": 3.2,
+   "sodium_mg": 541.1
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(22)地中海肉粒長通粉（烤薯角）",
+  "nutrients": {
+   "energy_kcal": 551.18,
+   "protein_g": 23.828,
+   "total_fat_g": 13.681,
+   "saturated_fat_g": 2.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.588,
+   "sugars_g": 6.7928,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(22)醬燒薯仔素漢堡扒配燕麥飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 555.15,
+   "protein_g": 20.485,
+   "total_fat_g": 15.57,
+   "saturated_fat_g": 8.395,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 79.665,
+   "sugars_g": 5.0,
+   "sodium_mg": 259.175
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(22)天天海南雞配飯 (滷水蛋+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 777.19,
+   "protein_g": 28.941,
+   "total_fat_g": 35.06,
+   "saturated_fat_g": 10.876,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.689,
+   "sugars_g": 6.103,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(17)雜果咕嚕肉配飯（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 645.8,
+   "protein_g": 39.3,
+   "total_fat_g": 16.8,
+   "saturated_fat_g": 3.4,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 160.0,
+   "sugars_g": 0.59,
+   "sodium_mg": 1047.3
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(20)蟲草花雞柳配飯（白菜仔）",
+  "nutrients": {
+   "energy_kcal": 648.0,
+   "protein_g": 21.45,
+   "total_fat_g": 12.3,
+   "saturated_fat_g": 2.03,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 112.925,
+   "sugars_g": 27.7575,
+   "sodium_mg": 631.075
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(20)香草牛肉醬螺絲粉（培根焗番茄）",
+  "nutrients": {
+   "energy_kcal": 708.0,
+   "protein_g": 22.25,
+   "total_fat_g": 12.4,
+   "saturated_fat_g": 2.03,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 126.925,
+   "sugars_g": 27.7575,
+   "sodium_mg": 646.075
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(20)素紅燒豆腐配紅米飯（白菜仔）",
+  "nutrients": {
+   "energy_kcal": 594.3,
+   "protein_g": 27.45,
+   "total_fat_g": 17.84,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.28,
+   "sugars_g": 7.78,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(20)雜菜海鮮配意粉（牛肉球+白菜仔）",
+  "nutrients": {
+   "energy_kcal": 995.96,
+   "protein_g": 28.75,
+   "total_fat_g": 20.85,
+   "saturated_fat_g": 1.575,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 174.649,
+   "sugars_g": 3.2925,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(20)西檸汁雞柳配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 648.0,
+   "protein_g": 21.45,
+   "total_fat_g": 12.3,
+   "saturated_fat_g": 2.03,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 112.925,
+   "sugars_g": 27.7575,
+   "sodium_mg": 631.075
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(21)甘筍洋蔥牛肉絲配飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 554.9,
+   "protein_g": 15.4,
+   "total_fat_g": 17.0,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 78.9,
+   "sugars_g": 2.9,
+   "sodium_mg": 659.9
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(16)蕃茄牛肉醬意粉（焗南瓜）",
+  "nutrients": {
+   "energy_kcal": 473.6,
+   "protein_g": 10.66,
+   "total_fat_g": 4.26,
+   "saturated_fat_g": 0.87,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 99.68,
+   "sugars_g": 2.771,
+   "sodium_mg": 517.97
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(15)鮮茄汁魚柳配飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 591.6,
+   "protein_g": 35.06,
+   "total_fat_g": 14.48,
+   "saturated_fat_g": 3.45,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 78.2,
+   "sugars_g": 8.01,
+   "sodium_mg": 530.1
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(22)豉汁龍利魚蒸蛋配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 533.1,
+   "protein_g": 30.3,
+   "total_fat_g": 6.5,
+   "saturated_fat_g": 1.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 80.1,
+   "sugars_g": 3.2,
+   "sodium_mg": 541.1
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(15)梅菜蒸新肉餅配糙米飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 612.58,
+   "protein_g": 20.3845,
+   "total_fat_g": 18.549,
+   "saturated_fat_g": 9.305,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 34.5335,
+   "sugars_g": 19.9815,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(15)日式洋蔥牛肉丼飯（蝦棗+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 777.19,
+   "protein_g": 28.941,
+   "total_fat_g": 35.06,
+   "saturated_fat_g": 10.876,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.689,
+   "sugars_g": 6.103,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(14)節瓜薯仔肉絲配飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 551.18,
+   "protein_g": 23.828,
+   "total_fat_g": 13.681,
+   "saturated_fat_g": 2.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.588,
+   "sugars_g": 6.7928,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(14)鮮茄海鮮螺絲粉（烤翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 555.15,
+   "protein_g": 20.485,
+   "total_fat_g": 15.57,
+   "saturated_fat_g": 8.395,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 79.665,
+   "sugars_g": 5.0,
+   "sodium_mg": 259.175
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(14)荷蘭豆炆素雞配毛豆飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 474.51,
+   "protein_g": 18.048,
+   "total_fat_g": 28.97,
+   "saturated_fat_g": 2.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 19.149,
+   "sugars_g": 6.2,
+   "sodium_mg": 1183.421
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(14)日式照燒豬軟骨配飯（日式煎餃+翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 554.9,
+   "protein_g": 15.4,
+   "total_fat_g": 17.0,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 78.9,
+   "sugars_g": 2.9,
+   "sodium_mg": 659.9
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(13)甘筍雞絲炒木耳配飯（旺菜）",
+  "nutrients": {
+   "energy_kcal": 404.51,
+   "protein_g": 18.048,
+   "total_fat_g": 28.97,
+   "saturated_fat_g": 2.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 19.149,
+   "sugars_g": 6.2,
+   "sodium_mg": 1183.421
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(13)甜椒炒素肉絲配紅米飯（旺菜）",
+  "nutrients": {
+   "energy_kcal": 550.1,
+   "protein_g": 24.61,
+   "total_fat_g": 11.91,
+   "saturated_fat_g": 3.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.765,
+   "sugars_g": 2.4475,
+   "sodium_mg": 715.555
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(13)鮮茄雞蛋海鮮炒意粉（牛肉球+旺菜）",
+  "nutrients": {
+   "energy_kcal": 529.1,
+   "protein_g": 23.06,
+   "total_fat_g": 12.01,
+   "saturated_fat_g": 3.1,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.14,
+   "sugars_g": 0.09,
+   "sodium_mg": 598.3
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(23)洋蔥牛肉片配飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 578.55,
+   "protein_g": 19.87,
+   "total_fat_g": 15.48,
+   "saturated_fat_g": 1.795,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 92.26,
+   "sugars_g": 5.0955,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(24)鹵水雞中翼配炒飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 665.6,
+   "protein_g": 22.025,
+   "total_fat_g": 10.67,
+   "saturated_fat_g": 1.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 121.32,
+   "sugars_g": 12.86,
+   "sodium_mg": 732.95
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(27)西蘭花蝦仁配飯（小棠菜）",
+  "nutrients": {
+   "energy_kcal": 544.73,
+   "protein_g": 19.95,
+   "total_fat_g": 11.07,
+   "saturated_fat_g": 2.79,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 92.68,
+   "sugars_g": 9.265,
+   "sodium_mg": 578.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(28)咖喱薯仔雞球配飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 594.3,
+   "protein_g": 27.45,
+   "total_fat_g": 17.84,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.28,
+   "sugars_g": 7.78,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(29)洋蔥木耳肉絲配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 578.3,
+   "protein_g": 25.68,
+   "total_fat_g": 16.52,
+   "saturated_fat_g": 3.508,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.5,
+   "sugars_g": 8.3,
+   "sodium_mg": 597.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(30)鮮茄雞蛋肉片配飯（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 645.8,
+   "protein_g": 39.3,
+   "total_fat_g": 16.8,
+   "saturated_fat_g": 3.4,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 160.0,
+   "sugars_g": 0.59,
+   "sodium_mg": 1047.3
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(24)洋蔥西蘭花肥牛配飯（墨魚餅+四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 618.32,
+   "protein_g": 21.58,
+   "total_fat_g": 21.766,
+   "saturated_fat_g": 6.586,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 85.99,
+   "sugars_g": 1.08,
+   "sodium_mg": 599.4
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(10)意式雜菜雞球扭扭通粉（甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 594.3,
+   "protein_g": 27.45,
+   "total_fat_g": 17.84,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.28,
+   "sugars_g": 7.78,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(13)茄汁免治肉碎貝殼粉（烤西蘭花）",
+  "nutrients": {
+   "energy_kcal": 473.6,
+   "protein_g": 10.66,
+   "total_fat_g": 4.26,
+   "saturated_fat_g": 0.87,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 99.68,
+   "sugars_g": 2.771,
+   "sodium_mg": 517.97
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(22)星洲黑磨豉炆牛筋腩配飯（蝦棗+時令菜）",
+  "nutrients": {
+   "energy_kcal": 777.19,
+   "protein_g": 28.941,
+   "total_fat_g": 35.06,
+   "saturated_fat_g": 10.876,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.689,
+   "sugars_g": 6.103,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(14)芝士汁海鮮螺絲粉（翠玉瓜粟米粒）",
+  "nutrients": {
+   "energy_kcal": 555.15,
+   "protein_g": 20.485,
+   "total_fat_g": 15.57,
+   "saturated_fat_g": 8.395,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 79.665,
+   "sugars_g": 5.0,
+   "sodium_mg": 259.175
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(15)日式咖喱豬肉長通粉（烤薯角）",
+  "nutrients": {
+   "energy_kcal": 515.6,
+   "protein_g": 19.23,
+   "total_fat_g": 10.73,
+   "saturated_fat_g": 1.795,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 85.03,
+   "sugars_g": 6.8,
+   "sodium_mg": 219.16
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(16)蕃茄牛肉醬意粉（南瓜）",
+  "nutrients": {
+   "energy_kcal": 473.6,
+   "protein_g": 10.66,
+   "total_fat_g": 4.26,
+   "saturated_fat_g": 0.87,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 99.68,
+   "sugars_g": 2.771,
+   "sodium_mg": 517.97
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(17)繽紛水果披薩(烤雞中翼+薯蓉)",
+  "nutrients": {
+   "energy_kcal": 567.5,
+   "protein_g": 30.2,
+   "total_fat_g": 11.4,
+   "saturated_fat_g": 3.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.7,
+   "sugars_g": 3.29,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(17)香草燴雞球扭扭通粉（烤甘筍仔）",
+  "nutrients": {
+   "energy_kcal": 695.6,
+   "protein_g": 28.415,
+   "total_fat_g": 25.535,
+   "saturated_fat_g": 5.445,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.915,
+   "sugars_g": 9.7835,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(20)芝士牛肉醬螺絲粉（培根焗番茄）",
+  "nutrients": {
+   "energy_kcal": 708.0,
+   "protein_g": 22.25,
+   "total_fat_g": 12.4,
+   "saturated_fat_g": 2.03,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 126.925,
+   "sugars_g": 27.7575,
+   "sodium_mg": 646.075
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(15)天天海南雞配飯 (滷水蛋+時令菜）",
+  "nutrients": {
+   "energy_kcal": 777.19,
+   "protein_g": 28.941,
+   "total_fat_g": 35.06,
+   "saturated_fat_g": 10.876,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.689,
+   "sugars_g": 6.103,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(21)鮮茄椰菜雞肉貝殼粉（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 1152.1,
+   "protein_g": 51.66,
+   "total_fat_g": 32.59,
+   "saturated_fat_g": 6.7,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 156.175,
+   "sugars_g": 12.7675,
+   "sodium_mg": 1388.875
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(22)地中海肉粒長通粉（南瓜）",
+  "nutrients": {
+   "energy_kcal": 551.18,
+   "protein_g": 23.828,
+   "total_fat_g": 13.681,
+   "saturated_fat_g": 2.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.588,
+   "sugars_g": 6.7928,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(23)彩椒蝦仁芝士意粉（烤翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 648.7,
+   "protein_g": 28.3,
+   "total_fat_g": 23.0,
+   "saturated_fat_g": 5.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.6,
+   "sugars_g": 7.8,
+   "sodium_mg": 594.2
+  }
+ },
+ {
+  "month": "4",
+  "name": "A(1)三絲炒雞絲配飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 527.52,
+   "protein_g": 20.838,
+   "total_fat_g": 13.899,
+   "saturated_fat_g": 4.233,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.562,
+   "sugars_g": 0.09,
+   "sodium_mg": 687.017
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(1)茄汁豬肉漢堡扒貝殼粉（烤翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 594.3,
+   "protein_g": 27.45,
+   "total_fat_g": 17.84,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.28,
+   "sugars_g": 7.78,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(1)素蠔王雜菌豆乾配紫米飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 404.51,
+   "protein_g": 18.048,
+   "total_fat_g": 28.97,
+   "saturated_fat_g": 2.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 19.149,
+   "sugars_g": 6.2,
+   "sodium_mg": 1183.421
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(1)天天海南雞配飯（滷水蛋+翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 525.8,
+   "protein_g": 17.25,
+   "total_fat_g": 11.55,
+   "saturated_fat_g": 3.8,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 90.35,
+   "sugars_g": 7.52,
+   "sodium_mg": 401.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(24)薯仔粒免治豬肉扭扭通粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 664.9,
+   "protein_g": 26.4,
+   "total_fat_g": 25.3,
+   "saturated_fat_g": 5.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.9,
+   "sugars_g": 8.9,
+   "sodium_mg": 832.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(27)意式牛肉醬意粉（南瓜）",
+  "nutrients": {
+   "energy_kcal": 565.5,
+   "protein_g": 26.0,
+   "total_fat_g": 14.9,
+   "saturated_fat_g": 2.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 83.1,
+   "sugars_g": 2.6,
+   "sodium_mg": 543.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(28)意式番茄魚柳扭扭通粉（烤翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 525.8,
+   "protein_g": 17.25,
+   "total_fat_g": 11.55,
+   "saturated_fat_g": 3.8,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 90.35,
+   "sugars_g": 7.52,
+   "sodium_mg": 401.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(29)葡國雞塊貝殼粉（烤西蘭花）",
+  "nutrients": {
+   "energy_kcal": 533.1,
+   "protein_g": 30.3,
+   "total_fat_g": 6.5,
+   "saturated_fat_g": 1.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 80.1,
+   "sugars_g": 3.2,
+   "sodium_mg": 541.1
+  }
+ },
+ {
+  "month": "4",
+  "name": "B(30)紅甜椒芝士雞柳螺絲粉（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 467.2,
+   "protein_g": 12.7,
+   "total_fat_g": 6.32,
+   "saturated_fat_g": 0.985,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.67,
+   "sugars_g": 3.813,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(10)三絲燴豆腐配燕麥飯（甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 404.51,
+   "protein_g": 18.048,
+   "total_fat_g": 28.97,
+   "saturated_fat_g": 2.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 19.149,
+   "sugars_g": 6.2,
+   "sodium_mg": 1183.421
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(13)甜椒炒素肉絲配紅米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 550.1,
+   "protein_g": 24.61,
+   "total_fat_g": 11.91,
+   "saturated_fat_g": 3.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.765,
+   "sugars_g": 2.4475,
+   "sodium_mg": 715.555
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(14)荷蘭豆炆素雞配毛豆飯（翠玉瓜粟米粒）",
+  "nutrients": {
+   "energy_kcal": 474.51,
+   "protein_g": 18.048,
+   "total_fat_g": 28.97,
+   "saturated_fat_g": 2.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 19.149,
+   "sugars_g": 6.2,
+   "sodium_mg": 1183.421
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(24)肉醬意麵（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 567.5,
+   "protein_g": 30.2,
+   "total_fat_g": 11.4,
+   "saturated_fat_g": 3.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.7,
+   "sugars_g": 3.29,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(15)梅菜蒸新肉餅配糙米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 612.58,
+   "protein_g": 20.3845,
+   "total_fat_g": 18.549,
+   "saturated_fat_g": 9.305,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 34.5335,
+   "sugars_g": 19.9815,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(16)茄汁薯仔炆素雞配小米飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 665.49,
+   "protein_g": 29.758,
+   "total_fat_g": 18.07,
+   "saturated_fat_g": 4.487,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 96.881,
+   "sugars_g": 0.927,
+   "sodium_mg": 539.2
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(17)蕃茄素鴨配健康飯卷（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 447.2,
+   "protein_g": 12.7,
+   "total_fat_g": 6.32,
+   "saturated_fat_g": 0.985,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.67,
+   "sugars_g": 3.813,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(20)素紅燒豆腐配紅米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 594.3,
+   "protein_g": 27.45,
+   "total_fat_g": 17.84,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.28,
+   "sugars_g": 7.78,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(21)雙耳（黑白木耳）素肉絲配香芋飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 534.0,
+   "protein_g": 22.07,
+   "total_fat_g": 11.54,
+   "saturated_fat_g": 1.96,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 86.325,
+   "sugars_g": 7.0295,
+   "sodium_mg": 562.615
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(22)醬燒薯仔素漢堡扒配燕麥飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 555.15,
+   "protein_g": 20.485,
+   "total_fat_g": 15.57,
+   "saturated_fat_g": 8.395,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 79.665,
+   "sugars_g": 5.0,
+   "sodium_mg": 259.175
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(23)青瓜炒雙筍【甘筍、萵筍】配糙米飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 450.65,
+   "protein_g": 13.58,
+   "total_fat_g": 6.365,
+   "saturated_fat_g": 0.995,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.06,
+   "sugars_g": 5.4,
+   "sodium_mg": 229.97
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(24)香煎素火腿配小米飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 550.1,
+   "protein_g": 24.61,
+   "total_fat_g": 11.91,
+   "saturated_fat_g": 3.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.765,
+   "sugars_g": 2.4475,
+   "sodium_mg": 715.555
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(27)茄汁素魚柳配紫薯飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 435.9,
+   "protein_g": 5.5,
+   "total_fat_g": 3.6,
+   "saturated_fat_g": 0.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.2,
+   "sugars_g": 2.5,
+   "sodium_mg": 762.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(28)羅漢齋配糙米飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 602.8,
+   "protein_g": 27.94,
+   "total_fat_g": 15.52,
+   "saturated_fat_g": 3.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 92.51,
+   "sugars_g": 5.358,
+   "sodium_mg": 574.6
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(29)香煎新餐肉配紫米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 665.49,
+   "protein_g": 29.758,
+   "total_fat_g": 18.07,
+   "saturated_fat_g": 4.487,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 96.881,
+   "sugars_g": 0.927,
+   "sodium_mg": 539.2
+  }
+ },
+ {
+  "month": "4",
+  "name": "C(30)西芹枝竹炒香乾配小米飯（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 612.7,
+   "protein_g": 23.2,
+   "total_fat_g": 18.5,
+   "saturated_fat_g": 4.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.0,
+   "sugars_g": 10.0,
+   "sodium_mg": 532.6
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(10)特色雞肉披薩(烤雞中翼+薯角)",
+  "nutrients": {
+   "energy_kcal": 525.8,
+   "protein_g": 17.25,
+   "total_fat_g": 11.55,
+   "saturated_fat_g": 3.8,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 90.35,
+   "sugars_g": 7.52,
+   "sodium_mg": 401.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(13)鮮茄雞蛋海鮮炒意粉（牛肉球+時令菜）",
+  "nutrients": {
+   "energy_kcal": 529.1,
+   "protein_g": 23.06,
+   "total_fat_g": 12.01,
+   "saturated_fat_g": 3.1,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.14,
+   "sugars_g": 0.09,
+   "sodium_mg": 598.3
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(14)日式照燒豬軟骨配飯（日式煎餃+翠玉瓜粟米粒）",
+  "nutrients": {
+   "energy_kcal": 554.9,
+   "protein_g": 15.4,
+   "total_fat_g": 17.0,
+   "saturated_fat_g": 4.0,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 78.9,
+   "sugars_g": 2.9,
+   "sodium_mg": 659.9
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(15)日式洋蔥牛肉丼飯（蝦棗+時令菜）",
+  "nutrients": {
+   "energy_kcal": 777.19,
+   "protein_g": 28.941,
+   "total_fat_g": 35.06,
+   "saturated_fat_g": 10.876,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.689,
+   "sugars_g": 6.103,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(16)柱侯牛腩配飯（墨魚餅+合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 609.6,
+   "protein_g": 34.5,
+   "total_fat_g": 12.2,
+   "saturated_fat_g": 2.3,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.1,
+   "sugars_g": 5.5,
+   "sodium_mg": 556.9
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(17)雜菜牛柳絲配意粉（咖喱魚蛋+西蘭花）",
+  "nutrients": {
+   "energy_kcal": 567.5,
+   "protein_g": 30.2,
+   "total_fat_g": 11.4,
+   "saturated_fat_g": 3.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.7,
+   "sugars_g": 3.29,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(20)吉列魚柳配飯（芝士焗薯球+時令菜）",
+  "nutrients": {
+   "energy_kcal": 995.96,
+   "protein_g": 28.75,
+   "total_fat_g": 20.85,
+   "saturated_fat_g": 1.575,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 174.649,
+   "sugars_g": 3.2925,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(21)福花炒腩片配飯（墨魚餅+合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 679.791,
+   "protein_g": 24.553,
+   "total_fat_g": 23.703,
+   "saturated_fat_g": 7.753,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 94.153,
+   "sugars_g": 2.98,
+   "sodium_mg": 672.673
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(23)旺菜肉片炒油麵（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 567.5,
+   "protein_g": 30.2,
+   "total_fat_g": 11.4,
+   "saturated_fat_g": 3.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.7,
+   "sugars_g": 3.29,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(22)天天海南雞配飯 (滷水蛋+時令菜）",
+  "nutrients": {
+   "energy_kcal": 777.19,
+   "protein_g": 28.941,
+   "total_fat_g": 35.06,
+   "saturated_fat_g": 10.876,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 88.689,
+   "sugars_g": 6.103,
+   "sodium_mg": 569.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(23)臺式滷肉飯（魚蓉燒賣+翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 729.78,
+   "protein_g": 26.16,
+   "total_fat_g": 26.74,
+   "saturated_fat_g": 13.34,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 96.762,
+   "sugars_g": 2.22,
+   "sodium_mg": 578.6
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(24)繽紛水果披薩(烤雞中翼+薯蓉)",
+  "nutrients": {
+   "energy_kcal": 619.91,
+   "protein_g": 28.0995,
+   "total_fat_g": 19.907,
+   "saturated_fat_g": 3.605,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 83.9335,
+   "sugars_g": 0.6455,
+   "sodium_mg": 596.3
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(27)照燒雞球配飯（日式煎餃+時令菜）",
+  "nutrients": {
+   "energy_kcal": 618.32,
+   "protein_g": 21.58,
+   "total_fat_g": 21.766,
+   "saturated_fat_g": 6.586,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 85.99,
+   "sugars_g": 1.08,
+   "sodium_mg": 599.4
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(28)京都豬扒配飯（魚蓉燒賣+翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 657.7,
+   "protein_g": 23.2,
+   "total_fat_g": 26.3,
+   "saturated_fat_g": 6.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 81.2,
+   "sugars_g": 0.4,
+   "sodium_mg": 586.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(29)蝦仁炒蛋配飯（十三香蔥肉餅+時令菜）",
+  "nutrients": {
+   "energy_kcal": 527.52,
+   "protein_g": 20.838,
+   "total_fat_g": 13.899,
+   "saturated_fat_g": 4.233,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 82.562,
+   "sugars_g": 0.09,
+   "sodium_mg": 687.017
+  }
+ },
+ {
+  "month": "4",
+  "name": "D(30)蕃茄牛肉配飯（墨魚餅+甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 567.5,
+   "protein_g": 30.2,
+   "total_fat_g": 11.4,
+   "saturated_fat_g": 3.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.7,
+   "sugars_g": 3.29,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(13)豉油皇肉絲炒麵（時令菜）",
+  "nutrients": {
+   "energy_kcal": 529.1,
+   "protein_g": 23.06,
+   "total_fat_g": 12.01,
+   "saturated_fat_g": 3.1,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.14,
+   "sugars_g": 0.09,
+   "sodium_mg": 598.3
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(14)雞絲炒意粉（翠玉瓜粟米粒）",
+  "nutrients": {
+   "energy_kcal": 565.5,
+   "protein_g": 26.0,
+   "total_fat_g": 14.9,
+   "saturated_fat_g": 2.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 83.1,
+   "sugars_g": 2.6,
+   "sodium_mg": 543.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(15)三絲炒油麵(時令菜)",
+  "nutrients": {
+   "energy_kcal": 551.18,
+   "protein_g": 23.828,
+   "total_fat_g": 13.681,
+   "saturated_fat_g": 2.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.588,
+   "sugars_g": 6.7928,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(16)上海粗炒（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 533.1,
+   "protein_g": 30.3,
+   "total_fat_g": 6.5,
+   "saturated_fat_g": 1.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 80.1,
+   "sugars_g": 3.2,
+   "sodium_mg": 541.1
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(17)餐肉炒公仔麵（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 525.8,
+   "protein_g": 17.25,
+   "total_fat_g": 11.55,
+   "saturated_fat_g": 3.8,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 90.35,
+   "sugars_g": 7.52,
+   "sodium_mg": 401.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(20)肉丁炒公仔麵（時令菜）",
+  "nutrients": {
+   "energy_kcal": 550.1,
+   "protein_g": 24.61,
+   "total_fat_g": 11.91,
+   "saturated_fat_g": 3.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.765,
+   "sugars_g": 2.4475,
+   "sodium_mg": 715.555
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(21)廈門炒米（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 551.18,
+   "protein_g": 23.828,
+   "total_fat_g": 13.681,
+   "saturated_fat_g": 2.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.588,
+   "sugars_g": 6.7928,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(22)乾炒雞絲烏冬（時令菜）",
+  "nutrients": {
+   "energy_kcal": 565.5,
+   "protein_g": 26.0,
+   "total_fat_g": 14.9,
+   "saturated_fat_g": 2.6,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 83.1,
+   "sugars_g": 2.6,
+   "sodium_mg": 543.5
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(27)彩椒雞絲炒米粉（時令菜）",
+  "nutrients": {
+   "energy_kcal": 534.0,
+   "protein_g": 22.07,
+   "total_fat_g": 11.54,
+   "saturated_fat_g": 1.96,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 86.325,
+   "sugars_g": 7.0295,
+   "sodium_mg": 562.615
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(28)蝦仁炒麵（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 551.18,
+   "protein_g": 23.828,
+   "total_fat_g": 13.681,
+   "saturated_fat_g": 2.9,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 84.588,
+   "sugars_g": 6.7928,
+   "sodium_mg": 579.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(29)芽菜肉絲炆貝殼粉（時令菜）",
+  "nutrients": {
+   "energy_kcal": 567.5,
+   "protein_g": 30.2,
+   "total_fat_g": 11.4,
+   "saturated_fat_g": 3.5,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 87.7,
+   "sugars_g": 3.29,
+   "sodium_mg": 589.0
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(30)照燒汁牛肉烏冬（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 534.0,
+   "protein_g": 22.07,
+   "total_fat_g": 11.54,
+   "saturated_fat_g": 1.96,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 86.325,
+   "sugars_g": 7.0295,
+   "sodium_mg": 562.615
+  }
+ },
+ {
+  "month": "4",
+  "name": "E(10)椰菜雞蛋肉絲炒米粉（時令菜）",
+  "nutrients": {
+   "energy_kcal": 534.0,
+   "protein_g": 22.07,
+   "total_fat_g": 11.54,
+   "saturated_fat_g": 1.96,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 86.325,
+   "sugars_g": 7.0295,
+   "sodium_mg": 562.615
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(27)蔥爆牛肉片配飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 590.9
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(27)鮮茄薯仔粒免治豬肉長通粉（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 648.7
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(27)洋蔥素魚柳毛豆飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 489.2
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(27)天天海南雞飯（滷水蛋+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 582.06
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(26)京都豬扒配飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 555.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(26)洋葱汁魚柳扭扭通粉（焗鮮茄）",
+  "nutrients": {
+   "energy_kcal": 565.5
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(26)西芹彩椒炒蛋配粟米飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 435.9
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(26)和風牛肉配飯（野菜鮮魚餅+合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 563.52
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(22)瑞士汁雞鎚配炒蛋飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 578.55
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(22)甜咖喱豬肉長通粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 648.7
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(22)青瓜炒雙筍配紫薯飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 450.65
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(22)雙花炒肥牛配飯（日式煎餃+四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 729.78
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(21)洋蔥牛肉配飯（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 544.73
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(21)茄汁免治肉碎貝殼粉（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 518.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(21)酸甜菠蘿炒素午餐肉配紫米飯（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 578.55
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(21)洋蔥薯仔炆雞下脾配飯（小籠包+甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 618.32
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(20)檸檬雞配飯（紹菜）",
+  "nutrients": {
+   "energy_kcal": 533.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(20)鮮茄肉醬意粉（薯角）",
+  "nutrients": {
+   "energy_kcal": 565.5
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(20)枝竹冬菇萵筍配小米飯（紹菜）",
+  "nutrients": {
+   "energy_kcal": 435.9
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(20)上海粢飯+潮州粉果+墨魚餅（紹菜）",
+  "nutrients": {
+   "energy_kcal": 555.15
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(19)洋蔥汁魚柳配飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 479.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(19)甜咖喱鮮茄雞塊螺絲粉（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 649.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(19)滑蛋素肉碎配糙米飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 568.6
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(19)鮮茄炒蛋大蝦配飯（牛肉丸+翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 604.86
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(18)甜椒絲炒牛肉配飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 522.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(18)葡國雞長通粉（焗日本南瓜）",
+  "nutrients": {
+   "energy_kcal": 579.3
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(18)茄汁香煎素魚柳配香芋飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 539.45
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(18)臺式滷肉飯（蝦棗+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 610.489
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(15)鹵水雞中翼配炒飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 533.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(15)茄汁豬扒長通粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 515.6
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(15)鮮茄雜菌配紫薯飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 484.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(15)繽紛水果披薩（雞翼+薯蓉）",
+  "nutrients": {
+   "energy_kcal": 600.29
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(14)雞蛋鮮茄蝦仁配飯（小棠菜）",
+  "nutrients": {
+   "energy_kcal": 609.6
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(14)蘑菇燒汁牛肉貝殼粉（甘筍仔）",
+  "nutrients": {
+   "energy_kcal": 591.6
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(14)羅漢齋配糙米飯（小棠菜）",
+  "nutrients": {
+   "energy_kcal": 474.51
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(14)臺式雞翼配炒飯（牛肉球+小棠菜）",
+  "nutrients": {
+   "energy_kcal": 612.58
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(13)滑蛋肉粒配飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 529.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(13)葡汁雞扒扭扭通粉（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 554.9
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(13)鮮茄素牛扒配小米飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 503.4
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(13)天天海南雞飯（滷水蛋+合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 619.91
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(12)糖醋魚柳配飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 533.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(12)鮮茄肉醬扭扭通粉（烤薯角）",
+  "nutrients": {
+   "energy_kcal": 551.18
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(12)三絲燴豆腐配紫薯飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 555.15
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(12)鮮茄紅燒牛肉配飯（香菇貢丸+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 777.19
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(11)甘筍洋蔥牛肉絲配飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 529.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(11)墨西哥豬肉醬長通粉（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 602.8
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(11)素肉碎鮮茄炒蛋配毛豆飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 489.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(11)瑞士汁原隻雞髀飯（魚蓉燒賣+翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 679.791
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(8)叉燒炒蛋配飯（白菜仔）",
+  "nutrients": {
+   "energy_kcal": 648.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(8)葡國汁雞肉意粉（焗鮮茄）",
+  "nutrients": {
+   "energy_kcal": 606.87
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(8)香煎新餐肉配粟米飯（白菜仔）",
+  "nutrients": {
+   "energy_kcal": 708.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(8)粵式古法蘿蔔牛腩配飯（魚蓉燒賣+白菜仔）",
+  "nutrients": {
+   "energy_kcal": 995.96
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(7)鮮茄雞塊配飯（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 645.8
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(7)香草牛肉醬長通粉（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 695.6
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(7)椰菜炒素肉絲配南瓜飯（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 447.2
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(7)豬頸肉片配炒蛋飯（甜咖喱魚丸+西蘭花）",
+  "nutrients": {
+   "energy_kcal": 612.7
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(6)蔥爆牛肉豆乾配飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 567.5
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(6)拿破崙雞肉扭扭通粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 578.3
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(6)咕嚕素肉配糙米飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 473.6
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(6)鮮茄雞蛋海鮮配意粉（肉丸+四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 665.49
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(5)菠蘿糖醋雞球配飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 527.52
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(5)鮮茄汁火腿螺絲粉（焗南瓜）",
+  "nutrients": {
+   "energy_kcal": 594.3
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(5)紅燒豆腐配紅米飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 404.51
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(5)白咖喱香茅豬扒（牛肉丸+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 648.7
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(4)三色豆肉片配飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 532.5
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(4)BBQ汁燴雞翼鎚貝殼粉（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 657.3
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(4)洋蔥素魚柳配小米飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 613.5
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(4)星洲黑磨豉牛腩飯（墨魚餅+翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 462.99
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(6)甜椒絲百合炒牛肉配飯（四色雜菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(6)芝士肉醬（豬肉）貝殼粉（烤西蘭花、甘筍）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(6)芹菜紅甜椒絲炒素肉絲配黑豆飯（四色雜菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(6)星洲黑磨豉炆牛筋腩配飯（墨魚餅+四色雜菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(28)蒜蓉粉絲蒸魚柳配飯（椰菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(28)鮮蕃茄肉醬意粉（烤蘑菇、薯仔）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(28)甘筍木耳炒新肉絲配紫薯飯（椰菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(28)天天燒雞配飯（牛肉球+椰菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(27)香芋豉汁蒸排骨配饭（小棠菜）🫘",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(27)煙肉蛋黃醬长通粉（烤紅黃甜椒）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(27)咕嚕素魚柳配粟米飯（小棠菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(27)海南鸡翼鎚炒貴刁（日式煎餃+小棠菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(26)蜜汁雞翼鎚配飯（西蘭花）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(26)粟米魚柳扭扭通粉（烤西蘭花、甘筍）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(26)雜菌枝竹配红腰豆饭（西蘭花）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(26)牛肉风味披薩+烤雞中翼+薯角",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(23)薯仔炆雞球配飯（翠玉瓜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(23)地中海肉粒長通粉（烤翠玉瓜、甘筍、珍珠筍）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(23)葡汁素肉配紅米飯（翠玉瓜）🫘",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(23)雙花（西蘭花、椰菜苗）炒肥牛配飯（章魚燒+翠玉瓜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(22)洋蔥牛柳絲配飯（菜心苗）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(22)白汁蘑菇雞柳貝殼粉（烤紅黃甜椒）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(22)西芹炒雞髀菇燴豆乾配紫薯飯（菜心苗）🫘",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(22)白咖喱香茅豬扒（牛肉球+菜心苗）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(21)照燒汁魚柳配飯（椰菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(21)南瓜汁火腿意粉（烤蕃茄）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(21)茄汁黃豆炆素雞配藜麥飯（椰菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(21)天天海南雞配飯（滷水蛋+椰菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(20)馬蹄冬菇蒸肉餅配飯（四色雜菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(20)洋蔥蘆筍蝦仁扭扭通粉（烤蘑菇、薯仔）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(20)冬菇馬蹄蒸新肉餅配紅腰豆飯（四色雜菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(20)九層塔炒豬頸肉配飯（墨魚餅+四色雜菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(19)三色豆炒雞丁配飯（娃娃菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(19)低脂洋蔥芝士汁牛肉貝殼粉（烤西蘭花、甘筍）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(19)荷蘭豆香菇炒枝竹糙米飯（娃娃菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(19)星洲黑磨豉炆牛筋腩配飯（茄汁肉丸+娃娃菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(16)粟米汁魚柳配飯（四色雜菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(16)葡國雞扒貝殼粉（烤翠玉瓜、甘筍、珍珠筍）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(16)鮮蕃茄素牛扒配小米飯（四色雜菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(16)九層塔炒牛柳配飯（日式甜咖喱魚蛋+四色雜菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(15)杏鮑菇甜椒絲炒肉絲配飯（小棠菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(15)香草牛肉醬長通粉（烤蘑菇、薯仔）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(15)薯仔木耳枝竹配紅米飯（小棠菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(15)海南鸡翼鎚炒貴刁（芝士薯角+小棠菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(14)和風牛肉配飯（香菇甘筍）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(14)忌廉白汁火腿扭扭通粉（烤蕃茄）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(14)娃娃菜炆豆卜配番薯飯（香菇甘筍）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(14)雙重黯然銷魂丼（黑金叉燒、日式叉燒飯）（小籠包+香菇甘筍）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(13)洋蔥汁豬扒配飯（菜心苗）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(13)芝士汁雞肉意粉（烤西蘭花、甘筍）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(13)洋蔥汁素魚柳配糙米飯（菜心苗）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(13)天天燒雞配飯（茄汁肉丸+菜心苗）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(12)蟲草花冬菇蒸雞配飯（翠玉瓜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(12)薯仔粒免治牛肉通粉（烤紅黃甜椒）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(12)雙筍冬菇炒豆乾配南瓜飯（翠玉瓜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(12)雙花（西蘭花、椰菜苗）炒肥牛飯（日式煎餃+翠玉瓜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(9)柱候蘿蔔炆排骨配飯（小棠菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(9)三色豆雞扒長通粉（烤翠玉瓜、甘筍、珍珠筍）🫘",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(9)羅漢齋配小米飯（小棠菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(9)奧爾良雞肉披薩+烤雞中翼+薯角",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(8)瑞士汁雞中翼配飯（娃娃菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(8)鮮蕃茄豬柳意粉（烤蘑菇、薯仔）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(8)雪耳冬菇燴素雞配紫薯飯（娃娃菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(8)白咖喱香茅豬扒配飯（魚蓉燒賣+娃娃菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(7)蜜汁叉燒配飯（椰菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(7)BBQ汁燴雞翼鎚扭扭通粉（烤蕃茄）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(7)粟米汁素魚柳配紅腰豆飯（椰菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(7)天天海南雞配飯（滷水蛋+椰菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "A(29)枝竹炆肉片配飯（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 665.6
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(29)日式咖喱鮮茄雞塊意粉（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 664.9
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(29)甘筍木耳炒新肉絲配紫薯飯（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 582.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(29)特色雞肉披薩（雞翼+烤薯角）",
+  "nutrients": {
+   "energy_kcal": 650.4
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(29)蝦仁炒麵（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 534.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(28)咖喱薯仔炆雞翼配飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 531.3
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(28)地中海肉粒螺絲粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 502.65
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(28)冬菇馬蹄蒸新肉餅配粟米飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 609.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(28)鮮茄雞蛋海鮮配意粉（芝士腸+四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 619.91
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(28)椰菜雞蛋肉絲炒米粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 567.5
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(27)蔥爆牛肉片配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 590.9
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(27)粟米汁素魚柳毛豆飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 489.2
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(27)天天海南雞飯（滷水蛋+時令菜）",
+  "nutrients": {
+   "energy_kcal": 582.06
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(27)彩椒雞絲粗炒（時令菜）",
+  "nutrients": {
+   "energy_kcal": 551.18
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(26)芽菜餐肉乾炒公仔麵（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 534.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(22)日式咖喱豬肉長通粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 648.7
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(22)雪菜肉絲炆米粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 567.5
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(21)照燒汁牛肉烏冬（甘筍椰菜花）",
+  "nutrients": {
+   "energy_kcal": 565.5
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(20)檸檬雞配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 533.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(20)鮮茄肉醬意粉（芝士薯角）",
+  "nutrients": {
+   "energy_kcal": 565.5
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(20)枝竹冬菇萵筍配小米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 435.9
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(20)上海粢飯+潮州粉果+墨魚餅（時令菜）",
+  "nutrients": {
+   "energy_kcal": 555.15
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(20)雜菜肉片炒油麵（時令菜）",
+  "nutrients": {
+   "energy_kcal": 450.65
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(19)日式咖喱鮮茄雞塊螺絲粉（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 649.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(19)滑蛋粟米素肉碎配糙米飯（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 568.6
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(19)三絲炒米線（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 550.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(18)甜椒絲炒牛肉配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 522.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(18)茄汁香煎素魚柳配香芋飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 539.45
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(18)臺式滷肉飯（蝦棗+時令菜）",
+  "nutrients": {
+   "energy_kcal": 610.489
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(18)山東菜肉餃（時令菜）",
+  "nutrients": {
+   "energy_kcal": 525.8
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(15)三絲炒油麵（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 565.5
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(14)雞蛋鮮茄蝦仁配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 609.6
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(14)蘑菇燒汁牛肉貝殼粉（芝士粟米粒）",
+  "nutrients": {
+   "energy_kcal": 591.6
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(14)羅漢齋配糙米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 474.51
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(14)臺式雞翼配飯（牛肉球+時令菜）",
+  "nutrients": {
+   "energy_kcal": 612.58
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(14)乾炒雞絲米粉（時令菜）",
+  "nutrients": {
+   "energy_kcal": 525.8
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(13)滑蛋粟米肉粒配飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 529.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(13)牛肉炒意粉（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 529.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(12)糖醋魚柳配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 533.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(12)芝士肉醬意粉（烤薯角）",
+  "nutrients": {
+   "energy_kcal": 551.18
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(12)三絲燴豆腐配紫薯飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 555.15
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(12)鮮茄紅燒牛肉配飯（香菇貢丸+時令菜）",
+  "nutrients": {
+   "energy_kcal": 777.19
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(12)肉丁炒公仔麵（時令菜）",
+  "nutrients": {
+   "energy_kcal": 534.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(11)上海粗炒（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 525.8
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(7)豬頸肉片配炒蛋飯（咖喱魚丸+西蘭花）",
+  "nutrients": {
+   "energy_kcal": 612.7
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(7)雞絲炒意粉（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 527.52
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(6)金針菇肉絲炒烏冬（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 534.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(5)菠蘿糖醋雞球配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 527.52
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(5)紅燒豆腐配紅米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 404.51
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(5)白咖喱香茅豬扒（牛肉丸+時令菜）",
+  "nutrients": {
+   "energy_kcal": 648.7
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(5)豉油皇肉絲炒麵（時令菜）",
+  "nutrients": {
+   "energy_kcal": 525.8
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(4)餐肉炒米線（翠玉瓜）",
+  "nutrients": {
+   "energy_kcal": 533.1
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(3)三絲炒雞絲配飯（時令菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "B(3)粟米忌廉白汁海鮮貝殼粉（時令菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "C(3)素蠔王芽菜雜菌豆乾配糙米飯（時令菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(3)雙花【福建椰菜花、泰國椰菜苗】炒肥牛飯（日式煎餃+時令菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "E(3)原隻瑞士汁雞髀蛋飯（時令菜）",
+  "nutrients": {}
+ },
+ {
+  "month": "5",
+  "name": "D(14)臺式雞翼配炒飯（牛肉球+時令菜）",
+  "nutrients": {
+   "energy_kcal": 612.58
+  }
+ },
+ {
+  "month": "5",
+  "name": "A(8)叉燒炒蛋配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 648.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "B(8)芝士汁雞肉意粉（焗鮮茄）",
+  "nutrients": {
+   "energy_kcal": 606.87
+  }
+ },
+ {
+  "month": "5",
+  "name": "C(8)香煎新餐肉配粟米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 708.0
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(8)粵式古法蘿蔔牛腩配飯（魚蓉燒賣+時令菜）",
+  "nutrients": {
+   "energy_kcal": 995.96
+  }
+ },
+ {
+  "month": "5",
+  "name": "E(8)廈門炒米（時令菜）",
+  "nutrients": {
+   "energy_kcal": 551.18
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(29)豬頸肉配炒蛋飯（墨魚餅+西蘭花）",
+  "nutrients": {
+   "energy_kcal": 650.4
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(27)珍珠雞+牛肉球+日式煎饺（時令菜）",
+  "nutrients": {
+   "energy_kcal": 582.06
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(20)天天海南雞飯（滷水蛋+時令菜）",
+  "nutrients": {
+   "energy_kcal": 555.15
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(15)日式洋蔥牛肉丼飯（小籠包+四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 600.29
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(13)日式照燒豬軟骨配飯（蝦棗+合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 619.91
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(8)繽紛水果披薩（雞翼+薯蓉）",
+  "nutrients": {
+   "energy_kcal": 995.96
+  }
+ },
+ {
+  "month": "5",
+  "name": "D(6)天天海南雞飯（滷水蛋+四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 665.49
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(30)蒜香薯仔蒸肉粒配飯（小棠菜）",
+  "nutrients": {
+   "energy_kcal": 664.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(30)蘑菇汁魚柳長通粉（烤翠玉瓜）含微量魚骨",
+  "nutrients": {
+   "energy_kcal": 545.3
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(30)青瓜素牛肉配紅米飯（小棠菜）",
+  "nutrients": {
+   "energy_kcal": 565.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(30)沙嗲金菇肥牛配飯(墨魚餅+小棠菜）",
+  "nutrients": {
+   "energy_kcal": 564.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(29)檸檬雞扒配飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 497.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(29)鮮茄海鮮意粉（合掌瓜薯仔）含微量魚骨",
+  "nutrients": {
+   "energy_kcal": 575.15
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(29)雪耳冬菇燴素雞配紫薯飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 582.1
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(29)甜咖喱香茅豬柳配飯（豬肉燒賣+合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 708.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(23)甘筍福花炒雞柳配飯(菜心苗)",
+  "nutrients": {}
+ },
+ {
+  "month": "6",
+  "name": "B(23)煙肉洋蔥汁長通粉（甘筍仔）",
+  "nutrients": {
+   "energy_kcal": 522.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(23)椰菜炒素肉絲配南瓜飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 590.9
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(23)星洲黑磨豉炆牛腩配飯（照燒墨魚丸+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 562.5
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(22)滑蛋肉粒配飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 507.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(22)鮮茄肉醬意粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 468.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(22)豆乾炒芹菜配藜麥飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 562.06
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(22)雙花（福建椰菜花、泰國椰菜苗）炒肥牛飯（魚蓉燒賣+四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 788.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(18)滷水雞中翼配炒飯（小棠菜）",
+  "nutrients": {
+   "energy_kcal": 665.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(18)拿坡里豬柳螺絲粉（烤椰菜花）",
+  "nutrients": {
+   "energy_kcal": 717.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(18)素西炒飯（小棠菜）",
+  "nutrients": {
+   "energy_kcal": 584.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(18)鮮茄紅燒牛腩配飯（蝦棗+小棠菜）",
+  "nutrients": {
+   "energy_kcal": 557.5
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(17)糖醋魚柳配飯（西蘭花）含微量魚骨",
+  "nutrients": {
+   "energy_kcal": 845.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(17)甜咖喱薯仔雞球意粉（烤西蘭花）",
+  "nutrients": {
+   "energy_kcal": 586.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(17)鮮茄素雞配紅米飯（西蘭花）",
+  "nutrients": {
+   "energy_kcal": 532.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(17)日式洋蔥牛肉丼飯（豬肉燒賣+西蘭花）",
+  "nutrients": {
+   "energy_kcal": 720.19
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(16)杞子蒸肉餅配飯（白菜仔）",
+  "nutrients": {
+   "energy_kcal": 447.7
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(16)鮮茄香草牛肉醬貝殼粉（焗南瓜）",
+  "nutrients": {
+   "energy_kcal": 825.9
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(16)素麻婆豆腐配紫薯飯（白菜仔）不辣",
+  "nutrients": {
+   "energy_kcal": 451.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(16)新加坡老街坊牛腩飯（墨魚餅+白菜仔）",
+  "nutrients": {
+   "energy_kcal": 729.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(15)青瓜甘筍炒牛肉配飯 (翠玉瓜粟米)",
+  "nutrients": {
+   "energy_kcal": 529.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(15)葡汁海鮮貝殼粉（翠玉瓜粟米）含微量魚骨",
+  "nutrients": {
+   "energy_kcal": 608.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(15)鮮茄素肉碎蒸水蛋飯（翠玉瓜粟米）",
+  "nutrients": {
+   "energy_kcal": 440.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(15)星洲黑磨豉豬軟骨（蜜糖雞尾腸+翠玉瓜粟米）",
+  "nutrients": {
+   "energy_kcal": 618.32
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(12)鮮茄滑蛋肉片配飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 645.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(12)洋蔥汁雞柳螺絲粉（烤西蘭花）",
+  "nutrients": {
+   "energy_kcal": 688.7
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(12)洋蔥汁素牛肉配小米飯（菜心苗）",
+  "nutrients": {
+   "energy_kcal": 559.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(12)繽紛水果披薩(烤雞中翼+薯蓉)",
+  "nutrients": {
+   "energy_kcal": 567.5
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(11)冬菇蒸雞配飯（甘筍粟米）",
+  "nutrients": {
+   "energy_kcal": 492.3
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(11)意式鮮茄魚柳扭扭通粉（甘筍粟米）含微量魚骨",
+  "nutrients": {
+   "energy_kcal": 587.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(11)鮮茄翠玉瓜豆乾配南瓜飯（甘筍粟米）",
+  "nutrients": {
+   "energy_kcal": 517.9
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(11)星洲黑磨豉炆豬手飯（蜜糖雞尾腸+甘筍粟米）",
+  "nutrients": {
+   "energy_kcal": 688.9
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(10)蟹柳蒸水蛋飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 500.1
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(10)甜咖喱雞皇長通粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 633.5
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(10)雙耳（黑白木耳）素肉絲配香芋飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 478.3
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(10)天天海南雞配飯（滷水蛋+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 777.19
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(9)日式甜咖喱雞球配飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 806.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(9)意式牛肉醬貝殼粉(合掌瓜薯仔)",
+  "nutrients": {
+   "energy_kcal": 661.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(9)冬菇蒸素肉餅配粟米飯（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 520.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(9)珍珠雞+牛肉丸（蝦棗+合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 649.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(8)洋蔥木耳肉片配飯（紹菜）",
+  "nutrients": {
+   "energy_kcal": 635.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(8)鮮茄甜椒蝦仁意粉（甘筍仔）",
+  "nutrients": {
+   "energy_kcal": 482.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(8)紅燒玉子豆腐配糙米飯（紹菜）",
+  "nutrients": {
+   "energy_kcal": 780.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(8)雙花（福建椰菜花、泰國椰菜苗）炒肥牛飯（墨魚餅+紹菜）",
+  "nutrients": {
+   "energy_kcal": 780.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(5)馬蹄蒸肉餅配飯（南瓜）",
+  "nutrients": {
+   "energy_kcal": 487.7
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(5)洋蔥薯仔粒免治牛肉扭扭通粉（焗南瓜）",
+  "nutrients": {
+   "energy_kcal": 586.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(5)燒汁素雞配香芋飯（南瓜）",
+  "nutrients": {
+   "energy_kcal": 542.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(5)枝竹甘筍炆牛腩配飯（日式煎餃+南瓜）",
+  "nutrients": {
+   "energy_kcal": 675.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(4)青瓜雞柳配飯（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 655.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(4)鮮茄汁海鮮意粉（四色雜菜）含微量魚骨",
+  "nutrients": {
+   "energy_kcal": 555.15
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(4)雪耳冬菇燴素雞配紫薯飯( 四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 602.1
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(4)甜咖喱香茅豬柳配飯（蝦棗+四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 689.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(3)蝦仁炒蛋配飯（甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 739.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(3)BBQ汁燴雞翼鎚螺絲粉（甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 664.9
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(3)彩椒豆乾配紫薯飯（甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 469.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(3)沙嗲金菇肥牛配飯(照燒肉丸+甘筍椰菜）",
+  "nutrients": {
+   "energy_kcal": 584.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(12)鮮茄滑蛋肉片配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 645.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(12)卡邦尼雞柳螺絲粉（烤西蘭花）",
+  "nutrients": {
+   "energy_kcal": 718.7
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(12)洋蔥汁素牛肉配小米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 559.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(12)和風牛肉配飯（魚蓉燒賣+時令菜）",
+  "nutrients": {
+   "energy_kcal": 665.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(11)冬菇蒸雞配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 492.3
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(11)鮮茄翠玉瓜豆乾配南瓜飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 517.9
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(11)星洲黑磨豉炆豬手飯（蜜糖雞尾腸+時令菜）",
+  "nutrients": {
+   "energy_kcal": 688.9
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(10)粟米蟹柳蒸水蛋飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 504.1
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(10)葡國雞皇長通粉（四色雜菜）",
+  "nutrients": {
+   "energy_kcal": 653.5
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(10)雙耳（黑白木耳）素肉絲配香芋飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 478.3
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(10)薯仔紅燒牛腩配飯（咖喱魚蛋+時令菜）",
+  "nutrients": {
+   "energy_kcal": 777.19
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(2)節瓜甘筍肉絲配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 517.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(2)濃香南瓜汁牛肉意粉（合掌瓜薯仔）",
+  "nutrients": {
+   "energy_kcal": 576.9,
+   "protein_g": 29.2,
+   "total_fat_g": 23.8,
+   "saturated_fat_g": 4.2,
+   "trans_fat_g": 0.0,
+   "available_carbohydrate_g": 76.7,
+   "sugars_g": 3.1,
+   "sodium_mg": 524.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(2)荷蘭豆甘筍素肉絲配南瓜飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 442.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(2)日式照燒豬軟骨配飯（墨魚餅+時令菜）",
+  "nutrients": {
+   "energy_kcal": 756.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(1)薯仔洋蔥牛肉片配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 562.7
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(1)墨西哥肉醬長通粉（翠玉瓜粟米）",
+  "nutrients": {
+   "energy_kcal": 898.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(1)南瓜汁素鴨配糙米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 459.5
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(1)星洲黑磨豉炆牛腩配飯（魚蓉燒賣+時令菜）",
+  "nutrients": {
+   "energy_kcal": 710.1
+  }
+ },
+ {
+  "month": "6",
+  "name": "E(12)肉絲炒麵（時令菜）",
+  "nutrients": {
+   "energy_kcal": 487.9
+  }
+ },
+ {
+  "month": "6",
+  "name": "E(11)日式椰菜雞絲炒烏冬（時令菜）",
+  "nutrients": {
+   "energy_kcal": 640.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "E(10)山東菜肉餃x8（時令菜）",
+  "nutrients": {
+   "energy_kcal": 450.5
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(9)日式甜咖喱雞球配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 806.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(9)冬菇蒸素肉餅配粟米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 520.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(9)珍珠雞+牛肉丸（蝦棗+時令菜）",
+  "nutrients": {
+   "energy_kcal": 649.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "E(9)雪菜肉絲炆米粉（時令菜）",
+  "nutrients": {
+   "energy_kcal": 705.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(8)洋蔥木耳肉片配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 635.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(8)甜椒蝦仁芝士意粉（甘筍仔）",
+  "nutrients": {
+   "energy_kcal": 546.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(8)紅燒玉子豆腐配糙米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 482.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(8)雙花（福建椰菜花、泰國椰菜苗）炒肥牛飯（墨魚餅+時令菜）",
+  "nutrients": {
+   "energy_kcal": 780.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "E(8)三絲炒米線（時令菜）",
+  "nutrients": {
+   "energy_kcal": 792.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(3)蝦仁炒蛋配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 739.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(3)彩椒豆乾配紫薯飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 469.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(3)沙嗲金菇肥牛配飯(照燒肉丸+時令菜）",
+  "nutrients": {
+   "energy_kcal": 584.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "E(3)餐肉炒公仔麵（時令菜）",
+  "nutrients": {
+   "energy_kcal": 820.5
+  }
+ },
+ {
+  "month": "6",
+  "name": "E(2)銀芽肉絲炆米粉（時令菜）",
+  "nutrients": {
+   "energy_kcal": 862.3
+  }
+ },
+ {
+  "month": "6",
+  "name": "E(1)鷄絲炒麵（時令菜）",
+  "nutrients": {
+   "energy_kcal": 578.3
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(18)滷水雞中翼配炒飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 665.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(18)素西炒飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 584.0
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(18)鮮茄紅燒牛腩配飯（蝦棗+時令菜）",
+  "nutrients": {
+   "energy_kcal": 557.5
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(17)糖醋魚柳配飯（時令菜）含微量魚骨",
+  "nutrients": {
+   "energy_kcal": 845.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(17)日式甜咖喱薯仔雞球意粉（烤西蘭花）",
+  "nutrients": {
+   "energy_kcal": 586.2
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(17)粟米汁素雞配紅米飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 522.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(17)天天海南雞配飯（滷水蛋+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 777.19
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(16)粟米杞子蒸肉餅配飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 457.7
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(16)素麻婆豆腐配紫薯飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 451.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(16)新加坡老街坊牛腩飯（墨魚餅+時令菜）",
+  "nutrients": {
+   "energy_kcal": 729.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "A(15)青瓜甘筍炒牛肉配飯 (時令菜)",
+  "nutrients": {
+   "energy_kcal": 529.8
+  }
+ },
+ {
+  "month": "6",
+  "name": "B(15)黑松露汁海鮮貝殼粉（翠玉瓜粟米）含微量魚骨",
+  "nutrients": {
+   "energy_kcal": 598.4
+  }
+ },
+ {
+  "month": "6",
+  "name": "C(15)鮮茄素肉碎蒸水蛋飯（時令菜）",
+  "nutrients": {
+   "energy_kcal": 440.6
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(15)星洲黑磨豉豬軟骨配飯（蜜糖雞尾腸+時令菜）",
+  "nutrients": {
+   "energy_kcal": 618.32
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(11)星洲黑磨豉炆豬手配飯（蜜糖雞尾腸+時令菜）",
+  "nutrients": {
+   "energy_kcal": 688.9
+  }
+ },
+ {
+  "month": "6",
+  "name": "D(3)天天海南雞配飯（滷水蛋+菜心苗）",
+  "nutrients": {
+   "energy_kcal": 584.8
+  }
+ }
+]

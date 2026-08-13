@@ -1,0 +1,75 @@
+name: 构建营养素计算工具 (Win + Mac)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write   # 发布到 GitHub Releases 需要
+
+jobs:
+  test:
+    name: 单元测试
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --quiet -r requirements.txt pytest
+      - run: python -m pytest -q
+
+  build-windows:
+    name: Windows exe
+    runs-on: windows-latest
+    needs: [test]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --quiet -r requirements.txt pyinstaller
+      - run: python -m PyInstaller 营养素计算工具.spec --noconfirm
+      - name: 组装发布包(整个 dist 文件夹, 含 _internal)
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force 发布 | Out-Null
+          Compress-Archive -Path dist/营养素计算工具 -DestinationPath 发布/nutrient-calculator-windows.zip -Force
+          Get-Item 发布/nutrient-calculator-windows.zip | Select-Object Name, Length
+      - name: 发布到 GitHub Releases (Windows)
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: latest
+          name: 最新构建 (Win + Mac)
+          body: |
+            自动构建最新版 (提交 ${{ github.sha }})
+            - Windows: nutrient-calculator-windows.zip (解压后双击 营养素计算工具.exe, 无需安装 Python)
+            - macOS: nutrient-calculator-macos.zip (解压后得到 .app, 右键打开)
+            双击即用, 自动打开浏览器 (默认端口 8317, 占用时自动避让)。
+          files: 发布/nutrient-calculator-windows.zip
+          fail_on_unmatched_files: false
+          overwrite_files: true
+
+  build-macos:
+    name: macOS app
+    runs-on: macos-latest
+    needs: [test, build-windows]   # 等 Windows 先创建 release, 再附加 Mac 文件
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.11'
+      - run: python3 -m pip install --quiet -r requirements.txt pyinstaller
+      - run: python3 -m PyInstaller 营养素计算工具.spec --noconfirm
+      - name: 压缩 .app 为 zip
+        run: |
+          cd dist && zip -r -q nutrient-calculator-macos.zip 营养素计算工具.app
+          ls -lh nutrient-calculator-macos.zip
+      - name: 发布到 GitHub Releases (macOS)
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: latest
+          files: dist/nutrient-calculator-macos.zip
+          fail_on_unmatched_files: false
+          overwrite_files: true

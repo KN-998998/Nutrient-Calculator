@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>营养素计算工具</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Microsoft JhengHei", "PingFang TC", sans-serif; background: #f0f4f8; color: #1a2b3c; }
+  .header { background: linear-gradient(135deg, #1e88e5, #1565c0); color: #fff; padding: 20px 32px; }
+  .header h1 { font-size: 22px; }
+  .header p { font-size: 13px; opacity: .85; margin-top: 4px; }
+  .container { max-width: 960px; margin: 24px auto; padding: 0 20px; }
+  .card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.06); margin-bottom: 20px; }
+  .card h2 { font-size: 16px; margin-bottom: 14px; color: #1565c0; }
+  .dropzone { border: 2px dashed #b0bec5; border-radius: 10px; padding: 36px; text-align: center; color: #607d8b; cursor: pointer; transition: all .2s; }
+  .dropzone:hover, .dropzone.dragover { border-color: #1e88e5; background: #e3f2fd; }
+  .dropzone .big { font-size: 15px; font-weight: bold; }
+  .file-list { margin-top: 12px; font-size: 13px; color: #455a64; }
+  .file-list span { display: inline-block; background: #e3f2fd; padding: 3px 10px; border-radius: 20px; margin: 3px 4px 0 0; }
+  .btn { background: #1e88e5; color: #fff; border: none; padding: 10px 28px; border-radius: 8px; font-size: 15px; cursor: pointer; }
+  .btn:hover { background: #1565c0; }
+  .btn:disabled { background: #90a4ae; cursor: not-allowed; }
+  .btn.green { background: #43a047; } .btn.green:hover { background: #2e7d32; }
+  .result-bar { background: #e8f5e9; border-radius: 8px; padding: 14px 18px; margin-top: 16px; font-size: 14px; }
+  .result-bar .num { font-size: 20px; font-weight: bold; color: #2e7d32; }
+  .warn { background: #fff3e0; color: #e65100; border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+  th, td { border: 1px solid #e0e0e0; padding: 6px 8px; text-align: left; white-space: nowrap; }
+  th { background: #f5f7fa; position: sticky; top: 0; }
+  .table-wrap { max-height: 380px; overflow: auto; border-radius: 8px; border: 1px solid #e0e0e0; }
+  .status-incomplete { color: #e65100; font-weight: bold; }
+  .status-passed { color: #2e7d32; }
+  .status-review { color: #f9a825; }
+  .footer { text-align: center; color: #90a4ae; font-size: 12px; padding: 16px; }
+  .error-box { background: #ffebee; color: #c62828; padding: 12px 16px; border-radius: 8px; margin-top: 12px; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🥗 营养素计算工具</h1>
+  <p>上传 SOP Excel → 自动计算每道菜营养 → 导出「菜式管理」格式 Excel</p>
+</div>
+<div class="container">
+  <div class="card">
+    <h2>① 选择 SOP 文件(可多选)</h2>
+    <div class="dropzone" id="dropzone">
+      <div class="big">点击或拖拽 SOP Excel 到此处</div>
+      <div style="margin-top:8px;font-size:12px;">支持 .xlsx,自动识别「X月A餐配料sop」等工作表</div>
+    </div>
+    <input type="file" id="fileInput" multiple accept=".xlsx,.xlsm" style="display:none;">
+    <div class="file-list" id="fileList"></div>
+    <div style="margin-top:16px;text-align:center;">
+      <button class="btn" id="calcBtn" disabled>开始计算营养素</button>
+    </div>
+    <div id="errorBox" class="error-box" style="display:none;"></div>
+  </div>
+
+  <div class="card" id="resultCard" style="display:none;">
+    <h2>② 计算结果</h2>
+    <div class="result-bar" id="resultBar"></div>
+    <div class="warn" id="incompleteWarn" style="display:none;"></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>SET</th><th>餐名</th><th>烹調</th><th>能量(kcal)</th><th>蛋白質(g)</th><th>總脂肪(g)</th><th>飽和脂肪(g)</th><th>反式脂肪(g)</th><th>碳水(g)</th><th>糖(g)</th><th>鈉(mg)</th><th>狀態</th></tr></thead>
+        <tbody id="previewBody"></tbody>
+      </table>
+    </div>
+    <div style="margin-top:16px;text-align:center;">
+      <a id="downloadLink" class="btn green" style="text-decoration:none;display:inline-block;" download>⬇ 导出菜式管理 Excel</a>
+    </div>
+  </div>
+</div>
+<div class="footer">营养素计算工具 · 数据来源:香港食物安全中心 · 计算口径:每100g可食部 × SOP克重</div>
+
+<script>
+const dropzone = document.getElementById('dropzone');
+const fileInput = document.getElementById('fileInput');
+const fileList = document.getElementById('fileList');
+const calcBtn = document.getElementById('calcBtn');
+const errorBox = document.getElementById('errorBox');
+const resultCard = document.getElementById('resultCard');
+const resultBar = document.getElementById('resultBar');
+const previewBody = document.getElementById('previewBody');
+const downloadLink = document.getElementById('downloadLink');
+const incompleteWarn = document.getElementById('incompleteWarn');
+
+let selectedFiles = [];
+
+dropzone.addEventListener('click', () => fileInput.click());
+dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('dragover'); });
+dropzone.addEventListener('dragleave', () => dropzone.classList.remove('dragover'));
+dropzone.addEventListener('drop', e => {
+  e.preventDefault(); dropzone.classList.remove('dragover');
+  addFiles(e.dataTransfer.files);
+});
+fileInput.addEventListener('change', () => addFiles(fileInput.files));
+
+function addFiles(files) {
+  for (const f of files) {
+    if (!f.name.toLowerCase().endsWith('.xlsx') && !f.name.toLowerCase().endsWith('.xlsm')) {
+      showError(f.name + ' 不是 Excel 文件');
+      continue;
+    }
+    if (!selectedFiles.some(x => x.name === f.name && x.size === f.size)) selectedFiles.push(f);
+  }
+  renderFileList();
+}
+
+function renderFileList() {
+  fileList.innerHTML = '';
+  selectedFiles.forEach((f, i) => {
+    const span = document.createElement('span');
+    span.textContent = f.name + ' (' + (f.size/1024/1024).toFixed(1) + 'MB)';
+    const del = document.createElement('a');
+    del.textContent = ' ✕';
+    del.style.cursor = 'pointer'; del.style.color = '#c62828';
+    del.onclick = () => { selectedFiles.splice(i, 1); renderFileList(); };
+    span.appendChild(del);
+    fileList.appendChild(span);
+  });
+  calcBtn.disabled = selectedFiles.length === 0;
+}
+
+function showError(msg) {
+  errorBox.textContent = msg;
+  errorBox.style.display = 'block';
+}
+
+calcBtn.addEventListener('click', async () => {
+  calcBtn.disabled = true;
+  errorBox.style.display = 'none';
+  resultCard.style.display = 'none';
+  const fd = new FormData();
+  selectedFiles.forEach(f => fd.append('sop_files', f));
+  try {
+    const resp = await fetch('/api/process', { method: 'POST', body: fd });
+    const data = await resp.json();
+    if (!resp.ok) throw new Error(data.error || '处理失败');
+    resultCard.style.display = 'block';
+    resultBar.innerHTML = '共 <span class="num">' + data.total + '</span> 道菜完成计算'
+      + (data.incomplete ? '，<b style="color:#e65100">' + data.incomplete + ' 道有未匹配食材</b>' : '，全部食材已匹配');
+    if (data.incomplete) {
+      incompleteWarn.style.display = 'block';
+      incompleteWarn.textContent = '有 ' + data.incomplete + ' 道菜存在未匹配食材(营养库缺数据),导出后请人工复核,或在系统中补充食材营养值。';
+    } else {
+      incompleteWarn.style.display = 'none';
+    }
+    if (data.sheet_errors && data.sheet_errors.length) {
+      incompleteWarn.style.display = 'block';
+      incompleteWarn.textContent = '部分食材克重异常已跳过: ' + data.sheet_errors.join('; ').slice(0, 300);
+    }
+    previewBody.textContent = '';
+    data.preview.forEach(r => {
+      const tr = document.createElement('tr');
+      [r['SET'], r['餐名'], r['烹調方式'], r['能量(kcal)'], r['蛋白質(g)'], r['總脂肪(g)'], r['飽和脂肪(g)'], r['反式脂肪(g)'], r['碳水化合物(g)'], r['糖(g)'], r['鈉(mg)']].forEach(v => {
+        const td = document.createElement('td');
+        td.textContent = v == null ? '' : String(v);
+        tr.appendChild(td);
+      });
+      const tdStatus = document.createElement('td');
+      tdStatus.textContent = r.status;
+      tdStatus.className = 'status-' + r.status;
+      if (r.warnings && r.warnings.length) {
+        tdStatus.title = r.warnings.join('; ');
+        tdStatus.textContent += ' ⚠';
+      }
+      tr.appendChild(tdStatus);
+      previewBody.appendChild(tr);
+    });
+    if (data.review) {
+      const warnRow = document.createElement('div');
+      warnRow.className = 'warn';
+      warnRow.textContent = data.review + ' 道菜有复核提示(能量与宏量营养素不一致/糖异常等),请查看行内 ⚠ 提示后人工确认。';
+      resultBar.parentNode.insertBefore(warnRow, resultBar.nextSibling);
+    }
+    downloadLink.href = data.download + '&name=' + encodeURIComponent(data.download_name);
+  } catch (e) {
+    showError(e.message);
+  } finally {
+    calcBtn.disabled = selectedFiles.length === 0;
+  }
+});
+</script>
+</body>
+</html>

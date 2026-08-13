@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 大型原始数据(勿入库)
+菜单+SOP/
+dist/
+build/
+*.spec.bak
+
+# 营养库备份(本地保留, 不入库)
+data/*.bak*
+data/*.bak-*
+
+# 临时/日志
+*.log
+/tmp/
+.codex-check/
+.idea/
+.pytest_cache/

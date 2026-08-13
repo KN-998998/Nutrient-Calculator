@@ -1,0 +1,6033 @@
+ 
+ 
+USDA Table of Nutrient Retention Factors 
+ 
+Release 6 
+ 
+ 
+ 
+ 
+ 
+ 
+Prepared by the 
+ 
+Nutrient Data Laboratory 
+Beltsville Human Nutrition Research Center (BHNRC) 
+Agricultural Research Service (ARS) 
+U.S. Department of Agriculture (USDA) 
+ 
+ 
+ 
+ 
+ 
+December 2007 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+U.S. Department of Agriculture 
+Agricultural Research Service 
+Beltsville Human Nutrition Research Center 
+Nutrient Data Laboratory 
+10300 Baltimore Avenue 
+Building 005, Room 107, BARC-West 
+Beltsville, Maryland 20705 
+Tel. 301-504-0630, FAX: 301-504-0632 
+E-Mail: ndlinfo@ars.usda.gov 
+Web site: http://www.ars.usda.gov/nutrientdata
+ 
+i
+Table of Contents 
+ 
+Introduction......................................................................................................................... 1 
+Methods............................................................................................................................... 1 
+File Formats ........................................................................................................................ 3 
+References........................................................................................................................... 4 
+USDA Table of Nutrient Retention Factors, Release 6 (2007) ...........................................5 
+ 
+ 
+Release Notes 
+ 
+Release 1 
+Based on Provisional Table on the Percent Retention of Nutrient in 
+Food Preparation 
+Release 2 (1984) 
+Included data on 16 minerals and vitamins 
+Release 3 (1986)  
+Added factors for Vitamin A, RE (Nutr. No. 392) and carotene 
+(Nutr. No. 393) 
+Release 4 (1998) 
+Added factors for alcohol (Nutr. No. 221) 
+Release 5 (2003) 
+Removed carotene (Nutr. No. 393) and added factors for folic acid 
+(Nutr. No. 431), food folate (Nutr. No. 432), β-carotene (Nutr.No. 
+321), β-cryptoxanthin (Nutr. No. 334), Lycopene (Nutr. No.337) and 
+Lutein+Zeaxanthin (Nutr. No. 338) 
+Release 6 (2007)  
+Added total choline (Nutr. No. 421) 
+ 
+ 
+ 
+ 
+1
+USDA Table of Nutrient Retention Factors, Release 6 (2007) 
+ 
+Introduction 
+ 
+Food composition data are needed for uncooked and cooked forms of foods.  The USDA 
+Table of Nutrient Retention Factors is the major source of nutrient retention data for US 
+and international food composition databases. The table has retention factors for 16 
+vitamins, 8 minerals, and alcohol for approximately 290 foods.  Nutrient retention factors 
+are given for a range of cooking and preparation methods such as, but not limited to, 
+baked, boiled, reheated, broiled, pared, and drained.  Methods applied were based on 
+food type.  
+ 
+Nutrient data are frequently lacking for cooked foods. The nutrient composition of a 
+cooked food may be calculated from the uncooked food by applying nutrient retention 
+factors. True retention is the term USDA has defined as the measure of the proportion of 
+the nutrient remaining in the cooked food in relation to the nutrient originally present in 
+the raw food (Murphy et al. 1975).  Most public and private sector databases use these 
+retention factors to calculate nutrient values when analytical data for cooked foods are 
+unavailable. The resulting values account for the nutrient content retained in a food after 
+losses due to heating or other food preparation steps.  
+ 
+Methods 
+ 
+USDA’s nutrient retention factors are based on data from USDA research contracts, data 
+reported in scientific publications, and USDA publications. Most retention factors were 
+calculated by the True Retention Method (%TR).  This method, as shown below, requires 
+data on the weights of food before and after cooking, as well as the content of the nutrient 
+of raw and cooked food (Murphy et al.1975). 
+  
+ %TR = (Nc*Gc) / (Nr*Gr) * 100  
+ 
+If weights of food before and after cooking are unavailable, the retention factor can be 
+calculated on a moisture-free basis, the Apparent Retention Method (%AR): 
+ 
+%AR = [Nc (dry wt basis)] / [Nr (dry wt basis)] * 100 
+ 
+where: 
+Nc = nutrient content per g of cooked food, 
+Gc = g of cooked food, 
+Nr = nutrient content per g of raw food, and 
+      Gr = g of food before cooking. 
+ 
+By applying retention factors to ingredients in a recipe, the estimated nutrient value will 
+be more accurate.  For example, assume a recipe calls for boiled spinach, but the ascorbic 
+ 
+2
+acid value for boiled spinach is unknown.  However, the ascorbic acid content in raw 
+spinach is 28mg/100g.  The nutrient retention factor for boiled greens is 85%.  The 
+ascorbic acid value for 100g of boiled spinach can be estimated by multiplying the 
+ascorbic acid value of raw spinach by the nutrient retention factor:  
+  
+(28mg ascorbic acid per 100g raw spinach) * 0.85  
+ = 23.8 mg of ascorbic acid per 100g cooked spinach. 
+ 
+USDA retention factors were first published in 1982 as a Provisional Table (USDA 
+1982).  For subsequent data releases, additional factors were imputed and some new 
+analytical studies were developed.  An analytical alcohol retention study was conducted 
+to investigate the extent of alcohol lost in food preparation.  Methods tested were: no heat 
+application, alcohol added to a boiling liquid, flaming, and baking for various lengths of 
+time.  To determine alcohol content, gas-liquid chromatography with 2-propanol as the 
+internal standard was used.  For more details on method, alcohol types, and specific foods 
+prepared, see Augustin et al.1992.   
+ 
+Release 6 of the USDA Table of Nutrient Retention Factors replaces Release 5, issued in 
+2003. Nutrient retention factors for total choline have been added to Release 5 to create 
+Release 6.  This data set release contains 26 factors for retention of selected vitamins, 
+minerals, and alcohol during food preparation. Nutrient retention factors for the 25 food 
+components reported in Release 5 are unchanged. 
+ 
+The Food and Nutrition Board of the Institute of Medicine, the National Academies, has 
+made recommendations for choline intake, estimating an Adequate Intake (AI) at 550 mg 
+per day for men and 425 mg per day for women. A USDA Special Interest database for 
+choline in foods was developed and released in 2004 to provide researchers and 
+consumers with the means to estimate choline intake from common foods (Howe et al. 
+2004).  Twelve selected food items were analyzed raw and cooked. Nutrient data from 
+these products were then used to calculate nutrient retention factors for total choline. 
+Samples were obtained nationally from 12 to 24 retail outlets in accordance with the 
+nationwide sampling plan developed for the National Food and Nutrient Analysis 
+Program. (Haytowitz et al., Pehrsson et al. 2000, Pehrsson et al. 2003).  Approximately 
+15% of the analyses were based on samples picked-up in the vicinity of Chapel Hill, NC. 
+Foods were cooked according to package directions or industry-recommended 
+procedures.  Samples were analyzed using liquid chromatography electrospray 
+ionization-isotope dilution mass spectrometry  
+(LC-ESI-IDMS) (Koc et al. 2002).    
+ 
+Due to limited data availability, many choline nutrient retention factors were imputed.  
+True retention factors (analytical), for choline were calculated through the USDA 
+Nutrient Database System’s retention utility for: eggs (scrambled and hard cooked); 
+biscuit (baked); bagel (toasted); cereal (instant cooked); pasta (boiled and drained); 
+cabbage (boiled); broccoli (boiled and steamed); potatoes (baked); carrots (boiled); 
+tomatoes (microwaved); chicken (roasted); and veal liver (pan-fried).  Other choline 
+nutrient retention factors were imputed from these analytical values and based on similar 
+ 
+3
+foods or cooking methods. Retention factors for choline ranged from 70% to 100%.  If 
+data were unavailable, imputations were based on retention factors using other B-
+vitamins.  
+ 
+For the first time, USDA is able to provide choline values for the Food and Nutrient 
+Database for Dietary Studies (http://www.ars.usda.gov/Services/doc.htm?docid=12089).   
+Analytical choline data, disseminated in the USDA’s National Nutrient Database for 
+Standard Reference, Release 20 (http://www.ars.usda.gov/nutrientdata) were augmented 
+by data calculated from similar foods or by recipe.  Retention factors were used, where 
+applicable in these calculations. 
+ 
+The Nutrient Data Laboratory reports nutrient retention factors to the nearest 5 percent. 
+Factors calculated above 100 percent are reported as 100 percent.  Data are being 
+released after careful internal review and will be updated in future releases as more data 
+become available. 
+File Formats 
+ 
+The data set is available in ASCII delimited and PDF format. In ASCII delimited all 
+fields are separated by carets (^) and text fields are surrounded by tildes (~). Each 
+preparation and processing category has a unique retention code for computer access. 
+ 
+The format of the file is as follows: 
+ 
+Field Name 
+Type 
+Blank 
+Description 
+Retn_Code 
+A 4 
+N 
+4-digit code uniquely identifying the retention 
+Factors 
+ 
+FdGrp_CD 
+A 4 
+N 
+4-digit code uniquely identifying the food 
+group to which the retention factors belong.  
+Can be linked to the Food Group Description 
+file in the USDA National Nutrient Database 
+for Standard Refernce. 
+RetnDesc 
+A 35 
+N 
+Description of the food category and 
+preparation 
+Nutr_No 
+A 3 
+N 
+3-digit unique identifier code for a nutrient 
+NutrDesc 
+A 60 
+N 
+Name of the food component 
+Retn_Factor 
+N 3.0 N 
+The specific factor representing the amount of 
+the food component retained during the 
+specified treatment 
+ 
+ 
+4
+References 
+ 
+Augustin J, Augustin E, Cutrufelli RL, Hagen SR, Teitzel, C. 1992.  Alcohol Retention    
+in Food Preparation. Journal of the American Dietetic Association. 92:486-488. 
+ 
+Haytowitz, DB, Pehrsson, PR, Holden, JM. The identification of key foods for food 
+composition research.  Journal of Food Composition and Analysis. 2002; 15: 183-194. 
+ 
+Howe, JC, Williams, JR, and Holden JM. 2004. USDA Database for the Choline Content 
+of Common Foods. http://www.nal.usda.gov/fnic/foodcomp/Data/Choline/Choline.pdf.  
+ 
+Koc H, Mar MH, Ranasinghe A, Swenberg JA, and Zeisel SH. 2002.  Quantitation of 
+choline and its Metabolites in Tissues and Foods by Liquid Chromatography/Electrospray 
+Ionization-Isotope Dilution Mass Spectrometry. Analytical Chemistry. 74:4734-4740. 
+ 
+Murphy EW, Criner PE, and Gray BC. 1975. Comparison of Methods for Determining 
+Retentions of Nutrients in Cooked Foods. Journal of Agriculture and Food Chemistry. 
+23:1153-1157. 
+ 
+Pehrsson PR, Haytowitz DB, Holden JM, Perry CR, and Beckler DG. 2000. USDA’s 
+National Food and Nutrient Analysis Program: Food Sampling.  Journal of Food 
+Composition and Analysis. 12:379-389. 
+ 
+Pehrsson PR, Haytowitz DB, Holden JM. 2003.  The USDA’s National Food and 
+Nutrient Analysis Program: Update 2002.  Journal of Food Composition and Analysis. 
+16:331-341. 
+ 
+USDA. Nutrient Data Research Group. 1982. Provisional Table on Percent Retention of 
+Nutrients in Food Preparation.  
+ 
+ 
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+0001
+01
+CHEESE,BAKED
+100 100 100 100 100 100 100 100
+65
+75 100 100
+75
+80
+80
+80
+75
+55 100 100 100 100 100 100 100 100
+0003
+01
+CHEESE,BROILED
+100 100 100 100 100 100 100 100
+65
+75 100 100
+75
+80
+80
+80
+75
+55 100 100 100 100 100 100 100 100
+0005
+01
+CHEESE,COOKED W/LIQUID
+100 100 100 100 100 100 100 100
+65
+75 100 100
+75
+80
+80
+80
+75
+55 100 100 100 100 100 100 100 100
+0007
+01
+CHEESE,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95
+95
+95 100 100 100 100 100 100 100 100
+0101
+01
+EGGS,BAKED
+100 100 100 100 100 100 100 100
+80
+80
+95
+90
+95
+75
+75
+75
+80
+80 100 100 100 100 100 100 100 100
+0103
+01
+EGGS,FRIED,SCRAMBLED
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+95
+75
+75
+75
+85
+85 100 100 100 100 100 100 100 100
+0105
+01
+EGGS,HARD COOKED
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+95
+75
+75
+75
+80
+85 100 100 100 100 100 100 100 100
+0107
+01
+EGGS,POACHED
+100 100 100 100 100 100 100 100
+80
+80
+85
+85
+85
+75
+75
+75
+80
+80 100 100 100 100 100 100 100 100
+0109
+01
+EGGS,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95
+85
+95 100 100 100 100 100 100 100 100
+2151
+01
+MILK,HEATED APPROX 10MIN
+100 100 100 100 100 100 100 100
+85
+90 100 100
+90
+85
+85
+85
+90
+80 100 100 100 100 100 100 100 100
+2152
+01
+MILK,HEATED APPROX 30MIN
+100 100 100 100 100 100 100 100
+65
+75 100 100
+75
+80
+80
+80
+75
+55 100 100 100 100 100 100 100 100
+2153
+01
+MILK,HEATED APPROX 1 HOUR
+100 100 100 100 100 100 100 100
+45
+60 100 100
+55
+70
+70
+70
+60
+30 100 100 100 100 100 100 100 100
+2154
+01
+MILK,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95
+95
+95 100 100 100 100 100 100 100 100
+0801
+05
+CHICKEN,BROILED
+95
+90
+75
+80
+80
+80 100
+95
+80
+70
+90
+80
+80
+60
+60
+60
+70
+65
+75
+75 100
+75
+75
+75
+75
+75
+0803
+05
+CHICKEN,FRIED,WO/COATING
+95
+90
+75
+80
+80
+80 100
+95
+80
+70
+90
+80
+80
+60
+60
+60
+70
+65
+75
+75 100
+75
+75
+75
+75
+75
+0804
+05
+CHICKEN,FRIED,W/COATING
+95
+90
+75
+80
+80
+80 100
+95
+80
+70
+90
+80
+80
+60
+60
+60
+70
+65
+75
+75 100
+75
+75
+75
+75
+75
+0805
+05
+CHICKEN,ROASTED
+95
+90
+75
+80
+80
+80 100
+95
+80
+70
+90
+80
+80
+60
+60
+60
+70
+65
+75
+75 100
+75
+75
+75
+75
+75
+0851
+05
+CHICKEN,BROWN,SIMMER,WO/DRIPPINGS
+80
+90
+65
+70
+60
+70 100
+90
+80
+55
+95
+60
+50
+60
+60
+60
+70
+50
+75
+75 100
+75
+75
+75
+75
+75
+0852
+05
+CHICKEN,BROWN,SIMMER,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+75 100
+95
+65
+70
+70
+70
+70
+65
+80
+80 100
+80
+80
+80
+80
+80
+0855
+05
+CHICKEN,SIMMERED,WO/DRIPPINGS
+80
+90
+65
+70
+60
+70 100
+90
+80
+55
+95
+60
+50
+60
+60
+60
+70
+50
+75
+75 100
+75
+75
+75
+75
+75
+0856
+05
+CHICKEN,SIMMERED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+75 100
+95
+65
+70
+70
+70
+70
+65
+80
+80 100
+80
+80
+80
+80
+80
+0864
+05
+CHICKEN,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95
+70
+95 100 100 100 100 100 100 100 100
+1805
+05
+TURKEY,ROASTED
+100
+95
+80
+80
+75
+75 100
+70
+80
+65
+85
+90
+70
+60
+60
+60
+70
+65
+75
+75 100
+75
+75
+75
+75
+75
+5
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+1851
+05
+TURKEY,SIMMERED,WO/DRIPPINGS
+85
+95
+65
+70
+55
+70 100
+95
+80
+55
+95
+60
+50
+60
+60
+60
+70
+50
+75
+75 100
+75
+75
+75
+75
+75
+1852
+05
+TURKEY,SIMMERED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+75 100
+95
+70
+70
+70
+70
+70
+70
+80
+80 100
+80
+80
+80
+80
+80
+1860
+05
+TURKEY,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95
+70
+95 100 100 100 100 100 100 100 100
+0351
+08
+OATMEAL,INST,COOKED
+100 100 100 100 100 100 100 100
+90
+90
+95
+95 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+0352
+08
+OATMEAL,REG/QUICK,COOKED
+100
+95 100
+95
+95 100 100
+95
+80
+80
+90
+90
+90
+70
+70
+70 100 100
+90
+90 100
+90
+90
+90
+90
+90
+0357
+08
+CEREAL,INST,COOKED
+100 100 100 100 100 100 100 100
+90
+90
+95
+95 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+0358
+08
+CEREAL,REG/QUICK,COOKED
+100
+95 100
+95
+95 100 100
+95
+80
+80
+90
+90
+90
+70
+70
+70 100 100
+90
+90 100
+90
+90
+90
+90
+90
+0151
+09
+FRUITS,FRESH(NOT CITRUS),BAKED
+95 100 100 100
+90 100 100
+90
+80
+80
+95
+90
+95
+60
+60
+60 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0152
+09
+FRUITS,FRESH(NOT CITRUS),BROILED
+95 100 100 100
+90 100 100
+90
+80
+80
+95
+90
+95
+60
+60
+60 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0153
+09
+FRUITS,FRESH(NOT CITRUS),SAUTEED
+95 100 100 100
+90 100 100
+90
+70
+80
+90
+90
+90
+50
+50
+50 100 100
+75
+75 100
+75
+75
+75
+75
+75
+0154
+09
+FRUITS,CANNED
+95 100 100 100
+90 100 100
+90
+50
+80
+90
+90
+90
+50
+50
+50 100 100
+75
+75 100
+75
+75
+75
+75
+75
+0155
+09
+FRUITS,FRESH(NOT CITRUS),STEWED
+95 100 100 100
+90 100 100
+90
+70
+80
+90
+90
+90
+50
+50
+50 100 100
+75
+75 100
+75
+75
+75
+75
+75
+0156
+09
+FRUITS,FROZEN
+95 100 100 100
+90 100 100
+90
+70
+95 100 100 100
+95
+95
+95 100 100
+95
+95 100
+95
+95
+95
+95
+95
+0157
+09
+FRUITS,FRESH(NOT CITRUS),REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100
+95
+95
+95 100 100
+95
+95 100
+95
+95
+95
+95
+95
+0158
+09
+FRUITS,DRIED
+100 100 100 100 100 100 100 100
+20
+70
+90
+90
+90
+50
+50
+50 100 100
+50
+50 100
+50
+50
+50
+50
+50
+0251
+09
+FRUITS(DRIED),BAKED
+95 100 100 100
+90 100 100
+90
+80
+80
+95
+90
+95
+60
+60
+60 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0253
+09
+FRUITS(DRIED),SAUTEED
+95 100 100 100
+90 100 100
+90
+70
+80
+90
+90
+90
+50
+50
+50 100 100
+75
+75 100
+75
+75
+75
+75
+75
+0255
+09
+FRUITS(DRIED),STEWED
+95 100 100 100
+90 100 100
+90
+70
+80
+90
+90
+90
+50
+50
+50 100 100
+75
+75 100
+75
+75
+75
+75
+75
+0257
+09
+FRUITS(DRIED),REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100
+95
+95
+95 100 100
+95
+95 100
+95
+95
+95
+95
+95
+0270
+09
+FRUITS,CITRUS,CKD
+100 100 100 100 100 100 100 100
+95
+95
+95
+95
+95
+70
+70
+70 100 100
+95
+95 100
+95
+95
+95
+95
+95
+1251
+10
+PORK,FRESH,BROILED
+75
+80
+95
+90
+85
+90 100
+95
+80
+70 100
+80
+65
+85
+85
+85 100
+90
+75
+75 100
+75
+75
+75
+75
+75
+1252
+10
+PORK,FRESH,FRIED,WO/COATING
+75
+80
+95
+90
+85
+90 100
+95
+80
+70 100
+80
+65
+85
+85
+85 100
+90
+75
+75 100
+75
+75
+75
+75
+75
+1253
+10
+PORK,FRESH,FRIED,W/COATING
+75
+80
+95
+90
+85
+90 100
+95
+80
+70 100
+80
+65
+85
+85
+85 100
+90
+75
+75 100
+75
+75
+75
+75
+75
+6
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+1254
+10
+PORK,FRESH,ROASTED
+95 100
+75
+85
+80
+80 100 100
+80
+60
+95
+85
+85
+95
+95
+95 100
+80
+75
+75 100
+75
+75
+75
+75
+75
+1301
+10
+PORK,FRESH,ROAST,SIMMERED WO/DRIP
+80 100
+65
+65
+75
+70 100 100
+75
+40
+75
+80
+50
+65
+65
+65 100
+60
+75
+75 100
+75
+75
+75
+75
+75
+1302
+10
+PORK,FRESH,ROAST,SIMMERED W/DRIPPNG
+100 100 100 100 100 100 100 100
+80
+55
+90
+95
+65
+70
+70
+70 100
+75
+80
+80 100
+80
+80
+80
+80
+80
+1351
+10
+PORK,FRSH,CHOPS,BRWN,SIMMRD,WO/DRIP
+80 100
+65
+65
+75
+70 100 100
+75
+40
+75
+80
+50
+65
+65
+65 100
+60
+75
+75 100
+75
+75
+75
+75
+75
+1352
+10
+PORK,FRSH,CHOPS,BRWN,SIMMRD,W/DRIP
+100 100 100 100 100 100 100 100
+80
+55
+90
+95
+65
+70
+70
+70 100
+75
+80
+80 100
+80
+80
+80
+80
+80
+1353
+10
+PORK,FRSH,CHOPS,SIMMERED,WO/DRIPPNG
+80 100
+65
+65
+75
+70 100 100
+75
+40
+75
+80
+50
+65
+65
+65 100
+60
+75
+75 100
+75
+75
+75
+75
+75
+1354
+10
+PORK,FRSH,CHOPS,SIMMERED,W/DRIPPNGS
+100 100 100 100 100 100 100 100
+80
+55
+90
+95
+65
+70
+70
+70 100
+75
+80
+80 100
+80
+80
+80
+80
+80
+1401
+10
+PORK,FRSH,GROUND,BRWN,SIMMR,WO/DRIP
+80 100
+65
+65
+75
+70 100 100
+75
+40
+75
+80
+50
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+1402
+10
+PORK,FRSH,GROUND,BRWN,SIMMRD,W/DRIP
+100 100 100 100 100 100 100 100
+80
+55
+90
+95
+65
+70
+70
+70 100
+75
+80
+80 100
+80
+80
+80
+80
+80
+1405
+10
+PORK,FRSH,GROUND,SIMMERED,WO/DRIP
+80 100
+65
+65
+75
+70 100 100
+75
+40
+75
+80
+50
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+1406
+10
+PORK,FRSH,GROUND,SIMMERED,W/DRIPPNG
+100 100 100 100 100 100 100 100
+80
+55
+90
+95
+65
+70
+70
+70
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+1407
+10
+PORK,FRESH,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95 100
+95 100 100 100 100 100 100 100 100
+1451
+10
+PORK,CURED,BROILED
+75
+80
+95
+90
+85
+90 100
+95
+80
+70 100
+80
+65
+85
+85
+85 100
+90
+75
+75 100
+75
+75
+75
+75
+75
+1456
+10
+BACON,BROILED/FRIED
+75
+80
+95
+90
+85
+90 100
+95
+80
+45
+95
+90
+80
+80
+80
+80
+80
+90
+65
+65 100
+65
+65
+65
+65
+65
+1459
+10
+PORK,CURED,ROASTED
+95 100
+75
+85
+80
+80 100 100
+80
+60
+95
+85
+85
+95
+95
+95 100
+80
+75
+75 100
+75
+75
+75
+75
+75
+1521
+10
+HAM/PICNIC,CURED,SIMMERED,WO/DRIP
+80 100
+65
+65
+75
+70 100 100
+75
+40
+75
+80
+50
+65
+65
+65 100
+60
+75
+75 100
+75
+75
+75
+75
+75
+1522
+10
+HAM/PICNIC,CURED,SIMMERED,W/DRIP
+100 100 100 100 100 100 100 100
+80
+55
+90
+95
+65
+70
+70
+70 100
+75
+80
+80 100
+80
+80
+80
+80
+80
+1551
+10
+PORK,CURED,SLICE,BRWN,SIMMR,WO/DRIP
+80 100
+65
+65
+75
+70 100 100
+75
+40
+75
+80
+50
+65
+65
+65 100
+60
+75
+75 100
+75
+75
+75
+75
+75
+1552
+10
+PORK,CURED,SLICE,BRWN,SIMMRD,W/DRIP
+100 100 100 100 100 100 100 100
+80
+55
+90
+95
+65
+70
+70
+70 100
+75
+80
+80 100
+80
+80
+80
+80
+80
+1555
+10
+PORK,CURED,SLICES,SIMMERED,WO/DRIP
+80 100
+65
+65
+75
+70 100 100
+75
+40
+75
+80
+50
+65
+65
+65 100
+60
+75
+75 100
+75
+75
+75
+75
+75
+1556
+10
+PORK,CURED,SLICES,SIMMERED,W/DRIP
+100 100 100 100 100 100 100 100
+80
+55
+90
+95
+65
+70
+70
+70 100
+75
+80
+80 100
+80
+80
+80
+80
+80
+1602
+10
+PORK,CURED,GROUND,BRWN,SIMR,WO/DRIP
+80 100
+65
+65
+75
+70 100 100
+75
+40
+75
+80
+50
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+1603
+10
+PORK,CURED,GROUND,BRWN,SIMR,W/DRIP
+100 100 100 100 100 100 100 100
+80
+55
+90
+95
+65
+70
+70
+70
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+7
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+1604
+10
+PORK,CURED,GROUND,SIMMERED,WO/DRIP
+80 100
+65
+65
+75
+70 100 100
+75
+40
+75
+80
+50
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+1605
+10
+PORK,CURED,GROUND,SIMMERED,W/DRIP
+100 100 100 100 100 100 100 100
+80
+55
+90
+95
+65
+70
+70
+70
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+1606
+10
+PORK,CURED,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95 100
+95 100 100 100 100 100 100 100 100
+1654
+10
+SAUSAGE,RTE,FRANKS,ETC,CKD,WO/DRIP
+100 100
+95
+95
+95
+95 100 100
+80
+85
+95
+90
+80
+85
+85
+85 100
+85
+85
+85 100
+85
+85
+85
+85
+85
+1655
+10
+SAUSAGE,RTE,FRANKS,ETC,CKD,W/DRIP
+100 100 100 100 100 100 100 100
+90
+95 100 100
+90
+95
+95
+95 100
+95
+95
+95 100
+95
+95
+95
+95
+95
+1657
+10
+SAUSAGE,RTE,FRANKS,ETC,BROILED
+100 100
+95
+95
+95
+95 100 100
+90
+95 100
+90
+90
+90
+90
+90 100
+95
+85
+85 100
+85
+85
+85
+85
+85
+1659
+10
+SAUSAGE,RTE,FRANKS,ETC,SAUTEED
+100 100
+95
+95
+95
+95 100 100
+90
+95 100
+90
+90
+90
+90
+90 100
+95
+85
+85 100
+85
+85
+85
+85
+85
+1705
+10
+SAUSAGE,RAW,PORK,OTHER,CKD,WO/DRIP
+85
+65
+75
+75
+85
+75
+75
+95
+50
+65
+75
+75
+60
+30
+30
+30
+95
+70
+75
+75 100
+75
+75
+75
+75
+75
+1706
+10
+SAUSAGE,RAW,PORK,OTHER,CKD,W/DRIP
+100 100 100 100 100 100 100 100
+70
+80
+90
+90
+85
+50
+50
+50
+95
+85
+80
+85 100
+80
+80
+80
+80
+80
+1707
+10
+SAUSAGE,RAW,PORK,OTHER,BROILED
+85
+65
+75
+75
+85
+75
+75
+95
+50
+65
+75
+75
+60
+30
+30
+30
+95
+70
+75
+75 100
+75
+75
+75
+75
+75
+1709
+10
+SAUSAGE,RAW,PORK,OTHER,SAUTEED
+85
+65
+75
+75
+85
+75
+75
+95
+50
+65
+75
+75
+60
+30
+30
+30
+95
+70
+75
+75 100
+75
+75
+75
+75
+75
+1712
+10
+SAUSAGE,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95
+95
+95 100 100 100 100 100 100 100 100
+3001
+11
+VEG,GREENS,BAKED
+100 100 100 100 100 100 100 100
+70
+90
+95
+95
+95
+75
+75
+75 100 100
+95
+95 100
+95
+95
+95
+95
+95
+3004
+11
+VEG,GREENS,BOILD,LITTLE WATER DRAIN
+95
+95
+95
+90
+90
+95
+95
+95
+60
+85
+95
+90
+90
+65
+65
+65 100 100
+95
+95 100
+95
+95
+95
+95
+95
+3005
+11
+VEG,GREENS,BOILED,WATER COVER DRAIN
+95
+95
+95
+85
+85
+95
+95
+95
+55
+80
+90
+85
+85
+60
+60
+60 100 100
+95
+95 100
+95
+95
+95
+95
+95
+3006
+11
+VEG,GREENS,BOILED,WATER USED
+100 100 100 100 100 100 100 100
+70
+90
+95
+95
+95
+75
+75
+75 100 100
+95
+95 100
+95
+95
+95
+95
+95
+3015
+11
+VEG,GREENS,STIR FRY
+100 100 100 100 100 100 100 100
+85
+90
+95
+95
+95
+85
+85
+85 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3018
+11
+VEG,GREENS,REHEATED
+100 100 100 100 100 100 100 100
+95 100 100 100 100
+95
+95
+95 100 100 100 100 100 100 100 100 100 100
+3019
+11
+VEG,GREENS,COOKED FROM FROZEN,DRAIN
+100 100 100 100 100 100 100 100
+60
+90
+95
+90
+90
+55
+55
+55 100 100
+95
+95 100
+95
+95
+95
+95
+95
+3301
+11
+POTATOES,BAKED IN SKIN
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+95
+90
+90
+90 100 100 100 100 100 100 100 100 100 100
+3302
+11
+POTATOES,BAKED IN CASSEROLE
+100 100 100 100 100 100 100 100
+80
+80
+95
+95
+95
+75
+75
+75 100 100 100 100 100 100 100 100 100 100
+3307
+11
+POTATOES,BOILED IN SKIN
+95
+95
+95
+95
+90
+95
+95
+95
+75
+80
+95
+95
+95
+90
+90
+90 100 100 100 100 100 100 100 100 100 100
+3308
+11
+POTATOES,BOILED(PARED)DRAIN
+95
+95
+95
+95
+90
+95
+95
+95
+75
+80
+95
+95
+95
+75
+75
+75 100 100 100 100 100 100 100 100 100 100
+8
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+3309
+11
+POTATOES,BOILED(PARED) WATER USED
+100 100 100 100 100 100 100 100
+80
+80
+95
+95
+95
+90
+90
+90 100 100 100 100 100 100 100 100 100 100
+3310
+11
+POTATOES,BOILED,BROWNED
+95
+95
+95
+95
+90
+95
+95
+95
+60
+65
+90
+90
+90
+65
+65
+65 100 100 100 100 100 100 100 100 100 100
+3311
+11
+POTATOES,BOILED,STORED,BROWNED
+95
+95
+95
+95
+90
+95
+95
+95
+25
+40
+85
+80
+90
+65
+65
+65 100 100 100 100 100 100 100 100 100 100
+3315
+11
+POTATOES,FRIED
+100 100 100 100 100 100 100 100
+80
+80
+95
+95
+95
+75
+75
+75
+95 100 100 100 100 100 100 100 100 100
+3316
+11
+POTATOES,MASHED
+95
+95
+95
+95
+90
+95
+95
+95
+75
+80
+95
+95
+95
+75
+75
+75 100 100 100 100 100 100 100 100 100 100
+3371
+11
+POTATOES,CANNED,BOILED,WATER USED
+100 100 100 100 100 100 100 100
+85
+90 100 100 100
+95
+95
+95 100 100 100 100 100 100 100 100 100 100
+3373
+11
+POTATOES,CANNED,BROILED
+100 100 100 100 100 100 100 100
+85
+90 100 100 100
+95
+95
+95 100 100 100 100 100 100 100 100 100 100
+3375
+11
+POTATOES,CANNED,FRIED
+100 100 100 100 100 100 100 100
+85
+90 100 100 100
+95
+95
+95
+95 100 100 100 100 100 100 100 100 100
+3379
+11
+POTATOES,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100
+95
+95
+95 100 100 100 100 100 100 100 100 100 100
+3380
+11
+POTATOES,CKD FROM FRZN,HASH BROWN
+100 100 100 100 100 100 100 100
+50
+75
+95
+95
+95
+60
+60
+60
+95 100 100 100 100 100 100 100 100 100
+3381
+11
+POTATOES,CKD FROM FRZN,FRENCH FRY
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+95
+80
+80
+80
+95 100 100 100 100 100 100 100 100 100
+3382
+11
+POTATOES,CKD FROM FRZN,BAKED STUFFD
+100 100 100 100 100 100 100 100
+80
+80
+95
+95
+95
+80
+80
+80
+95 100 100 100 100 100 100 100 100 100
+3451
+11
+VEG,ROOTS,ETC,BAKED
+100 100 100 100 100 100 100 100
+75
+90
+95
+95
+95
+80
+80
+80 100 100
+95
+95 100
+95
+95
+95
+95
+95
+3454
+11
+VEG,ROOTS,ETC,BLD,DRAIND,LITTLE WTR
+95
+95
+95
+90
+90
+95
+95
+95
+70
+85
+95
+95
+95
+70
+70
+70 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3455
+11
+VEG,ROOTS,ETC,BLD,DRAIND,WTR COVER
+95
+95
+95
+90
+90
+95
+95
+95
+65
+80
+90
+90
+90
+65
+65
+65 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3456
+11
+VEG,ROOTS,ETC,BOILED,WATER USED
+100 100 100 100 100 100 100 100
+75
+90
+95
+95
+95
+80
+80
+80 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3460
+11
+VEG,ROOTS,ETC,SAUTEED
+100 100 100 100 100 100 100 100
+75
+85
+95
+95
+95
+70
+70
+70 100 100
+85
+85 100
+85
+85
+85
+85
+85
+3464
+11
+VEG,ROOTS,ETC,STEAMED
+100 100 100 100 100 100 100 100
+75
+90
+95
+95
+95
+80
+80
+80 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3465
+11
+VEG,ROOTS,ETC,STIR FRY
+100 100 100 100 100 100 100 100
+80
+90
+95
+95
+95
+80
+80
+80 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3468
+11
+VEG,ROOTS,ETC,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100
+95
+95
+95 100 100 100 100 100 100 100 100 100 100
+3469
+11
+VEG,ROOTS,ETC,CKD FROM FRZN,DRAINED
+95
+95
+95
+90
+90
+95
+95
+95
+70
+90
+95
+95
+95
+70
+70
+70 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3701
+11
+SWEETPOTAOTES,BAKED IN SKIN
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+95
+90
+90
+90 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3702
+11
+SWEETPOTATOES, BAKED IN CASSEROLE
+100 100 100 100 100 100 100 100
+80
+80
+95
+95
+95
+75
+75
+75 100 100
+90
+90 100
+90
+90
+90
+90
+90
+9
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+3707
+11
+SWEETPOTATOES,BOILED IN SKIN
+95
+95
+95
+95
+90
+95
+95
+95
+75
+80
+95
+95
+95
+90
+90
+90 100 100
+85
+85 100
+85
+85
+85
+85
+85
+3708
+11
+SWEETPOTATOES,BOILED (PARED)DRAINED
+95
+95
+95
+95
+90
+95
+95
+95
+75
+80
+95
+95
+95
+75
+75
+75 100 100
+85
+85 100
+85
+85
+85
+85
+85
+3709
+11
+SWEETPOTATOES,BLD(PARED)WATER USED
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+95
+90
+90
+90 100 100
+95
+95 100
+95
+95
+95
+95
+95
+3710
+11
+SWEETPOTATOES,FRIED
+100 100 100 100 100 100 100 100
+80
+80
+95
+95
+95
+75
+75
+75
+95 100
+80
+80 100
+80
+80
+80
+80
+80
+3711
+11
+SWEETPOTATOES,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100
+95
+95
+95 100 100 100 100 100 100 100 100 100 100
+3712
+11
+SWEETPOTATOES,CKD FROM FRN,BAKED
+100 100 100 100 100 100 100 100
+80
+80
+95
+95
+95
+80
+80
+80 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3713
+11
+SWEETPOTATOES,CKD FROM FRZN,BOILED
+95
+95
+95
+95
+95
+95
+95
+95
+75
+80
+95
+95
+95
+80
+80
+80 100 100
+85
+85 100
+85
+85
+85
+85
+85
+3751
+11
+TOMATOES,BOILED/BAKED
+100 100 100 100 100 100 100 100
+95
+95
+95
+95
+95
+70
+70
+70
+90 100
+95
+95 100
+95
+95
+95
+95
+95
+3752
+11
+TOMATOES,FRIED/BROILED
+100 100 100 100 100 100 100 100
+95
+95
+95
+95
+95
+70
+70
+70
+90 100
+90
+90 100
+90
+90
+90
+90
+90
+3754
+11
+TOMATOES,REHEATED
+100 100 100 100 100 100 100 100 100 100 100 100 100
+95
+95
+95
+95 100 100 100 100 100 100 100 100 100
+3771
+11
+VEG,OTHER,BAKED
+100 100 100 100 100 100 100 100
+85
+90
+95
+95
+95
+85
+85
+85 100 100
+95
+95 100
+95
+95
+95
+95
+95
+3774
+11
+VEG,OTHER,BLD,LITTLE WATER,DRAINED
+95
+95
+95
+90
+90
+95
+95
+95
+80
+85
+95
+90
+90
+70
+70
+70 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3775
+11
+VEG,OTHER,BLD,WATER COVER,DRAINED
+95
+95
+95
+90
+90
+95
+95
+95
+75
+80
+90
+85
+85
+65
+65
+65 100 100
+90
+90 100
+90
+90
+90
+90
+90
+3776
+11
+VEG,OTHER,BLD,WATER USED
+100 100 100 100 100 100 100 100
+85
+90
+95
+95
+90
+85
+85
+85 100 100
+95
+95 100
+95
+95
+95
+95
+95
+3780
+11
+VEG,OTHER,FRIED
+100 100 100 100 100 100 100 100
+85
+85
+95
+90
+90
+70
+70
+70
+90 100
+85
+85 100
+85
+85
+85
+85
+85
+3784
+11
+VEG,OTHER,STEAMED
+100 100 100 100 100 100 100 100
+85
+90
+95
+95
+90
+85
+85
+85 100 100
+95
+95 100
+95
+95
+95
+95
+95
+3785
+11
+VEG,OTHER,STIR FRY
+100 100 100 100 100 100 100 100
+85
+90
+95
+95
+95
+80
+80
+80
+90 100
+90
+90 100
+90
+90
+90
+90
+90
+3788
+11
+VEG,OTHER,REHEATED
+100 100 100 100 100 100 100 100
+90
+95 100 100 100
+95
+95
+95 100 100 100 100 100 100 100 100 100 100
+3789
+11
+VEG,OTHER,CKD FROM FRZN(BLD,DRAIND)
+95
+95
+95
+90
+90
+95
+95
+95
+80
+90
+95
+90
+90
+70
+70
+70 100 100
+90
+90 100
+90
+90
+90
+90
+90
+2201
+12
+NUTS,BAKED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+95
+80
+80
+80 100 100
+95
+95 100
+95
+95
+95
+95
+95
+2202
+12
+NUTS,BROILED
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+95
+80
+80
+80 100 100
+95
+95 100
+95
+95
+95
+95
+95
+2203
+12
+NUTS,ROASTED
+100 100 100
+80 100
+95 100 100
+80
+85
+95
+95
+95
+80
+80
+80 100 100
+80
+80 100
+80
+80
+80
+80
+80
+2204
+12
+NUTS,BOILED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+95
+80
+80
+80 100 100
+95
+95 100
+95
+95
+95
+95
+95
+10
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+0601
+13
+BEEF,ROASTED
+90 100
+85
+85
+80
+85 100 100
+80
+55
+95
+75
+50
+95
+95
+95
+90
+70
+75
+75 100
+75
+75
+75
+75
+75
+0602
+13
+BEEF,BROILED CUT
+100
+95
+85
+90
+85
+85 100 100
+80
+70
+90
+80
+60
+85
+85
+85
+90
+80
+75
+75 100
+75
+75
+75
+75
+75
+0603
+13
+BEEF,BROILED GROUND
+100
+95
+85
+90
+85
+85 100 100
+80
+80
+95
+90
+60
+85
+85
+85
+90
+80
+75
+75 100
+75
+75
+75
+75
+75
+0604
+13
+BEEF,FRIED,W/O COATING
+100
+95
+85
+90
+85
+85 100 100
+80
+70
+90
+80
+60
+85
+85
+85
+90
+80
+75
+75 100
+75
+75
+75
+75
+75
+0605
+13
+BEEF,FRIED
+100
+95
+85
+90
+85
+85 100 100
+80
+70
+90
+80
+60
+85
+85
+85
+90
+80
+75
+75 100
+75
+75
+75
+75
+75
+0651
+13
+BEEF,ROAST,BRAISED,WO/DRIPPINGS
+80 100
+65
+65
+55
+55 100
+95
+80
+45
+85
+55
+35
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+0652
+13
+BEEF,ROAST,BRAISED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+60 100
+90
+50
+70
+70
+70
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+0653
+13
+BEEF,ROAST,SIMMERED,WO/DRIPPINGS
+80 100
+65
+65
+55
+55 100
+95
+80
+45
+85
+55
+35
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+0654
+13
+BEEF,ROAST,SIMMERED,W/DRIP
+100 100 100 100 100 100 100 100
+85
+60 100
+90
+50
+70
+70
+70
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+0701
+13
+BEEF,SLICES,BRWN,SIMMER,WO/DRIPPING
+80 100
+65
+65
+55
+55 100
+95
+80
+45
+85
+55
+35
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+0702
+13
+BEEF,SLICES,BRWN,SIMMER,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+60 100
+90
+50
+70
+70
+70
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+0703
+13
+BEEF,SLICES,SIMMERED,WO/DRIPPINGS
+80 100
+65
+65
+55
+55 100
+95
+80
+45
+85
+55
+35
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+0704
+13
+BEEF,SLICES,SIMMERED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+60 100
+90
+50
+70
+70
+70
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+0749
+13
+BEEF,GROUND,BAKED,WO/DRIPPINGS
+80 100
+65
+65
+55
+55 100
+95
+80
+45
+85
+55
+35
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+0750
+13
+BEEF,GROUND,BAKED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+60 100
+90
+50
+70
+70
+70
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+0751
+13
+BEEF,GROUND,BRWN,SIMMER,WO/DRIPPING
+80 100
+65
+65
+55
+55 100
+95
+80
+45
+85
+55
+35
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+0752
+13
+BEEF,GROUND,BRWN,SIMMER,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+60 100
+90
+50
+70
+70
+70
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+0753
+13
+BEEF,GROUND,SIMMERED,WO/DRIPPINGS
+80 100
+65
+65
+55
+55 100
+95
+80
+45
+85
+55
+35
+65
+65
+65
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+0754
+13
+BEEF,GROUND,SIMMERED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+60 100
+90
+50
+70
+70
+70
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+0770
+13
+BEEF,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95
+90
+95 100 100 100 100 100 100 100 100
+1152
+13
+LIVER,SIMMERED,WO/DRIPPINGS
+95
+60
+60
+70
+45
+45
+90
+75
+75
+65
+55
+45
+45
+65
+65
+65 100
+60
+75
+75 100
+75
+75
+75
+75
+75
+1153
+13
+LIVER,SIMMERED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+80
+80 100
+90
+55
+70
+70
+70 100
+75
+80
+80 100
+80
+80
+80
+80
+80
+1181
+13
+ORGAN MEATS(NOTLIVER) FRIED
+100
+95
+85
+90
+85
+85 100 100
+80
+70
+90
+80
+60
+85
+85
+85 100
+80
+75
+75 100
+75
+75
+75
+75
+75
+11
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+1182
+13
+ORGAN MEATS(NOTLIVER)SIMMRD,WO/DRIP
+95
+60
+60
+70
+45
+45
+90
+75
+75
+65
+55
+45
+45
+65
+65
+65 100
+60
+75
+75 100
+75
+75
+75
+75
+75
+1183
+13
+ORGAN MEATS(NOTLIVER)SIMMRD,W/DRIP
+100 100 100 100 100 100 100 100
+80
+80 100
+90
+55
+70
+70
+70 100
+75
+80
+80 100
+80
+80
+80
+80
+80
+1184
+13
+ORGAN MEATS(NOTLIVER) REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95 100
+95 100 100 100 100 100 100 100 100
+5001
+14
+ALC BEV,NO HEAT,STORED OVERNIGHT
+100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+70 100 100 100 100 100
+5002
+14
+ALC BEV,STIRRED INTO HOT LIQ
+100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+85 100 100 100 100 100
+5003
+14
+ALC BEV,FLAMED
+100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+75 100 100 100 100 100
+5004
+14
+ALC BEV,STIRRED,BKD/SIMMRD 15 MIN
+100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+40 100 100 100 100 100
+5005
+14
+ALC BEV,STIRRED,BKD/SIMMRD 30 MIN
+100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+35 100 100 100 100 100
+5006
+14
+ALC BEV,STIRRED,BKD/SIMMRD 1 HR
+100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+25 100 100 100 100 100
+5007
+14
+ALC BEV,STIRRED,BKD/SIMMRD 1.5 HR
+100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+20 100 100 100 100 100
+5008
+14
+ALC BEV,STIRRED,BKD/SIMMRD 2 HR
+100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+10 100 100 100 100 100
+5009
+14
+ALC BEV,STIRRED,BKD/SIMMRD 2.5 HR
+100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+5 100 100 100 100 100
+5010
+14
+ALC BEV,NOT STIRRED IN,BKD 25 MIN
+100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+45 100 100 100 100 100
+2301
+15
+FINFISH,<5%FAT,BAKED,WO/DRIPPINGS
+100 100 100 100 100 100 100 100
+80
+90
+95
+95
+90
+90
+90
+90 100
+90
+90
+90 100
+90
+90
+90
+90
+90
+2302
+15
+FINFISH,<5%FAT,BAKED W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+95 100 100
+95
+95
+95
+95 100
+95
+90
+90 100
+90
+90
+90
+90
+90
+2305
+15
+FINFISH,<5%FAT,BROILED,WO/DRIPPINGS
+100 100 100 100 100 100 100 100
+80
+90
+95
+95
+90
+90
+90
+90 100
+90
+90
+90 100
+90
+90
+90
+90
+90
+2306
+15
+FINFISH,<5%FAT,BROILED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+80
+90
+95 100
+90
+90
+90
+90 100
+90
+90
+90 100
+90
+90
+90
+90
+90
+2309
+15
+FINFISH,<5%FAT,FRIED,WO/COATING
+100 100 100 100 100 100 100 100
+80
+85
+95 100
+90
+90
+90
+90 100
+90
+85
+85 100
+85
+85
+85
+85
+85
+2310
+15
+FINFISH,<5%FAT,FRIED,W/COATING
+100 100 100 100 100 100 100 100
+80
+85
+95 100
+90
+90
+90
+90 100
+90
+85
+85 100
+85
+85
+85
+85
+85
+2401
+15
+FINFISH,<5%FAT,SIMMERED,WO/DRIPPING
+100 100
+90
+90
+85
+90 100 100
+75
+80
+90
+85
+80
+80
+80
+80 100
+85
+80
+80 100
+80
+80
+80
+80
+80
+2402
+15
+FINFISH,<5%FAT,SIMMERED,W/DRIPPINGS
+80
+80
+80
+80
+80
+80
+80
+80
+80
+90 100
+95
+90
+90
+90
+90 100
+95
+90
+90 100
+90
+90
+90
+90
+90
+2451
+15
+FINFISH,>5%FAT,BAKED,WO/DRIPPINGS
+100 100 100 100 100 100 100 100
+80
+95 100 100
+90
+90
+90
+90 100
+85
+85
+85 100
+85
+85
+85
+85
+85
+2452
+15
+FINFISH,>5%FAT,BAKED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85 100 100 100
+95
+95
+95
+95 100
+80
+90
+90 100
+90
+90
+90
+90
+90
+12
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+2455
+15
+FINFISH,>5%FAT,BROILED,WO/DRIPPNG
+100 100 100 100 100 100 100 100
+80
+95 100 100
+90
+90
+90
+90 100
+75
+85
+85 100
+85
+85
+85
+85
+85
+2456
+15
+FINFISH,>5%FAT,BROILED,W/DRIPPNGS
+100 100 100 100 100 100 100 100
+80
+95 100 100
+90
+90
+90
+90 100
+75
+90
+90 100
+90
+90
+90
+90
+90
+2459
+15
+FINFISH,>5%FAT,FRIED,WO/COATING
+100 100 100 100 100 100 100 100
+80
+85 100 100
+90
+90
+90
+90 100
+75
+85
+85 100
+85
+85
+85
+85
+85
+2460
+15
+FINFISH,>5%FAT,FRIED,W/COATING
+100 100 100 100 100 100 100 100
+80
+85 100 100
+90
+90
+90
+90 100
+75
+85
+85 100
+85
+85
+85
+85
+85
+2551
+15
+FINFISH,>5%FAT,SIMMERED,WO/DRIP
+100 100
+90
+90
+85
+90 100 100
+75
+80
+90
+85
+80
+80
+80
+80 100
+85
+85
+85 100
+85
+85
+85
+85
+85
+2552
+15
+FINFISH,>5%FAT,SIMMERED,W/DRIP
+100 100 100 100 100 100 100 100
+80
+90 100
+95
+90
+90
+90
+90 100
+95
+95
+95 100
+95
+95
+95
+95
+95
+2554
+15
+FINFISH,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+2601
+15
+FINFISH(FROZEN),FRIED
+100 100 100 100 100 100 100 100
+90
+90
+95 100
+95
+95
+95
+95 100
+95
+90
+90 100
+90
+90
+90
+90
+90
+2605
+15
+FINFISH(FROZEN),HEATED
+100 100 100 100 100 100 100 100
+90
+90 100 100
+95
+95
+95
+95 100
+95
+90
+90 100
+90
+90
+90
+90
+90
+2701
+15
+SHELLFISH,W/SHELL,BOILED
+100
+90
+85
+70
+70
+85 100
+90
+75
+90
+75
+75
+90
+75
+75
+75 100
+60
+90
+90 100
+90
+90
+90
+90
+90
+2702
+15
+SHELLFISH,W/SHELL,STEAMED
+100
+90 100
+75
+90 100 100
+85
+80
+95
+95
+90
+95
+75
+75
+75 100
+90
+90
+90 100
+90
+90
+90
+90
+90
+2750
+15
+SHELLFISH,WO/SHELL,BAKED,W/DRIPPNGS
+100 100 100 100 100 100 100 100
+85
+95 100
+95
+95
+90
+90
+90 100 100
+95
+95 100
+95
+95
+95
+95
+95
+2753
+15
+SHELLFISH,WO/SHELL,BROILED
+100 100 100 100 100 100 100 100
+95
+90
+80
+95
+95
+95
+95
+95 100
+95
+85
+85 100
+85
+85
+85
+85
+85
+2755
+15
+SHELLFISH,WO/SHELL,FRIED,WO/COATING
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+90
+75
+75
+75 100
+85
+95
+95 100
+95
+95
+95
+95
+95
+2756
+15
+SHELLFISH,WO/SHELL,FRIED,W/COATING
+100 100 100 100 100 100 100 100
+80
+85
+95
+95
+90
+80
+80
+80 100
+85
+95
+95 100
+95
+95
+95
+95
+95
+2761
+15
+SHELLFISH,WO/SHELL,SIMMERED,WO/DRIP
+95
+90
+85
+70
+70
+85 100
+80
+75
+90
+75
+75
+85
+75
+75
+75 100
+60
+90
+90 100
+90
+90
+90
+90
+90
+2762
+15
+SHELLFISH,WO/SHELL,SIMMERED,W/DRIP
+100 100 100
+90 100 100 100
+95
+80
+95
+95
+95
+90
+75
+75
+75 100
+90
+90
+90 100
+90
+90
+90
+90
+90
+2770
+15
+SHELLFISH,WO/SHELL,STEAMED
+100
+90 100
+75
+90 100 100
+85
+80
+95
+95
+90
+90
+75
+75
+75 100
+90
+90
+90 100
+90
+90
+90
+90
+90
+2771
+15
+SHELLFISH,WO/SHELL,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+2901
+15
+SEAFOOD,FROG,TURTLE,BKD,WO/DRIP
+100 100 100 100 100 100 100 100
+80
+90 100
+95
+90
+90
+90
+90 100
+90
+90
+90 100
+90
+90
+90
+90
+90
+2902
+15
+SEAFOOD,FROG,TURTLE,CKD,W/DRIP
+100 100 100 100 100 100 100 100
+85
+95 100 100
+95
+95
+95
+95 100
+95
+90
+90 100
+90
+90
+90
+90
+90
+2905
+15
+SEAFOOD,FROG,TURTLE,SIMM,WO/DRIP
+100
+95
+90
+80
+80
+90 100
+95
+75
+85
+85
+80
+80
+80
+80
+80 100
+80
+90
+90 100
+90
+90
+90
+90
+90
+2906
+15
+SEAFOOD,FROG,TURTLE,SIMRD,W/DRIP
+100 100 100
+95 100 100 100 100
+80
+90 100
+95
+90
+85
+85
+85 100
+95
+90
+90 100
+90
+90
+90
+90
+90
+13
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+2907
+15
+SEAFOOD,FROG,TURTLE,BRSD,WO/DRIP
+100
+95
+90
+80
+80
+90 100
+95
+70
+80
+80
+80
+75
+75
+75
+75 100
+75
+85
+85 100
+85
+85
+85
+85
+85
+2908
+15
+SEAFOOD,FROG,TURTLE,BRAIS,W/DRIP
+100 100 100
+95 100 100 100 100
+75
+90
+95
+95
+85
+80
+80
+80 100
+90
+90
+90 100
+90
+90
+90
+90
+90
+2909
+15
+SEAFOOD,FROG,TURTLE,BRLD,WO/DRIP
+100 100 100 100 100 100 100 100
+80
+90 100
+95
+90
+85
+85
+85 100
+90
+90
+90 100
+90
+90
+90
+90
+90
+2910
+15
+SEAFOOD,FROG,TURTLE,BRLD,W/DRIP
+100 100 100 100 100 100 100 100
+80
+90 100 100
+90
+85
+85
+85 100
+95
+90
+90 100
+90
+90
+90
+90
+90
+2911
+15
+SEAFOOD,FROG,TURTLE,FRYD,WO/COAT
+100 100 100 100 100 100 100 100
+80
+85
+95 100
+90
+85
+85
+85 100
+85
+85
+85 100
+85
+85
+85
+85
+85
+2912
+15
+SEAFOOD,FROG,TURTLE,FRIED,W/COAT
+100 100 100 100 100 100 100 100
+80
+85
+95 100
+90
+90
+90
+90 100
+90
+90
+90 100
+90
+90
+90
+90
+90
+2917
+15
+SEAFOOD,FROG,TURTLE,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100
+0501
+16
+LEGUMES,CKD 15/20MIN,BOILED,DRAINED
+85
+85
+80
+90
+75
+90
+85
+70
+65
+65
+75
+70
+70
+60
+60
+60 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0502
+16
+LEGUMES,CKD 15/20MIN,BLD,WATER USED
+90
+90
+85
+95
+80
+95
+90
+75
+70
+70
+80
+75
+75
+65
+65
+65 100 100
+90
+90 100
+90
+90
+90
+90
+90
+0503
+16
+LEGUMES,CKD 15/20MIN,BLD,DRAIND,BKD
+85
+85
+80
+90
+75
+90
+85
+70
+60
+60
+70
+65
+65
+55
+55
+55 100 100
+80
+80 100
+80
+80
+80
+80
+80
+0504
+16
+LEGUMES,CKD 15/20MIN,BOILED+BAKED
+90
+90
+85
+95
+80
+95
+90
+95
+65
+65
+75
+70
+70
+60
+60
+60 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0505
+16
+LEGUMES,CKD 15/20MIN,BLD,DRND,FRIED
+85
+85
+80
+90
+75
+90
+85
+70
+60
+60
+70
+65
+65
+55
+55
+55 100 100
+80
+80 100
+80
+80
+80
+80
+80
+0506
+16
+LEGUMES,CKD 15/20MIN,BOILED+FRIED
+90
+90
+85
+95
+80
+95
+90
+75
+65
+65
+75
+70
+70
+60
+60
+60 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0521
+16
+LEGUMES,CKD 45/75MIN,BOILED,DRND
+85
+80
+75
+85
+70
+90
+85
+65
+65
+60
+70
+65
+65
+45
+45
+45 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0522
+16
+LEGUMES,CKD 45/75MIN,BLD,WATER USED
+90
+85
+80
+90
+75
+95
+90
+70
+70
+65
+75
+70
+70
+50
+50
+50 100 100
+90
+90 100
+90
+90
+90
+90
+90
+0523
+16
+LEGUMES,CKD 45/75MIN,BLD,DRND,BKD
+85
+80
+75
+85
+70
+90
+85
+65
+60
+55
+65
+60
+60
+40
+40
+40 100 100
+80
+80 100
+80
+80
+80
+80
+80
+0524
+16
+LEGUMES,CKD 45/75MIN,BOILED+BAKED
+90
+85
+80
+90
+75
+95
+90
+70
+65
+60
+70
+65
+65
+45
+45
+45 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0525
+16
+LEGUMES,CKD 45/75MIN,BLD,DRND,FRIED
+85
+80
+75
+85
+70
+90
+85
+65
+60
+55
+65
+60
+60
+40
+40
+40 100 100
+80
+80 100
+80
+80
+80
+80
+80
+0526
+16
+LEGUMES,CKD 45/75MIN,BOILED+FRIED
+90
+85
+80
+90
+75
+95
+90
+70
+65
+60
+70
+65
+65
+45
+45
+45 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0541
+16
+LEGUMES,CKD 2/2.5HRS,BOILED,DRAINED
+85
+75
+70
+80
+65
+90
+85
+55
+65
+40
+75
+55
+50
+30
+30
+30 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0542
+16
+LEGUMES,CKD 2/2.5HRS,BLD,WATER USED
+90
+80
+75
+85
+70
+95
+90
+60
+70
+45
+80
+60
+55
+35
+35
+35 100 100
+90
+90 100
+90
+90
+90
+90
+90
+0543
+16
+LEGUMES,CKD 2/2.5HRS,BLD,DRND,BKD
+85
+75
+70
+80
+65
+90
+85
+55
+60
+35
+70
+50
+45
+25
+25
+25 100 100
+80
+80 100
+80
+80
+80
+80
+80
+0544
+16
+LEGUMES,CKD 2/2.5HRS,BOILED+BAKED
+90
+80
+75
+85
+70
+95
+90
+60
+65
+40
+75
+55
+50
+30
+30
+30 100 100
+85
+85 100
+85
+85
+85
+85
+85
+14
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+0545
+16
+LEGUMES,CKD 2/2.5HRS,BLD,DRND,FRIED
+85
+75
+70
+80
+65
+90
+85
+55
+60
+35
+70
+50
+45
+25
+25
+25 100 100
+80
+80 100
+80
+80
+80
+80
+80
+0546
+16
+LEGUMES,CKD 2/2.5HRS,BOILED+FRIED
+90
+80
+75
+85
+70
+95
+90
+60
+65
+40
+75
+55
+50
+30
+30
+30 100 100
+85
+85 100
+85
+85
+85
+85
+85
+0550
+16
+LEGUMES,REHEATED
+100 100 100 100 100 100 100 100
+95
+95
+95
+95
+95
+95
+95
+95 100 100 100 100 100 100 100 100 100 100
+1001
+17
+LAMB, BROILED
+100
+95
+85
+85
+85
+85 100
+90
+80
+60
+90
+80
+65
+70
+70
+70
+90
+80
+75
+75 100
+75
+75
+75
+75
+75
+1003
+17
+LAMB,GROUND,BROILED
+90
+95
+80
+85
+85
+80 100
+75
+80
+70
+80
+85
+75
+70
+70
+70
+90
+75
+75
+75 100
+75
+75
+75
+75
+75
+1004
+17
+LAMB, ROASTED
+100 100
+80
+85
+75
+75 100
+80
+80
+60
+90
+80
+75
+85
+85
+85
+90
+75
+75
+75 100
+75
+75
+75
+75
+75
+1051
+17
+LAMB,BROWN,SIMMER,WO/DRIPPINGS
+100
+95
+65
+65
+55
+65
+95
+70
+80
+30
+60
+60
+45
+55
+55
+55
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+1052
+17
+LAMB,BROWN,SIMMER,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+45
+85
+95
+70
+65
+65
+65
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+1055
+17
+LAMB,SIMMERED,WO/DRIPPINGS
+100
+95
+65
+65
+55
+65
+95
+70
+80
+30
+60
+60
+55
+55
+55
+55
+90
+60
+75
+75 100
+75
+75
+75
+75
+75
+1056
+17
+LAMB,SIMMERED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+45
+85
+95
+70
+65
+65
+65
+90
+75
+80
+80 100
+80
+80
+80
+80
+80
+1074
+17
+LAMB,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95
+90
+95 100 100 100 100 100 100 100 100
+1151
+17
+LIVER,FRIED
+100
+95
+85
+90
+85
+85 100 100
+80
+70
+90
+80
+60
+85
+85
+85
+90
+80
+75
+75 100
+75
+75
+75
+75
+75
+1154
+17
+LIVER,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95
+90
+95 100 100 100 100 100 100 100 100
+1951
+17
+VEAL, BROILED
+95
+90
+85
+85
+85
+85 100
+95
+80
+65
+90
+80
+65
+75
+75
+75
+90
+80
+75
+75 100
+75
+75
+75
+75
+75
+1952
+17
+VEAL, FRIED, WO/COATING
+95
+90
+85
+85
+85
+60 100
+95
+80
+65
+75
+85
+45
+85
+85
+85
+90
+90
+75
+75 100
+75
+75
+75
+75
+75
+1953
+17
+VEAL, FRIED, W/COATING
+95
+90
+85
+85
+85
+85 100
+95
+80
+65
+90
+80
+65
+75
+75
+75
+90
+80
+75
+75 100
+75
+75
+75
+75
+75
+1954
+17
+VEAL, ROASTED
+95
+85
+80
+80
+80
+80 100
+90
+80
+60
+90
+80
+50
+85
+85
+85
+90
+85
+75
+75 100
+75
+75
+75
+75
+75
+2001
+17
+VEAL,ROAST,BRAISED,WO/DRIPPINGS
+100
+95
+65
+65
+60
+60 100
+75
+80
+45
+75
+65
+45
+75
+75
+75
+90
+65
+75
+75 100
+75
+75
+75
+75
+75
+2002
+17
+VEAL,ROAST,BRAISED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+60
+95
+95
+65
+70
+70
+70
+90
+70
+80
+80 100
+80
+80
+80
+80
+80
+2003
+17
+VEAL,ROAST,SIMMERED,WO/DRIPPINGS
+85
+95
+65
+65
+60
+65 100
+90
+80
+45
+80
+65
+50
+60
+60
+60
+90
+55
+75
+75 100
+75
+75
+75
+75
+75
+2004
+17
+VEAL,ROAST,SIMMERED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+60
+95
+95
+65
+70
+70
+70
+90
+70
+80
+80 100
+80
+80
+80
+80
+80
+2051
+17
+VEAL,SLICES,BRWN,SIMMRD,WO/DRIPPING
+85
+95
+65
+65
+60
+65 100
+90
+80
+45
+80
+65
+50
+60
+60
+60
+90
+55
+75
+75 100
+75
+75
+75
+75
+75
+2052
+17
+VEAL,SLICES,BRWN,SIMMRD,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+60
+95
+95
+65
+70
+70
+70
+90
+70
+80
+80 100
+80
+80
+80
+80
+80
+15
+USDA Table of Nutrient Retention Factors, Release 6
+Retention 
+Code
+Food 
+Group 
+Code
+Retention Description
+Calcium, Ca
+Iron, Fe
+Magnesium, Mg
+Phosphorus, P
+Potassium, K
+Sodium, Na
+Zinc, Zn
+Copper, Cu
+Vitamin C, total ascorbic acid
+Thiamin
+Riboflavin
+Niacin
+Vitamin B-6
+Folate, food
+Folic acid
+Folate, total
+Choline, total
+Vitamin B-12
+Vitamin A, IU
+Vitamin A, RE
+Alcohol, ethyl
+Carotene, beta
+Carotene, alpha
+Cryptoxanthin, beta
+Lycopene
+Lutein + zeaxanthin
+2055
+17
+VEAL.SLICES,SIMMERED,WO/DRIPPINGS
+85
+95
+65
+65
+60
+65 100
+90
+80
+45
+80
+65
+50
+60
+60
+60
+90
+55
+75
+75 100
+75
+75
+75
+75
+75
+2056
+17
+VEAL,SLICES,SIMMERED,W/DRIPPINGS
+100 100 100 100 100 100 100 100
+85
+60
+95
+95
+65
+70
+70
+70
+90
+70
+80
+80 100
+80
+80
+80
+80
+80
+2064
+17
+VEAL,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100
+95
+95
+95
+95
+90
+95 100 100 100 100 100 100 100 100
+0301
+20
+FLOUR/MEAL,BAKED
+100 100 100 100 100 100 100 100
+80
+80
+90
+90
+90
+70
+70
+70
+95 100
+90
+90 100
+90
+90
+90
+90
+90
+0302
+20
+FLOUR/MEAL,BOILED,STEAMED
+100 100 100 100 100 100 100 100
+80
+80
+90
+90
+90
+70
+70
+70
+95 100
+90
+90 100
+90
+90
+90
+90
+90
+0304
+20
+FLOUR/MEAL,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100
+90
+90
+90 100 100 100 100 100 100 100 100 100 100
+0305
+20
+FLOUR/MEAL,SAUTEED
+100 100 100 100 100 100 100 100
+80
+75
+90
+90
+90
+65
+65
+65
+95 100
+85
+85 100
+85
+85
+85
+85
+85
+0306
+20
+FLOUR/MEAL,TOASTED
+100 100 100 100 100 100 100 100
+85
+80 100 100 100
+85
+85
+85 100 100
+95
+95 100
+95
+95
+95
+95
+95
+0380
+20
+PASTA,BAKED
+100 100 100 100 100 100 100 100
+80
+80
+90
+90
+90
+70
+70
+70
+95 100
+95
+95 100
+95
+95
+95
+95
+95
+0381
+20
+PASTA,BOILED,DRAINED
+95
+75
+85
+85
+30
+50 100
+90
+70
+65
+75
+65
+80
+70
+70
+70
+95 100
+95
+95 100
+95
+95
+95
+95
+95
+0382
+20
+PASTA,BOILED,DRAINED,BAKED
+95
+75
+85
+85
+30
+50 100
+90
+60
+55
+75
+60
+75
+50
+50
+50
+95 100
+90
+90 100
+90
+90
+90
+90
+90
+0384
+20
+PASTA,BOILED,NOT DRAINED
+100 100 100 100 100 100 100 100
+80
+80
+90
+90
+90
+70
+70
+70
+95 100
+95
+95 100
+95
+95
+95
+95
+95
+0385
+20
+PASTA,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100
+95
+95
+95 100 100 100 100 100 100 100 100 100 100
+0431
+20
+RICE,WHITE/BROWN,COOKED,DRAINED
+95
+90
+95
+90
+85
+95
+95
+90
+75
+75
+90
+95
+90
+60
+60
+60 100 100
+95
+95 100
+95
+95
+95
+95
+95
+0432
+20
+RICE,WHITE/BROWN,COOKED,WATER USED
+100
+95 100
+95
+95 100 100
+95
+80
+80
+90 100
+95
+70
+70
+70 100 100
+95
+95 100
+95
+95
+95
+95
+95
+0433
+20
+RICE,WHITE/BROWN,SAUTEED+SIMMERED
+100
+95 100
+95
+95 100 100
+95
+70
+75
+85 100
+90
+60
+60
+60 100 100
+90
+90 100
+90
+90
+90
+90
+90
+0434
+20
+RICE,WHITE/BROWN,REHEATED
+100 100 100 100 100 100 100 100
+95
+95 100 100 100
+95
+95
+95 100 100 100 100 100 100 100 100 100 100
+16

@@ -1,0 +1,971 @@
+[
+ {
+  "month": "5",
+  "name": "菠蘿糖醋雞球配飯（菜心苗）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 1186.8727499999998,
+   "protein_g": 45.45638999999999,
+   "total_fat_g": 19.23831,
+   "saturated_fat_g": 4.3610805,
+   "trans_fat_g": 0.147388815,
+   "available_carbohydrate_g": 207.53617500000001,
+   "sugars_g": 27.56754,
+   "sodium_mg": 1333.57620375,
+   "dietary_fibre_g": 4.3233749999999995
+  },
+  "weight": 763.182
+ },
+ {
+  "month": "5",
+  "name": "鲜茄雞块配飯（西蘭花）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 813.8151,
+   "protein_g": 44.6796,
+   "total_fat_g": 14.681047500000002,
+   "saturated_fat_g": 3.4130565000000006,
+   "trans_fat_g": 0.08084853,
+   "available_carbohydrate_g": 125.19643500000001,
+   "sugars_g": 3.497256,
+   "sodium_mg": 552.1297162499999,
+   "dietary_fibre_g": 5.6614949999999995
+  },
+  "weight": 596.271375
+ },
+ {
+  "month": "5",
+  "name": "叉燒炒蛋配飯（白菜仔）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 1202.8905,
+   "protein_g": 45.39402,
+   "total_fat_g": 73.40665499999999,
+   "saturated_fat_g": 14.702876999999999,
+   "trans_fat_g": 1.05939981,
+   "available_carbohydrate_g": 91.029015,
+   "sugars_g": 3.9562425000000006,
+   "sodium_mg": 624.6993375000001,
+   "dietary_fibre_g": 1.68966
+  },
+  "weight": 617.1795
+ },
+ {
+  "month": "5",
+  "name": "糖醋魚柳配飯（菜心苗）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 839.86875,
+   "protein_g": 35.173845,
+   "total_fat_g": 23.22432,
+   "saturated_fat_g": 3.0161565,
+   "trans_fat_g": 0.154550025,
+   "available_carbohydrate_g": 122.73849,
+   "sugars_g": 5.763555,
+   "sodium_mg": 574.480998,
+   "dietary_fibre_g": 2.713095
+  },
+  "weight": 574.6545
+ },
+ {
+  "month": "5",
+  "name": "滷水雞中翼配炒飯（四色雜菜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 942.198075,
+   "protein_g": 75.64715549999998,
+   "total_fat_g": 26.432122500000002,
+   "saturated_fat_g": 6.979486499999999,
+   "trans_fat_g": 0.14726124,
+   "available_carbohydrate_g": 100.16253449999999,
+   "sugars_g": 2.0516895,
+   "sodium_mg": 772.5183637500002,
+   "dietary_fibre_g": 2.6011125
+  },
+  "weight": 626.6767500000001
+ },
+ {
+  "month": "5",
+  "name": "洋蔥汁魚柳配飯（翠玉瓜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 1089.29205,
+   "protein_g": 27.422955,
+   "total_fat_g": 54.27891,
+   "saturated_fat_g": 7.8186465,
+   "trans_fat_g": 0.8145933074999999,
+   "available_carbohydrate_g": 124.153155,
+   "sugars_g": 4.733315999999999,
+   "sodium_mg": 501.42928499999994,
+   "dietary_fibre_g": 5.179545
+  },
+  "weight": 567.567
+ },
+ {
+  "month": "5",
+  "name": "洋蔥牛肉配飯（甘筍椰菜花）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 741.636,
+   "protein_g": 16.469648999999997,
+   "total_fat_g": 21.32770500000001,
+   "saturated_fat_g": 2.836701,
+   "trans_fat_g": 0.18580023,
+   "available_carbohydrate_g": 120.82628249999999,
+   "sugars_g": 5.5167966,
+   "sodium_mg": 320.6044800000001,
+   "dietary_fibre_g": 4.124925
+  },
+  "weight": 566.433
+ },
+ {
+  "month": "5",
+  "name": "蔥爆牛肉片配飯（菜心苗）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 655.1118,
+   "protein_g": 21.163275,
+   "total_fat_g": 14.574735000000004,
+   "saturated_fat_g": 2.2563765,
+   "trans_fat_g": 0.07031367,
+   "available_carbohydrate_g": 109.81656,
+   "sugars_g": 0.30618,
+   "sodium_mg": 160.53116625,
+   "dietary_fibre_g": 0.9072
+  },
+  "weight": 577.4895
+ },
+ {
+  "month": "5",
+  "name": "咖喱薯仔炆雞翼配飯（四色雜菜）",
+  "cooking": "stew",
+  "nutrients": {
+   "energy_kcal": 765.13815,
+   "protein_g": 43.74972,
+   "total_fat_g": 15.524460000000003,
+   "saturated_fat_g": 3.7169685000000006,
+   "trans_fat_g": 0.08561133,
+   "available_carbohydrate_g": 112.18661999999999,
+   "sugars_g": 2.648457,
+   "sodium_mg": 573.704775,
+   "dietary_fibre_g": 4.862025000000001
+  },
+  "weight": 576.7807499999999
+ },
+ {
+  "month": "5",
+  "name": "枝竹炆肉片配飯（西蘭花）",
+  "cooking": "stew",
+  "nutrients": {
+   "energy_kcal": 889.2261000000001,
+   "protein_g": 63.88956,
+   "total_fat_g": 19.961235000000002,
+   "saturated_fat_g": 0.6602715,
+   "trans_fat_g": 0.06256845,
+   "available_carbohydrate_g": 113.40567,
+   "sugars_g": 0.337932,
+   "sodium_mg": 119.80709999999999,
+   "dietary_fibre_g": 4.096575
+  },
+  "weight": 597.3344999999999
+ },
+ {
+  "month": "5",
+  "name": "鮮茄汁火腿螺絲粉（焗南瓜）",
+  "cooking": "roast",
+  "nutrients": {
+   "energy_kcal": 950.4054,
+   "protein_g": 44.28553500000001,
+   "total_fat_g": 66.32766,
+   "saturated_fat_g": 4.939987499999999,
+   "trans_fat_g": 0.67872735,
+   "available_carbohydrate_g": 45.7002,
+   "sugars_g": 9.074835,
+   "sodium_mg": 1147.10904,
+   "dietary_fibre_g": 4.947075
+  },
+  "weight": 528.7275000000001
+ },
+ {
+  "month": "5",
+  "name": "香草牛肉醬長通粉（西蘭花）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 2240.0469000000003,
+   "protein_g": 69.51419999999999,
+   "total_fat_g": 151.975845,
+   "saturated_fat_g": 22.726210499999997,
+   "trans_fat_g": 3.2746872375,
+   "available_carbohydrate_g": 155.65850999999998,
+   "sugars_g": 3.6883350000000004,
+   "sodium_mg": 210.1542975,
+   "dietary_fibre_g": 5.02362
+  },
+  "weight": 878.14125
+ },
+ {
+  "month": "5",
+  "name": "芝士汁雞肉意粉（焗鮮茄）",
+  "cooking": "roast",
+  "nutrients": {
+   "energy_kcal": 1068.5682000000002,
+   "protein_g": 46.051739999999995,
+   "total_fat_g": 43.68168,
+   "saturated_fat_g": 8.229438,
+   "trans_fat_g": 0.648134865,
+   "available_carbohydrate_g": 124.181505,
+   "sugars_g": 1.5252300000000003,
+   "sodium_mg": 607.0528800000001,
+   "dietary_fibre_g": 7.796250000000001
+  },
+  "weight": 653.4675
+ },
+ {
+  "month": "5",
+  "name": "墨西哥豬肉醬長通粉（翠玉瓜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 1148.7136500000001,
+   "protein_g": 34.10505,
+   "total_fat_g": 55.8495,
+   "saturated_fat_g": 5.265161999999999,
+   "trans_fat_g": 0.70594335,
+   "available_carbohydrate_g": 129.32136,
+   "sugars_g": 26.41086,
+   "sodium_mg": 1048.9131449999998,
+   "dietary_fibre_g": 3.4331850000000004
+  },
+  "weight": 644.9625000000001
+ },
+ {
+  "month": "5",
+  "name": "芝士肉醬意粉（烤薯角）",
+  "cooking": "roast",
+  "nutrients": {
+   "energy_kcal": 4695.6672,
+   "protein_g": 30.53862,
+   "total_fat_g": 463.09214699999995,
+   "saturated_fat_g": 66.8657997,
+   "trans_fat_g": 9.953585775,
+   "available_carbohydrate_g": 122.91426,
+   "sugars_g": 18.937800000000003,
+   "sodium_mg": 586.2553200000001,
+   "dietary_fibre_g": 3.308445
+  },
+  "weight": 983.7449999999999
+ },
+ {
+  "month": "5",
+  "name": "茄汁豬扒長通粉（四色雜菜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 1182.180825,
+   "protein_g": 39.767962499999996,
+   "total_fat_g": 62.16446249999999,
+   "saturated_fat_g": 4.6973115,
+   "trans_fat_g": 0.67475835,
+   "available_carbohydrate_g": 117.5036625,
+   "sugars_g": 6.592792500000001,
+   "sodium_mg": 349.19332875,
+   "dietary_fibre_g": 3.0065175000000006
+  },
+  "weight": 588.97125
+ },
+ {
+  "month": "5",
+  "name": "日式咖喱鮮茄雞塊螺絲粉（翠玉瓜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 480.3624,
+   "protein_g": 48.38777999999999,
+   "total_fat_g": 15.56982,
+   "saturated_fat_g": 3.3379290000000004,
+   "trans_fat_g": 0.08560849499999999,
+   "available_carbohydrate_g": 36.897525,
+   "sugars_g": 3.200715,
+   "sodium_mg": 466.08037874999997,
+   "dietary_fibre_g": 2.6337150000000005
+  },
+  "weight": 403.27874999999995
+ },
+ {
+  "month": "5",
+  "name": "茄汁免治肉碎貝殼粉（甘筍椰菜花）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 961.9438499999999,
+   "protein_g": 36.4878675,
+   "total_fat_g": 41.753879999999995,
+   "saturated_fat_g": 3.0467745,
+   "trans_fat_g": 0.3978639,
+   "available_carbohydrate_g": 111.1390875,
+   "sugars_g": 21.017556,
+   "sodium_mg": 748.4407087499999,
+   "dietary_fibre_g": 4.402755000000001
+  },
+  "weight": 623.6999999999999
+ },
+ {
+  "month": "5",
+  "name": "日式咖喱豬肉長通粉（四色雜菜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 1057.866075,
+   "protein_g": 46.90365750000001,
+   "total_fat_g": 38.0953125,
+   "saturated_fat_g": 0.8944425,
+   "trans_fat_g": 0.06891885,
+   "available_carbohydrate_g": 132.2399925,
+   "sugars_g": 3.7124325000000002,
+   "sodium_mg": 297.77918625,
+   "dietary_fibre_g": 3.5366625000000007
+  },
+  "weight": 654.885
+ },
+ {
+  "month": "5",
+  "name": "日式咖喱鮮茄雞塊意粉（西蘭花）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 709.6855500000001,
+   "protein_g": 35.304255,
+   "total_fat_g": 13.882995000000001,
+   "saturated_fat_g": 3.193344,
+   "trans_fat_g": 0.083227095,
+   "available_carbohydrate_g": 111.055455,
+   "sugars_g": 2.234547,
+   "sodium_mg": 471.73620374999996,
+   "dietary_fibre_g": 4.998105000000001
+  },
+  "weight": 543.6112499999999
+ },
+ {
+  "month": "5",
+  "name": "洋蔥素魚柳配小米飯（翠玉瓜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 1533.74634,
+   "protein_g": 36.349802999999994,
+   "total_fat_g": 37.49571,
+   "saturated_fat_g": 5.825613150000001,
+   "trans_fat_g": 0.3220971075,
+   "available_carbohydrate_g": 262.2491235,
+   "sugars_g": 7.6256397,
+   "sodium_mg": 754.810245,
+   "dietary_fibre_g": 6.804
+  },
+  "weight": 1031.6565
+ },
+ {
+  "month": "5",
+  "name": "椰菜炒素肉絲配南瓜飯（西蘭花）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 625.3556400000001,
+   "protein_g": 22.126608000000004,
+   "total_fat_g": 12.43431,
+   "saturated_fat_g": 0.7636356,
+   "trans_fat_g": 0.08553195,
+   "available_carbohydrate_g": 106.003485,
+   "sugars_g": 3.8043432000000004,
+   "sodium_mg": 270.07911,
+   "dietary_fibre_g": 6.3135449999999995
+  },
+  "weight": 562.4639999999999
+ },
+ {
+  "month": "5",
+  "name": "香煎新餐肉配栗米飯（白菜仔）",
+  "cooking": "pan_fry",
+  "nutrients": {
+   "energy_kcal": 920.6379,
+   "protein_g": 17.6249115,
+   "total_fat_g": 48.19499999999999,
+   "saturated_fat_g": 4.7097855,
+   "trans_fat_g": 0.6716625299999999,
+   "available_carbohydrate_g": 105.033915,
+   "sugars_g": 4.322127600000001,
+   "sodium_mg": 973.1803725000001,
+   "dietary_fibre_g": 2.6053650000000004
+  },
+  "weight": 574.9379999999999
+ },
+ {
+  "month": "5",
+  "name": "素肉碎鮮茄炒蛋配毛豆飯（翠玉瓜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 640.8234000000001,
+   "protein_g": 24.074536499999997,
+   "total_fat_g": 16.700985,
+   "saturated_fat_g": 3.5199360000000004,
+   "trans_fat_g": 0.07258167,
+   "available_carbohydrate_g": 98.70902999999998,
+   "sugars_g": 6.4455426000000005,
+   "sodium_mg": 281.4365452500001,
+   "dietary_fibre_g": 2.852010000000001
+  },
+  "weight": 581.31675
+ },
+ {
+  "month": "5",
+  "name": "茄汁香煎素魚柳配香芋飯（菜心苗）",
+  "cooking": "pan_fry",
+  "nutrients": {
+   "energy_kcal": 753.2311500000001,
+   "protein_g": 23.235376499999994,
+   "total_fat_g": 18.730845,
+   "saturated_fat_g": 2.6079165,
+   "trans_fat_g": 0.1424941875,
+   "available_carbohydrate_g": 122.91426,
+   "sugars_g": 10.527942599999998,
+   "sodium_mg": 592.30521,
+   "dietary_fibre_g": 3.7421999999999995
+  },
+  "weight": 626.67675
+ },
+ {
+  "month": "5",
+  "name": "滑蛋粟米素肉碎配糙米飯（翠玉瓜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 586.7882999999999,
+   "protein_g": 18.171783,
+   "total_fat_g": 11.984962500000002,
+   "saturated_fat_g": 2.4094665000000006,
+   "trans_fat_g": 0.06650343,
+   "available_carbohydrate_g": 101.4740055,
+   "sugars_g": 5.2530282,
+   "sodium_mg": 101.05074000000002,
+   "dietary_fibre_g": 4.63239
+  },
+  "weight": 562.3222499999999
+ },
+ {
+  "month": "5",
+  "name": "酸甜菠蘿炒素午餐肉配紫米飯（甘筍椰菜花）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 756.7749000000001,
+   "protein_g": 19.283386500000002,
+   "total_fat_g": 21.930426000000004,
+   "saturated_fat_g": 0.5695515,
+   "trans_fat_g": 0.06106022999999999,
+   "available_carbohydrate_g": 119.8714545,
+   "sugars_g": 12.519246599999999,
+   "sodium_mg": 1166.90173425,
+   "dietary_fibre_g": 3.86127
+  },
+  "weight": 584.15175
+ },
+ {
+  "month": "5",
+  "name": "粟米汁素魚柳毛豆飯（菜心苗）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 833.7564900000001,
+   "protein_g": 26.8925265,
+   "total_fat_g": 21.656565,
+   "saturated_fat_g": 3.1328450999999995,
+   "trans_fat_g": 0.1668865275,
+   "available_carbohydrate_g": 133.191135,
+   "sugars_g": 5.7708126,
+   "sodium_mg": 403.38690525,
+   "dietary_fibre_g": 5.457375
+  },
+  "weight": 638.7254999999999
+ },
+ {
+  "month": "5",
+  "name": "冬菇馬蹄蒸新肉餅配栗米飯（四色雜菜）",
+  "cooking": "steam",
+  "nutrients": {
+   "energy_kcal": 793.7716500000001,
+   "protein_g": 30.311536500000003,
+   "total_fat_g": 21.306442500000003,
+   "saturated_fat_g": 3.447147375,
+   "trans_fat_g": 0.06106022999999999,
+   "available_carbohydrate_g": 122.17148999999999,
+   "sugars_g": 3.9348666000000008,
+   "sodium_mg": 44.845447500000006,
+   "dietary_fibre_g": 10.472489999999999
+  },
+  "weight": 572.3865000000001
+ },
+ {
+  "month": "5",
+  "name": "鮮茄炒蛋大蝦配飯（牛肉丸+翠玉瓜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 869.211,
+   "protein_g": 52.33977,
+   "total_fat_g": 29.29689,
+   "saturated_fat_g": 6.185402999999999,
+   "trans_fat_g": 0.143924445,
+   "available_carbohydrate_g": 98.36032499999999,
+   "sugars_g": 6.1805835,
+   "sodium_mg": 677.4601049999999,
+   "dietary_fibre_g": 2.724435
+  },
+  "weight": 617.88825
+ },
+ {
+  "month": "5",
+  "name": "珍珠雞+牛肉球+日式煎餃（菜心苗）",
+  "cooking": "pan_fry",
+  "nutrients": {
+   "energy_kcal": 319.81635000000006,
+   "protein_g": 24.406515000000002,
+   "total_fat_g": 14.5719,
+   "saturated_fat_g": 3.7078965,
+   "trans_fat_g": 0.18813060000000004,
+   "available_carbohydrate_g": 22.481550000000002,
+   "sugars_g": 0.5942160000000001,
+   "sodium_mg": 141.60825,
+   "dietary_fibre_g": 0.28350000000000003
+  },
+  "weight": 194.19750000000005
+ },
+ {
+  "month": "5",
+  "name": "山東菜肉餃（菜心苗）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 30.079349999999998,
+   "protein_g": 0.195615,
+   "total_fat_g": 3.03345,
+   "saturated_fat_g": 0.45331649999999996,
+   "trans_fat_g": 0.06177464999999999,
+   "available_carbohydrate_g": 0.65205,
+   "sugars_g": 0.027216,
+   "sodium_mg": 5.655825,
+   "dietary_fibre_g": 0.0
+  },
+  "weight": 73.71
+ },
+ {
+  "month": "6",
+  "name": "薯仔洋蔥牛肉片配飯（翠玉瓜粟米）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 681.9875999999999,
+   "protein_g": 30.612046499999998,
+   "total_fat_g": 13.228110000000001,
+   "saturated_fat_g": 1.8543735000000001,
+   "trans_fat_g": 0.12343023,
+   "available_carbohydrate_g": 109.62944999999999,
+   "sugars_g": 4.0907916,
+   "sodium_mg": 179.76097125,
+   "dietary_fibre_g": 4.068225
+  },
+  "weight": 600.453
+ },
+ {
+  "month": "6",
+  "name": "節瓜甘筍肉絲配飯（白菜仔）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 539.5855499999999,
+   "protein_g": 28.17111149999999,
+   "total_fat_g": 6.02721,
+   "saturated_fat_g": 0.5695515,
+   "trans_fat_g": 0.06106022999999999,
+   "available_carbohydrate_g": 92.94830999999999,
+   "sugars_g": 3.9745566,
+   "sodium_mg": 85.47028875000001,
+   "dietary_fibre_g": 3.98034
+  },
+  "weight": 583.443
+ },
+ {
+  "month": "6",
+  "name": "蝦仁炒蛋配飯（甘筍椰菜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 722.17089,
+   "protein_g": 30.060638999999995,
+   "total_fat_g": 24.318630000000002,
+   "saturated_fat_g": 4.5339021,
+   "trans_fat_g": 0.09434879999999998,
+   "available_carbohydrate_g": 95.2347375,
+   "sugars_g": 3.6598716000000002,
+   "sodium_mg": 510.86912624999997,
+   "dietary_fibre_g": 2.95974
+  },
+  "weight": 507.32325
+ },
+ {
+  "month": "6",
+  "name": "青瓜雞柳配飯（四色雜菜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 579.21885,
+   "protein_g": 31.99581,
+   "total_fat_g": 8.927415000000002,
+   "saturated_fat_g": 0.6273854999999999,
+   "trans_fat_g": 0.06177464999999999,
+   "available_carbohydrate_g": 92.214045,
+   "sugars_g": 3.2449410000000007,
+   "sodium_mg": 116.84665125,
+   "dietary_fibre_g": 2.9200500000000007
+  },
+  "weight": 582.45075
+ },
+ {
+  "month": "6",
+  "name": "馬蹄蒸肉餅配飯（南瓜）",
+  "cooking": "steam",
+  "nutrients": {
+   "energy_kcal": 674.761185,
+   "protein_g": 26.271944999999995,
+   "total_fat_g": 20.4417675,
+   "saturated_fat_g": 3.4097679000000003,
+   "trans_fat_g": 0.006891884999999999,
+   "available_carbohydrate_g": 94.87327499999999,
+   "sugars_g": 6.085610999999999,
+   "sodium_mg": 487.37193749999994,
+   "dietary_fibre_g": 2.7782999999999998
+  },
+  "weight": 535.95675
+ },
+ {
+  "month": "6",
+  "name": "冬菇蒸雞配飯（甘筍粟米）",
+  "cooking": "steam",
+  "nutrients": {
+   "energy_kcal": 860.5075499999999,
+   "protein_g": 59.406574500000005,
+   "total_fat_g": 18.911718000000004,
+   "saturated_fat_g": 4.556638800000001,
+   "trans_fat_g": 0.087286815,
+   "available_carbohydrate_g": 119.750967,
+   "sugars_g": 2.5037586000000007,
+   "sodium_mg": 612.36567,
+   "dietary_fibre_g": 18.044775
+  },
+  "weight": 544.7452499999999
+ },
+ {
+  "month": "6",
+  "name": "鮮茄滑蛋肉片配飯（菜心苗）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 825.6937499999999,
+   "protein_g": 36.415575,
+   "total_fat_g": 29.132460000000002,
+   "saturated_fat_g": 5.0389289999999995,
+   "trans_fat_g": 0.37789982999999994,
+   "available_carbohydrate_g": 105.01974,
+   "sugars_g": 3.4700400000000005,
+   "sodium_mg": 250.91663625000004,
+   "dietary_fibre_g": 2.5940250000000002
+  },
+  "weight": 610.80075
+ },
+ {
+  "month": "6",
+  "name": "青瓜甘筍炒牛肉配飯 (翠玉瓜粟米)",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 516.56535,
+   "protein_g": 12.382996499999999,
+   "total_fat_g": 7.699860000000001,
+   "saturated_fat_g": 0.7128607499999999,
+   "trans_fat_g": 0.06106022999999999,
+   "available_carbohydrate_g": 99.2817,
+   "sugars_g": 5.729421599999999,
+   "sodium_mg": 78.9930225,
+   "dietary_fibre_g": 4.039875
+  },
+  "weight": 575.64675
+ },
+ {
+  "month": "6",
+  "name": "糖醋魚柳配飯（西蘭花）含微量魚骨",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 910.8855000000001,
+   "protein_g": 28.70721,
+   "total_fat_g": 20.823075,
+   "saturated_fat_g": 2.824227,
+   "trans_fat_g": 0.151374825,
+   "available_carbohydrate_g": 152.10908999999998,
+   "sugars_g": 5.938191000000001,
+   "sodium_mg": 565.8221992499999,
+   "dietary_fibre_g": 5.321294999999999
+  },
+  "weight": 576.7807499999999
+ },
+ {
+  "month": "6",
+  "name": "滑蛋肉粒配飯（四色雜菜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 648.1943999999999,
+   "protein_g": 18.09864,
+   "total_fat_g": 9.400860000000002,
+   "saturated_fat_g": 1.8934964999999997,
+   "trans_fat_g": 0.06897271499999999,
+   "available_carbohydrate_g": 123.43306499999998,
+   "sugars_g": 28.656179999999996,
+   "sodium_mg": 126.58275,
+   "dietary_fibre_g": 9.553949999999999
+  },
+  "weight": 504.48825
+ },
+ {
+  "month": "6",
+  "name": "甘筍福花炒雞柳配飯(菜心苗)",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 596.2004999999999,
+   "protein_g": 31.751999999999995,
+   "total_fat_g": 9.749565,
+   "saturated_fat_g": 0.805707,
+   "trans_fat_g": 0.06494985,
+   "available_carbohydrate_g": 95.190795,
+   "sugars_g": 3.9633299999999996,
+   "sodium_mg": 151.99356375,
+   "dietary_fibre_g": 2.849175
+  },
+  "weight": 581.742
+ },
+ {
+  "month": "6",
+  "name": "鮮茄菠蘿肉片配飯（翠玉瓜甘筍）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 791.2484999999999,
+   "protein_g": 31.896301499999993,
+   "total_fat_g": 20.8244925,
+   "saturated_fat_g": 2.6566785,
+   "trans_fat_g": 0.36596448,
+   "available_carbohydrate_g": 119.010465,
+   "sugars_g": 12.5348391,
+   "sodium_mg": 154.95613875000004,
+   "dietary_fibre_g": 6.591375
+  },
+  "weight": 622.4242499999999
+ },
+ {
+  "month": "6",
+  "name": "檸檬雞扒配飯（合掌瓜薯仔）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 832.9513499999999,
+   "protein_g": 55.928596500000005,
+   "total_fat_g": 19.516140000000004,
+   "saturated_fat_g": 4.789448999999999,
+   "trans_fat_g": 0.08967105,
+   "available_carbohydrate_g": 108.095715,
+   "sugars_g": 0.5413716,
+   "sodium_mg": 719.862633,
+   "dietary_fibre_g": 4.1674500000000005
+  },
+  "weight": 589.113
+ },
+ {
+  "month": "6",
+  "name": "墨西哥肉醬長通粉（翠玉瓜粟米）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 1248.0237,
+   "protein_g": 40.200016500000004,
+   "total_fat_g": 64.941345,
+   "saturated_fat_g": 5.195421,
+   "trans_fat_g": 0.7020537299999999,
+   "available_carbohydrate_g": 127.43608499999999,
+   "sugars_g": 27.899121599999997,
+   "sodium_mg": 1071.17285625,
+   "dietary_fibre_g": 5.576445000000001
+  },
+  "weight": 644.5372500000001
+ },
+ {
+  "month": "6",
+  "name": "BBQ汁燴雞翼鎚螺絲粉（甘筍椰菜）",
+  "cooking": "braise",
+  "nutrients": {
+   "energy_kcal": 843.32745,
+   "protein_g": 64.37831400000002,
+   "total_fat_g": 44.11827,
+   "saturated_fat_g": 7.823466,
+   "trans_fat_g": 0.7327567799999999,
+   "available_carbohydrate_g": 48.62733750000001,
+   "sugars_g": 4.8902616000000005,
+   "sodium_mg": 200.93062500000002,
+   "dietary_fibre_g": 2.9824200000000003
+  },
+  "weight": 395.76599999999996
+ },
+ {
+  "month": "6",
+  "name": "鮮茄汁海鮮意粉（四色雜菜）#★▲※含微量魚骨",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 919.1070000000001,
+   "protein_g": 16.6797225,
+   "total_fat_g": 41.79357,
+   "saturated_fat_g": 5.911542,
+   "trans_fat_g": 0.7016384025,
+   "available_carbohydrate_g": 120.535695,
+   "sugars_g": 6.290865,
+   "sodium_mg": 364.66605,
+   "dietary_fibre_g": 5.088825
+  },
+  "weight": 549.99
+ },
+ {
+  "month": "6",
+  "name": "葡國雞皇長通粉（四色雜菜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 954.2099699999999,
+   "protein_g": 42.3950436,
+   "total_fat_g": 38.047004099999995,
+   "saturated_fat_g": 4.739553,
+   "trans_fat_g": 0.67475835,
+   "available_carbohydrate_g": 111.92579999999998,
+   "sugars_g": 5.406344999999999,
+   "sodium_mg": 174.61686375,
+   "dietary_fibre_g": 5.6274750000000004
+  },
+  "weight": 610.0920000000001
+ },
+ {
+  "month": "6",
+  "name": "洋蔥汁雞柳螺絲粉（烤西蘭花）",
+  "cooking": "roast",
+  "nutrients": {
+   "energy_kcal": 804.14775,
+   "protein_g": 51.387209999999996,
+   "total_fat_g": 49.04550000000001,
+   "saturated_fat_g": 6.2367165,
+   "trans_fat_g": 0.7651381499999999,
+   "available_carbohydrate_g": 40.455450000000006,
+   "sugars_g": 4.424301000000001,
+   "sodium_mg": 295.25958,
+   "dietary_fibre_g": 5.202225
+  },
+  "weight": 413.20124999999996
+ },
+ {
+  "month": "6",
+  "name": "鮮茄香草牛肉醬貝殼粉（焗南瓜）",
+  "cooking": "roast",
+  "nutrients": {
+   "energy_kcal": 1532.8306350000003,
+   "protein_g": 63.10143000000001,
+   "total_fat_g": 65.531025,
+   "saturated_fat_g": 10.211074649999999,
+   "trans_fat_g": 1.3970057850000002,
+   "available_carbohydrate_g": 175.580055,
+   "sugars_g": 14.063301,
+   "sodium_mg": 237.43692000000001,
+   "dietary_fibre_g": 7.952175000000001
+  },
+  "weight": 878.42475
+ },
+ {
+  "month": "6",
+  "name": "日式甜咖喱薯仔雞球意粉（烤西蘭花）",
+  "cooking": "roast",
+  "nutrients": {
+   "energy_kcal": 631.26945,
+   "protein_g": 34.626689999999996,
+   "total_fat_g": 13.191255000000002,
+   "saturated_fat_g": 3.0087855,
+   "trans_fat_g": 0.080051895,
+   "available_carbohydrate_g": 93.56634,
+   "sugars_g": 0.5806080000000001,
+   "sodium_mg": 375.71687999999995,
+   "dietary_fibre_g": 4.6494
+  },
+  "weight": 486.91125
+ },
+ {
+  "month": "6",
+  "name": "拿坡里豬柳螺絲粉（烤椰菜花）",
+  "cooking": "roast",
+  "nutrients": {
+   "energy_kcal": 794.0992500000001,
+   "protein_g": 37.757146500000005,
+   "total_fat_g": 56.805119999999995,
+   "saturated_fat_g": 4.672341,
+   "trans_fat_g": 0.6807687299999999,
+   "available_carbohydrate_g": 34.37703,
+   "sugars_g": 6.0018066,
+   "sodium_mg": 200.76714000000004,
+   "dietary_fibre_g": 3.0035250000000002
+  },
+  "weight": 413.7322499999999
+ },
+ {
+  "month": "6",
+  "name": "鮮茄肉醬意粉（四色雜菜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 1041.3522,
+   "protein_g": 39.219390000000004,
+   "total_fat_g": 39.77504999999999,
+   "saturated_fat_g": 6.3501164999999995,
+   "trans_fat_g": 0.810427275,
+   "available_carbohydrate_g": 133.21098,
+   "sugars_g": 27.791504999999997,
+   "sodium_mg": 994.3209674999999,
+   "dietary_fibre_g": 8.198820000000003
+  },
+  "weight": 674.73
+ },
+ {
+  "month": "6",
+  "name": "燒汁牛肉醬意粉（西蘭花）",
+  "cooking": "roast",
+  "nutrients": {
+   "energy_kcal": 1002.08745,
+   "protein_g": 36.353205,
+   "total_fat_g": 38.796974999999996,
+   "saturated_fat_g": 6.1573364999999995,
+   "trans_fat_g": 0.807252075,
+   "available_carbohydrate_g": 128.377305,
+   "sugars_g": 25.655616,
+   "sodium_mg": 798.5401200000001,
+   "dietary_fibre_g": 6.171795000000001
+  },
+  "weight": 578.3399999999999
+ },
+ {
+  "month": "6",
+  "name": "甜咖喱香茅豬柳配飯（蝦棗+四色雜菜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 904.1382000000001,
+   "protein_g": 48.492675,
+   "total_fat_g": 28.469070000000002,
+   "saturated_fat_g": 5.5495125,
+   "trans_fat_g": 0.145597095,
+   "available_carbohydrate_g": 112.86135,
+   "sugars_g": 5.466447,
+   "sodium_mg": 846.3538125,
+   "dietary_fibre_g": 6.392925
+  },
+  "weight": 644.1120000000001
+ },
+ {
+  "month": "6",
+  "name": "山東菜肉餃x8（四色雜菜）",
+  "cooking": "stir_fry",
+  "nutrients": {
+   "energy_kcal": 396.3749,
+   "protein_g": 15.841160000000002,
+   "total_fat_g": 22.666674999999998,
+   "saturated_fat_g": 5.8460965,
+   "trans_fat_g": 0.16494985,
+   "available_carbohydrate_g": 33.485724999999995,
+   "sugars_g": 4.763105,
+   "sodium_mg": 564.7103999999999,
+   "dietary_fibre_g": 4.827025
+  },
+  "weight": 306.3125
+ }
+]
