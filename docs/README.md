@@ -33,6 +33,8 @@ python -m web_app.app
 
 ## ECS 部署
 
+本项目以阿里云 ECS 上的网页服务为唯一运行交付方式；不发布 Windows/macOS 桌面程序或 EXE。GitHub Actions 中原有的双平台打包发布流程已移除。
+
 ```powershell
 gunicorn --workers 1 --threads 4 --bind 0.0.0.0:8300 wsgi:app
 ```
