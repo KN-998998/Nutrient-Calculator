@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nutrition-tool"
+version = "0.1.0"
+description = "Auditable nutrition calculation tool for school menus"
+requires-python = ">=3.11"
+dependencies = [
+    "Flask>=3.0",
+    "gunicorn>=23; platform_system != 'Windows'",
+    "openpyxl>=3.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["nutrition_tool*", "web_app*"]
+
+[tool.setuptools.package-data]
+web_app = ["templates/*.html"]

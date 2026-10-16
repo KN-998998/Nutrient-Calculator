@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>营养素计算工具</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Microsoft JhengHei", "PingFang TC", sans-serif; background: #f0f4f8; color: #1a2b3c; overflow-x: hidden; }
+  .header { background: linear-gradient(135deg, #1e88e5, #1565c0); color: #fff; padding: 20px 32px; }
+  .header h1 { font-size: 22px; }
+  .header p { font-size: 13px; opacity: .85; margin-top: 4px; }
+  .container { width: calc(100% - 32px); max-width: 1800px; margin: 24px auto; padding: 0 16px; }
+  .card { width: 100%; background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,.06); margin-bottom: 20px; }
+  .card h2 { font-size: 16px; margin-bottom: 14px; color: #1565c0; }
+  .dropzone { border: 2px dashed #b0bec5; border-radius: 10px; padding: 36px; text-align: center; color: #607d8b; cursor: pointer; transition: all .2s; }
+  .dropzone:hover, .dropzone.dragover { border-color: #1e88e5; background: #e3f2fd; }
+  .dropzone .big { font-size: 15px; font-weight: bold; }
+  .file-list { margin-top: 12px; font-size: 13px; color: #455a64; }
+  .file-list span { display: inline-block; background: #e3f2fd; padding: 3px 10px; border-radius: 20px; margin: 3px 4px 0 0; }
+  .btn { background: #1e88e5; color: #fff; border: none; padding: 10px 28px; border-radius: 8px; font-size: 15px; cursor: pointer; }
+  .btn:hover { background: #1565c0; }
+  .btn:disabled { background: #90a4ae; cursor: not-allowed; }
+  .btn.green { background: #43a047; } .btn.green:hover { background: #2e7d32; }
+  .result-bar { background: #e8f5e9; border-radius: 8px; padding: 14px 18px; margin-top: 16px; font-size: 14px; }
+  .result-bar .num { font-size: 20px; font-weight: bold; color: #2e7d32; }
+  .warn { background: #fff3e0; color: #e65100; border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-size: 13px; }
+  table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+  th, td { border: 1px solid #e0e0e0; padding: 6px 8px; text-align: left; white-space: normal; overflow-wrap: anywhere; word-break: break-word; }
+  th:nth-child(1), td:nth-child(1) { width: 4%; }
+  th:nth-child(2), td:nth-child(2) { width: 5%; }
+  th:nth-child(3), td:nth-child(3) { width: 16%; }
+  th:nth-child(4), td:nth-child(4) { width: 6%; }
+  th:nth-child(n+5):nth-child(-n+12), td:nth-child(n+5):nth-child(-n+12) { width: 6%; }
+  th:nth-child(13), td:nth-child(13) { width: 8%; }
+  th:nth-child(14), td:nth-child(14) { width: 12%; }
+  th:nth-child(15), td:nth-child(15) { width: 7%; }
+  th { background: #f5f7fa; position: sticky; top: 0; }
+  .table-wrap { max-height: 520px; overflow-y: auto; overflow-x: hidden; border-radius: 8px; border: 1px solid #e0e0e0; }
+  .status-incomplete { color: #e65100; font-weight: bold; }
+  .status-passed { color: #2e7d32; }
+  .status-review { color: #f9a825; }
+  .editable-cell { background: #fffdf0; cursor: text; min-width: 0; }
+  .editable-cell:focus { outline: 2px solid #1e88e5; outline-offset: -2px; background: #fff; }
+  .edited-cell { background: #e8f5e9; }
+  .invalid-cell { background: #ffebee; color: #c62828; }
+  .source-cell { font-size: 12px; }
+  .edit-hint { color: #607d8b; font-size: 12px; margin-top: 8px; }
+  .footer { text-align: center; color: #90a4ae; font-size: 12px; padding: 16px; }
+  .error-box { background: #ffebee; color: #c62828; padding: 12px 16px; border-radius: 8px; margin-top: 12px; font-size: 14px; }
+  @media (max-width: 900px) {
+    .container { width: 100%; padding: 0 10px; }
+    .card { padding: 16px; }
+    table { font-size: 11px; }
+    th, td { padding: 5px 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🥗 营养素计算工具</h1>
+  <p>上传 SOP Excel → 自动计算每道菜营养 → 按小学和中学导出结果</p>
+</div>
+<div class="container">
+  <div class="card">
+    <h2>① 选择 SOP 文件(可多选)</h2>
+    <div class="dropzone" id="dropzone">
+      <div class="big">点击或拖拽 SOP Excel 到此处</div>
+      <div style="margin-top:8px;font-size:12px;">支持 .xlsx,自动识别「X月A餐配料sop」等工作表</div>
+    </div>
+    <input type="file" id="fileInput" multiple accept=".xlsx,.xlsm" style="display:none;">
+    <div class="file-list" id="fileList"></div>
+    <div style="margin-top:16px;text-align:center;">
+      <button class="btn" id="calcBtn" disabled>开始计算营养素</button>
+    </div>
+    <div id="errorBox" class="error-box" style="display:none;"></div>
+  </div>
+
+  <div class="card" id="resultCard" style="display:none;">
+    <h2>② 计算结果</h2>
+    <div class="result-bar" id="resultBar"></div>
+    <div class="warn" id="incompleteWarn" style="display:none;"></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>SET</th><th>學段</th><th>餐名</th><th>烹調</th><th>能量(kcal)</th><th>蛋白質(g)</th><th>總脂肪(g)</th><th>飽和脂肪(g)</th><th>反式脂肪(g)</th><th>碳水(g)</th><th>糖(g)</th><th>鈉(mg)</th><th>狀態</th></tr></thead>
+        <tbody id="previewBody"></tbody>
+      </table>
+    </div>
+    <div style="margin-top:16px;text-align:center;">
+      <button id="exportBtn" class="btn green" disabled>导出圣类斯上架 Excel</button>
+    </div>
+    <div class="warn" id="exportNotice" style="display:none;"></div>
+    <div class="edit-hint">营养素数值可直接点击编辑；红色单元格表示无效值，绿色表示已修改。上架文件使用圣类斯 15 列模板，小学/中学作为独立商品并标注在商品名称中。八项数值不完整的菜品会从上架文件排除，并保留在本页复核表中。</div>
+  </div>
+</div>
+<div class="footer">营养素计算工具 · 香港 CFS/FRL 优先 · 未命中时使用已标记后备资料 · 计算口径:每100g可食部 × SOP克重</div>
+
+<script>
+const dropzone = document.getElementById('dropzone');
+const fileInput = document.getElementById('fileInput');
+const fileList = document.getElementById('fileList');
+const calcBtn = document.getElementById('calcBtn');
+const errorBox = document.getElementById('errorBox');
+const resultCard = document.getElementById('resultCard');
+const resultBar = document.getElementById('resultBar');
+const previewBody = document.getElementById('previewBody');
+const exportBtn = document.getElementById('exportBtn');
+const exportNotice = document.getElementById('exportNotice');
+const incompleteWarn = document.getElementById('incompleteWarn');
+const headerRow = document.querySelector('table thead tr');
+headerRow.insertAdjacentHTML('beforeend', '<th>數據來源</th><th>計算標準</th>');
+
+const nutrientFields = [
+  'energy_kcal',
+  'protein_g',
+  'total_fat_g',
+  'saturated_fat_g',
+  'trans_fat_g',
+  'available_carbohydrate_g',
+  'sugars_g',
+  'sodium_mg'
+];
+const nutrientStartColumn = 4;
+let currentBatchId = '';
+let currentRows = [];
+let editedCells = new Map();
+
+let selectedFiles = [];
+
+dropzone.addEventListener('click', () => fileInput.click());
+dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('dragover'); });
+dropzone.addEventListener('dragleave', () => dropzone.classList.remove('dragover'));
+dropzone.addEventListener('drop', e => {
+  e.preventDefault(); dropzone.classList.remove('dragover');
+  addFiles(e.dataTransfer.files);
+});
+fileInput.addEventListener('change', () => addFiles(fileInput.files));
+
+function addFiles(files) {
+  for (const f of files) {
+    if (!f.name.toLowerCase().endsWith('.xlsx') && !f.name.toLowerCase().endsWith('.xlsm')) {
+      showError(f.name + ' 不是 Excel 文件');
+      continue;
+    }
+    if (!selectedFiles.some(x => x.name === f.name && x.size === f.size)) selectedFiles.push(f);
+  }
+  renderFileList();
+}
+
+function renderFileList() {
+  fileList.innerHTML = '';
+  selectedFiles.forEach((f, i) => {
+    const span = document.createElement('span');
+    span.textContent = f.name + ' (' + (f.size/1024/1024).toFixed(1) + 'MB)';
+    const del = document.createElement('a');
+    del.textContent = ' ✕';
+    del.style.cursor = 'pointer'; del.style.color = '#c62828';
+    del.onclick = () => { selectedFiles.splice(i, 1); renderFileList(); };
+    span.appendChild(del);
+    fileList.appendChild(span);
+  });
+  calcBtn.disabled = selectedFiles.length === 0;
+}
+
+function showError(msg) {
+  errorBox.textContent = msg;
+  errorBox.style.display = 'block';
+}
+
+async function readApiResponse(resp) {
+  const text = await resp.text();
+  let data;
+  try {
+    data = text ? JSON.parse(text) : {};
+  } catch (error) {
+    throw new Error('服务器返回了非 JSON 错误页（HTTP ' + resp.status + '），请重启工具后重试；仍失败时查看本机临时目录的 nutrition_tool_error.log');
+  }
+  if (!resp.ok) throw new Error(data.error || '请求失败（HTTP ' + resp.status + '）');
+  return data;
+}
+
+function validateEditableCell(td) {
+  const key = td.dataset.rowIndex + ':' + td.dataset.field;
+  const text = td.textContent.trim();
+  const systemText = td.dataset.systemValue || '';
+  const intentionalBlank = text === '' && systemText === '';
+  if (intentionalBlank) {
+    td.classList.remove('edited-cell', 'invalid-cell');
+    editedCells.delete(key);
+    return true;
+  }
+  const number = Number(text);
+  const valid = text !== '' && Number.isFinite(number) && number >= 0;
+  td.classList.toggle('invalid-cell', !valid);
+  if (!valid) {
+    td.classList.remove('edited-cell');
+    editedCells.delete(key);
+    return false;
+  }
+  const unchanged = systemText !== '' && Number(systemText) === number;
+  td.classList.toggle('edited-cell', !unchanged);
+  if (unchanged) {
+    editedCells.delete(key);
+  } else {
+    editedCells.set(key, {
+      row_index: Number(td.dataset.rowIndex),
+      field: td.dataset.field,
+      value: number,
+    });
+  }
+  return true;
+}
+
+function setupEditableCells(rows) {
+  editedCells = new Map();
+  previewBody.querySelectorAll('tr').forEach((tr, rowIndex) => {
+    nutrientFields.forEach((field, nutrientIndex) => {
+      const td = tr.children[nutrientStartColumn + nutrientIndex];
+      if (!td) return;
+      const row = rows[rowIndex] || {};
+      const systemValue = row.nutrients ? row.nutrients[field] : '';
+      td.contentEditable = 'true';
+      td.classList.add('editable-cell');
+      td.dataset.rowIndex = String(row.row_index ?? rowIndex);
+      td.dataset.field = field;
+      td.dataset.systemValue = systemValue == null ? '' : String(systemValue);
+      td.addEventListener('input', () => validateEditableCell(td));
+      td.addEventListener('blur', () => validateEditableCell(td));
+    });
+  });
+  exportBtn.disabled = !currentBatchId;
+}
+
+function collectEdits() {
+  const grouped = new Map();
+  editedCells.forEach(item => {
+    if (!grouped.has(item.row_index)) grouped.set(item.row_index, {});
+    grouped.get(item.row_index)[item.field] = item.value;
+  });
+  return Array.from(grouped, ([row_index, values]) => ({ row_index, values }));
+}
+
+async function recalculateRow(rowIndex, standard, button) {
+  button.disabled = true;
+  errorBox.style.display = 'none';
+  try {
+    const resp = await fetch('/api/recalculate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        batch_id: currentBatchId,
+        row_index: rowIndex,
+        calculation_standard: standard,
+        edits: collectEdits(),
+      }),
+    });
+    const data = await readApiResponse(resp);
+    if (!resp.ok) throw new Error(data.error || '重新計算失敗');
+    const tr = previewBody.children[rowIndex];
+    if (!tr) throw new Error('找不到要更新的菜品行');
+    data.nutrients.forEach((value, nutrientIndex) => {
+      const td = tr.children[nutrientStartColumn + nutrientIndex];
+      // Incomplete calculations deliberately return null; keep the cell blank
+      // instead of exposing the JavaScript literal "null" to the user.
+      td.textContent = value == null ? '' : String(value);
+      td.dataset.systemValue = value == null ? '' : String(value);
+      td.classList.remove('edited-cell', 'invalid-cell');
+    });
+    const statusCell = tr.children[nutrientStartColumn + nutrientFields.length];
+    const unmatched = data.unmatched_ingredients || [];
+    statusCell.textContent = data.status === 'incomplete' && unmatched.length
+      ? data.status + '（未匹配 ' + unmatched.length + ' 项）'
+      : data.status;
+    statusCell.className = 'status-' + data.status;
+    const sourceCell = tr.children[nutrientStartColumn + nutrientFields.length + 1];
+    sourceCell.textContent = data.source_summary || '來源待確認';
+    const standardCell = tr.children[nutrientStartColumn + nutrientFields.length + 2];
+    standardCell.textContent = data.standard_label;
+    const row = currentRows[rowIndex] || {};
+    row.calculation_standard = data.standard;
+    row.calculation_standard_label = data.standard_label;
+    row.status = data.status;
+    row.nutrients = Object.fromEntries(
+      nutrientFields.map((field, index) => [field, data.nutrients[index]])
+    );
+    currentRows[rowIndex] = row;
+    editedCells = new Map(
+      Array.from(editedCells).filter(([key, item]) => item.row_index !== rowIndex)
+    );
+    const warningParts = [];
+    if (unmatched.length) warningParts.push('未匹配食材：' + unmatched.join('、'));
+    if (data.warnings && data.warnings.length) warningParts.push(...data.warnings);
+    if (warningParts.length) statusCell.title = warningParts.join('; ');
+  } catch (e) {
+    showError(e.message);
+  } finally {
+    button.disabled = false;
+  }
+}
+
+calcBtn.addEventListener('click', async () => {
+  calcBtn.disabled = true;
+  errorBox.style.display = 'none';
+  resultCard.style.display = 'none';
+  currentBatchId = '';
+  currentRows = [];
+  editedCells = new Map();
+  exportBtn.disabled = true;
+  const fd = new FormData();
+  selectedFiles.forEach(f => fd.append('sop_files', f));
+  try {
+    const resp = await fetch('/api/process', { method: 'POST', body: fd });
+    const data = await readApiResponse(resp);
+    currentBatchId = data.batch_id || '';
+    currentRows = data.preview || [];
+    if (!resp.ok) throw new Error(data.error || '处理失败');
+    resultCard.style.display = 'block';
+    resultBar.innerHTML = '共 <span class="num">' + data.total + '</span> 道菜完成计算'
+      + (data.incomplete ? '，<b style="color:#e65100">' + data.incomplete + ' 道存在未匹配食材或克重解析问题</b>' : '，全部菜品均已生成暂算结果')
+      + (data.history_reused ? '，复用 ' + data.history_reused + ' 道已确认历史数据' : '');
+    const incompleteMessages = [];
+    if (data.incomplete) incompleteMessages.push('有 ' + data.incomplete + ' 道菜存在未匹配食材或SOP克重解析问题，不能形成完整暂算结果；请先复核。');
+    if (data.review) incompleteMessages.push(data.review + ' 道菜使用估算克重、营养缺项暂按0或非香港来源，暂算值已计入，请查看行内提示并在营养师确认后更新。');
+    if (data.sheet_errors && data.sheet_errors.length) {
+      incompleteMessages.push('部分食材克重异常已跳过: ' + data.sheet_errors.join('; ').slice(0, 300));
+    }
+    incompleteWarn.style.display = incompleteMessages.length ? 'block' : 'none';
+    incompleteWarn.textContent = incompleteMessages.join(' ');
+    previewBody.textContent = '';
+    data.preview.forEach(r => {
+      const tr = document.createElement('tr');
+      [r['SET'], r['學段'], r['餐名'], r['烹調方式'], r['能量(kcal)'], r['蛋白質(g)'], r['總脂肪(g)'], r['飽和脂肪(g)'], r['反式脂肪(g)'], r['碳水化合物(g)'], r['糖(g)'], r['鈉(mg)']].forEach(v => {
+        const td = document.createElement('td');
+        td.textContent = v == null ? '' : String(v);
+        tr.appendChild(td);
+      });
+      const tdStatus = document.createElement('td');
+      tdStatus.textContent = r.history_confirmed
+        ? '历史确认 v' + (r.history_revision || '')
+        : r.status;
+      tdStatus.className = 'status-' + r.status;
+      if (r.warnings && r.warnings.length) {
+        tdStatus.title = r.warnings.join('; ');
+        tdStatus.textContent += ' ⚠';
+      }
+      if (r.unmatched_ingredients && r.unmatched_ingredients.length) {
+        tdStatus.textContent = r.status + '（未匹配 ' + r.unmatched_ingredients.length + ' 项）';
+        tdStatus.title = '未匹配食材：' + r.unmatched_ingredients.join('、')
+          + (tdStatus.title ? '; ' + tdStatus.title : '');
+      }
+      tr.appendChild(tdStatus);
+      const tdSource = document.createElement('td');
+      tdSource.className = 'source-cell';
+      tdSource.textContent = r.source_summary || '來源待確認';
+      if (r.fallback_sources && r.fallback_sources.length) {
+        tdSource.classList.add('status-review');
+        tdSource.title = r.fallback_sources.map(item =>
+          item.ingredient_name + ' → ' + item.matched_name + '（' + item.source_label + '）'
+        ).join('; ');
+      }
+      tr.appendChild(tdSource);
+      const tdStandard = document.createElement('td');
+      tdStandard.textContent = '香港標準';
+      tr.appendChild(tdStandard);
+      previewBody.appendChild(tr);
+    });
+    setupEditableCells(currentRows);
+    if (data.review) {
+      const warnRow = document.createElement('div');
+      warnRow.className = 'warn';
+      warnRow.textContent = data.review + ' 道菜有复核提示(包括估算克重、暂按0的缺项、替代来源或营养组成校验)，请查看行内 ⚠ 提示，取得营养师资料或1+7标签后更新。';
+      resultBar.parentNode.insertBefore(warnRow, resultBar.nextSibling);
+    }
+  } catch (e) {
+    showError(e.message);
+  } finally {
+    calcBtn.disabled = selectedFiles.length === 0;
+  }
+});
+exportBtn.addEventListener('click', async () => {
+  let valid = true;
+  previewBody.querySelectorAll('.editable-cell').forEach(td => {
+    if (!validateEditableCell(td)) valid = false;
+  });
+  if (!valid) {
+    showError('请先修正红色营养素单元格中的数值');
+    return;
+  }
+  const edits = collectEdits();
+  exportBtn.disabled = true;
+  errorBox.style.display = 'none';
+  exportNotice.style.display = 'none';
+  try {
+    const resp = await fetch('/api/export-edited', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ batch_id: currentBatchId, edits }),
+    });
+    const data = await readApiResponse(resp);
+    if (!resp.ok) throw new Error(data.error || '导出失败');
+    const link = document.createElement('a');
+    link.href = data.download + '&name=' + encodeURIComponent(data.download_name);
+    link.download = data.download_name || 'nutrition_results.xlsx';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    if (data.history_warning) {
+      exportNotice.textContent = data.history_warning;
+      exportNotice.style.display = 'block';
+    }
+  } catch (e) {
+    showError(e.message);
+  } finally {
+    exportBtn.disabled = !currentBatchId;
+  }
+});
+</script>
+</body>
+</html>

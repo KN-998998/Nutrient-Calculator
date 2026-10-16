@@ -1,4 +1,7 @@
-"""把 SOP 菜谱计算结果导出为 TT 菜單系統「菜式管理」格式。
+"""把 SOP 菜谱计算结果转换并导出为不同的展示格式。
+
+营养师最终结果使用“小學/中學”两个工作表，每行只含菜品名称和 8 项营养。
+旧的菜式管理和商品上架转换函数暂时保留，供既有调用方兼容使用。
 
 字段对齐系统菜式管理列表:
   菜式編號 | SET | 餐名 | 主菜 | 主食材類別 | 具體主食材 | 主食/穀物 | 配菜(蔬菜) |
@@ -18,13 +21,14 @@
 from __future__ import annotations
 
 import re
+from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 from typing import Iterable
 
 from .models import RecipeResult
 
 # ---- 菜式管理表头(与系统一致) ----
 DISH_HEADERS = [
-    "菜式編號", "SET", "餐名", "主菜", "主食材類別", "具體主食材", "主食/穀物",
+    "菜式編號", "SET", "學段", "餐名", "主菜", "主食材類別", "具體主食材", "主食/穀物",
     "配菜(蔬菜)", "小食", "醬汁/風味", "烹調方式",
     "能量(kcal)", "蛋白質(g)", "總脂肪(g)", "飽和脂肪(g)", "反式脂肪(g)",
     "碳水化合物(g)", "糖(g)", "鈉(mg)",
@@ -32,6 +36,13 @@ DISH_HEADERS = [
 ]
 
 # 8 项营养 -> 菜式管理列名
+CALCULATION_STANDARD_COL = "計算標準"
+CALCULATION_STANDARD_LABELS = {
+    "hong_kong": "香港標準",
+    "mainland": "內地標準",
+}
+DISH_HEADERS.insert(-2, CALCULATION_STANDARD_COL)
+
 NUTRIENT_TO_DISH_COL = {
     "energy_kcal": "能量(kcal)",
     "protein_g": "蛋白質(g)",
@@ -42,6 +53,37 @@ NUTRIENT_TO_DISH_COL = {
     "sugars_g": "糖(g)",
     "sodium_mg": "鈉(mg)",
 }
+
+# 商品上架模板固定列名。工具只自动填写「商品名称」和 E 列「商品详情」；
+# 分类、图片、规格、库存、上架状态、过敏源等业务字段留给营养师团队。
+STORE_UPLOAD_HEADERS = [
+    "商品名称",
+    "所属分类（请填写已设置的商品分类名称）",
+    "商品图片路径（多图用，符合隔开）",
+    "商品规格（格式：规格名称-属性名称-价格）（多规格用；符合隔开  例“份量-均量-10；味道-均量-10）（多属性用，符合隔开  例“份量-大份-15，中份-10，小份-5”）",
+    "商品详情",
+    "虚拟销量",
+    "包装费(元/个)",
+    "商品库存(-1表示无限库存)",
+    "库存预警数",
+    "饥饿营销数",
+    "是否上架(填1表示上架，填2表示不上架)",
+    "最少购买数(最小值为1)",
+    "商品属性(填0表示不设置，填1表示新品，填2表示招牌，填3表示推荐)",
+    "营养详情(格式:营养名称:营养值)(多营养使用;符号隔开“能量:657;蛋白质:400;维生素A:200",
+    "过敏源(请输入系统内有的过敏源，多个逗号隔开)",
+]
+
+STORE_DETAIL_FIELDS = (
+    ("能量", "能量(kcal)", "Kcal"),
+    ("蛋白質", "蛋白質(g)", "g"),
+    ("碳水化合物", "碳水化合物(g)", "g"),
+    ("脂肪", "總脂肪(g)", "g"),
+    ("糖", "糖(g)", "g"),
+    ("飽和脂肪", "飽和脂肪(g)", "g"),
+    ("反式脂肪", "反式脂肪(g)", "g"),
+    ("鈉", "鈉(mg)", "mg"),
+)
 
 # 烹调方式关键词(按优先级)
 COOKING_RULES = [
@@ -166,10 +208,26 @@ def result_to_dish_row(result: RecipeResult, dish_no: str = "") -> dict:
     cooking = _detect_cooking(result.recipe_name)
 
     row = {h: "" for h in DISH_HEADERS}
+    calculation_standard = getattr(result, "calculation_standard", "hong_kong")
+    standard_label = CALCULATION_STANDARD_LABELS.get(
+        calculation_standard, calculation_standard
+    )
+    fallback_labels = []
+    for contribution in result.contributions:
+        if not getattr(contribution, "requires_review", False):
+            continue
+        label = getattr(contribution, "source_label", "來源待確認")
+        if label not in fallback_labels:
+            fallback_labels.append(label)
+    if fallback_labels:
+        standard_label += "（後備：" + "、".join(fallback_labels) + "）"
+    row[CALCULATION_STANDARD_COL] = standard_label
     row["菜式編號"] = dish_no
     row["SET"] = result.meal_set
+    row["學段"] = getattr(result, "school_stage", "")
     row["餐名"] = _clean_dish_name(result.recipe_name)
-    row["主菜"] = _clean_dish_name(result.recipe_name)
+    # 主菜需要独立的菜品拆分规则；无法可靠拆分时留空，避免重复餐名造成误导。
+    row["主菜"] = ""
     row["主食材類別"] = category
     row["具體主食材"] = protein
     row["主食/穀物"] = staple
@@ -177,7 +235,9 @@ def result_to_dish_row(result: RecipeResult, dish_no: str = "") -> dict:
     row["醬汁/風味"] = _detect_flavor(staple)
     row["烹調方式"] = cooking
     for field, col in NUTRIENT_TO_DISH_COL.items():
-        value = result.nutrients_per_serving.get(field)
+        # Incomplete recipes contain only a partial sum; keep nutrient cells
+        # blank so a partial result is never mistaken for a valid zero.
+        value = None if result.status == "incomplete" else result.nutrients_per_serving.get(field)
         row[col] = round(value, 2) if value is not None else ""
     # 未匹配食材提示放进过敏源? 不, 放常规菜单列做状态标注
     row["常規菜單"] = result.status
@@ -191,22 +251,117 @@ def _excel_safe(value: object) -> object:
     return value
 
 
-def write_dish_excel(results: Iterable[RecipeResult], path: str, dish_no_start: int = 100001) -> int:
-    """导出菜式管理 Excel(用 openpyxl)。返回行数。"""
+def _compact_number(value: object) -> str:
+    """Return a non-negative numeric value with at most two decimal places."""
+    if isinstance(value, bool) or value in (None, ""):
+        return ""
+    try:
+        number = Decimal(str(value))
+    except (InvalidOperation, TypeError, ValueError):
+        return ""
+    if not number.is_finite() or number < 0:
+        return ""
+    rounded = number.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
+    return format(rounded, "f").rstrip("0").rstrip(".")
+
+
+def format_store_nutrition_detail(dish_row: dict) -> str:
+    """Format the supplied template's E-column eight-nutrient description."""
+    parts = []
+    for label, column, unit in STORE_DETAIL_FIELDS:
+        value = _compact_number(dish_row.get(column, ""))
+        if value == "":
+            return ""
+        parts.append(f"{label}{value}({unit})")
+    return " ".join(parts)
+
+
+def dish_row_to_store_upload_row(dish_row: dict) -> dict:
+    """Map one auditable dish row to the storefront upload template."""
+    upload_row = {header: "" for header in STORE_UPLOAD_HEADERS}
+    meal_set = str(dish_row.get("SET") or "").strip()
+    school_stage = str(dish_row.get("學段") or "").strip()
+    dish_name = str(dish_row.get("餐名") or "").strip()
+    prefix = meal_set
+    if school_stage:
+        prefix += f"({school_stage})" if prefix else school_stage
+    upload_row["商品名称"] = f"{prefix}{dish_name}" if prefix else dish_name
+    upload_row["商品详情"] = format_store_nutrition_detail(dish_row)
+    return upload_row
+
+
+def write_store_upload_excel(
+    rows: Iterable[dict],
+    path: str,
+    template_path: str | None = None,
+) -> int:
+    """Fill the supplied 15-column template with rows having all eight values."""
+    from copy import copy
+    from pathlib import Path
+    from openpyxl import load_workbook
+
+    if template_path is None:
+        template_path = str(
+            Path(__file__).resolve().parent.parent
+            / "data"
+            / "templates"
+            / "聖類斯上架模版.xlsx"
+        )
+    workbook = load_workbook(template_path)
+    try:
+        worksheet = workbook.active
+        actual_headers = [worksheet.cell(1, column).value for column in range(1, len(STORE_UPLOAD_HEADERS) + 1)]
+        if actual_headers != STORE_UPLOAD_HEADERS or worksheet.max_column != len(STORE_UPLOAD_HEADERS):
+            raise ValueError("上架模板表头与项目要求的15列不一致")
+
+        row_style = [copy(worksheet.cell(2, column)._style) for column in range(1, len(STORE_UPLOAD_HEADERS) + 1)] if worksheet.max_row >= 2 else []
+        row_height = worksheet.row_dimensions[2].height if worksheet.max_row >= 2 else None
+        if worksheet.max_row > 1:
+            worksheet.delete_rows(2, worksheet.max_row - 1)
+
+        count = 0
+        for dish_row in rows:
+            upload_row = dish_row_to_store_upload_row(dish_row)
+            if not upload_row["商品详情"]:
+                continue
+            worksheet.append([_excel_safe(upload_row.get(header, "")) for header in STORE_UPLOAD_HEADERS])
+            count += 1
+            for column, style in enumerate(row_style, start=1):
+                worksheet.cell(worksheet.max_row, column)._style = copy(style)
+            if row_height is not None:
+                worksheet.row_dimensions[worksheet.max_row].height = row_height
+
+        worksheet.auto_filter.ref = worksheet.dimensions
+        workbook.save(path)
+        return count
+    finally:
+        workbook.close()
+
+
+def write_dish_rows_excel(rows: Iterable[dict], path: str) -> int:
+    """Write already materialized dish rows to the TT dish-management workbook."""
     from openpyxl import Workbook
+    from openpyxl.utils import get_column_letter
 
     wb = Workbook()
     ws = wb.active
     ws.title = "菜式"
     ws.append(DISH_HEADERS)
     count = 0
-    for idx, result in enumerate(results, start=0):
-        row = result_to_dish_row(result, dish_no=str(dish_no_start + idx))
-        ws.append([_excel_safe(row[h]) for h in DISH_HEADERS])
+    for row in rows:
+        ws.append([_excel_safe(row.get(header, "")) for header in DISH_HEADERS])
         count += 1
-    # 列宽优化
     for col_idx, header in enumerate(DISH_HEADERS, start=1):
         width = max(len(header) * 2, 12)
-        ws.column_dimensions[chr(64 + col_idx) if col_idx <= 26 else "A"].width = min(width, 30)
+        ws.column_dimensions[get_column_letter(col_idx)].width = min(width, 30)
     wb.save(path)
     return count
+
+
+def write_dish_excel(results: Iterable[RecipeResult], path: str, dish_no_start: int = 100001) -> int:
+    """导出菜式管理 Excel(用 openpyxl)。返回行数。"""
+    rows = (
+        result_to_dish_row(result, dish_no=str(dish_no_start + idx))
+        for idx, result in enumerate(results)
+    )
+    return write_dish_rows_excel(rows, path)

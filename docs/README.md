@@ -1,6 +1,6 @@
 # 营养素计算工具
 
-面向学生餐 SOP 的可审计营养计算核心。计算结果可独立导出，也可由后续 Flask 菜单系统直接调用。
+面向学生餐 SOP 的可审计营养计算服务。网页读取 A–E 餐主 SOP 页，计算小学和中学两套营养值，并按圣类斯 15 列上架模板导出。
 
 ## 计算口径
 
@@ -12,34 +12,34 @@
 - 每100g成品：`套餐总营养 ÷ 成品熟重 × 100`
 - 宏量能量校验：`蛋白质×4 + 总脂肪×9 + 可利用碳水×4`
 
-营养数据库的所有营养指标均须填写为“每100克可食用部分”。计算过程保留未四舍五入值，仅在导出展示时舍入。
+营养数据库的所有营养指标均须填写为“每100克可食用部分”。第一版不虚构营养保留率，默认值为 1.0；如有经过确认的因子，再写入食材或配方记录。计算过程保留未四舍五入值，仅在导出展示时舍入。暂行缺项及按件估重规则见[计算规则](calculation_rules.md)：未报告的营养项暂按 0 参与计算但标记复核；克重估算仅在明确件数和已登记单重时触发。
 
 ## 快速开始
 
 ```powershell
-python -m pip install -r requirements.txt
-
-# 检查工作簿可解析情况
-python main.py inspect-sop "菜单+SOP\finnal-2026年6月Lunch 學生餐單Menusop.xlsx"
-
-# 从 SOP 提取唯一食材，生成待补充的营养数据库模板
-python main.py make-template `
-  "菜单+SOP\finnal-2026年6月Lunch 學生餐單Menusop.xlsx" `
-  "ingredient_nutrients.csv"
-
-# 补齐模板中的每100g营养值后批量计算
-python main.py calculate-sop `
-  "菜单+SOP\finnal-2026年6月Lunch 學生餐單Menusop.xlsx" `
-  "ingredient_nutrients.csv" `
-  "nutrition_results.json"
+python -m pip install -e .
+python -m web_app.app
 ```
 
-仅计算指定工作表：
+打开 `http://127.0.0.1:8300`，上传 SOP，检查营养值及缺失食材后导出。
+
+## 输入与输出
+
+- 输入工作簿默认只读取可见的标准 A–E 餐配料 SOP 工作表；不读取隐藏参考页、菜单排期页、官方营养资料页或带学校附注的重复专页。
+- SOP 同时包含小学和中学克重时，两个学段分别计算，商品名称会标注学段。
+- 输出沿用 `data/templates/聖類斯上架模版.xlsx` 的工作表、15 列表头和行格式；10 月示例商品不进入结果。
+- `passed` 和 `review` 菜品可导出暂算值；`review` 会标注估算、替代来源或缺项暂按 0，供营养师复核。存在未匹配食材或 SOP 解析缺项的 `incomplete` 菜品不作为完整营养值导出。
+- 导出仅自动填写商品名称和商品详情，其余分类、图片、规格、库存及过敏源字段留空，供营养师按上架要求维护。
+
+## ECS 部署
 
 ```powershell
-python main.py calculate-sop sop.xlsx ingredient_nutrients.csv result.csv `
-  --sheets "6月A餐配料sop,6月B餐配料sop"
+gunicorn --workers 1 --threads 4 --bind 0.0.0.0:8300 wsgi:app
 ```
+
+部署时保留 `data/templates/`、`data/` 营养数据库和 `web_app/templates/` 页面资源。SQLite 历史记录当前按单机方式使用。
+
+网页部署监听 `0.0.0.0:8300` 时，应在 ECS 安全组配置对应入站规则，并限制来源范围或使用 HTTPS 反向代理。
 
 ## 营养数据库字段
 
@@ -54,15 +54,15 @@ python main.py calculate-sop sop.xlsx ingredient_nutrients.csv result.csv `
 ## 输出状态
 
 - `passed`：食材全部匹配且没有质量警告
-- `review`：计算完成，但能量或营养组成需要复核
-- `incomplete`：至少一项食材未匹配，结果不可发布
+- `review`：已生成暂算值，但存在估重、缺项暂按 0、替代来源或组成校验等复核提示
+- `incomplete`：至少一项食材未匹配或 SOP 解析缺项，结果不能作为完整营养值
 
-## 后续集成
+## 系统集成
 
-网站后端可直接调用：
+计算核心可独立调用：
 
 ```python
 from nutrition_tool import calculate_recipe
 ```
 
-推荐将自动计算值保存到 `calculated_*` 字段，审核发布值保存到 `published_*` 字段，并记录 SOP、食材数据库及计算规则版本。
+服务契约当前为 `nutrition.calculation.v3`。推荐将自动计算值保存到 `calculated_*` 字段，审核发布值保存到 `published_*` 字段，并记录 SOP、食材数据库及计算规则版本。暂算结果未经营养师审核，不应标记为已发布。

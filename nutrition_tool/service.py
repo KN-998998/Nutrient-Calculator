@@ -5,10 +5,11 @@ from typing import Any, Mapping
 
 from .calculator import calculate_recipe
 from .models import IngredientAmount, Recipe
+from .models import CALCULATION_RULE_VERSION
 from .repository import NutrientRepository
 
 
-CONTRACT_VERSION = "nutrition.calculation.v1"
+CONTRACT_VERSION = "nutrition.calculation.v3"
 
 
 class ContractError(ValueError):
@@ -77,12 +78,17 @@ class NutritionCalculationService:
             recipe_name=str(recipe_data.get("recipe_name") or "").strip(),
             ingredients=tuple(ingredients),
             meal_set=str(recipe_data.get("meal_set") or "").strip(),
+            school_stage=str(recipe_data.get("school_stage") or "").strip(),
             service_date=str(recipe_data.get("service_date") or "").strip(),
             cooked_weight_g=_optional_number(recipe_data.get("cooked_weight_g"), "cooked_weight_g"),
             source_sheet=str(recipe_data.get("source_sheet") or "").strip(),
+            calculation_standard=str(
+                recipe_data.get("calculation_standard") or "hong_kong"
+            ).strip(),
         )
         result = calculate_recipe(recipe, self.repository)
         return {
             "contract_version": CONTRACT_VERSION,
+            "calculation_rule_version": CALCULATION_RULE_VERSION,
             "result": result.to_dict(),
         }

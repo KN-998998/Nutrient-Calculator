@@ -1,0 +1,24 @@
+{
+  "version": "portion-estimates.v1",
+  "policy": "Only use when SOP grams are zero or invalid and a count plus a listed unit is explicit. These are provisional per-piece weights, not supplier specifications.",
+  "items": [
+    {"name": "魚蓉燒賣", "aliases": ["魚肉燒賣", "鱼蓉烧卖"], "unit": "個", "grams_per_unit": 30.0},
+    {"name": "滷水蛋", "aliases": ["卤水蛋", "滷水蛋(熟)", "卤水蛋(熟)"], "unit": "個", "grams_per_unit": 50.0},
+    {"name": "菜肉水餃", "aliases": ["菜肉水饺", "水餃"], "unit": "隻", "grams_per_unit": 25.0},
+    {"name": "披薩", "aliases": ["披萨"], "unit": "個", "grams_per_unit": 120.0},
+    {"name": "麵包胚", "aliases": ["面包胚", "漢堡包胚", "汉堡包胚"], "unit": "個", "grams_per_unit": 45.0},
+    {"name": "車厘茄", "aliases": ["车厘茄", "櫻桃番茄", "樱桃番茄"], "unit": "個", "grams_per_unit": 15.0},
+    {"name": "法蘭克福腸", "aliases": ["法兰克福肠", "法蘭克福腸"], "unit": "條", "grams_per_unit": 50.0},
+    {"name": "麥樂雞", "aliases": ["麦乐鸡", "麥樂雞塊"], "unit": "塊", "grams_per_unit": 20.0},
+    {"name": "蜜糖雞尾腸", "aliases": ["蜜糖鸡尾肠", "雞尾腸", "鸡尾肠"], "unit": "條", "grams_per_unit": 18.9, "note": "按同一 SOP 三條合計 56.7g 反推"},
+    {"name": "健康飯卷", "aliases": ["健康饭卷", "健康飯卷(糯米卷)", "糯米卷"], "unit": "個", "grams_per_unit": 120.0}
+  ],
+  "recipe_specific_estimates": [
+    {
+      "recipe_contains": "洋蔥叉燒炒蛋飯",
+      "ingredient_aliases": ["洋蔥", "洋葱", "洋蔥絲", "洋葱丝"],
+      "grams": 42.5,
+      "note": "SOP 克重為 0，按相似主菜洋蔥絲用量 1.5oz 估算；需營養師或供應規格確認"
+    }
+  ]
+}

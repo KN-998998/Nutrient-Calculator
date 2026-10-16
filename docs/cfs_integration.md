@@ -2,6 +2,19 @@
 
 > 抓取日期:2026-08-01。链路已实测打通,编码为 UTF-8(非 Big5)。
 
+## 2026-10-14 食材修正与缺项规则（当前）
+
+- `data/ingredient_nutrient_corrections.csv` 是按规范化后的完整 SOP 食材名生效的审查层。`replace` 优先使用明确来源的整条档案；`block` 阻断已知错误或身份不明确的匹配。Web 与 `NutrientRepository.from_csv()` 都加载该文件，不依赖重复的 SOP 编码或模糊别名。
+- CSV 保留来源、食物 ID、URL、核查日期及适用条件。CFS 收录的澳新/CFC 数据、USDA 数据与香港 FRL 实测分开标记；品牌未标示的字段不能用其他品牌数据冒充。
+- `data/ingredient_nutrient_sources.json` 保存本轮实际采用的 CFS 详情字段和 USDA 官方原始响应，供离线核对。此前品牌页记录未重新抓取成功，不标记本轮核实日期。
+- 八项门槛为能量、蛋白质、总脂肪、饱和脂肪、反式脂肪、可利用碳水、糖、钠。纤维是辅助项；仅缺纤维不单独阻断八项，但总碳水无法正确换算时仍为不完整。
+- 空白、NA、ND、Trace 均保留缺项语义；暂行计算将未报告字段按 0 参与合计，但 `missing_nutrients` 继续记录，0 不代表确认零值。总脂肪明确为 0 时，可以在同一报告精度下补缺失的饱和/反式脂肪为 0；不覆盖已报告的 Trace、ND 或正数。不按菜名推断复合加工品的零值。
+- 已匹配食材但有八项缺项、身份/来源待复核或碳水口径待核的菜品仍计算，状态为 `review`，结果用于暂算并可导出；未匹配食材或 SOP 解析缺项仍为 `incomplete`，不作为完整营养结果导出。JSON 保留逐项缺项、来源、估重说明和状态。
+- USDA 新增档案使用官网 FoodData Central 原始营养项 ID 核对，总碳水减去总膳食纤维后得到可利用碳水。旧本地对比缓存存在脂肪分项错位，不直接取作本次新增值。CFC 不溶性纤维不冒充完整总膳食纤维。
+- `nutrition.calculation.v3` 增加规则版本和估重审计字段，并将已匹配食材的缺项状态调整为暂算复核。完整八项结果仍可能需要核对干重/湿重、带骨可食率及烹调损耗，不等于已获营养师确认。按件估重只使用 `data/portion_estimates.json` 中明确登记的食材、单位和规则。
+
+以下早期批次统计与自动匹配仅供历史追溯，不作为当前食材身份的确认依据。
+
 ## 端点与请求格式
 
 ### 1. 按名称搜索食物
@@ -32,13 +45,13 @@ fg_id=<fg>&fsg_id=<fsg>&food_id=<food_id>&inShortMode=
 
 ## 数据来源(官方声明)
 
-| 代号 | 来源 | 碳水口径 | 膳食纤维口径 |
-|---|---|---|---|
-| USDA | 美国农业部 FoodData Central | 总碳水 | 总膳食纤维 |
-| CFC2002Ed2 | 中国疾控营养与食品安全所 | 总碳水 | **不溶性纤维** |
-| FRL | 香港食安中心食物研究化验所 | 可利用碳水 | 总膳食纤维 |
-| AFCD R2 (2022) | 澳洲新西兰食品标准管理局 | 可利用碳水 | 总膳食纤维 |
-| Thai FCD 2025 | 泰国玛希隆大学 | 可利用碳水(除非标"总") | — |
+| 代号             | 来源                     | 碳水口径          | 膳食纤维口径    |
+|----------------|------------------------|---------------|-----------|
+| USDA           | 美国农业部 FoodData Central | 总碳水           | 总膳食纤维     |
+| CFC2002Ed2     | 中国疾控营养与食品安全所           | 总碳水           | **不溶性纤维** |
+| FRL            | 香港食安中心食物研究化验所          | 可利用碳水         | 总膳食纤维     |
+| AFCD R2 (2022) | 澳洲新西兰食品标准管理局           | 可利用碳水         | 总膳食纤维     |
+| Thai FCD 2025  | 泰国玛希隆大学                | 可利用碳水(除非标"总") | —         |
 
 - 能量口径:AFCD 为**不含膳食纤维**的能量,千焦按 1 kcal = 4.2 kJ 换算;USDA/CFC 为总能量。
 - "NA"=无资料,"ND"=未检出,"Trace"=微量。
@@ -84,14 +97,14 @@ fg_id=<fg>&fsg_id=<fsg>&food_id=<food_id>&inShortMode=
 
 ### 官方"间接营养分析法"7 步 vs 本工具实现
 
-| 官方步骤(技术指引 §47) | 本工具对应 |
-|---|---|
-| Step 2 从权威成分库取食材营养值 | CFS 营养搜寻器抓取(每100g可食部) |
-| Step 3 修正可食部重量 | `edible_fraction`(默认1) |
-| Step 4a 熟食数据→用 yield factor 调整生重→熟重 | `yield_factor`(默认1) |
-| Step 4b 生食数据→retention factor 调整营养 + yield factor 调整重量 | `retention_factor` + `yield_factor` |
-| Step 5 求和 = 食谱营养值 | `calculate_recipe()` 逐项求和 |
-| Step 7 每100g / 每份 | `nutrients_per_100g` / `nutrients_per_serving` |
+| 官方步骤(技术指引 §47)                                         | 本工具对应                                          |
+|--------------------------------------------------------|------------------------------------------------|
+| Step 2 从权威成分库取食材营养值                                    | CFS 营养搜寻器抓取(每100g可食部)                          |
+| Step 3 修正可食部重量                                         | `edible_fraction`(默认1)                         |
+| Step 4a 熟食数据→用 yield factor 调整生重→熟重                    | `yield_factor`(默认1)                            |
+| Step 4b 生食数据→retention factor 调整营养 + yield factor 调整重量 | `retention_factor` + `yield_factor`            |
+| Step 5 求和 = 食谱营养值                                      | `calculate_recipe()` 逐项求和                      |
+| Step 7 每100g / 每份                                      | `nutrients_per_100g` / `nutrients_per_serving` |
 
 ### 官方口径确认
 
@@ -103,7 +116,7 @@ fg_id=<fg>&fsg_id=<fsg>&food_id=<food_id>&inShortMode=
   - **USDA Table of Nutrient Retention Factors**(营养保留因子表)
   - **Food Yields Summarized by Different Stages of Preparations, USDA**(产出因子表)
   - 其余:McCance&Widdowson UK、FSANZ 澳洲、ASEAN、中国食物成分表 2002/2004
-- NLC 计算数值保留 3 位小数;缺失营养按 0
+- 未知营养项不可按已确认的 0 发布；当前完整性规则见本文顶部。
 
 ### 待办(需用户决策)
 

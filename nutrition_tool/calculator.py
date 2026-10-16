@@ -5,10 +5,17 @@ import math
 from .models import (
     IngredientContribution,
     NUTRIENT_FIELDS,
+    REQUIRED_NUTRIENT_FIELDS,
+    CALCULATION_RULE_VERSION,
     Recipe,
     RecipeResult,
 )
-from .repository import NutrientRepository
+from .repository import (
+    NutrientRepository,
+    source_label,
+    source_match_tier,
+    source_requires_review,
+)
 
 
 def _valid_factor(value: float, label: str, allow_over_one: bool = False) -> None:
@@ -31,6 +38,13 @@ def calculate_recipe(
     unmatched: list[dict[str, object]] = []
     warnings: list[str] = []
     carb_uncertain_names: list[str] = []
+    abnormal_oil_names: list[str] = []
+    non_hk_source_names: list[str] = []
+    manual_source_names: list[str] = []  # 手工/品牌标签录入 → 必须人工复核
+    manual_estimate_names: list[str] = []
+    brand_label_names: list[str] = []
+    missing_nutrient_names: list[str] = []
+    estimated_weight_names: list[str] = []
 
     for ingredient in recipe.ingredients:
         if not math.isfinite(ingredient.grams):
@@ -50,6 +64,10 @@ def calculate_recipe(
             )
             continue
 
+        profile_text = " ".join((ingredient.ingredient_name, profile.ingredient_name, *profile.aliases))
+        if ingredient.grams > 50 and any(token in profile_text for token in ("油", "麻油", "牛油")):
+            abnormal_oil_names.append(f"{ingredient.ingredient_name} ({ingredient.grams:g}g)")
+
         edible_fraction = ingredient.edible_fraction if ingredient.edible_fraction is not None else profile.edible_fraction
         yield_factor = ingredient.yield_factor if ingredient.yield_factor is not None else profile.yield_factor
         retention = ingredient.retention_factor if ingredient.retention_factor is not None else profile.retention_factor
@@ -67,6 +85,31 @@ def calculate_recipe(
         estimated_cooked_weight += cooked
         if profile.carb_uncertain:
             carb_uncertain_names.append(ingredient.ingredient_name)
+        match_tier = source_match_tier(profile)
+        profile_source_label = source_label(profile)
+        requires_source_review = source_requires_review(profile)
+        if requires_source_review:
+            non_hk_source_names.append(
+                f"{ingredient.ingredient_name}→{profile.ingredient_name}（{profile_source_label}）"
+            )
+        if "人工补录" in profile.source:
+            manual_source_names.append(
+                f"{ingredient.ingredient_name}→{profile.ingredient_name}"
+            )
+        if profile.source_type == "manual_estimate":
+            manual_estimate_names.append(ingredient.ingredient_name)
+        elif profile.source_type in {"manual_brand_label", "official_brand_label"}:
+            brand_label_names.append(ingredient.ingredient_name)
+        required_missing = tuple(f for f in profile.missing_nutrients if f in REQUIRED_NUTRIENT_FIELDS)
+        if required_missing:
+            missing_nutrient_names.append(
+                f"{ingredient.ingredient_name}({','.join(required_missing)})"
+            )
+        if ingredient.weight_is_estimated:
+            detail = ingredient.weight_estimate_note or "按件数暂估"
+            estimated_weight_names.append(
+                f"{ingredient.ingredient_name} {ingredient.grams:g}g（{detail}）"
+            )
         for field, value in nutrients.items():
             totals[field] += value
         contributions.append(
@@ -79,6 +122,16 @@ def calculate_recipe(
                 cooked_weight_g=cooked,
                 nutrients=nutrients,
                 source_row=ingredient.source_row,
+                source_type=profile.source_type,
+                source_food_id=profile.source_food_id,
+                source=profile.source,
+                source_url=profile.source_url,
+                match_tier=match_tier,
+                source_label=profile_source_label,
+                requires_review=requires_source_review,
+                missing_nutrients=profile.missing_nutrients,
+                weight_is_estimated=ingredient.weight_is_estimated,
+                weight_estimate_note=ingredient.weight_estimate_note,
             )
         )
 
@@ -101,10 +154,58 @@ def calculate_recipe(
         )
     if unmatched:
         warnings.append(f"有 {len(unmatched)} 项食材未匹配营养数据库。")
+    if abnormal_oil_names:
+        warnings.append(
+            "單項食用油克重超過50g，請核對SOP是否把批量用油誤作每人用量: "
+            + "、".join(abnormal_oil_names[:5])
+            + (" 等" if len(abnormal_oil_names) > 5 else "")
+        )
     if carb_uncertain_names:
         warnings.append(
             "以下食材碳水口径待核验(CFC 纤维缺失未换算): " + "、".join(carb_uncertain_names[:5])
             + (" 等" if len(carb_uncertain_names) > 5 else "")
+        )
+    if non_hk_source_names:
+        warnings.append(
+            "香港 CFS/FRL 未命中，以下食材使用非香港后备数据，必须由营养师复核："
+            + "、".join(non_hk_source_names[:8])
+            + (" 等" if len(non_hk_source_names) > 8 else "")
+        )
+    if manual_source_names:
+        warnings.append(
+            "以下食材来自人工补录/品牌营养标签，须核对产品规格后确认："
+            + "、".join(manual_source_names[:8])
+            + (" 等" if len(manual_source_names) > 8 else "")
+        )
+    if manual_estimate_names:
+        warnings.append(
+            "以下食材仅使用通用估算/参考值，不能视为品牌标签的最终值："
+            + "、".join(manual_estimate_names[:8])
+            + (" 等" if len(manual_estimate_names) > 8 else "")
+        )
+    if brand_label_names:
+        warnings.append(
+            "以下食材使用品牌营养标签，提交前请核对 SOP 中的品牌、规格和标签日期："
+            + "、".join(brand_label_names[:8])
+            + (" 等" if len(brand_label_names) > 8 else "")
+        )
+    if missing_nutrient_names:
+        warnings.append(
+            "以下食材未报告的营养项暂按0计入本次计算；0不代表检测或标签确认的零值，待营养师或1+7标签对齐："
+            + "、".join(missing_nutrient_names[:8])
+            + (" 等" if len(missing_nutrient_names) > 8 else "")
+        )
+    if estimated_weight_names:
+        warnings.append(
+            "以下克重按明确件数和暂定单重估算，已计入本次结果；取得实称或供应规格后需替换："
+            + "、".join(estimated_weight_names[:8])
+            + (" 等" if len(estimated_weight_names) > 8 else "")
+        )
+    if recipe.parse_warnings:
+        warnings.append(
+            "SOP 解析不完整，以下原料未能纳入计算："
+            + "；".join(recipe.parse_warnings[:5])
+            + (" 等" if len(recipe.parse_warnings) > 5 else "")
         )
 
     final_weight = recipe.cooked_weight_g or estimated_cooked_weight
@@ -112,15 +213,15 @@ def calculate_recipe(
     if final_weight > 0:
         per_100g = {field: value / final_weight * 100 for field, value in totals.items()}
 
-    if unmatched:
+    if unmatched or recipe.parse_warnings:
         status = "incomplete"
-    elif warnings:
+    elif warnings or missing_nutrient_names or carb_uncertain_names or estimated_weight_names:
         status = "review"
     else:
         status = "passed"
 
-    # 有未匹配食材时, 每 100g 结果不可用(分母缺少未匹配食材的熟重)
-    if unmatched:
+    # 未匹配或解析不完整的菜品不发布每100g结果；review 暂算值可以供复核。
+    if status == "incomplete":
         per_100g = None
 
     return RecipeResult(
@@ -140,4 +241,7 @@ def calculate_recipe(
         warnings=warnings,
         unmatched_ingredients=unmatched,
         contributions=contributions,
+        school_stage=recipe.school_stage,
+        calculation_standard=recipe.calculation_standard,
+        calculation_rule_version=CALCULATION_RULE_VERSION,
     )

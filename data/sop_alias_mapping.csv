@@ -1,0 +1,384 @@
+canonical_code,canonical_name,canonical_source,alias_name,alias_normalized,mapping_status,confidence,mapping_method,sop_code,source_food_id,occurrences
+DTL0121,亨通紅色蓋大豆油,澳洲新西蘭食品標準管理局,亨通紅色蓋大豆油,亨通紅色蓋大豆油,confirmed,1.0,name_exact,DTL0121,,237
+DTL0084,鹽/25KG 幼鹽,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),25KG 幼鹽,25kg幼鹽,candidate,0.7,fallback_fuzzy,DTL0084,,171
+,清水,水(无营养),清水,清水,candidate,0.0,ambiguous,,,169
+DTL0079,30KG 韓國幼砂糖,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),30KG 韓國幼砂糖,30kg韓國幼砂糖,confirmed,1.0,name_exact,DTL0079,,105
+A10-7117,大米/泰國香米（飛羊）[彩線]25公斤,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),大米/泰國香米（飛羊）[彩線]25公斤,大米泰國香米飛羊彩線25公斤,candidate,0.0,ambiguous,A10-7117,,77
+DTL0084,鹽/25KG 幼鹽,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),鹽/25KG 幼鹽,鹽25kg幼鹽,confirmed,1.0,name_exact,DTL0084,,67
+HK0-0803,甘筍肉（切片）,澳洲新西蘭食品標準管理局,甘筍肉（切片）,甘筍肉切片,confirmed,1.0,name_exact,HK0-0803,,57
+HK0-1738,西蘭花 <切朵>,澳洲新西蘭食品標準管理局,西蘭花 <切朵>,西蘭花切朵,candidate,0.0,ambiguous,HK0-1738,,51
+DTL0006,25KG 風車生粉,澳洲新西蘭食品標準管理局,25KG 風車生粉,25kg風車生粉,candidate,0.0,ambiguous,DTL0006,,49
+DTL0073,雞粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),雞粉,雞粉,candidate,0.0,ambiguous,DTL0073,,44
+HK0-1354,翠玉瓜（切半圈片）,澳洲新西蘭食品標準管理局,翠玉瓜 <切半圓片>,翠玉瓜切半圓片,confirmed,1.0,code_exact,HK0-1354,,41
+HK0-0116,生抽,澳洲新西蘭食品標準管理局,生抽,生抽,confirmed,1.0,name_exact,HK0-0116,,40
+DTL0006,生粉,澳洲新西蘭食品標準管理局,生粉,生粉,candidate,0.0,ambiguous,DTL0006,,40
+HK0-1118,雞粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),12X1KG家樂牌調味雞粉(包裝),12x1kg家樂牌調味雞粉包裝,candidate,0.0,ambiguous,HK0-1118,,37
+VHF024,甘筍肉 <切絲>,澳洲新西蘭食品標準管理局,甘筍肉 <切絲>,甘筍肉切絲,confirmed,1.0,name_exact,VHF024,,37
+HK0-1118,雞粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),雞粉,雞粉,candidate,0.0,ambiguous,HK0-1118,,36
+DTL0079,砂糖/30KG 韓國幼砂糖,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),砂糖,砂糖,candidate,0.0,ambiguous,DTL0079,,35
+CFC_0503020452040,西蘭花,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),西椰菜 <切絲>,西椰菜切絲,candidate,0.7,fallback_fuzzy,HK0-1082,0503020452040,35
+DTL0073,雞粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),12X1KG家樂牌調味雞粉(包裝),12x1kg家樂牌調味雞粉包裝,candidate,0.0,ambiguous,DTL0073,,34
+HK0-1290,味精,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),味精,味精,confirmed,1.0,code_exact,HK0-1290,,34
+HK0-1354,翠玉瓜（切半圈片）,澳洲新西蘭食品標準管理局,翠玉瓜（切半圈片）,翠玉瓜切半圈片,confirmed,1.0,code_exact,HK0-1354,,31
+MANUAL_KNORR_XIANLU,家樂牌鮮露,【人工补录】家樂牌鮮露，Unilever 官方营养标签（每100g）,家樂牌鮮露,家樂牌鮮露,confirmed,1.0,name_exact,HK0-3211,MANUAL_KNORR_XIANLU,29
+DTL0047,地捫茄汁,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),地捫茄汁,地捫茄汁,candidate,0.0,ambiguous,DTL0047,,28
+DTL0073,雞粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),调味雞粉(家樂)1kg*12包,调味雞粉家樂1kg*12包,candidate,0.0,ambiguous,DTL0073,,28
+HK0-2784,(清洗)菜心苗,澳洲新西蘭食品標準管理局,(清洗)菜心苗,清洗菜心苗,confirmed,1.0,name_exact,HK0-2784,,26
+DTL0047,茄汁,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),茄汁,茄汁,confirmed,1.0,name_exact,DTL0047,,26
+DTL137,茄羔,澳洲新西蘭食品標準管理局,茄羔,茄羔,confirmed,1.0,name_exact,DTL137,,22
+DTL0121,豆油,澳洲新西蘭食品標準管理局,豆油,豆油,confirmed,1.0,name_exact,DTL0121,,22
+TTF0058,粟米粒,澳洲新西蘭食品標準管理局,栗米粒,栗米粒,candidate,0.0,ambiguous,TTF0058,,21
+HK0-0078,大米/泰國香米（飛羊）[彩線]25公斤,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),大米/泰國香米（飛羊）[彩線]25公斤,大米泰國香米飛羊彩線25公斤,candidate,0.0,ambiguous,HK0-0078,,19
+HK0-1391,椰菜花 <切朵>,澳洲新西蘭食品標準管理局,椰菜花 <切朵>,椰菜花切朵,candidate,0.0,ambiguous,HK0-1391,,19
+,鮮菇粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),鮮菇粉,鮮菇粉,confirmed,1.0,name_exact,HK0-2651,,18
+HK0-1567,椰菜花 <切朵>,澳洲新西蘭食品標準管理局,椰菜花 <切朵>,椰菜花切朵,candidate,0.0,ambiguous,HK0-1567,,17
+HK0-3257,麵粉＜指南針＞,澳洲新西蘭食品標準管理局,麵粉＜指南針＞,麵粉指南針,confirmed,1.0,name_exact,HK0-3257,,17
+CFC_0503050443010,洋葱,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),洋蔥絲,洋蔥絲,candidate,0.7,fallback_fuzzy,HK0-1808,0503050443010,16
+HK0-0802,甘筍粒,澳洲新西蘭食品標準管理局,甘筍粒,甘筍粒,confirmed,1.0,name_exact,HK0-0802,,15
+DTL137,茄膏,澳洲新西蘭食品標準管理局,茄膏,茄膏,confirmed,1.0,name_exact,DTL137,,15
+HK0-0078,大米/泰國香米（飛羊）[彩線]25公斤,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),金盾牌頂級香絲苗米（紅線）25公斤,金盾牌頂級香絲苗米紅線25公斤,confirmed,1.0,code_exact,HK0-0078,,15
+HK0-2901,＜清洗＞白菜仔,澳洲新西蘭食品標準管理局,＜清洗＞白菜仔,清洗白菜仔,confirmed,1.0,code_exact,HK0-2901,,15
+SHK0001,肉絲,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),肉絲,肉絲,confirmed,1.0,code_exact,SHK0001,,14
+HK0-3148,薯仔肉 <切絲>,食物安全中心轄下的食物研究化驗所 (FRL),薯仔肉 <切絲>,薯仔肉切絲,candidate,0.0,ambiguous,HK0-3148,,14
+,合掌瓜肉 <切角>,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),合掌瓜肉 <切角>,合掌瓜肉切角,candidate,0.0,ambiguous,HK0-0016,,13
+HK0-3214,意粉,澳洲新西蘭食品標準管理局,意粉,意粉,confirmed,1.0,name_exact,HK0-3214,,13
+,<清洗>小棠菜苗,食物安全中心轄下的食物研究化驗所 (FRL),<清洗>小棠菜苗,清洗小棠菜苗,confirmed,1.0,name_exact,HK0-2785,,12
+DTL0079,南韓幼砂糖（包/30kg),中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),南韓幼砂糖（包/30kg),南韓幼砂糖包30kg,confirmed,1.0,name_exact,DTL0079,,12
+CFC_0503050443010,洋葱,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),洋蔥粒,洋蔥粒,candidate,0.7,fallback_fuzzy,HK0-1654,0503050443010,11
+HK0-0110,生粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),生粉,生粉,candidate,0.0,ambiguous,HK0-0110,,11
+HK0-1567,福建椰菜花<切朵>,澳洲新西蘭食品標準管理局,福建椰菜花<切朵>,福建椰菜花切朵,confirmed,1.0,name_exact,HK0-1567,,11
+DTL0158,錦珍財神蠔油,食物安全中心轄下的食物研究化驗所 (FRL),錦珍財神蠔油,錦珍財神蠔油,confirmed,1.0,name_exact,DTL0158,,11
+HK0-3519,雞球,澳洲新西蘭食品標準管理局,雞球,雞球,confirmed,1.0,code_exact,HK0-3519,,11
+HK0-0338,湖北大蛋（件）,澳洲新西蘭食品標準管理局,湖北大蛋（件）,湖北大蛋件,candidate,0.0,ambiguous,HK0-0338,,10
+HK0-3070,51/60蝦肉,美國農業部農業研究局轄下的貝茲維爾人類營養研究中心 (FoodData Central),51/60蝦肉,5160蝦肉,confirmed,1.0,name_exact,HK0-3070,,9
+HK0-0784,冰糖,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),冰糖,冰糖,candidate,0.0,ambiguous,HK0-0784,,9
+MANUAL_LKK_TERIYAKI,李錦記照燒汁,【人工补录】李錦記照燒汁，官方营养标签（每100g）,照燒汁,照燒汁,confirmed,1.0,name_exact,HK0-1314,MANUAL_LKK_TERIYAKI,9
+VCK0173,薯仔肉 <切絲>,食物安全中心轄下的食物研究化驗所 (FRL),薯仔肉 <切絲>,薯仔肉切絲,candidate,0.0,ambiguous,VCK0173,,9
+,鮮露,澳洲新西蘭食品標準管理局,鮮露,鮮露,confirmed,1.0,name_exact,HK0-3211,,9
+HK0-3257,麵粉,澳洲新西蘭食品標準管理局,麵粉,麵粉,candidate,0.0,ambiguous,HK0-3257,,9
+HK0-0626,免治牛肉,澳洲新西蘭食品標準管理局,免治牛肉,免治牛肉,confirmed,1.0,code_exact,HK0-0626,,8
+HK0-3235,牛肉片,澳洲新西蘭食品標準管理局,牛坑腩切,牛坑腩切,confirmed,1.0,name_exact,MCK0050,,8
+VHF024,甘筍絲,澳洲新西蘭食品標準管理局,甘筍絲,甘筍絲,confirmed,1.0,name_exact,VHF024,,8
+DTL0316,白醋,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),白醋,白醋,confirmed,1.0,code_exact,DTL0316,,8
+HK0-1386,薯仔粒,食物安全中心轄下的食物研究化驗所 (FRL),薯仔粒,薯仔粒,confirmed,1.0,name_exact,HK0-1386,,8
+HK0-2015,螺絲粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),螺絲粉,螺絲粉,confirmed,1.0,code_exact,HK0-2015,,8
+HK0-2014,2KG糙米,澳洲新西蘭食品標準管理局,2KG糙米,2kg糙米,confirmed,1.0,code_exact,HK0-2014,,7
+DTL0073,雞粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),家樂牌調味雞粉,家樂牌調味雞粉,confirmed,1.0,code_exact,DTL0073,,7
+HK0-2220,日式咖哩磚,食物安全中心轄下的食物研究化驗所 (FRL),日式咖哩磚,日式咖哩磚,candidate,0.0,ambiguous,HK0-2220,,7
+,淮山肉 <切角>,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),淮山肉 <切角>,淮山肉切角,confirmed,1.0,name_exact,HK0-2229,,7
+DTL0158,蠔油,澳洲新西蘭食品標準管理局,蠔油,蠔油,confirmed,1.0,name_exact,DTL0158,,7
+HK0-1118,雞粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),调味雞粉(家樂)1kg*12包,调味雞粉家樂1kg*12包,candidate,0.0,ambiguous,HK0-1118,,7
+HK0-2518,雞絲,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),雞絲,雞絲,confirmed,1.0,name_exact,HK0-2518,,7
+CFC_0507030911080,雞胸脯肉,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),去皮雞絲,去皮雞絲,candidate,0.7,fallback_fuzzy,HK0-2518,0507030911080,6
+,扭扭粉彎曲通心粉（山麥）,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),扭扭粉彎曲通心粉（山麥）,扭扭粉彎曲通心粉山麥,confirmed,1.0,name_exact,HK0-3359,,6
+HK0-1599,炒麵,食物安全中心轄下的食物研究化驗所 (FRL),炒麵,炒麵,confirmed,1.0,code_exact,HK0-1599,,6
+A10-1269,特級老抽(李錦記) 15kg,澳洲新西蘭食品標準管理局,特級老抽(李錦記) 15kg,特級老抽李錦記15kg,confirmed,1.0,name_exact,A10-1269,,6
+DTL0079,白砂糖/30KG 韓國幼砂糖,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),白砂糖/30KG 韓國幼砂糖,白砂糖30kg韓國幼砂糖,confirmed,1.0,name_exact,DTL0079,,6
+DTL0079,砂糖/30KG 韓國幼砂糖,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),砂糖/30KG 韓國幼砂糖,砂糖30kg韓國幼砂糖,confirmed,1.0,name_exact,DTL0079,,6
+,紹菜,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),紹菜,紹菜,confirmed,1.0,name_exact,HK0-2292,,6
+A10-1269,老抽/40斤,澳洲新西蘭食品標準管理局,老抽/40斤,老抽40斤,confirmed,1.0,name_exact,A10-1269,,6
+HK0-2575,肉片,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),肉片,肉片,candidate,0.0,ambiguous,HK0-2575,,6
+HK0-0862,肥牛片,澳洲新西蘭食品標準管理局,肥牛片,肥牛片,confirmed,1.0,code_exact,HK0-0862,,6
+CFC_0503040431050,番茄,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),蕃茄 <切角>,蕃茄切角,candidate,0.7,fallback_fuzzy,HK0-1373,0503040431050,6
+,蝦棗3個,美國農業部農業研究局轄下的貝茲維爾人類營養研究中心 (FoodData Central),蝦棗3個,蝦棗3個,confirmed,1.0,name_exact,,,6
+,蟹柳,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),蟹柳,蟹柳,confirmed,1.0,name_exact,TTF0006,,6
+DTL0158,蠔油/財神蠔油,澳洲新西蘭食品標準管理局,蠔油/財神蠔油,蠔油財神蠔油,confirmed,1.0,name_exact,DTL0158,,6
+HK0-1739,西椰菜 <切角>,澳洲新西蘭食品標準管理局,西椰菜 <切角>,西椰菜切角,candidate,0.0,ambiguous,HK0-1739,,6
+CFC_0515001920140,色拉油,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),豆油/15L 福字生油,豆油15l福字生油,candidate,0.7,fallback_fuzzy,DTL0121,0515001920140,6
+DTL0173,雞蛋,澳洲新西蘭食品標準管理局 (AFCD R2),雞蛋,雞蛋,candidate,0.0,ambiguous,DTL0173,,6
+HK0-0110,25KG 風車生粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),25KG 風車生粉,25kg風車生粉,candidate,0.0,ambiguous,HK0-0110,,5
+HK0-2025,尖通粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),28LB 蜆殼粉,28lb蜆殼粉,candidate,0.0,ambiguous,HK0-2025,,5
+CFC_0501040124060,秈米粉,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),4KG滿姨米粉,4kg滿姨米粉,candidate,0.7,fallback_fuzzy,DTL160,0501040124060,5
+VCK0145,南瓜肉 <切粒>,澳洲新西蘭食品標準管理局,南瓜肉 <切粒>,南瓜肉切粒,confirmed,1.0,name_exact,VCK0145,,5
+MANUAL_LKK_CHUHOU,李錦記柱侯醬,【人工补录】李錦記柱侯醬，官方营养标签（每100g）,柱侯醬,柱侯醬,confirmed,1.0,name_exact,HK0-0102,MANUAL_LKK_CHUHOU,5
+DTL0046,濃縮雞汁,食物安全中心轄下的食物研究化驗所 (FRL),濃縮雞汁,濃縮雞汁,confirmed,1.0,code_exact,DTL0046,,5
+HK0-1373,鮮茄 <切角>,食物安全中心轄下的食物研究化驗所 (FRL),蕃茄角,蕃茄角,confirmed,1.0,name_exact,HK0-1373,,5
+HK0-3070,蝦仁,美國農業部農業研究局轄下的貝茲維爾人類營養研究中心 (FoodData Central),蝦仁,蝦仁,confirmed,1.0,name_exact,HK0-3070,,5
+HK0-3223,魚柳粒,澳洲新西蘭食品標準管理局,魚柳粒,魚柳粒,confirmed,1.0,name_exact,HK0-3223,,5
+HK0-1373,鮮茄粒,澳洲新西蘭食品標準管理局,鮮茄粒,鮮茄粒,confirmed,1.0,name_exact,HK0-1373,,5
+MANUAL_LKK_MOSHI,李錦記磨豉醬,【人工补录】李錦記磨豉醬，包装营养标签（每100g）,黑磨豉醬,黑磨豉醬,confirmed,1.0,name_exact,LKK0005,MANUAL_LKK_MOSHI,5
+HK0-0416,免治豬肉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),免治豬肉,免治豬肉,confirmed,1.0,code_exact,HK0-0416,,4
+HK0-0443,小米（粗糧）,美國農業部農業研究局轄下的貝茲維爾人類營養研究中心 (FoodData Central),小米（粗糧）,小米粗糧,confirmed,1.0,code_exact,HK0-0443,,4
+HK0-2148,栗米墨魚餅2個,食物安全中心轄下的食物研究化驗所 (FRL),栗米墨魚餅2個,栗米墨魚餅2個,confirmed,1.0,name_exact,HK0-2148,,4
+MANUAL_LKK_TERIYAKI,李錦記照燒汁,【人工补录】李錦記照燒汁，官方营养标签（每100g）,照燒汁,照燒汁,confirmed,1.0,name_exact,LKK0004,MANUAL_LKK_TERIYAKI,4
+HK0-3235,牛肉片,澳洲新西蘭食品標準管理局,牛肉片,牛肉片,candidate,0.0,ambiguous,HK0-3235,,4
+CFC_0501040124060,秈米粉,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),米線,米線,candidate,0.7,fallback_fuzzy,HK0-2945,0501040124060,4
+TTF0058,粟米粒,澳洲新西蘭食品標準管理局,粟米粒,粟米粒,confirmed,1.0,code_exact,TTF0058,,4
+,紅圓椒肉 <切角>,食物安全中心轄下的食物研究化驗所 (FRL),紅圓椒肉 <切角>,紅圓椒肉切角,confirmed,1.0,name_exact,HK0-1569,,4
+CK0405,素肉碎,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),素肉碎,素肉碎,confirmed,1.0,code_exact,CK0405,,4
+HK0-1799,素雞,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),素雞,素雞,confirmed,1.0,code_exact,HK0-1799,,4
+HK0-2708,蜆肉,美國農業部農業研究局轄下的貝茲維爾人類營養研究中心 (FoodData Central),蜆肉,蜆肉,candidate,0.0,ambiguous,HK0-2708,,4
+MANUAL_PORK_CARTILAGE,豬軟骨,【人工补录】豬軟骨，日本食品成分表+xiao688（每100g）,豬軟骨,豬軟骨,confirmed,1.0,name_exact,MCK0011,MANUAL_PORK_CARTILAGE,4
+HK0-1939,長通粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),長通粉,長通粉,candidate,0.0,ambiguous,HK0-1939,,4
+HK0-3571,長通粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),長通粉,長通粉,candidate,0.0,ambiguous,HK0-3571,,4
+HK0-0338,雞蛋,澳洲新西蘭食品標準管理局 (AFCD R2),雞蛋,雞蛋,candidate,0.0,ambiguous,HK0-0338,,4
+,青椒絲,食物安全中心轄下的食物研究化驗所 (FRL),青椒絲,青椒絲,confirmed,1.0,name_exact,HK0-2507,,4
+DTL0406,黃薑粉,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),黃薑粉,黃薑粉,candidate,0.0,ambiguous,DTL0406,,4
+HK0-1927,(濕)炸支竹,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),(濕)炸支竹,濕炸支竹,candidate,0.0,ambiguous,HK0-1927,,3
+MANUAL_MUSHROOM_ESSENCE,香菇精粉,【人工补录】香菇精粉（香菇调味粉，参照市售香菇精均值）,6X1KG 大廚師香菇精粉/李錦記鮮菇粉,6x1kg大廚師香菇精粉李錦記鮮菇粉,candidate,0.7,historical_match,HK0-2651,MANUAL_MUSHROOM_ESSENCE,3
+DTL0082,冰糖,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),冰糖,冰糖,candidate,0.0,ambiguous,DTL0082,,3
+VCK0075,南瓜,澳洲新西蘭食品標準管理局,南瓜,南瓜,confirmed,1.0,code_exact,VCK0075,,3
+,合掌瓜肉 <切角>,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),合掌瓜肉 <切角>,合掌瓜肉切角,candidate,0.0,ambiguous,斤（HK）,,3
+DTL137,地捫茄糕,食物安全中心轄下的食物研究化驗所 (FRL),地捫茄糕,地捫茄糕,confirmed,1.0,name_exact,DTL137,,3
+CFC_0503030432130,南瓜,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),日本青皮南瓜<有皮><切粒>,日本青皮南瓜有皮切粒,candidate,0.7,fallback_fuzzy,HK0-3147,0503030432130,3
+CFC_0503040131010,玉米,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),栗米粒,栗米粒,candidate,0.0,ambiguous,CK0283,0503040131010,3
+HK0-2642,椰菜苗 <一開二>,食物安全中心轄下的食物研究化驗所 (FRL),椰菜苗 <一開二>,椰菜苗一開二,confirmed,1.0,code_exact,HK0-2642,,3
+,泰國紅米,澳洲新西蘭食品標準管理局,泰國紅米,泰國紅米,confirmed,1.0,name_exact,HK0-2024,,3
+DTL0173,湖北大蛋（件）,澳洲新西蘭食品標準管理局,湖北大蛋（件）,湖北大蛋件,candidate,0.0,ambiguous,DTL0173,,3
+CFC_0503070510140,木耳,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),珍珠雲耳 ( 貓耳朵 ),珍珠雲耳貓耳朵,candidate,0.7,fallback_fuzzy,DTL0108,0503070510140,3
+CFC_0503010411040,紅蘿蔔,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),甘筍仔,甘筍仔,candidate,0.7,fallback_fuzzy,VCK0310,0503010411040,3
+HK0-0803,甘筍肉,澳洲新西蘭食品標準管理局,甘筍肉,甘筍肉,candidate,0.0,ambiguous,HK0-0803,,3
+HK0-0802,甘筍肉,澳洲新西蘭食品標準管理局,甘筍肉,甘筍肉,candidate,0.0,ambiguous,HK0-0802,,3
+HK0-0802,甘筍肉 <切粒>,澳洲新西蘭食品標準管理局,甘筍肉 <切粒>,甘筍肉切粒,confirmed,1.0,name_exact,HK0-0802,,3
+HK0-1743,粗炒,食物安全中心轄下的食物研究化驗所 (FRL),粗炒,粗炒,confirmed,1.0,code_exact,HK0-1743,,3
+,紅圓椒絲,食物安全中心轄下的食物研究化驗所 (FRL),紅圓椒絲,紅圓椒絲,confirmed,1.0,name_exact,HK0-2508,,3
+,紅椒絲,食物安全中心轄下的食物研究化驗所 (FRL),紅椒絲,紅椒絲,confirmed,1.0,name_exact,HK0-2508,,3
+HK0-1582,芋頭肉 <切粒>,澳洲新西蘭食品標準管理局,芋頭肉 <切粒>,芋頭肉切粒,confirmed,1.0,code_exact,HK0-1582,,3
+CFC_0503040431050,番茄,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),蕃茄粒,蕃茄粒,candidate,0.7,fallback_fuzzy,HK0-1373,0503040431050,3
+CFC_0503020452040,西蘭花,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),西椰菜（切絲）,西椰菜切絲,candidate,0.7,fallback_fuzzy,HK0-1082,0503020452040,3
+HK0-1380,豆干,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),豆干,豆干,confirmed,1.0,name_exact,HK0-1380,,3
+HK0-1037,豬柳扒條,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),豬柳扒條,豬柳扒條,confirmed,1.0,name_exact,HK0-1037,,3
+TTF0022,雞中翼,澳洲新西蘭食品標準管理局,雞中翼,雞中翼,confirmed,1.0,name_exact,TTF0022,,3
+MCK0103,雞扒,食物安全中心轄下的食物研究化驗所 (FRL),雞扒,雞扒,confirmed,1.0,code_exact,MCK0103,,3
+HK0-2055,香煎倉魚塊,澳洲新西蘭食品標準管理局,香煎倉魚塊,香煎倉魚塊,confirmed,1.0,code_exact,HK0-2055,,3
+HK0-0644,魚蓉燒賣3個,食物安全中心轄下的食物研究化驗所 (FRL),魚蓉燒賣3個,魚蓉燒賣3個,confirmed,1.0,name_exact,HK0-0644,,3
+HK0-2289,鮮茄角,澳洲新西蘭食品標準管理局,鮮茄角,鮮茄角,confirmed,1.0,name_exact,HK0-1373,,3
+HK0-2289,鮮茄角,澳洲新西蘭食品標準管理局,鮮茄角,鮮茄角,confirmed,1.0,name_exact,HK0-2289,,3
+,黃圓椒絲,食物安全中心轄下的食物研究化驗所 (FRL),黃圓椒絲,黃圓椒絲,confirmed,1.0,name_exact,HK0-2107,,3
+HK0-1595,12X510G 李錦記素食蠔油,澳洲新西蘭食品標準管理局,12X510G 李錦記素食蠔油,12x510g李錦記素食蠔油,confirmed,1.0,name_exact,HK0-1595,,2
+HK0-1638,4X5L 玉蓮麻油 (紅蓋),中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),4X5L 玉蓮麻油 (紅蓋),4x5l玉蓮麻油紅蓋,confirmed,1.0,code_exact,HK0-1638,,2
+,<清洗>紹菜,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),<清洗>紹菜,清洗紹菜,confirmed,1.0,name_exact,VCK0348,,2
+DTL0462,冬菇,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),冬菇,冬菇,confirmed,1.0,code_exact,DTL0462,,2
+DTL0081,冰糖,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),冰糖,冰糖,candidate,0.0,ambiguous,DTL0081,,2
+CFC_0501040113050,麵條,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),出前一丁,出前一丁,candidate,0.7,fallback_fuzzy,HK0-3217,0501040113050,2
+VHF072,包仔豆腐,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),包仔豆腐,包仔豆腐,confirmed,1.0,code_exact,VHF072,,2
+,合掌瓜肉 <切絲>,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),合掌瓜肉 <切絲>,合掌瓜肉切絲,confirmed,1.0,name_exact,HK0-2363,,2
+,合掌瓜肉 <切絲>,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),合掌瓜肉 <切絲>,合掌瓜肉切絲,confirmed,1.0,name_exact,HK0-0016,,2
+CFC_0506060814200,火腿,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),大利 火腿片 2磅/包,大利火腿片2磅包,candidate,0.7,fallback_fuzzy,MCK0104,0506060814200,2
+,小籠包2個,食物安全中心轄下的食物研究化驗所 (FRL),小籠包2個,小籠包2個,confirmed,1.0,name_exact,,,2
+HK0-2087,急凍餃子2個,食物安全中心轄下的食物研究化驗所 (FRL),急凍餃子,急凍餃子,confirmed,1.0,code_exact,HK0-2087,,2
+HK0-2087,急凍餃子2個,食物安全中心轄下的食物研究化驗所 (FRL),急凍餃子2個,急凍餃子2個,confirmed,1.0,code_exact,HK0-2087,,2
+HK0-3257,指南針麵粉,澳洲新西蘭食品標準管理局,指南針麵粉,指南針麵粉,confirmed,1.0,name_exact,HK0-3257,,2
+MANUAL_OMNIPORK_STRIP,OmniPork新肉絲,【人工补录】OmniPork新肉絲，同新猪肉营养（每100g）,新肉絲OMNIPORK STRIP,新肉絲omniporkstrip,candidate,0.7,historical_match,,MANUAL_OMNIPORK_STRIP,2
+HK0-1659,日式烏冬,食物安全中心轄下的食物研究化驗所 (FRL),日式烏冬,日式烏冬,confirmed,1.0,name_exact,HK0-1659,,2
+MANUAL_LKK_CHUHOU,李錦記柱侯醬,【人工补录】李錦記柱侯醬，官方营养标签（每100g）,柱候醬,柱候醬,confirmed,1.0,name_exact,HK0-0102,MANUAL_LKK_CHUHOU,2
+HK0-2148,栗米墨魚餅,食物安全中心轄下的食物研究化驗所 (FRL),栗米墨魚餅,栗米墨魚餅,confirmed,1.0,name_exact,HK0-2148,,2
+HK0-2004,梅肉粒,澳洲新西蘭食品標準管理局,梅肉粒,梅肉粒,confirmed,1.0,code_exact,HK0-2004,,2
+HK0-3215,歐柏茄汁(紅色) 3KGX6罐,澳洲新西蘭食品標準管理局,歐柏茄汁(紅色) 3KGX6罐,歐柏茄汁紅色3kgx6罐,confirmed,1.0,code_exact,HK0-3215,,2
+MANUAL_LKK_SATAY,李錦記沙爹醬,【人工补录】李錦記沙爹醬，官方营养标签（每100g）,沙爹醬,沙爹醬,confirmed,1.0,name_exact,DTL0238,MANUAL_LKK_SATAY,2
+VCK0194,油麵,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),油麵,油麵,confirmed,1.0,code_exact,VCK0194,,2
+CFC_0503050443010,洋葱,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),洋蔥,洋蔥,confirmed,1.0,name_exact,HK0-3153,0503050443010,2
+CFC_0503050443010,洋葱,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),洋蔥角,洋蔥角,candidate,0.7,fallback_fuzzy,HK0-3153,0503050443010,2
+,清洗 毛豆肉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),清洗 毛豆肉,清洗毛豆肉,confirmed,1.0,name_exact,,,2
+DTL0173,湖北雞蛋 360,澳洲新西蘭食品標準管理局,湖北雞蛋 360,湖北雞蛋360,confirmed,1.0,name_exact,DTL0173,,2
+DTL0039,濃縮檸檬汁,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),濃縮檸檬汁,濃縮檸檬汁,confirmed,1.0,code_exact,DTL0039,,2
+HK0-0256,牛柳絲,澳洲新西蘭食品標準管理局,牛柳絲,牛柳絲,confirmed,1.0,name_exact,HK0-0256,,2
+HK0-3235,牛片,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),牛片,牛片,confirmed,1.0,name_exact,HK0-3235,,2
+HK0-1861,牛肉丸2個,澳洲新西蘭食品標準管理局,牛肉丸2個,牛肉丸2個,confirmed,1.0,name_exact,,,2
+HK0-3228,牛肉片,澳洲新西蘭食品標準管理局,牛肉片,牛肉片,candidate,0.0,ambiguous,HK0-3228,,2
+VCK0038,甘筍肉,澳洲新西蘭食品標準管理局,甘筍肉,甘筍肉,candidate,0.0,ambiguous,VCK0038,,2
+HK0-1375,甘筍角,澳洲新西蘭食品標準管理局,甘筍角,甘筍角,confirmed,1.0,code_exact,HK0-1375,,2
+HK0-1373,番茄角,澳洲新西蘭食品標準管理局,番茄角,番茄角,confirmed,1.0,name_exact,HK0-1373,,2
+HK0-3364,素午餐肉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),素午餐肉,素午餐肉,confirmed,1.0,name_exact,HK0-3364,,2
+HK0-1626,素火腿,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),素火腿,素火腿,confirmed,1.0,name_exact,HK0-1626,,2
+CK0501,素肉絲,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),素肉絲,素肉絲,candidate,0.0,ambiguous,CK0501,,2
+A10-1269,老抽,澳洲新西蘭食品標準管理局,老抽,老抽,confirmed,1.0,name_exact,A10-1269,,2
+CFC_0506030821040,牛肉,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),肉眼粒,肉眼粒,candidate,0.7,fallback_fuzzy,MCK0084,0506030821040,2
+HK0-1669,肉餅,美國農業部農業研究局轄下的貝茲維爾人類營養研究中心 (FoodData Central),肉餅,肉餅,confirmed,1.0,code_exact,HK0-1669,,2
+HK0-1792,草菇<切一開二>,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),草菇<切一開二>,草菇切一開二,confirmed,1.0,name_exact,HK0-1792,,2
+HK0-2408,荷蘭豆肉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),荷蘭豆肉,荷蘭豆肉,confirmed,1.0,name_exact,HK0-2408,,2
+HK0-3361,菠蘿粒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),菠蘿粒,菠蘿粒,confirmed,1.0,name_exact,HK0-3361,,2
+HK0-2615,薯角,食物安全中心轄下的食物研究化驗所 (FRL),薯角,薯角,candidate,0.0,ambiguous,HK0-2615,,2
+CFC_0513001241070,河蜆,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),蜆肉,蜆肉,candidate,0.0,ambiguous,,0513001241070,2
+,蜜糖雞尾腸3個,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),蜜糖雞尾腸3個,蜜糖雞尾腸3個,confirmed,1.0,name_exact,,,2
+HK0-1578,西椰菜 <切角>,澳洲新西蘭食品標準管理局,西椰菜 <切角>,西椰菜切角,candidate,0.0,ambiguous,HK0-1578,,2
+,豆辦醬,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),豆辦醬,豆辦醬,confirmed,1.0,name_exact,DTL0057,,2
+HK0-3234,豬柳扒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),豬柳扒,豬柳扒,candidate,0.0,ambiguous,HK0-3234,,2
+,豬頸肉片,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),豬頸肉片,豬頸肉片,confirmed,1.0,name_exact,,,2
+HK0-2025,尖通粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),貝殼粉,貝殼粉,confirmed,1.0,code_exact,HK0-2025,,2
+CFC_0503020422030,綠豆芽,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),銀芽,銀芽,candidate,0.7,fallback_fuzzy,VHF050,0503020422030,2
+MANUAL_MIXED_VEG,三色豆,【人工补录】三色豆（玉米+青豆+胡萝卜），按1:1:1均值（每100g）,雜豆粒,雜豆粒,confirmed,1.0,name_exact,HK0-2007,MANUAL_MIXED_VEG,2
+HK0-2011,雞柳,澳洲新西蘭食品標準管理局,雞柳,雞柳,confirmed,1.0,code_exact,HK0-2011,,2
+HK0-0797,雞翼槌,澳洲新西蘭食品標準管理局,雞翼槌,雞翼槌,confirmed,1.0,name_exact,HK0-0797,,2
+HK0-1951,雪菜粒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),雪菜粒,雪菜粒,confirmed,1.0,code_exact,HK0-1951,,2
+HK0-2513,青瓜肉 <切片>,食物安全中心轄下的食物研究化驗所 (FRL),青瓜肉 <切片>,青瓜肉切片,confirmed,1.0,name_exact,HK0-2513,,2
+CFC_0506060813070,午餐肉,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),餐肉,餐肉,confirmed,1.0,name_exact,HK0-3364,0506060813070,2
+,魚粒,澳洲新西蘭食品標準管理局,魚粒,魚粒,confirmed,1.0,name_exact,,,2
+HK0-0644,魚蓉燒賣,食物安全中心轄下的食物研究化驗所 (FRL),魚蓉燒賣,魚蓉燒賣,confirmed,1.0,name_exact,HK0-0644,,2
+HK0-1579,"鮮冬菇肉 <切,開四>",中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),"鮮冬菇肉 <切,開四>","鮮冬菇肉切,開四",confirmed,1.0,code_exact,HK0-1579,,2
+DTL0215,黃薑粉,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),黃薑粉,黃薑粉,candidate,0.0,ambiguous,DTL0215,,2
+DTL0439,黃雪耳,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),黃雪耳,黃雪耳,candidate,0.0,ambiguous,DTL0439,,2
+HK0-0745,(濕)炸支竹,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),(濕)炸支竹,濕炸支竹,candidate,0.0,ambiguous,HK0-0745,,1
+HK0-2159,10X2KG 金地球黑糯米,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),10X2KG 金地球黑糯米,10x2kg金地球黑糯米,confirmed,1.0,code_exact,HK0-2159,,1
+HK0-2022,114G 雙囍牌洋芫荽( 歐芹 ),澳洲新西蘭食品標準管理局,114G 雙囍牌洋芫荽( 歐芹 ),114g雙囍牌洋芫荽歐芹,confirmed,1.0,code_exact,HK0-2022,,1
+MANUAL_KNORR_XIANLU,家樂牌鮮露,【人工补录】家樂牌鮮露，Unilever 官方营养标签（每100g）,12X980ML 家樂牌鮮露,12x980ml家樂牌鮮露,confirmed,1.0,name_exact,HK0-3211,MANUAL_KNORR_XIANLU,1
+HK0-1938,21LB 鴻聯牌咖喱胆,食物安全中心轄下的食物研究化驗所 (FRL),21LB 鴻聯牌咖喱胆,21lb鴻聯牌咖喱胆,confirmed,1.0,code_exact,HK0-1938,,1
+HK0-2179,21LB 鴻聯牌咖喱膽,食物安全中心轄下的食物研究化驗所 (FRL),21LB 鴻聯牌咖喱膽,21lb鴻聯牌咖喱膽,confirmed,1.0,code_exact,HK0-2179,,1
+HKO-1771,220+魚柳（越南）,澳洲新西蘭食品標準管理局,220+魚柳（越南）,220+魚柳越南,confirmed,1.0,code_exact,HKO-1771,,1
+DTL0307,25KG糯米,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),25KG糯米,25kg糯米,confirmed,1.0,code_exact,DTL0307,,1
+CFC_0501040113120,通心麵,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),28LB蜆殼粉,28lb蜆殼粉,candidate,0.0,ambiguous,HK0-3209,0501040113120,1
+HK0-1312,魚柳,澳洲新西蘭食品標準管理局,300+龍利柳(白),300+龍利柳白,candidate,0.7,historical_match,HK0-3223,,1
+HK0-1312,魚柳,澳洲新西蘭食品標準管理局,300+龍利柳(白盒),300+龍利柳白盒,confirmed,1.0,name_exact,HK0-3223,,1
+HK0-1659,30X200G 佳富牌日式烏冬,食物安全中心轄下的食物研究化驗所 (FRL),30X200G 佳富牌日式烏冬,30x200g佳富牌日式烏冬,confirmed,1.0,name_exact,HK0-1659,,1
+HK0-1939,4X3KG 大紅日通粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),4X3KG 大紅日通粉,4x3kg大紅日通粉,confirmed,1.0,name_exact,HK0-1939,,1
+,500G 藜麥,美國農業部農業研究局轄下的貝茲維爾人類營養研究中心 (FoodData Central),500G 藜麥,500g藜麥,confirmed,1.0,name_exact,,,1
+,<清洗>紹菜,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),<清洗>紹菜,清洗紹菜,confirmed,1.0,name_exact,,,1
+MANUAL_OMNIPORK,OmniPork新豬肉,【人工补录】OmniPork新豬肉，台湾官方营养标签（每100g）,OMNIMeat（新豬肉碎）,omnimeat新豬肉碎,candidate,0.7,historical_match,,MANUAL_OMNIPORK,1
+,京蔥,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),京蔥,京蔥,confirmed,1.0,name_exact,HK0-1572,,1
+,京蔥,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),京蔥,京蔥,confirmed,1.0,name_exact,DTL0173,,1
+,什豆,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),什豆,什豆,confirmed,1.0,name_exact,HK0-2007,,1
+HK0-1465,冬菇片,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),冬菇片,冬菇片,confirmed,1.0,name_exact,HK0-1465,,1
+HK0-1465,冬菇粒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),冬菇粒,冬菇粒,confirmed,1.0,name_exact,HK0-1465,,1
+HK0-3228,冰室醃製牛肉片 5磅/包,澳洲新西蘭食品標準管理局,冰室醃製牛肉片 5磅/包,冰室醃製牛肉片5磅包,confirmed,1.0,name_exact,HK0-3228,,1
+HK0-3364,午餐肉（亨通）,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),午餐肉（亨通）,午餐肉亨通,confirmed,1.0,name_exact,HK0-3364,,1
+HK0-2238,南瓜片,澳洲新西蘭食品標準管理局,南瓜片,南瓜片,confirmed,1.0,code_exact,HK0-2238,,1
+VCK0145,南瓜粒,澳洲新西蘭食品標準管理局,南瓜粒,南瓜粒,confirmed,1.0,name_exact,VCK0145,,1
+DTL0295,南順牛油,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),南順牛油,南順牛油,confirmed,1.0,code_exact,DTL0295,,1
+HK0-2518,去皮雞粒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),去皮雞粒,去皮雞粒,confirmed,1.0,name_exact,HK0-2518,,1
+HK0-3542,叉燒絲,食物安全中心轄下的食物研究化驗所 (FRL),叉燒絲,叉燒絲,confirmed,1.0,code_exact,HK0-3542,,1
+HK0-0068,叉燒（斤）,食物安全中心轄下的食物研究化驗所 (FRL),叉燒（斤）,叉燒斤,confirmed,1.0,code_exact,HK0-0068,,1
+HK0-3148,薯仔肉 <切絲>,食物安全中心轄下的食物研究化驗所 (FRL),合掌瓜肉 <切角>,合掌瓜肉切角,candidate,0.0,ambiguous,HK0-3148,,1
+MANUAL_FRUIT_MIX,熱帶雜果,【人工补录】地捫什果（Del Monte 热带杂果罐头，糖水连果），参考香港包装营养标签,地捫什果,地捫什果,confirmed,1.0,name_exact,HK0-3567,MANUAL_FRUIT_MIX,1
+MANUAL_FRUIT_MIX,熱帶雜果,【人工补录】地捫什果（Del Monte 热带杂果罐头，糖水连果），参考香港包装营养标签,地捫什果/什果(億萬),地捫什果什果億萬,candidate,0.7,historical_match,HK0-3567,MANUAL_FRUIT_MIX,1
+DTL0084,地捫茄汁,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),地捫茄汁,地捫茄汁,candidate,0.0,ambiguous,DTL0084,,1
+DTL137,地捫茄膏,澳洲新西蘭食品標準管理局,地捫茄膏,地捫茄膏,confirmed,1.0,name_exact,DTL137,,1
+CFC_0501060222010,粉絲,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),塔牌龍口粉絲（箱拆包）,塔牌龍口粉絲箱拆包,candidate,0.7,fallback_fuzzy,DTL0014,0501060222010,1
+A10-7117,大米,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),大米,大米,confirmed,1.0,name_exact,A10-7117,,1
+A10-7117,大米/金盾牌頂級香絲苗米（紅線）25公斤,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),大米/金盾牌頂級香絲苗米（紅線）25公斤,大米金盾牌頂級香絲苗米紅線25公斤,confirmed,1.0,name_exact,A10-7117,,1
+DTL0157,大美極鮮醬油,澳洲新西蘭食品標準管理局,大美極鮮醬油,大美極鮮醬油,confirmed,1.0,code_exact,DTL0157,,1
+,姜蓉（沙师弟）,澳洲新西蘭食品標準管理局,姜蓉（沙师弟）,姜蓉沙师弟,confirmed,1.0,name_exact,BCPN-9013,,1
+MANUAL_KNORR_CHICKEN_POWDER,家樂牌雞粉,Unilever Food Solutions Hong Kong 官方營養標籤,家樂牌調味雞粉(包裝),家樂牌調味雞粉包裝,confirmed,1.0,brand_label_exact,MANUAL_KNORR_CHICKEN_POWDER,4892218067816,1
+HK0-1118,雞粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),家樂牌黃罐雞粉,家樂牌黃罐雞粉,confirmed,1.0,code_exact,HK0-1118,,1
+HK0-2025,尖通粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),尖通粉,尖通粉,candidate,0.0,ambiguous,HK0-2025,,1
+HK0-1939,尖通粉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),尖通粉,尖通粉,candidate,0.0,ambiguous,HK0-1939,,1
+HK0-3214,意大利粉(藍鯨),中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),意大利粉(藍鯨),意大利粉藍鯨,confirmed,1.0,name_exact,HK0-3214,,1
+,披薩,澳洲新西蘭食品標準管理局,披薩,披薩,confirmed,1.0,name_exact,A10-7114,,1
+DTL0084,日式咖哩磚,食物安全中心轄下的食物研究化驗所 (FRL),日式咖哩磚,日式咖哩磚,candidate,0.0,ambiguous,DTL0084,,1
+CFC_0503070510150,平菇,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),本菇,本菇,confirmed,1.0,name_exact,,0503070510150,1
+MANUAL_LKK_TERIYAKI,李錦記照燒汁,【人工补录】李錦記照燒汁，官方营养标签（每100g）,李錦記照燒汁,李錦記照燒汁,confirmed,1.0,name_exact,HK0-1314,MANUAL_LKK_TERIYAKI,1
+CFC_0503020480790,枸杞菜,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),杞子,杞子,confirmed,1.0,name_exact,DTL0099,0503020480790,1
+HK0-1927,枝竹,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),枝竹,枝竹,confirmed,1.0,name_exact,HK0-1927,,1
+HK0-1082,西椰菜（切絲）,澳洲新西蘭食品標準管理局,椰菜絲,椰菜絲,confirmed,1.0,name_exact,HK0-1082,,1
+HK0-1244,檳城白咖喱醬,食物安全中心轄下的食物研究化驗所 (FRL),檳城白咖喱醬,檳城白咖喱醬,confirmed,1.0,code_exact,HK0-1244,,1
+HK0-0995,檸檬,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),檸檬,檸檬,confirmed,1.0,name_exact,HK0-0995,,1
+VCK0192,河粉,泰國國立瑪希隆大學營養學學院 (Thai FCD 2025),河粉,河粉,confirmed,1.0,code_exact,VCK0192,,1
+DTL0047,清水,水(无营养),清水,清水,candidate,0.0,ambiguous,DTL0047,,1
+HK0-2784,清水,水(无营养),清水,清水,candidate,0.0,ambiguous,HK0-2784,,1
+VHF024,清水,水(无营养),清水,清水,candidate,0.0,ambiguous,VHF024,,1
+HK0-0338,滷水蛋（熟蛋）1個,澳洲新西蘭食品標準管理局,滷水蛋（熟蛋）1個,滷水蛋熟蛋1個,confirmed,1.0,name_exact,HK0-0338,,1
+MANUAL_BRAISED_PORK,滷肉,【人工补录】滷肉（卤味猪肉），市售通用值（每100g）,滷肉<108倉>,滷肉108倉,candidate,0.7,historical_match,HK0-2569,MANUAL_BRAISED_PORK,1
+MCK0036,潮州白魚蛋4個,澳洲新西蘭食品標準管理局,潮州白魚蛋4個,潮州白魚蛋4個,confirmed,1.0,name_exact,MCK0036,,1
+DTL0040,濃縮橙汁,食物安全中心轄下的食物研究化驗所 (FRL),濃縮橙汁,濃縮橙汁,candidate,0.0,ambiguous,DTL0040,,1
+HK0-3568,濃縮橙汁,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),濃縮橙汁,濃縮橙汁,candidate,0.0,ambiguous,HK0-3568,,1
+VCK0193,瀨粉,食物安全中心轄下的食物研究化驗所 (FRL),瀨粉,瀨粉,confirmed,1.0,code_exact,VCK0193,,1
+MCK0104,火腿,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),火腿,火腿,confirmed,1.0,name_exact,MCK0104,,1
+MCK0104,火腿片,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),火腿片,火腿片,confirmed,1.0,name_exact,MCK0104,,1
+MCK0104,火腿絲,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),火腿絲,火腿絲,confirmed,1.0,name_exact,MCK0104,,1
+MANUAL_FRIED_GARLIC,炸蒜蓉,【人工补录】炸蒜蓉（油炸蒜末），估算值（每100g）,炸蒜容,炸蒜容,confirmed,1.0,name_exact,DTL0028,MANUAL_FRIED_GARLIC,1
+HK0-1659,烏冬面,食物安全中心轄下的食物研究化驗所 (FRL),烏冬面,烏冬面,confirmed,1.0,name_exact,HK0-1659,,1
+HK0-2615,烤薯角,食物安全中心轄下的食物研究化驗所 (FRL),烤薯角,烤薯角,confirmed,1.0,name_exact,HK0-2615,,1
+CFC_0506060813040,臘肉,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),煙肉,煙肉,candidate,0.7,fallback_fuzzy,HK0-1168,0506060813040,1
+CFC_0506060813040,臘肉,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),煙肉片,煙肉片,candidate,0.7,fallback_fuzzy,HK0-1168,0506060813040,1
+,煮饭油（沙师弟）,食物安全中心轄下的食物研究化驗所 (FRL),煮饭油（沙师弟）,煮饭油沙师弟,confirmed,1.0,name_exact,BCPN-9006,,1
+HK0-3235,牛片,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),牛冧片,牛冧片,confirmed,1.0,name_exact,HK0-3235,,1
+HK0-3235,牛片,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),牛冧片,牛冧片,confirmed,1.0,name_exact,HK0-3228,,1
+CFC_0506030821040,牛肉,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),牛坑腩切粒,牛坑腩切粒,candidate,0.7,fallback_fuzzy,MCK0050,0506030821040,1
+HK0-1861,牛肉丸2個,澳洲新西蘭食品標準管理局,牛肉丸2個,牛肉丸2個,confirmed,1.0,code_exact,HK0-1861,,1
+HK0-1856,牛肉燒賣2個,澳洲新西蘭食品標準管理局,牛肉燒賣2個,牛肉燒賣2個,confirmed,1.0,code_exact,HK0-1856,,1
+HK0-1821,牛肉球,澳洲新西蘭食品標準管理局,牛肉球,牛肉球,confirmed,1.0,code_exact,HK0-1821,,1
+,牛肉球2個,澳洲新西蘭食品標準管理局,牛肉球2個,牛肉球2個,confirmed,1.0,name_exact,,,1
+,玉子豆腐,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),玉子豆腐,玉子豆腐,confirmed,1.0,name_exact,HK0-3078,,1
+HK0-1474,珍珠雞,食物安全中心轄下的食物研究化驗所 (FRL),珍珠雞,珍珠雞,confirmed,1.0,name_exact,,,1
+HK0-1474,珍珠雞,食物安全中心轄下的食物研究化驗所 (FRL),珍珠雞,珍珠雞,confirmed,1.0,code_exact,HK0-1474,,1
+CFC_0503070510140,木耳,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),珍珠雲耳,珍珠雲耳,candidate,0.7,fallback_fuzzy,DTL0108,0503070510140,1
+CFC_0503070510140,木耳,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),珍珠雲耳 ( 貓耳朵 ),珍珠雲耳貓耳朵,candidate,0.7,fallback_fuzzy,,0503070510140,1
+MANUAL_LKK_SWISS,李錦記瑞士汁,【人工补录】李錦記瑞士汁，香港官方营养标签（每100g）,瑞士汁,瑞士汁,confirmed,1.0,name_exact,YJ0013,MANUAL_LKK_SWISS,1
+HK0-0803,甘筍片,澳洲新西蘭食品標準管理局,甘筍片,甘筍片,confirmed,1.0,name_exact,HK0-0803,,1
+HK0-1568,甘筍肉,澳洲新西蘭食品標準管理局,甘筍肉,甘筍肉,candidate,0.0,ambiguous,HK0-1568,,1
+VHF024,甘筍絲,澳洲新西蘭食品標準管理局,甘荀絲,甘荀絲,confirmed,1.0,name_exact,VHF024,,1
+HK0-0116,生抽/40斤淘大金標生抽,澳洲新西蘭食品標準管理局,生抽/40斤淘大金標生抽,生抽40斤淘大金標生抽,confirmed,1.0,name_exact,HK0-0116,,1
+HK0-0116,生抽（錦珍牌）15KG,澳洲新西蘭食品標準管理局,生抽（錦珍牌）15KG,生抽錦珍牌15kg,confirmed,1.0,name_exact,HK0-0116,,1
+HK0-1373,番茄,澳洲新西蘭食品標準管理局,番茄,番茄,confirmed,1.0,name_exact,HK0-1373,,1
+HK0-2289,番茄（對半切）,食物安全中心轄下的食物研究化驗所 (FRL),番茄（對半切）,番茄對半切,confirmed,1.0,name_exact,HK0-2289,,1
+HK0-2081,白切雞,食物安全中心轄下的食物研究化驗所 (FRL),白切雞,白切雞,confirmed,1.0,code_exact,HK0-2081,,1
+DTL0079,白砂糖,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),白砂糖,白砂糖,confirmed,1.0,name_exact,DTL0079,,1
+DTL0079,白砂糖/30KG 韓國幼砂糖（德利行）,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),白砂糖/30KG 韓國幼砂糖（德利行）,白砂糖30kg韓國幼砂糖德利行,confirmed,1.0,name_exact,DTL0079,,1
+CFC_0503010411010,白蘿蔔,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),白蘿蔔,白蘿蔔,confirmed,1.0,name_exact,,0503010411010,1
+VCK0044,百福豆腐,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),百福豆腐,百福豆腐,confirmed,1.0,code_exact,VCK0044,,1
+,砂糖,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),砂糖,砂糖,candidate,0.0,ambiguous,,,1
+HK0-1567,福建椰菜花<切朵>,澳洲新西蘭食品標準管理局,福花,福花,confirmed,1.0,name_exact,HK0-1567,,1
+HK0-2108,節瓜絲,澳洲新西蘭食品標準管理局,節瓜絲,節瓜絲,confirmed,1.0,code_exact,HK0-2108,,1
+HK0-2148,粟米墨魚餅2個,食物安全中心轄下的食物研究化驗所 (FRL),粟米墨魚餅2個,粟米墨魚餅2個,confirmed,1.0,name_exact,HK0-2148,,1
+HK0-1626,素咕嚕肉,食物安全中心轄下的食物研究化驗所 (FRL),素咕嚕肉,素咕嚕肉,confirmed,1.0,name_exact,HK0-1626,,1
+,素牛扒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),素牛扒,素牛扒,confirmed,1.0,name_exact,,,1
+MANUAL_VEG_BEEF,素牛肉,【人工补录】素牛肉（小麦/大豆蛋白），市售通用值（每100g）,素牛肉,素牛肉,confirmed,1.0,name_exact,,MANUAL_VEG_BEEF,1
+MANUAL_VEG_BEEF,素牛肉,【人工补录】素牛肉（小麦/大豆蛋白），市售通用值（每100g）,素牛肉片,素牛肉片,confirmed,1.0,name_exact,,MANUAL_VEG_BEEF,1
+MANUAL_VEG_SHREDDED,素肉絲,【人工补录】素肉絲（大豆组织蛋白），市售通用值（每100g）,素肉絲,素肉絲,candidate,0.0,ambiguous,,MANUAL_VEG_SHREDDED,1
+MANUAL_VEG_PATTY,素肉餅,【人工补录】素肉餅（大豆组织蛋白），市售通用值（每100g）,素肉餅,素肉餅,confirmed,1.0,name_exact,,MANUAL_VEG_PATTY,1
+MANUAL_VEG_SHRIMP,素蝦仁,【人工补录】素蝦仁（植物蛋白），市售通用值（每100g）,素蝦仁,素蝦仁,confirmed,1.0,name_exact,,MANUAL_VEG_SHRIMP,1
+HK0-1595,素蠔油,澳洲新西蘭食品標準管理局,素蠔油,素蠔油,confirmed,1.0,name_exact,HK0-1595,,1
+,素雞絲,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),素雞絲,素雞絲,confirmed,1.0,name_exact,,,1
+,素鴨,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),素鴨,素鴨,confirmed,1.0,name_exact,,,1
+,紹菜,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),紹菜,紹菜,confirmed,1.0,name_exact,VCK0348,,1
+HK0-1779,美極牛肉片,澳洲新西蘭食品標準管理局,美極牛肉片,美極牛肉片,confirmed,1.0,code_exact,HK0-1779,,1
+HK0-0256,美極醬油牛柳頭粒/絲,澳洲新西蘭食品標準管理局,美極醬油牛柳頭粒/絲,美極醬油牛柳頭粒絲,confirmed,1.0,name_exact,HK0-0256,,1
+HK0-1861,牛肉丸2個,澳洲新西蘭食品標準管理局,肉丸2個,肉丸2個,confirmed,1.0,name_exact,,,1
+HK0-1861,牛肉丸2個,澳洲新西蘭食品標準管理局,肉丸2個,肉丸2個,confirmed,1.0,name_exact,101-0396,,1
+HK0-3347,肉片,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),肉片,肉片,candidate,0.0,ambiguous,HK0-3347,,1
+HK0-3229,肉粒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),肉粒,肉粒,candidate,0.0,ambiguous,HK0-3229,,1
+BCPN-9989,肉粒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),肉粒,肉粒,candidate,0.0,ambiguous,BCPN-9989,,1
+HK0-1076,臺青瓜肉 <切片>,食物安全中心轄下的食物研究化驗所 (FRL),臺青瓜肉 <切片>,台青瓜肉切片,confirmed,1.0,code_exact,HK0-1076,,1
+HK0-0830,芝士腸3個,澳洲新西蘭食品標準管理局 (AFCD R2),芝士腸3個,芝士腸3個,confirmed,1.0,code_exact,HK0-0830,,1
+MANUAL_CHEESE_SAUCE,芝士醬,【人工补录】芝士醬（奶酪酱），市售通用值（每100g）,芝士醬,芝士醬,candidate,0.0,ambiguous,,MANUAL_CHEESE_SAUCE,1
+HK0-2073,芝士醬,澳洲新西蘭食品標準管理局,芝士醬,芝士醬,candidate,0.0,ambiguous,HK0-2073,,1
+HK0-2408,荷蘭豆,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),荷蘭豆,荷蘭豆,confirmed,1.0,name_exact,HK0-2408,,1
+HK0-3361,菠蘿粒（新豐）[大罐裝],中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),菠蘿粒（新豐）[大罐裝],菠蘿粒新豐大罐裝,confirmed,1.0,name_exact,HK0-3361,,1
+HK0-2319,萵筍,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),萵筍,萵筍,confirmed,1.0,code_exact,HK0-2319,,1
+BCPN-9007,蒜蓉（沙师弟）,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),蒜蓉（沙师弟）,蒜蓉沙师弟,confirmed,1.0,code_exact,BCPN-9007,,1
+CK0226,蔥阿伯東北手工水餃,食物安全中心轄下的食物研究化驗所 (FRL),蔥阿伯東北手工水餃,蔥阿伯東北手工水餃,confirmed,1.0,code_exact,CK0226,,1
+DTL0047,蕃茄汁,澳洲新西蘭食品標準管理局,蕃茄汁,蕃茄汁,confirmed,1.0,name_exact,DTL0047,,1
+HK0-1386,薯仔肉 <切粒>,食物安全中心轄下的食物研究化驗所 (FRL),薯仔肉 <切粒>,薯仔肉切粒,confirmed,1.0,name_exact,HK0-1386,,1
+VCK0173,薯仔角,食物安全中心轄下的食物研究化驗所 (FRL),薯仔角,薯仔角,candidate,0.0,ambiguous,VCK0173,,1
+HK0-1385,薯仔角,食物安全中心轄下的食物研究化驗所 (FRL),薯仔角,薯仔角,candidate,0.0,ambiguous,HK0-1385,,1
+,薯蓉粉,食物安全中心轄下的食物研究化驗所 (FRL),薯蓉粉,薯蓉粉,confirmed,1.0,name_exact,HK0-0411,,1
+HK0-1385,薯角,食物安全中心轄下的食物研究化驗所 (FRL),薯角,薯角,candidate,0.0,ambiguous,HK0-1385,,1
+HK0-3560,蘑菇片,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),蘑菇片,蘑菇片,candidate,0.0,ambiguous,HK0-3560,,1
+HK0-1792,蘑菇片,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),蘑菇片,蘑菇片,candidate,0.0,ambiguous,HK0-1792,,1
+MANUAL_CORDYCEPS,蟲草花,【人工补录】蟲草花（蛹蟲草）干品，参考公开营养文献,蟲草花,蟲草花,confirmed,1.0,name_exact,DTL0331,MANUAL_CORDYCEPS,1
+HK0-1728,西芹肉 <切角>,澳洲新西蘭食品標準管理局,西芹肉 <切角>,西芹肉切角,confirmed,1.0,code_exact,HK0-1728,,1
+HK0-2289,西蘭花 <切朵>,澳洲新西蘭食品標準管理局,西蘭花 <切朵>,西蘭花切朵,candidate,0.0,ambiguous,HK0-2289,,1
+HK0-1761,豬手粒,食物安全中心轄下的食物研究化驗所 (FRL),豬手粒,豬手粒,confirmed,1.0,code_exact,HK0-1761,,1
+HKO-3234,豬柳扒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),豬柳扒,豬柳扒,candidate,0.0,ambiguous,HKO-3234,,1
+HK0-1037,豬柳扒漢堡扒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),豬柳扒漢堡扒,豬柳扒漢堡扒,confirmed,1.0,name_exact,HK0-1037,,1
+HK0-2054,豬肉燒賣2個,食物安全中心轄下的食物研究化驗所 (FRL),豬肉燒賣2個,豬肉燒賣2個,confirmed,1.0,code_exact,HK0-2054,,1
+MANUAL_FISH_VEGETABLE_BALL,野菜鮮魚餅,【人工补录】野菜鮮魚餅（蔬菜鱼饼），市售通用值（每100g）,野菜鮮魚餅2個,野菜鮮魚餅2個,candidate,0.7,historical_match,,MANUAL_FISH_VEGETABLE_BALL,1
+CFC_0503070510090,金針菇,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),金菇(包),金菇包,candidate,0.7,fallback_fuzzy,VHF088,0503070510090,1
+MANUAL_MIXED_VEG,三色豆,【人工补录】三色豆（玉米+青豆+胡萝卜），按1:1:1均值（每100g）,雜豆,雜豆,confirmed,1.0,name_exact,HK0-2007,MANUAL_MIXED_VEG,1
+,雞下脾,食物安全中心轄下的食物研究化驗所 (FRL),雞下脾,雞下脾,confirmed,1.0,name_exact,,,1
+TTF0022,雞中翼 35g,澳洲新西蘭食品標準管理局,雞中翼 35g,雞中翼35g,confirmed,1.0,name_exact,TTF0022,,1
+HK0-2518,雞粒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),雞粒,雞粒,confirmed,1.0,name_exact,HK0-2518,,1
+HK0-0797,雞翼鎚,澳洲新西蘭食品標準管理局,雞翼鎚,雞翼鎚,confirmed,1.0,name_exact,HK0-0797,,1
+MANUAL_KING_OYSTER,杏鲍菇,【人工补录】杏鲍菇（雞脾菇），中国食物成分表（每100g）,雞脾菇,雞脾菇,confirmed,1.0,name_exact,HK0-0431,MANUAL_KING_OYSTER,1
+HK0-0797,雞鎚,澳洲新西蘭食品標準管理局,雞鎚,雞鎚,confirmed,1.0,name_exact,HK0-0797,,1
+CFC_0503070510140,木耳,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),雲耳,雲耳,confirmed,1.0,name_exact,DTL0108,0503070510140,1
+,青椒角,食物安全中心轄下的食物研究化驗所 (FRL),青椒角,青椒角,confirmed,1.0,name_exact,HK0-0800,,1
+HK0-2513,青瓜,食物安全中心轄下的食物研究化驗所 (FRL),青瓜,青瓜,confirmed,1.0,name_exact,HK0-2513,,1
+MANUAL_MUSHROOM_BALL,香菇貢丸,【人工补录】香菇貢丸，市售通用值（每100g）,香菇貢丸2個,香菇貢丸2個,candidate,0.7,historical_match,,MANUAL_MUSHROOM_BALL,1
+HK0-1575,馬蹄,食物安全中心轄下的食物研究化驗所 (FRL),馬蹄,馬蹄,confirmed,1.0,code_exact,HK0-1575,,1
+HK0-1575,馬蹄,食物安全中心轄下的食物研究化驗所 (FRL),馬蹄碎,馬蹄碎,confirmed,1.0,code_exact,HK0-1575,,1
+HKO1771,魚柳,澳洲新西蘭食品標準管理局,魚柳,魚柳,candidate,0.0,ambiguous,HKO1771,,1
+HK0-1312,魚柳,澳洲新西蘭食品標準管理局,魚柳,魚柳,candidate,0.0,ambiguous,HK0-1312,,1
+HK0-3223,魚柳,澳洲新西蘭食品標準管理局,魚柳,魚柳,candidate,0.0,ambiguous,HK0-3223,,1
+MCK0036,魚蛋,澳洲新西蘭食品標準管理局,魚蛋,魚蛋,confirmed,1.0,name_exact,MCK0036,,1
+HK0-1465,鮮冬菇粒,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),鮮冬菇粒,鮮冬菇粒,confirmed,1.0,name_exact,HK0-1465,,1
+HK0-2289,鮮茄,澳洲新西蘭食品標準管理局,鮮茄,鮮茄,confirmed,1.0,name_exact,HK0-2289,,1
+HK0-1373,鮮茄 <切角>,食物安全中心轄下的食物研究化驗所 (FRL),鮮茄 <切角>,鮮茄切角,confirmed,1.0,name_exact,HK0-1373,,1
+CFC_0501050112010,小麥粉,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),麵粉,麵粉,candidate,0.0,ambiguous,,0501050112010,1
+DTL0006,麵粉,澳洲新西蘭食品標準管理局,麵粉,麵粉,candidate,0.0,ambiguous,DTL0006,,1
+,黃圓椒肉 <切角>,食物安全中心轄下的食物研究化驗所 (FRL),黃圓椒肉 <切角>,黃圓椒肉切角,confirmed,1.0,name_exact,HK0-1571,,1
+HK0-0995,黃檸檬,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),黃檸檬,黃檸檬,confirmed,1.0,name_exact,HK0-0995,,1
+HK0-1380,黃豆幹,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),黃豆幹,黃豆幹,confirmed,1.0,name_exact,HK0-1380,,1
+DTL0006,黃雪耳,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),黃雪耳,黃雪耳,candidate,0.0,ambiguous,DTL0006,,1
+,黑松露油,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),黑松露油,黑松露油,confirmed,1.0,name_exact,HK0-2030,,1
+,黑松露醬,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),黑松露醬,黑松露醬,confirmed,1.0,name_exact,XWJ-0281,,1
+MANUAL_LKK_MOSHI,李錦記磨豉醬,【人工补录】李錦記磨豉醬，包装营养标签（每100g）,黑磨豉醬,黑磨豉醬,confirmed,1.0,name_exact,DTL0054,MANUAL_LKK_MOSHI,1
