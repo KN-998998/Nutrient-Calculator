@@ -25,18 +25,24 @@
   .result-bar { background: #e8f5e9; border-radius: 8px; padding: 14px 18px; margin-top: 16px; font-size: 14px; }
   .result-bar .num { font-size: 20px; font-weight: bold; color: #2e7d32; }
   .warn { background: #fff3e0; color: #e65100; border-radius: 8px; padding: 10px 14px; margin-top: 10px; font-size: 13px; }
-  table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
   th, td { border: 1px solid #e0e0e0; padding: 6px 8px; text-align: left; white-space: normal; overflow-wrap: anywhere; word-break: break-word; }
-  th:nth-child(1), td:nth-child(1) { width: 4%; }
-  th:nth-child(2), td:nth-child(2) { width: 5%; }
-  th:nth-child(3), td:nth-child(3) { width: 16%; }
-  th:nth-child(4), td:nth-child(4) { width: 6%; }
-  th:nth-child(n+5):nth-child(-n+12), td:nth-child(n+5):nth-child(-n+12) { width: 6%; }
-  th:nth-child(13), td:nth-child(13) { width: 8%; }
-  th:nth-child(14), td:nth-child(14) { width: 12%; }
-  th:nth-child(15), td:nth-child(15) { width: 7%; }
   th { background: #f5f7fa; position: sticky; top: 0; }
-  .table-wrap { max-height: 520px; overflow-y: auto; overflow-x: hidden; border-radius: 8px; border: 1px solid #e0e0e0; }
+  .table-wrap { max-height: 520px; overflow: auto; border-radius: 8px; border: 1px solid #e0e0e0; }
+  .output-table { min-width: 1800px; table-layout: fixed; }
+  .output-table th:nth-child(1), .output-table td:nth-child(1) { width: 240px; }
+  .output-table th:nth-child(5), .output-table td:nth-child(5) { width: 520px; }
+  .output-table th:not(:first-child):not(:nth-child(5)), .output-table td:not(:first-child):not(:nth-child(5)) { width: 150px; }
+  .detail-table { min-width: 1400px; table-layout: fixed; }
+  .detail-table th:nth-child(1), .detail-table td:nth-child(1) { width: 5%; }
+  .detail-table th:nth-child(2), .detail-table td:nth-child(2) { width: 6%; }
+  .detail-table th:nth-child(3), .detail-table td:nth-child(3) { width: 16%; }
+  .detail-table th:nth-child(4), .detail-table td:nth-child(4) { width: 6%; }
+  .detail-table th:nth-child(n+5):nth-child(-n+12), .detail-table td:nth-child(n+5):nth-child(-n+12) { width: 6%; }
+  .detail-table th:nth-child(13), .detail-table td:nth-child(13) { width: 8%; }
+  .detail-table th:nth-child(14), .detail-table td:nth-child(14) { width: 12%; }
+  .detail-table th:nth-child(15), .detail-table td:nth-child(15) { width: 7%; }
+  .detail-toggle { margin: 14px 0 0; background: #eef5fc; color: #1565c0; border: 1px solid #bbd3eb; padding: 8px 14px; border-radius: 7px; cursor: pointer; font-size: 13px; }
   .status-incomplete { color: #e65100; font-weight: bold; }
   .status-passed { color: #2e7d32; }
   .status-review { color: #f9a825; }
@@ -80,17 +86,28 @@
     <h2>② 计算结果</h2>
     <div class="result-bar" id="resultBar"></div>
     <div class="warn" id="incompleteWarn" style="display:none;"></div>
+    <div class="edit-hint">以下预览对应上架模板的全部 15 列；菜品名称填入 A 列，八项合并营养含量填入 E 列，其余列留空。横向滚动可查看完整模板列。</div>
     <div class="table-wrap">
-      <table>
-        <thead><tr><th>SET</th><th>學段</th><th>餐名</th><th>烹調</th><th>能量(kcal)</th><th>蛋白質(g)</th><th>總脂肪(g)</th><th>飽和脂肪(g)</th><th>反式脂肪(g)</th><th>碳水(g)</th><th>糖(g)</th><th>鈉(mg)</th><th>狀態</th></tr></thead>
-        <tbody id="previewBody"></tbody>
+      <table class="output-table">
+        <thead><tr id="storePreviewHeaders"></tr></thead>
+        <tbody id="storePreviewBody"></tbody>
       </table>
+    </div>
+    <button class="detail-toggle" id="detailToggle" type="button" aria-expanded="false">展开八项营养复核明细与编辑</button>
+    <div id="detailPanel" style="display:none;">
+      <div class="edit-hint">这里是复核用的计算明细，不会写入上架模板的其他列。营养师可直接修改数值，或重新计算单道菜。</div>
+      <div class="table-wrap">
+        <table id="detailTable" class="detail-table">
+          <thead><tr><th>SET</th><th>學段</th><th>餐名</th><th>烹調</th><th>能量(kcal)</th><th>蛋白質(g)</th><th>總脂肪(g)</th><th>飽和脂肪(g)</th><th>反式脂肪(g)</th><th>碳水(g)</th><th>糖(g)</th><th>鈉(mg)</th><th>狀態</th></tr></thead>
+          <tbody id="previewBody"></tbody>
+        </table>
+      </div>
     </div>
     <div style="margin-top:16px;text-align:center;">
       <button id="exportBtn" class="btn green" disabled>导出圣类斯上架 Excel</button>
     </div>
     <div class="warn" id="exportNotice" style="display:none;"></div>
-    <div class="edit-hint">营养素数值可直接点击编辑；红色单元格表示无效值，绿色表示已修改。上架文件使用圣类斯 15 列模板，小学/中学作为独立商品并标注在商品名称中。八项数值不完整的菜品会从上架文件排除，并保留在本页复核表中。</div>
+    <div class="edit-hint">数值可在复核明细中直接编辑；红色单元格表示无效值，绿色表示已修改。小学/中学作为独立商品并标注在商品名称中；八项营养不完整的菜品不进入上架表。</div>
   </div>
 </div>
 <div class="footer">营养素计算工具 · 香港 CFS/FRL 优先 · 未命中时使用已标记后备资料 · 计算口径:每100g可食部 × SOP克重</div>
@@ -104,11 +121,25 @@ const errorBox = document.getElementById('errorBox');
 const resultCard = document.getElementById('resultCard');
 const resultBar = document.getElementById('resultBar');
 const previewBody = document.getElementById('previewBody');
+const storePreviewBody = document.getElementById('storePreviewBody');
+const detailPanel = document.getElementById('detailPanel');
+const detailToggle = document.getElementById('detailToggle');
 const exportBtn = document.getElementById('exportBtn');
 const exportNotice = document.getElementById('exportNotice');
 const incompleteWarn = document.getElementById('incompleteWarn');
-const headerRow = document.querySelector('table thead tr');
+const headerRow = document.querySelector('#detailTable thead tr');
 headerRow.insertAdjacentHTML('beforeend', '<th>數據來源</th><th>計算標準</th>');
+const storePreviewHeaders = document.getElementById('storePreviewHeaders');
+let storeColumnCount = 0;
+
+detailToggle.addEventListener('click', () => {
+  const expanded = detailPanel.style.display !== 'none';
+  detailPanel.style.display = expanded ? 'none' : 'block';
+  detailToggle.setAttribute('aria-expanded', String(!expanded));
+  detailToggle.textContent = expanded
+    ? '展开八项营养复核明细与编辑'
+    : '收起八项营养复核明细与编辑';
+});
 
 const nutrientFields = [
   'energy_kcal',
@@ -165,6 +196,37 @@ function renderFileList() {
 function showError(msg) {
   errorBox.textContent = msg;
   errorBox.style.display = 'block';
+}
+
+function renderStoreHeaders(headers) {
+  storePreviewHeaders.textContent = '';
+  headers.forEach(header => {
+    const th = document.createElement('th');
+    th.textContent = header;
+    storePreviewHeaders.appendChild(th);
+  });
+  storeColumnCount = headers.length;
+}
+
+function renderStorePreview(rows) {
+  storePreviewBody.textContent = '';
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+    for (let column = 0; column < storeColumnCount; column += 1) {
+      const td = document.createElement('td');
+      if (column === 0) td.textContent = row['商品名称'] || '';
+      if (column === 4) td.textContent = row['商品详情'] || '';
+      tr.appendChild(td);
+    }
+    storePreviewBody.appendChild(tr);
+  });
+}
+
+function updateStorePreviewRow(rowIndex, name, detail) {
+  const tr = storePreviewBody.children[rowIndex];
+  if (!tr) return;
+  tr.children[0].textContent = name || '';
+  tr.children[4].textContent = detail || '';
 }
 
 async function readApiResponse(resp) {
@@ -258,6 +320,7 @@ async function recalculateRow(rowIndex, standard, button) {
     if (!resp.ok) throw new Error(data.error || '重新計算失敗');
     const tr = previewBody.children[rowIndex];
     if (!tr) throw new Error('找不到要更新的菜品行');
+    updateStorePreviewRow(rowIndex, data['商品名称'], data['商品详情']);
     data.nutrients.forEach((value, nutrientIndex) => {
       const td = tr.children[nutrientStartColumn + nutrientIndex];
       // Incomplete calculations deliberately return null; keep the cell blank
@@ -326,6 +389,8 @@ calcBtn.addEventListener('click', async () => {
     }
     incompleteWarn.style.display = incompleteMessages.length ? 'block' : 'none';
     incompleteWarn.textContent = incompleteMessages.join(' ');
+    renderStoreHeaders(data.store_headers || []);
+    renderStorePreview(currentRows);
     previewBody.textContent = '';
     data.preview.forEach(r => {
       const tr = document.createElement('tr');
@@ -398,6 +463,7 @@ exportBtn.addEventListener('click', async () => {
     });
     const data = await readApiResponse(resp);
     if (!resp.ok) throw new Error(data.error || '导出失败');
+    if (Array.isArray(data.store_preview)) renderStorePreview(data.store_preview);
     const link = document.createElement('a');
     link.href = data.download + '&name=' + encodeURIComponent(data.download_name);
     link.download = data.download_name || 'nutrition_results.xlsx';

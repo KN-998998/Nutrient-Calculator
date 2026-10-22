@@ -34,6 +34,8 @@ from nutrition_tool.dish_export import (
     CALCULATION_STANDARD_LABELS,
     DISH_HEADERS,
     NUTRIENT_TO_DISH_COL,
+    STORE_UPLOAD_HEADERS,
+    dish_row_to_store_upload_row,
     result_to_dish_row,
     write_store_upload_excel,
 )
@@ -437,12 +439,15 @@ def process_sop():
     preview = []
     for index, (result, row) in enumerate(zip(all_results, export_rows)):
         source_info = _result_source_info(result)
+        store_row = dish_row_to_store_upload_row(row)
         nutrients = {
             field: row.get(column, "")
             for field, column in NUTRIENT_TO_DISH_COL.items()
         }
         preview.append({
             "row_index": index,
+            "商品名称": store_row["商品名称"],
+            "商品详情": store_row["商品详情"],
             "SET": row["SET"],
             "學段": row["學段"],
             "餐名": row["餐名"],
@@ -492,6 +497,7 @@ def process_sop():
         "download": f"/api/download?file={out_name}&dir={temp_dir.name}",
         "download_name": cn_name,
         "upload_count": upload_count,
+        "store_headers": STORE_UPLOAD_HEADERS,
         "preview": preview,
     })
 
@@ -558,8 +564,11 @@ def recalculate_row():
         state["recipes"] = recipes
         state_path.write_text(json.dumps(state, ensure_ascii=False), encoding="utf-8")
         write_store_upload_excel(rows, temp_dir / "store_upload.xlsx", str(STORE_UPLOAD_TEMPLATE))
+        store_row = dish_row_to_store_upload_row(rows[index])
         return jsonify({
             "row_index": index,
+            "商品名称": store_row["商品名称"],
+            "商品详情": store_row["商品详情"],
             "school_stage": result.school_stage,
             "standard": standard,
             "standard_label": CALCULATION_STANDARD_LABELS[standard],
@@ -668,6 +677,7 @@ def export_edited():
             "download": f"/api/download?file={out_name}&dir={temp_dir.name}",
             "download_name": f"聖類斯上架_小學中學_已修改_{upload_count}項.xlsx",
             "upload_count": upload_count,
+            "store_preview": [dish_row_to_store_upload_row(row) for row in rows],
             "changed_cells": len(changes),
             "history_saved": history_saved,
             "history_warning": history_warning,
