@@ -295,7 +295,7 @@ def write_store_upload_excel(
     path: str,
     template_path: str | None = None,
 ) -> int:
-    """Fill the supplied 15-column template with rows having all eight values."""
+    """Fill the supplied 15-column template in separate primary/secondary sheets."""
     from copy import copy
     from pathlib import Path
     from openpyxl import load_workbook
@@ -309,29 +309,62 @@ def write_store_upload_excel(
         )
     workbook = load_workbook(template_path)
     try:
-        worksheet = workbook.active
-        actual_headers = [worksheet.cell(1, column).value for column in range(1, len(STORE_UPLOAD_HEADERS) + 1)]
-        if actual_headers != STORE_UPLOAD_HEADERS or worksheet.max_column != len(STORE_UPLOAD_HEADERS):
+        primary_sheet = workbook.active
+        actual_headers = [
+            primary_sheet.cell(1, column).value
+            for column in range(1, len(STORE_UPLOAD_HEADERS) + 1)
+        ]
+        if actual_headers != STORE_UPLOAD_HEADERS or primary_sheet.max_column != len(STORE_UPLOAD_HEADERS):
             raise ValueError("上架模板表头与项目要求的15列不一致")
 
-        row_style = [copy(worksheet.cell(2, column)._style) for column in range(1, len(STORE_UPLOAD_HEADERS) + 1)] if worksheet.max_row >= 2 else []
-        row_height = worksheet.row_dimensions[2].height if worksheet.max_row >= 2 else None
-        if worksheet.max_row > 1:
-            worksheet.delete_rows(2, worksheet.max_row - 1)
+        primary_sheet.title = "小学标准"
+        secondary_sheet = workbook.copy_worksheet(primary_sheet)
+        secondary_sheet.title = "中学标准"
+        sheets_by_stage = {
+            "小學": primary_sheet,
+            "中學": secondary_sheet,
+        }
+        row_styles = {
+            worksheet.title: [
+                copy(worksheet.cell(2, column)._style)
+                for column in range(1, len(STORE_UPLOAD_HEADERS) + 1)
+            ] if worksheet.max_row >= 2 else []
+            for worksheet in (primary_sheet, secondary_sheet)
+        }
+        row_heights = {
+            worksheet.title: worksheet.row_dimensions[2].height
+            if worksheet.max_row >= 2 else None
+            for worksheet in (primary_sheet, secondary_sheet)
+        }
+        for worksheet in (primary_sheet, secondary_sheet):
+            if worksheet.max_row > 1:
+                worksheet.delete_rows(2, worksheet.max_row - 1)
 
         count = 0
         for dish_row in rows:
             upload_row = dish_row_to_store_upload_row(dish_row)
             if not upload_row["商品详情"]:
                 continue
-            worksheet.append([_excel_safe(upload_row.get(header, "")) for header in STORE_UPLOAD_HEADERS])
+            stage = str(dish_row.get("學段") or "").strip()
+            worksheet = sheets_by_stage.get(stage)
+            if worksheet is None:
+                raise ValueError(
+                    f"菜品「{dish_row.get('餐名') or upload_row['商品名称']}」的學段「{stage}」無法識別，"
+                    "只接受小學或中學"
+                )
+            worksheet.append(
+                [_excel_safe(upload_row.get(header, "")) for header in STORE_UPLOAD_HEADERS]
+            )
             count += 1
-            for column, style in enumerate(row_style, start=1):
+            for column, style in enumerate(row_styles[worksheet.title], start=1):
                 worksheet.cell(worksheet.max_row, column)._style = copy(style)
+            row_height = row_heights[worksheet.title]
             if row_height is not None:
                 worksheet.row_dimensions[worksheet.max_row].height = row_height
 
-        worksheet.auto_filter.ref = worksheet.dimensions
+        for worksheet in (primary_sheet, secondary_sheet):
+            worksheet.auto_filter.ref = worksheet.dimensions
+        workbook.active = workbook.index(primary_sheet)
         workbook.save(path)
         return count
     finally:
