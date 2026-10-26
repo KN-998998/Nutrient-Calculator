@@ -213,9 +213,9 @@ def calculate_recipe(
     if final_weight > 0:
         per_100g = {field: value / final_weight * 100 for field, value in totals.items()}
 
-    if unmatched or recipe.parse_warnings:
+    if unmatched or recipe.parse_warnings or missing_nutrient_names:
         status = "incomplete"
-    elif warnings or missing_nutrient_names or carb_uncertain_names or estimated_weight_names:
+    elif warnings or carb_uncertain_names or estimated_weight_names:
         status = "review"
     else:
         status = "passed"
@@ -239,6 +239,7 @@ def calculate_recipe(
         energy_difference_percent=energy_percent,
         status=status,
         warnings=warnings,
+        input_errors=list(recipe.parse_warnings),
         unmatched_ingredients=unmatched,
         contributions=contributions,
         school_stage=recipe.school_stage,

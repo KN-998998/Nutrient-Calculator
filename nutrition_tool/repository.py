@@ -488,7 +488,7 @@ class NutrientRepository:
         """Exact SOP-name decisions take precedence over recycled codes and fuzzy aliases."""
         if not Path(path).exists():
             return
-        profiles = {p.ingredient_code: p for p in self._load_csv(path)}
+        profiles = {normalize_name(p.ingredient_name): p for p in self._load_csv(path)}
         with Path(path).open(encoding="utf-8-sig", newline="") as handle:
             for row in csv.DictReader(handle):
                 name = normalize_name(row["ingredient_name"])
@@ -497,7 +497,7 @@ class NutrientRepository:
                 action = row.get("action", "replace")
                 if action not in {"replace", "block"}:
                     raise ValueError(f"不支持的修正动作: {action}")
-                self._corrections[name] = None if action == "block" else profiles[row["ingredient_code"]]
+                self._corrections[name] = None if action == "block" else profiles[name]
                 self.correction_notes[name] = row.get("repair_note", "")
 
     @staticmethod

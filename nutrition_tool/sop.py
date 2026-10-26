@@ -16,6 +16,7 @@ _HEADER_ALIASES = {
     "ingredient_name": ("食材", "食材名称", "食材名稱", "食材系统名称", "食材系統名稱", "原料", "原料名称", "原料名稱", "配料", "配料名称", "配料名稱", "原材料", "食物", "用料", "物料", "材料", "ingredient", "ingredientname", "food", "foodname", "material"),
     "grams": ("克重", "克数", "克數", "重量", "净重", "淨重", "净含量", "淨含量", "用量", "每人用量", "每人下单量", "每人下單量", "人均餐盒实际下单用量", "人均餐盒實際下單用量", "实际下单用量", "實際下單用量", "下单用量", "下單用量", "每份克重", "数量克", "數量克", "克", "g", "gram", "grams", "weight", "amount", "quantity", "qty", "netweight"),
     "code": ("食材编码", "食材編碼", "原料编码", "原料編碼", "物料编码", "物料編碼", "编码", "編碼", "代码", "代碼", "货号", "貨號", "物料号", "物料號", "ingredientcode", "materialcode", "code", "sku"),
+    "package_spec": ("規格/單位", "规格/单位", "包裝規格", "包装规格", "規格", "规格"),
     "component": ("食材系统名称", "食材系統名稱", "系统名称", "系統名稱", "组件", "組件", "分类", "分類", "category", "component", "group"),
     "date": ("日期", "服务日期", "服務日期", "出餐日期", "date", "servicedate"),
     "meal_set": ("餐别", "餐別", "set", "mealset", "meal"),
@@ -84,6 +85,13 @@ _COUNT_UNIT_NORMALISATION = {
     "個": "個", "个": "個", "隻": "隻", "只": "隻", "粒": "粒",
     "條": "條", "条": "條", "塊": "塊", "块": "塊", "件": "件", "片": "片",
 }
+_PACK_WEIGHT_RE = re.compile(
+    r"(?P<weight>\d+(?:\.\d+)?)\s*(?P<unit>kg|公斤|千克|g|克|公克)\s*/\s*(?P<container>袋|包|盒|箱)",
+    re.IGNORECASE,
+)
+_PACK_COUNT_RE = re.compile(
+    r"(?P<count>\d+(?:\.\d+)?)\s*(?P<unit>個|个|隻|只|粒|條|条|塊|块|件|片)\s*/\s*(?P<container>袋|包|盒|箱)"
+)
 
 
 def _portion_key(value: object) -> str:
@@ -115,8 +123,33 @@ def _clean_count_suffix(value: str) -> str:
 
 def _estimate_portion_weight(
     *, recipe_name: str, ingredient_name: str, component_name: str, count_cell: object,
-    allow_recipe_specific: bool = True,
+    package_spec: object = None, allow_recipe_specific: bool = True,
 ) -> tuple[float, str] | None:
+    serving_count = None
+    for text in (ingredient_name, component_name, count_cell):
+        serving_count = _COUNT_RE.search(str(text or ""))
+        if serving_count:
+            break
+    if serving_count:
+        specification = unicodedata.normalize("NFKC", str(package_spec or ""))
+        pack_weight = _PACK_WEIGHT_RE.search(specification)
+        pack_count = _PACK_COUNT_RE.search(specification)
+        serving_unit = _COUNT_UNIT_NORMALISATION[serving_count.group("unit")]
+        package_unit = (
+            _COUNT_UNIT_NORMALISATION[pack_count.group("unit")] if pack_count else ""
+        )
+        if (pack_weight and pack_count
+                and pack_weight.group("container") == pack_count.group("container")
+                and (serving_unit == package_unit or "個" in {serving_unit, package_unit})
+                and float(pack_count.group("count")) > 0):
+            weight_g = float(pack_weight.group("weight"))
+            if pack_weight.group("unit").casefold() in {"kg", "公斤", "千克"}:
+                weight_g *= 1000
+            count = float(serving_count.group("count"))
+            grams = weight_g / float(pack_count.group("count")) * count
+            note = f"按SOP規格{pack_weight.group(0)}÷約{pack_count.group(0)}×{count:g}{serving_count.group('unit')}暫估"
+            return grams, note
+
     ingredient_key = _portion_key(ingredient_name)
     recipe_key = _portion_key(recipe_name)
     if allow_recipe_specific:
@@ -130,12 +163,13 @@ def _estimate_portion_weight(
     if item is None:
         return None
     expected_unit = str(item.get("unit", ""))
+    accepted_units = {expected_unit, *item.get("alternate_units", [])}
     for text in (ingredient_name, component_name, count_cell):
         match = _COUNT_RE.search(str(text or ""))
         if not match:
             continue
         unit = _COUNT_UNIT_NORMALISATION.get(match.group("unit"), "")
-        if unit != expected_unit:
+        if unit not in accepted_units:
             continue
         count = float(match.group("count"))
         grams = count * float(item["grams_per_unit"])
@@ -398,9 +432,13 @@ def _meal_set(sheet_name: str) -> str:
 
 
 def _is_primary_sop_sheet(sheet_name: str) -> bool:
-    """Accept canonical A–E recipe sheets, excluding school-specific variants."""
+    """Accept canonical A–E sheets and explicitly staged school variants."""
     compact = re.sub(r"\s+", "", sheet_name).lower()
-    return re.fullmatch(r"(?:\d+月)?[abcde]餐配料sop", compact) is not None
+    stem = r"(?:\d+月)?[abcde]餐配料sop"
+    if re.fullmatch(stem, compact):
+        return True
+    variant = re.fullmatch(stem + r"[（(]([^()（）]+)[）)]", compact)
+    return variant is not None and bool(_school_stage(variant.group(1)))
 
 
 def _read_sop_workbook_legacy(
@@ -438,7 +476,7 @@ def _read_sop_workbook_legacy(
 
             def flush() -> None:
                 nonlocal current_ingredients, current_parse_warnings
-                if current_name and current_ingredients:
+                if current_name and (current_ingredients or current_parse_warnings):
                     recipes.append(
                         Recipe(
                             recipe_name=current_name,
@@ -538,6 +576,7 @@ def read_sop_workbook(
             set_col = columns.get("meal_set")
             component_col = columns.get("component")
             code_col = columns.get("code")
+            package_col = columns.get("package_spec")
 
             ingredient_col = columns.get("ingredient_name")
             has_ingredient_values = (
@@ -617,7 +656,7 @@ def read_sop_workbook(
 
                 def flush() -> None:
                     nonlocal current_ingredients, current_parse_warnings
-                    if current_name and current_ingredients:
+                    if current_name and (current_ingredients or current_parse_warnings):
                         recipes.append(
                             Recipe(
                                 recipe_name=current_name,
@@ -657,7 +696,23 @@ def read_sop_workbook(
                         ingredient_name = embedded[0]
                         weight_value = embedded[1]
                     ingredient_name = _clean_count_suffix(ingredient_name)
+                    if (not ingredient_name and _COUNT_RE.fullmatch(ingredient_value)
+                            and current_component and current_component not in TOTAL_MARKERS):
+                        ingredient_name = current_component
                     count_cell = _value(row, grams_col - 1) if grams_col > 0 else None
+                    # Keep a count embedded in the original ingredient label for
+                    # per-piece estimates after removing it from the lookup name.
+                    count_hint = f"{ingredient_value} {count_cell or ''}"
+                    borrowed_count_stage = ""
+                    if (len(stage_columns) == 2 and school_stage
+                            and not any(_COUNT_RE.search(str(value or "")) for value in
+                                        (ingredient_value, current_component, count_cell))):
+                        other_stage = next(stage for stage in SCHOOL_STAGES if stage != school_stage)
+                        other_grams_col = stage_columns[other_stage]
+                        other_count = _value(row, other_grams_col - 1)
+                        if _COUNT_RE.search(str(other_count or "")):
+                            count_hint = f"{count_hint} {other_count}"
+                            borrowed_count_stage = other_stage
                     weight_is_estimated = False
                     weight_estimate_note = ""
                     try:
@@ -667,12 +722,15 @@ def read_sop_workbook(
                             recipe_name=current_name,
                             ingredient_name=ingredient_name,
                             component_name=current_component,
-                            count_cell=count_cell,
+                            count_cell=count_hint,
+                            package_spec=_value(row, package_col),
                             allow_recipe_specific=False,
                         )
                         if estimate is not None:
                             grams, weight_estimate_note = estimate
                             weight_is_estimated = True
+                            if borrowed_count_stage:
+                                weight_estimate_note += f"；{school_stage}數量未填，暫沿用同一SOP的{borrowed_count_stage}數量，待復核"
                         else:
                             source_column = _column_letter(
                                 grams_col if grams_col >= 0 else ingredient_col
@@ -692,11 +750,28 @@ def read_sop_workbook(
                             recipe_name=current_name,
                             ingredient_name=ingredient_name,
                             component_name=current_component,
-                            count_cell=count_cell,
+                            count_cell=count_hint,
+                            package_spec=_value(row, package_col),
                         )
                         if estimate is not None:
                             grams, weight_estimate_note = estimate
                             weight_is_estimated = True
+                            if borrowed_count_stage:
+                                weight_estimate_note += f"；{school_stage}數量未填，暫沿用同一SOP的{borrowed_count_stage}數量，待復核"
+                        else:
+                            source_column = _column_letter(
+                                grams_col if grams_col >= 0 else ingredient_col
+                            )
+                            stage_suffix = f"（{school_stage}）" if school_stage else ""
+                            message = (
+                                f"{sheet_name}{stage_suffix}!{source_column}{row_index} "
+                                f"{ingredient_name}: 用量为空或为0，且无可核实的单件克重"
+                            )
+                            errors.append(message)
+                            current_parse_warnings.append(message)
+                            if strict:
+                                raise ValueError(message)
+                            continue
                     current_ingredients.append(
                         IngredientAmount(
                             ingredient_name=ingredient_name,

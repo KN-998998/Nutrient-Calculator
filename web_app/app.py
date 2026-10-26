@@ -16,6 +16,7 @@ import sqlite3
 import tempfile
 import time
 import traceback
+from dataclasses import replace
 from pathlib import Path
 
 from flask import Flask, jsonify, render_template, request, send_file
@@ -44,6 +45,8 @@ from nutrition_tool.history import (
     default_history_db_path,
 )
 from nutrition_tool.models import CALCULATION_RULE_VERSION, IngredientAmount, Recipe
+from nutrition_tool.models import RecipeResult
+from nutrition_tool.nutrition_export import write_school_nutrition_excel
 from nutrition_tool.repository import (
     NutrientRepository,
     normalize_name,
@@ -317,6 +320,11 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/healthz")
+def healthz():
+    return jsonify({"status": "ok"})
+
+
 @app.route("/favicon.ico")
 def favicon():
     """Avoid treating a missing optional browser icon as an application error."""
@@ -361,6 +369,39 @@ def _edited_number(value: object, field: str) -> float:
     return round(number, 2)
 
 
+def _write_batch_nutrition(state: dict, path: Path) -> dict[str, int]:
+    """Export the current batch, including complete human-edited nutrient rows."""
+    results = []
+    for index, saved in enumerate(state["results"]):
+        result = RecipeResult(**saved)
+        row = state["rows"][index]
+        values = {}
+        for field, column in NUTRIENT_TO_DISH_COL.items():
+            raw = row.get(column)
+            if raw in (None, ""):
+                break
+            try:
+                number = float(raw)
+            except (TypeError, ValueError):
+                break
+            if not math.isfinite(number) or number < 0:
+                break
+            values[field] = number
+        if len(values) == len(NUTRIENT_TO_DISH_COL):
+            results.append(replace(
+                result,
+                nutrients_per_serving={**result.nutrients_per_serving, **values},
+                status="review" if result.status == "incomplete" else result.status,
+            ))
+        else:
+            results.append(result)
+    return write_school_nutrition_excel(
+        (result for result in results if result.school_stage == "小學"),
+        (result for result in results if result.school_stage == "中學"),
+        path,
+    )
+
+
 @app.route("/api/process", methods=["POST"])
 def process_sop():
     """上传 SOP -> 计算 -> 生成小学/中学营养结果表, 返回预览。"""
@@ -403,7 +444,7 @@ def process_sop():
         return jsonify({"error": "没有找到可计算的菜式(检查是否包含 'X月X餐配料sop' 工作表)"}), 400
 
     # 内部文件名用 ASCII(避免 URL 中文编码问题), 下载时再给中文名
-    out_name = "store_upload.xlsx"
+    out_name = "nutrition_results.xlsx"
     out_path = temp_dir / out_name
     export_rows = [
         result_to_dish_row(result, dish_no=str(dish_no + idx))
@@ -414,11 +455,23 @@ def process_sop():
             continue
         for field, column in NUTRIENT_TO_DISH_COL.items():
             row[column] = round(history_record.confirmed_nutrients[field], 2)
-    upload_count = write_store_upload_excel(export_rows, out_path, str(STORE_UPLOAD_TEMPLATE))
+    effective_results = [
+        replace(result, nutrients_per_serving=history_record.confirmed_nutrients,
+                status="review" if result.status == "incomplete" else result.status)
+        if history_record else result
+        for result, history_record in zip(all_results, history_records)
+    ]
+    counts = write_school_nutrition_excel(
+        (result for result in effective_results if result.school_stage == "小學"),
+        (result for result in effective_results if result.school_stage == "中學"),
+        out_path,
+    )
+    upload_count = sum(counts.values())
     (temp_dir / "batch.json").write_text(
         json.dumps(
             {
                 "rows": export_rows,
+                "results": [result.to_dict(digits=None) for result in effective_results],
                 "calculation_rule_version": CALCULATION_RULE_VERSION,
                 "recipes": [_recipe_to_dict(recipe) for recipe in all_recipes],
                 "system_nutrients": [
@@ -433,7 +486,7 @@ def process_sop():
         ),
         encoding="utf-8",
     )
-    cn_name = f"聖類斯上架_小學中學_{upload_count}項.xlsx"
+    cn_name = f"餐单营养素_小学中学_{upload_count}道.xlsx"
 
     # 预览(前 30 条, 含 warnings 供营养师复核; 8 项营养全量展示)
     preview = []
@@ -547,6 +600,7 @@ def recalculate_row():
         source_info = _result_source_info(result)
         dish_no = rows[index].get(DISH_HEADERS[0], "")
         rows[index] = result_to_dish_row(result, dish_no=str(dish_no))
+        state["results"][index] = result.to_dict(digits=None)
         recipes[index] = _recipe_to_dict(recipe)
         system_nutrients = state.setdefault("system_nutrients", [{} for _ in rows])
         while len(system_nutrients) < len(rows):
@@ -563,7 +617,7 @@ def recalculate_row():
         state["rows"] = rows
         state["recipes"] = recipes
         state_path.write_text(json.dumps(state, ensure_ascii=False), encoding="utf-8")
-        write_store_upload_excel(rows, temp_dir / "store_upload.xlsx", str(STORE_UPLOAD_TEMPLATE))
+        _write_batch_nutrition(state, temp_dir / "nutrition_results.xlsx")
         store_row = dish_row_to_store_upload_row(rows[index])
         return jsonify({
             "row_index": index,
@@ -633,9 +687,9 @@ def export_edited():
                     "system_value": old_value,
                     "edited_value": number,
                 })
-        out_name = "store_upload.xlsx"
+        out_name = "nutrition_results.xlsx"
         out_path = temp_dir / out_name
-        upload_count = write_store_upload_excel(rows, out_path, str(STORE_UPLOAD_TEMPLATE))
+        upload_count = sum(_write_batch_nutrition(state, out_path).values())
         (temp_dir / "edit_log.json").write_text(
             json.dumps(changes, ensure_ascii=False, indent=2),
             encoding="utf-8",
@@ -675,7 +729,7 @@ def export_edited():
             history_saved += 1
         return jsonify({
             "download": f"/api/download?file={out_name}&dir={temp_dir.name}",
-            "download_name": f"聖類斯上架_小學中學_已修改_{upload_count}項.xlsx",
+            "download_name": f"餐单营养素_小学中学_已修改_{upload_count}道.xlsx",
             "upload_count": upload_count,
             "store_preview": [dish_row_to_store_upload_row(row) for row in rows],
             "changed_cells": len(changes),

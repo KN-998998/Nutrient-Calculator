@@ -3,15 +3,16 @@
   "policy": "Only use when SOP grams are zero or invalid and a count plus a listed unit is explicit. These are provisional per-piece weights, not supplier specifications.",
   "items": [
     {"name": "魚蓉燒賣", "aliases": ["魚肉燒賣", "鱼蓉烧卖"], "unit": "個", "grams_per_unit": 30.0},
-    {"name": "滷水蛋", "aliases": ["卤水蛋", "滷水蛋(熟)", "卤水蛋(熟)"], "unit": "個", "grams_per_unit": 50.0},
+    {"name": "滷水蛋", "aliases": ["卤水蛋", "滷水蛋(熟)", "卤水蛋(熟)", "滷水蛋（熟蛋）"], "unit": "個", "grams_per_unit": 50.0},
     {"name": "菜肉水餃", "aliases": ["菜肉水饺", "水餃"], "unit": "隻", "grams_per_unit": 25.0},
+    {"name": "蔥阿伯東北手工水餃", "unit": "隻", "grams_per_unit": 18.0, "note": "同名商品零售規格720g±10%/約40顆，按18g/隻暫估；SOP未註明口味及實際供貨規格，待復核。來源：https://www.buy123.com.tw/site/sku/2070135"},
     {"name": "披薩", "aliases": ["披萨"], "unit": "個", "grams_per_unit": 120.0},
-    {"name": "麵包胚", "aliases": ["面包胚", "漢堡包胚", "汉堡包胚"], "unit": "個", "grams_per_unit": 45.0},
-    {"name": "車厘茄", "aliases": ["车厘茄", "櫻桃番茄", "樱桃番茄"], "unit": "個", "grams_per_unit": 15.0},
-    {"name": "法蘭克福腸", "aliases": ["法兰克福肠", "法蘭克福腸"], "unit": "條", "grams_per_unit": 50.0},
+    {"name": "麵包胚", "aliases": ["面包胚", "漢堡包胚", "汉堡包胚"], "unit": "個", "grams_per_unit": 51.5, "note": "同類市售漢堡包胚每個58g（United States Bakery）及45g（Great Value，180g/4個）的均值51.5g/個；非本SOP供應規格，熱狗包胚亦待核。來源：https://fdc.nal.usda.gov/food-details/886706/nutrients；https://www.eatthismuch.com/calories/hamburger-buns-4091533?a=4%3A1"},
+    {"name": "車厘茄", "aliases": ["车厘茄", "櫻桃番茄", "樱桃番茄"], "unit": "個", "grams_per_unit": 17.0, "note": "按市售同類車厘茄平均17g/個暫估；非本SOP採購規格，待復核。來源：https://www.hanna-one.com/weighttomato.html"},
+    {"name": "法蘭克福腸", "aliases": ["法兰克福肠", "法蘭克福腸"], "unit": "條", "grams_per_unit": 50.0, "note": "同類市售Westlers法蘭克福腸7條×50g；非本SOP採購規格，待復核。來源：https://nicolretailer.com/product/westlers-premium-frankfurter-7-x-50g-6%C2%BD/"},
     {"name": "麥樂雞", "aliases": ["麦乐鸡", "麥樂雞塊"], "unit": "塊", "grams_per_unit": 20.0},
-    {"name": "蜜糖雞尾腸", "aliases": ["蜜糖鸡尾肠", "雞尾腸", "鸡尾肠"], "unit": "條", "grams_per_unit": 18.9, "note": "按同一 SOP 三條合計 56.7g 反推"},
-    {"name": "健康飯卷", "aliases": ["健康饭卷", "健康飯卷(糯米卷)", "糯米卷"], "unit": "個", "grams_per_unit": 120.0}
+    {"name": "蜜糖雞尾腸", "aliases": ["蜜糖鸡尾肠", "雞尾腸", "鸡尾肠"], "unit": "條", "alternate_units": ["個"], "grams_per_unit": 18.9, "note": "按同一 SOP 三條合計 56.7g 反推"},
+    {"name": "健康飯卷", "aliases": ["健康饭卷", "健康飯卷(糯米卷)", "糯米卷"], "unit": "個", "grams_per_unit": 115.0, "note": "同類市售鮮蔬飯捲每份115g、每包1份，按115g/個暫估；SOP未標供應商或規格，待復核。來源：https://www.vegue.me/product?pid_for_show=4811"}
   ],
   "recipe_specific_estimates": [
     {
@@ -19,6 +20,24 @@
       "ingredient_aliases": ["洋蔥", "洋葱", "洋蔥絲", "洋葱丝"],
       "grams": 42.5,
       "note": "SOP 克重為 0，按相似主菜洋蔥絲用量 1.5oz 估算；需營養師或供應規格確認"
+    },
+    {
+      "recipe_contains": "雞肉漢堡包",
+      "ingredient_aliases": ["鸡肉漢堡扒", "雞肉漢堡扒"],
+      "grams": 85.05,
+      "note": "中學克重為0；暫沿用同一SOP小學欄3安士/85.05g，即每份1塊；非已確認的中學份量，待復核"
+    },
+    {
+      "recipe_contains": "豬柳漢堡包",
+      "ingredient_aliases": ["豬柳漢堡扒"],
+      "grams": 85.05,
+      "note": "中學克重為0；暫沿用同一SOP小學欄3安士/85.05g，即每份1塊；非已確認的中學份量，待復核"
+    },
+    {
+      "recipe_contains": "熱狗包(法蘭克福腸)",
+      "ingredient_aliases": ["法蘭克福腸", "法兰克福肠"],
+      "grams": 100.0,
+      "note": "SOP同菜式有麵包胚2個；暫按1條/包×2包×市售同類Westlers法蘭克福腸50g/條=100g，數量與採購規格均待復核。來源：https://nicolretailer.com/product/westlers-premium-frankfurter-7-x-50g-6%C2%BD/"
     }
   ]
 }

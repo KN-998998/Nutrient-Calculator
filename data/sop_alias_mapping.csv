@@ -166,7 +166,6 @@ HK0-2148,栗米墨魚餅,食物安全中心轄下的食物研究化驗所 (FRL),
 HK0-2004,梅肉粒,澳洲新西蘭食品標準管理局,梅肉粒,梅肉粒,confirmed,1.0,code_exact,HK0-2004,,2
 HK0-3215,歐柏茄汁(紅色) 3KGX6罐,澳洲新西蘭食品標準管理局,歐柏茄汁(紅色) 3KGX6罐,歐柏茄汁紅色3kgx6罐,confirmed,1.0,code_exact,HK0-3215,,2
 MANUAL_LKK_SATAY,李錦記沙爹醬,【人工补录】李錦記沙爹醬，官方营养标签（每100g）,沙爹醬,沙爹醬,confirmed,1.0,name_exact,DTL0238,MANUAL_LKK_SATAY,2
-VCK0194,油麵,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),油麵,油麵,confirmed,1.0,code_exact,VCK0194,,2
 CFC_0503050443010,洋葱,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),洋蔥,洋蔥,confirmed,1.0,name_exact,HK0-3153,0503050443010,2
 CFC_0503050443010,洋葱,【国内参考·CFC】中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),洋蔥角,洋蔥角,candidate,0.7,fallback_fuzzy,HK0-3153,0503050443010,2
 ,清洗 毛豆肉,中國疾病預防控制中心轄下的營養與食品安全所 (CFC2002Ed2),清洗 毛豆肉,清洗毛豆肉,confirmed,1.0,name_exact,,,2

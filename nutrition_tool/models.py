@@ -115,6 +115,7 @@ class RecipeResult:
     energy_difference_percent: float | None
     status: str
     warnings: list[str] = field(default_factory=list)
+    input_errors: list[str] = field(default_factory=list)
     unmatched_ingredients: list[dict[str, Any]] = field(default_factory=list)
     contributions: list[IngredientContribution] = field(default_factory=list)
     school_stage: str = ""
