@@ -138,17 +138,48 @@ def test_september_soy_chicken_fills_cfs_missing_fields_from_product_labels(repo
     assert any(marker in repository.correction_notes["素雞"] for marker in ("待复核", "待復核"))
 
 
-def test_september_lily_uses_average_of_dried_lily_bulb_labels(repository):
+def test_september_lily_uses_fresh_cfc_profile_not_dried_labels(repository):
     profile = repository.find(name="百合")
 
     assert profile is not None
     assert tuple(getattr(profile, field) for field in REQUIRED_NUTRIENT_FIELDS) == pytest.approx(
-        (344.0, 6.05, 0.8, 0.1, 0.0, 78.9, 3.5, 23.0)
+        (166.0, 3.2, 0.1, 0.02, 0.0, 37.1, 1.5, 6.7)
     )
     assert profile.source_type == "manual_estimate"
-    assert "homiemart.com.au/products/golden-bai-wei-dried-lily-bulb-no-sulfur-75g" in profile.source_url
-    assert "orientalmart.co.uk/zheng-feng-dried-lily-bulb" in profile.source_url
-    assert "暫估0g" in repository.correction_notes["百合"]
+    assert "0503050454090" in profile.source_food_id
+    assert "鮮百合" in repository.correction_notes["百合"]
+    assert "125g/盒" in repository.correction_notes["百合"]
+
+
+def test_count_suffixed_fish_cake_duplicate_has_all_eight_nutrients(repository):
+    profile = repository.find(name="栗米墨魚餅2個")
+
+    assert profile is not None
+    assert not set(profile.missing_nutrients).intersection(REQUIRED_NUTRIENT_FIELDS)
+    assert profile.sugars_g == pytest.approx(2.45)
+    assert profile.sodium_mg == pytest.approx(497.5)
+
+
+def test_quantity_only_one_piece_cell_stays_blocked(repository):
+    assert repository.find(name="1個") is None
+
+
+def test_official_source_types_map_to_expected_match_tiers():
+    from nutrition_tool.models import NutrientProfile
+    from nutrition_tool.repository import source_match_tier
+
+    assert source_match_tier(NutrientProfile(source_type="cfs_official")) == "hong_kong_official"
+    assert source_match_tier(NutrientProfile(source_type="china_food_composition")) == "fallback_cfc"
+
+
+def test_pizza_piece_weight_uses_sop_180g_spec():
+    import json
+
+    payload = json.loads((DATA / "portion_estimates.json").read_text(encoding="utf-8"))
+    item = next(item for item in payload["items"] if item["name"] == "披薩")
+
+    assert item["grams_per_unit"] == 180.0
+    assert "180G/個" in item["note"]
 
 
 @pytest.fixture(scope="module")

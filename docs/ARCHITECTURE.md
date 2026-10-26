@@ -44,9 +44,10 @@ version, rule version, timestamp, and reviewer/publisher identity.
 
 The storefront workbook is a presentation adapter, not a calculation source.
 It starts from the supplied 15-column template, clears example rows, and fills
-only product name and nutrition detail. Primary and secondary recipes become
-separate products with the school stage in the name. Incomplete recipes stay
-visible in the review UI and are excluded from the upload workbook.
+only column A (product name, e.g. A(1)菜名) and column E (eight-nutrient
+detail). Primary and secondary recipes are written to separate 小学标准 and
+中学标准 sheets; all other columns stay blank. Incomplete recipes stay visible
+in the review UI and are excluded from the upload workbook.
 
 ## Deployment boundary
 

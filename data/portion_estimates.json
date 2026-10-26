@@ -6,7 +6,7 @@
     {"name": "滷水蛋", "aliases": ["卤水蛋", "滷水蛋(熟)", "卤水蛋(熟)", "滷水蛋（熟蛋）"], "unit": "個", "grams_per_unit": 50.0},
     {"name": "菜肉水餃", "aliases": ["菜肉水饺", "水餃"], "unit": "隻", "grams_per_unit": 25.0},
     {"name": "蔥阿伯東北手工水餃", "unit": "隻", "grams_per_unit": 18.0, "note": "同名商品零售規格720g±10%/約40顆，按18g/隻暫估；SOP未註明口味及實際供貨規格，待復核。來源：https://www.buy123.com.tw/site/sku/2070135"},
-    {"name": "披薩", "aliases": ["披萨"], "unit": "個", "grams_per_unit": 120.0},
+    {"name": "披薩", "aliases": ["披萨"], "unit": "個", "grams_per_unit": 180.0, "note": "SOP 9月D餐第331行規格欄明列 180G/個；解析器會優先直接採用該標明克重，不標記為估算。此項僅在規格欄缺失時作後備"},
     {"name": "麵包胚", "aliases": ["面包胚", "漢堡包胚", "汉堡包胚"], "unit": "個", "grams_per_unit": 51.5, "note": "同類市售漢堡包胚每個58g（United States Bakery）及45g（Great Value，180g/4個）的均值51.5g/個；非本SOP供應規格，熱狗包胚亦待核。來源：https://fdc.nal.usda.gov/food-details/886706/nutrients；https://www.eatthismuch.com/calories/hamburger-buns-4091533?a=4%3A1"},
     {"name": "車厘茄", "aliases": ["车厘茄", "櫻桃番茄", "樱桃番茄"], "unit": "個", "grams_per_unit": 17.0, "note": "按市售同類車厘茄平均17g/個暫估；非本SOP採購規格，待復核。來源：https://www.hanna-one.com/weighttomato.html"},
     {"name": "法蘭克福腸", "aliases": ["法兰克福肠", "法蘭克福腸"], "unit": "條", "grams_per_unit": 50.0, "note": "同類市售Westlers法蘭克福腸7條×50g；非本SOP採購規格，待復核。來源：https://nicolretailer.com/product/westlers-premium-frankfurter-7-x-50g-6%C2%BD/"},

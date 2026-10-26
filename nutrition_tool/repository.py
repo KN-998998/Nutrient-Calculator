@@ -238,10 +238,12 @@ def source_match_tier(profile: NutrientProfile) -> str:
         source_type = _classify_source(profile.source)
     return {
         "official_hk": "hong_kong_official",
+        "cfs_official": "hong_kong_official",
         "water_zero": "water_zero",
         "official_brand_label": "brand_label",
         "manual_brand_label": "brand_label",
         "official_cfc": "fallback_cfc",
+        "china_food_composition": "fallback_cfc",
         "reference_other": "fallback_international",
         "manual_reference": "manual_reference",
         "manual_estimate": "generic_estimate",

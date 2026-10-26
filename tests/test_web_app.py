@@ -58,11 +58,18 @@ class WebAppHealthTests(unittest.TestCase):
             download = client.get(payload["download"])
             self.assertEqual(download.status_code, 200)
             result_workbook = load_workbook(BytesIO(download.data), read_only=True, data_only=True)
-            self.assertEqual(result_workbook.sheetnames, ["小学", "中学"])
-            self.assertEqual(result_workbook["小学"].max_column, 9)
-            self.assertEqual(result_workbook["小学"]["A2"].value, "雞肉飯")
-            self.assertEqual(result_workbook["小学"]["B2"].value, 100)
-            self.assertEqual(result_workbook["中学"]["B2"].value, 200)
+            self.assertEqual(result_workbook.sheetnames, ["小学标准", "中学标准"])
+            for sheet_name in ("小学标准", "中学标准"):
+                sheet = result_workbook[sheet_name]
+                self.assertEqual(sheet.max_column, 15)
+                self.assertEqual(sheet["A2"].value, "A(1)雞肉飯")
+                self.assertTrue(sheet["E2"].value.startswith("能量"))
+                for column in (2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15):
+                    self.assertIn(sheet.cell(2, column).value, (None, ""))
+            self.assertIn("能量100(Kcal)", result_workbook["小学标准"]["E2"].value)
+            self.assertIn("蛋白質20(g)", result_workbook["小学标准"]["E2"].value)
+            self.assertIn("能量200(Kcal)", result_workbook["中学标准"]["E2"].value)
+            self.assertIn("蛋白質40(g)", result_workbook["中学标准"]["E2"].value)
             result_workbook.close()
             download.close()
 
@@ -99,9 +106,12 @@ class WebAppHealthTests(unittest.TestCase):
                 download = client.get(payload["download"])
                 self.assertEqual(download.status_code, 200)
                 result_workbook = load_workbook(BytesIO(download.data), data_only=True)
-                self.assertEqual(result_workbook["小学"]["A2"].value, "待补数据饭")
-                self.assertTrue(all(result_workbook["小学"].cell(2, column).value is None for column in range(2, 10)))
-                self.assertIn("未知酱料", result_workbook["小学"]["A2"].comment.text)
+                # Incomplete recipes are excluded from the storefront upload file.
+                for sheet_name in ("小学标准", "中学标准"):
+                    sheet = result_workbook[sheet_name]
+                    self.assertEqual(sheet.max_row, 1)
+                    self.assertEqual(sheet.max_column, 15)
+                self.assertEqual(payload["upload_count"], 0)
                 result_workbook.close()
                 download.close()
 

@@ -18,7 +18,13 @@ _HEADER_ALIASES = {
     "code": ("食材编码", "食材編碼", "原料编码", "原料編碼", "物料编码", "物料編碼", "编码", "編碼", "代码", "代碼", "货号", "貨號", "物料号", "物料號", "ingredientcode", "materialcode", "code", "sku"),
     "package_spec": ("規格/單位", "规格/单位", "包裝規格", "包装规格", "規格", "规格"),
     "component": ("食材系统名称", "食材系統名稱", "系统名称", "系統名稱", "组件", "組件", "分类", "分類", "category", "component", "group"),
-    "date": ("日期", "服务日期", "服務日期", "出餐日期", "date", "servicedate"),
+    "date": (
+        "日期", "服务日期", "服務日期", "出餐日期", "date", "servicedate",
+        # The September SOP stores the service date as an Excel serial in the
+        # first column under the visual header "編號/圖片"; the legacy parser
+        # already reads column 0 as the date.
+        "編號/圖片", "编号/图片",
+    ),
     "meal_set": ("餐别", "餐別", "set", "mealset", "meal"),
 }
 
@@ -93,6 +99,15 @@ _PACK_COUNT_RE = re.compile(
     r"(?P<count>\d+(?:\.\d+)?)\s*(?P<unit>個|个|隻|只|粒|條|条|塊|块|件|片)\s*/\s*(?P<container>袋|包|盒|箱)"
 )
 
+# A per-piece weight explicitly written in the SOP specification column,
+# e.g. "180G/個".  This is a stated weight, not a market estimate, so it must
+# not be flagged as weight_is_estimated.
+_UNIT_WEIGHT_RE = re.compile(
+    r"(?P<weight>\d+(?:\.\d+)?)\s*(?P<unit>kg|公斤|千克|g|克|公克)\s*[/／]\s*"
+    r"(?P<each>個|个|隻|只|粒|條|条|塊|块|件|片)",
+    re.IGNORECASE,
+)
+
 
 def _portion_key(value: object) -> str:
     text = unicodedata.normalize("NFKC", str(value or "")).casefold()
@@ -119,6 +134,30 @@ _PORTION_ESTIMATES, _RECIPE_SPECIFIC_ESTIMATES = _load_portion_estimates()
 
 def _clean_count_suffix(value: str) -> str:
     return _COUNT_RE.sub("", value).strip()
+
+
+def _specified_unit_weight(*, count_hint: object, package_spec: object) -> tuple[float, str] | None:
+    """Use a per-piece weight explicitly stated in the SOP specification column.
+
+    Example: package_spec="180G/個", count_hint="披薩 1个" -> (180.0,
+    "按SOP規格180G/個×1個").  This is a stated weight, not an estimate.
+    """
+    specification = unicodedata.normalize("NFKC", str(package_spec or ""))
+    match = _UNIT_WEIGHT_RE.search(specification)
+    if not match:
+        return None
+    serving = _COUNT_RE.search(str(count_hint or ""))
+    if not serving:
+        return None
+    serving_unit = _COUNT_UNIT_NORMALISATION.get(serving.group("unit"), "")
+    specified_unit = _COUNT_UNIT_NORMALISATION.get(match.group("each"), "")
+    if not serving_unit or serving_unit != specified_unit:
+        return None
+    weight_g = float(match.group("weight"))
+    if match.group("unit").casefold() in {"kg", "公斤", "千克"}:
+        weight_g *= 1000
+    count = float(serving.group("count"))
+    return weight_g * count, f"按SOP規格{match.group(0)}×{count:g}{serving.group('unit')}"
 
 
 def _estimate_portion_weight(
@@ -718,60 +757,80 @@ def read_sop_workbook(
                     try:
                         grams = _parse_weight_value(weight_value)
                     except ValueError as exc:
-                        estimate = _estimate_portion_weight(
-                            recipe_name=current_name,
-                            ingredient_name=ingredient_name,
-                            component_name=current_component,
-                            count_cell=count_hint,
+                        specified = _specified_unit_weight(
+                            count_hint=count_hint,
                             package_spec=_value(row, package_col),
-                            allow_recipe_specific=False,
                         )
-                        if estimate is not None:
-                            grams, weight_estimate_note = estimate
-                            weight_is_estimated = True
+                        if specified is not None:
+                            grams, weight_estimate_note = specified
+                            weight_is_estimated = False
                             if borrowed_count_stage:
                                 weight_estimate_note += f"；{school_stage}數量未填，暫沿用同一SOP的{borrowed_count_stage}數量，待復核"
                         else:
-                            source_column = _column_letter(
-                                grams_col if grams_col >= 0 else ingredient_col
+                            estimate = _estimate_portion_weight(
+                                recipe_name=current_name,
+                                ingredient_name=ingredient_name,
+                                component_name=current_component,
+                                count_cell=count_hint,
+                                package_spec=_value(row, package_col),
+                                allow_recipe_specific=False,
                             )
-                            stage_suffix = f"（{school_stage}）" if school_stage else ""
-                            message = (
-                                f"{sheet_name}{stage_suffix}!{source_column}{row_index} "
-                                f"{ingredient_name}: {exc}"
-                            )
-                            errors.append(message)
-                            current_parse_warnings.append(message)
-                            if strict:
-                                raise ValueError(message) from exc
-                            continue
+                            if estimate is not None:
+                                grams, weight_estimate_note = estimate
+                                weight_is_estimated = True
+                                if borrowed_count_stage:
+                                    weight_estimate_note += f"；{school_stage}數量未填，暫沿用同一SOP的{borrowed_count_stage}數量，待復核"
+                            else:
+                                source_column = _column_letter(
+                                    grams_col if grams_col >= 0 else ingredient_col
+                                )
+                                stage_suffix = f"（{school_stage}）" if school_stage else ""
+                                message = (
+                                    f"{sheet_name}{stage_suffix}!{source_column}{row_index} "
+                                    f"{ingredient_name}: {exc}"
+                                )
+                                errors.append(message)
+                                current_parse_warnings.append(message)
+                                if strict:
+                                    raise ValueError(message) from exc
+                                continue
                     if grams == 0 and not weight_is_estimated:
-                        estimate = _estimate_portion_weight(
-                            recipe_name=current_name,
-                            ingredient_name=ingredient_name,
-                            component_name=current_component,
-                            count_cell=count_hint,
+                        specified = _specified_unit_weight(
+                            count_hint=count_hint,
                             package_spec=_value(row, package_col),
                         )
-                        if estimate is not None:
-                            grams, weight_estimate_note = estimate
-                            weight_is_estimated = True
+                        if specified is not None:
+                            grams, weight_estimate_note = specified
+                            weight_is_estimated = False
                             if borrowed_count_stage:
                                 weight_estimate_note += f"；{school_stage}數量未填，暫沿用同一SOP的{borrowed_count_stage}數量，待復核"
                         else:
-                            source_column = _column_letter(
-                                grams_col if grams_col >= 0 else ingredient_col
+                            estimate = _estimate_portion_weight(
+                                recipe_name=current_name,
+                                ingredient_name=ingredient_name,
+                                component_name=current_component,
+                                count_cell=count_hint,
+                                package_spec=_value(row, package_col),
                             )
-                            stage_suffix = f"（{school_stage}）" if school_stage else ""
-                            message = (
-                                f"{sheet_name}{stage_suffix}!{source_column}{row_index} "
-                                f"{ingredient_name}: 用量为空或为0，且无可核实的单件克重"
-                            )
-                            errors.append(message)
-                            current_parse_warnings.append(message)
-                            if strict:
-                                raise ValueError(message)
-                            continue
+                            if estimate is not None:
+                                grams, weight_estimate_note = estimate
+                                weight_is_estimated = True
+                                if borrowed_count_stage:
+                                    weight_estimate_note += f"；{school_stage}數量未填，暫沿用同一SOP的{borrowed_count_stage}數量，待復核"
+                            else:
+                                source_column = _column_letter(
+                                    grams_col if grams_col >= 0 else ingredient_col
+                                )
+                                stage_suffix = f"（{school_stage}）" if school_stage else ""
+                                message = (
+                                    f"{sheet_name}{stage_suffix}!{source_column}{row_index} "
+                                    f"{ingredient_name}: 用量为空或为0，且无可核实的单件克重"
+                                )
+                                errors.append(message)
+                                current_parse_warnings.append(message)
+                                if strict:
+                                    raise ValueError(message)
+                                continue
                     current_ingredients.append(
                         IngredientAmount(
                             ingredient_name=ingredient_name,

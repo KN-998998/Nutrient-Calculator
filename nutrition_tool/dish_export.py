@@ -251,8 +251,8 @@ def _excel_safe(value: object) -> object:
     return value
 
 
-def _compact_number(value: object) -> str:
-    """Return a non-negative numeric value with at most two decimal places."""
+def _compact_number(value: object, digits: int = 2) -> str:
+    """Return a non-negative numeric value with at most the requested decimals."""
     if isinstance(value, bool) or value in (None, ""):
         return ""
     try:
@@ -261,15 +261,19 @@ def _compact_number(value: object) -> str:
         return ""
     if not number.is_finite() or number < 0:
         return ""
-    rounded = number.quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
-    return format(rounded, "f").rstrip("0").rstrip(".")
+    quantum = Decimal(1).scaleb(-max(0, digits))
+    rounded = number.quantize(quantum, rounding=ROUND_HALF_UP)
+    text = format(rounded, "f")
+    if "." in text:
+        text = text.rstrip("0").rstrip(".")
+    return text
 
 
-def format_store_nutrition_detail(dish_row: dict) -> str:
+def format_store_nutrition_detail(dish_row: dict, digits: int = 2) -> str:
     """Format the supplied template's E-column eight-nutrient description."""
     parts = []
     for label, column, unit in STORE_DETAIL_FIELDS:
-        value = _compact_number(dish_row.get(column, ""))
+        value = _compact_number(dish_row.get(column, ""), digits=digits)
         if value == "":
             return ""
         parts.append(f"{label}{value}({unit})")
@@ -279,14 +283,20 @@ def format_store_nutrition_detail(dish_row: dict) -> str:
 def dish_row_to_store_upload_row(dish_row: dict) -> dict:
     """Map one auditable dish row to the storefront upload template."""
     upload_row = {header: "" for header in STORE_UPLOAD_HEADERS}
-    meal_set = str(dish_row.get("SET") or "").strip()
-    school_stage = str(dish_row.get("學段") or "").strip()
-    dish_name = str(dish_row.get("餐名") or "").strip()
-    prefix = meal_set
-    if school_stage:
-        prefix += f"({school_stage})" if prefix else school_stage
-    upload_row["商品名称"] = f"{prefix}{dish_name}" if prefix else dish_name
-    upload_row["商品详情"] = format_store_nutrition_detail(dish_row)
+    if dish_row.get("商品名称"):
+        upload_row["商品名称"] = str(dish_row["商品名称"]).strip()
+    else:
+        meal_set = str(dish_row.get("SET") or "").strip()
+        school_stage = str(dish_row.get("學段") or "").strip()
+        dish_name = str(dish_row.get("餐名") or "").strip()
+        prefix = meal_set
+        if school_stage:
+            prefix += f"({school_stage})" if prefix else school_stage
+        upload_row["商品名称"] = f"{prefix}{dish_name}" if prefix else dish_name
+    if "商品详情" in dish_row and dish_row.get("商品详情") is not None:
+        upload_row["商品详情"] = str(dish_row["商品详情"])
+    else:
+        upload_row["商品详情"] = format_store_nutrition_detail(dish_row)
     return upload_row
 
 

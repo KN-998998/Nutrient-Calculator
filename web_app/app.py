@@ -37,6 +37,7 @@ from nutrition_tool.dish_export import (
     NUTRIENT_TO_DISH_COL,
     STORE_UPLOAD_HEADERS,
     dish_row_to_store_upload_row,
+    format_store_nutrition_detail,
     result_to_dish_row,
     write_store_upload_excel,
 )
@@ -46,7 +47,6 @@ from nutrition_tool.history import (
 )
 from nutrition_tool.models import CALCULATION_RULE_VERSION, IngredientAmount, Recipe
 from nutrition_tool.models import RecipeResult
-from nutrition_tool.nutrition_export import write_school_nutrition_excel
 from nutrition_tool.repository import (
     NutrientRepository,
     normalize_name,
@@ -369,37 +369,34 @@ def _edited_number(value: object, field: str) -> float:
     return round(number, 2)
 
 
-def _write_batch_nutrition(state: dict, path: Path) -> dict[str, int]:
-    """Export the current batch, including complete human-edited nutrient rows."""
-    results = []
+def _store_product_name(result: RecipeResult, dish_row: dict) -> str:
+    """A(1)菜名 format used by the storefront template's product column."""
+    meal_set = str(result.meal_set or dish_row.get("SET") or "").strip()
+    day = ""
+    service_date = str(result.service_date or "").strip()
+    if service_date:
+        parts = service_date.split("-")
+        if len(parts) == 3 and parts[2].isdigit():
+            day = str(int(parts[2]))
+    stage = str(dish_row.get("學段") or result.school_stage or "").strip()
+    prefix = f"{meal_set}({day})" if day else f"{meal_set}({stage})" if stage else meal_set
+    return f"{prefix}{dish_row.get('餐名') or result.recipe_name}".strip()
+
+
+def _write_batch_nutrition(state: dict, path: Path) -> int:
+    """Export the current batch as the 15-column storefront template.
+
+    Only column A (product name) and column E (nutrition detail) receive data;
+    all other template columns stay blank. Incomplete recipes are omitted.
+    """
+    rows = []
     for index, saved in enumerate(state["results"]):
         result = RecipeResult(**saved)
-        row = state["rows"][index]
-        values = {}
-        for field, column in NUTRIENT_TO_DISH_COL.items():
-            raw = row.get(column)
-            if raw in (None, ""):
-                break
-            try:
-                number = float(raw)
-            except (TypeError, ValueError):
-                break
-            if not math.isfinite(number) or number < 0:
-                break
-            values[field] = number
-        if len(values) == len(NUTRIENT_TO_DISH_COL):
-            results.append(replace(
-                result,
-                nutrients_per_serving={**result.nutrients_per_serving, **values},
-                status="review" if result.status == "incomplete" else result.status,
-            ))
-        else:
-            results.append(result)
-    return write_school_nutrition_excel(
-        (result for result in results if result.school_stage == "小學"),
-        (result for result in results if result.school_stage == "中學"),
-        path,
-    )
+        row = dict(state["rows"][index])
+        row["商品名称"] = row.get("商品名称") or _store_product_name(result, row)
+        row["商品详情"] = format_store_nutrition_detail(row, digits=0)
+        rows.append(row)
+    return write_store_upload_excel(rows, str(path), str(STORE_UPLOAD_TEMPLATE))
 
 
 @app.route("/api/process", methods=["POST"])
@@ -446,27 +443,22 @@ def process_sop():
     # 内部文件名用 ASCII(避免 URL 中文编码问题), 下载时再给中文名
     out_name = "nutrition_results.xlsx"
     out_path = temp_dir / out_name
-    export_rows = [
-        result_to_dish_row(result, dish_no=str(dish_no + idx))
-        for idx, result in enumerate(all_results)
-    ]
-    for row, history_record in zip(export_rows, history_records):
-        if history_record is None:
-            continue
-        for field, column in NUTRIENT_TO_DISH_COL.items():
-            row[column] = round(history_record.confirmed_nutrients[field], 2)
     effective_results = [
         replace(result, nutrients_per_serving=history_record.confirmed_nutrients,
                 status="review" if result.status == "incomplete" else result.status)
         if history_record else result
         for result, history_record in zip(all_results, history_records)
     ]
-    counts = write_school_nutrition_excel(
-        (result for result in effective_results if result.school_stage == "小學"),
-        (result for result in effective_results if result.school_stage == "中學"),
-        out_path,
+    export_rows = [
+        result_to_dish_row(result, dish_no=str(dish_no + idx))
+        for idx, result in enumerate(effective_results)
+    ]
+    for row, result in zip(export_rows, effective_results):
+        row["商品名称"] = _store_product_name(result, row)
+        row["商品详情"] = format_store_nutrition_detail(row, digits=0)
+    upload_count = write_store_upload_excel(
+        export_rows, str(out_path), str(STORE_UPLOAD_TEMPLATE)
     )
-    upload_count = sum(counts.values())
     (temp_dir / "batch.json").write_text(
         json.dumps(
             {
@@ -486,7 +478,7 @@ def process_sop():
         ),
         encoding="utf-8",
     )
-    cn_name = f"餐单营养素_小学中学_{upload_count}道.xlsx"
+    cn_name = f"餐单上架_小学中学_{upload_count}道.xlsx"
 
     # 预览(前 30 条, 含 warnings 供营养师复核; 8 项营养全量展示)
     preview = []
@@ -689,7 +681,7 @@ def export_edited():
                 })
         out_name = "nutrition_results.xlsx"
         out_path = temp_dir / out_name
-        upload_count = sum(_write_batch_nutrition(state, out_path).values())
+        upload_count = _write_batch_nutrition(state, out_path)
         (temp_dir / "edit_log.json").write_text(
             json.dumps(changes, ensure_ascii=False, indent=2),
             encoding="utf-8",
@@ -729,7 +721,7 @@ def export_edited():
             history_saved += 1
         return jsonify({
             "download": f"/api/download?file={out_name}&dir={temp_dir.name}",
-            "download_name": f"餐单营养素_小学中学_已修改_{upload_count}道.xlsx",
+            "download_name": f"餐单上架_小学中学_已修改_{upload_count}道.xlsx",
             "upload_count": upload_count,
             "store_preview": [dish_row_to_store_upload_row(row) for row in rows],
             "changed_cells": len(changes),
